@@ -32,6 +32,7 @@ void Neural_Network::start(int what)
     }
     else if (what == 1)
     {
+        cout << "reading input \n";
         access(0); // read input
         cout << "file read\n";
         access(2); // read weights
@@ -120,8 +121,8 @@ void Neural_Network::write_output(string filePath)
     fori(0,dataset_size)
     {
             forj(1,output_len+1)
-                    if ( output_dataset[i][j-1] != 0)
-                    write << rank_output[j]<<",";
+                    /*if (*/write << output_dataset[i][j-1]<<" "<<rank_output[j]<<",";// != 0)
+                    //write << rank_output[j]<<",";
         write << endl;
     }
     write.close();

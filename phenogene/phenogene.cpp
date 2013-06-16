@@ -94,10 +94,15 @@ void Phenogene::on_pushButton_clicked()
             return;
     }
     network.fill_rank_output();
+    cout << "rank filled\n";
     if(ui->tabWidget->currentIndex()==0) //train
         network.start(0);
     else if(ui->tabWidget->currentIndex()==1) //test
+    {
+        cout << "starting \n";
         network.start(1);
+        cout << "not\n";
+    }
     return;
 }
 

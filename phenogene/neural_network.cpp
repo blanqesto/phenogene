@@ -70,6 +70,7 @@ void Neural_Network::test()
 {
     error = 0;
     output_dataset.clear();
+    output_dataset.resize(dataset_size);
     fork(0,dataset_size)
     {
         // Get current dataset of input
@@ -81,8 +82,9 @@ void Neural_Network::test()
         fori(0,output_len)
                 error += pow((output[i]-expected_o[i]),2);
         error*=0.5;
+        output_dataset[k].resize(output_len);
         forj(0,output_len)
-                output_dataset[k].push_back(output[j]);
+                output_dataset[k][j]=output[j];
     }
     return;
 }

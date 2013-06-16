@@ -8,9 +8,10 @@
 #include <vector>
 #include <cstring>
 #include <string>
-#include <math.h>
+//#include <math.h>
 #include <stdlib.h>
 #include <sstream>
+#include <fstream>
 using namespace std;
 
 #define fori(a, b) for (int i = (a); i < (b); i++)
@@ -54,6 +55,8 @@ public:
             delta_H[hidden_l];
 
     /*files parameters*/
+    ofstream write;
+    ifstream read;
     string  read_ex_output_string,
             read_input_string,
             input_file,

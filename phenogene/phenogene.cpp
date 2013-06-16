@@ -93,8 +93,6 @@ void Phenogene::on_pushButton_clicked()
             msgBox.move((Phenogene::width()-msgBox.width())/2,(Phenogene::height()-msgBox.height())/2);
             return;
     }
-    fori(0,network.output_len)
-            cout << network.rank_output_strings[i]<<endl;
     network.fill_rank_output();
     if(ui->tabWidget->currentIndex()==0) //train
         network.start(0);

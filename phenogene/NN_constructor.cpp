@@ -3,12 +3,12 @@
 Neural_Network::Neural_Network()
 {
     srand((unsigned)time(0));
-    minimum_error = 1;
+    minimum_error = 100;
     input_len = 9;
-    hidden_len = 6;
+    hidden_len = 7;
     output_len = 5;
-    momentum = (double)rand()/((double)RAND_MAX); // between 0 and 1;
-    learning_rate = 0.1;
+    momentum = 0.1;//(double)rand()/((double)RAND_MAX); // between 0 and 1;
+    learning_rate = 0.3;
     dataset_size=0;
     AV=segmoidal;
     //pair <char,char> temp (char1,char2);

@@ -1,6 +1,18 @@
 #include "NN.h"
 
 
+void Neural_Network::fill_rank_output()
+{
+    output_rank.clear();
+    rank_output.clear();
+    fori (0,output_len)
+    {
+        output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
+        rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
+    }
+    return;
+}
+
 void Neural_Network::start(int what)
 {
     //add read files and write to files calls
@@ -52,19 +64,19 @@ void Neural_Network::read_input(string filePath)
     dataset_size = 0;
     int id = -1;
     char char1,char2;
-    freopen(filePath.c_str(),"r",stdin);
+    read.open(filePath.c_str());
     input_dataset.clear();
     input_dataset.resize(max_dataset_size);
     fork (0,max_dataset_size)
     {
-        cin >> id;
-        if (cin.fail()) {cin.clear(); break;}
+        read >> id;
+        if (read.fail()) {read.clear(); break;}
         read_input_string += id+"\n";
         input_dataset[dataset_size].resize(input_len+1);
         fill_n(input,input_len,0);
         fori(0,input_len)
         {
-            cin >> char1 >> char2;
+            read >> char1 >> char2;
             read_input_string += char1 + char2 + "\n";
             pair <char,char> temp (char1,char2);
             input[i] = input_rank[temp];
@@ -72,88 +84,74 @@ void Neural_Network::read_input(string filePath)
         }
         dataset_size++;
     }
-    fclose(stdin);
+    read.close();
     return;
 }
 
-void Neural_Network::fill_rank_output()
-{
-    output_rank.clear();
-    rank_output.clear();
-    fori (0,output_len)
-    {
-        output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
-        rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
-    }
-    return;
-}
 
 void Neural_Network::read_expected_output(string filePath)
 {
     string temp;
     string tempSplit;
-    freopen(filePath.c_str(),"r",stdin);
+    read.open(filePath.c_str());
     output_dataset.clear();
     output_dataset.resize(max_dataset_size);
     fori(0,dataset_size)
     {
         fill_n(expected_o,output_len+1,0);
-        output_dataset[i].resize(output_len+1);
-        cin >> temp;
+        output_dataset[i].resize(output_len);
+        read >> temp;
         read_ex_output_string+= temp + "\n";
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
             expected_o[output_rank[tempSplit]]=1;
 
         forj(1,output_len+1)
-                output_dataset[i][j]=expected_o[j];
+                output_dataset[i][j-1]=expected_o[j];
     }
+    read.close();
+    return;
+}
+
+
+void Neural_Network::write_output(string filePath)
+{
+    write.open(filePath.c_str());
     fori(0,dataset_size)
     {
             forj(1,output_len+1)
-            if (output_dataset[i][j] == 1)
-            cout << rank_output[j] << "  ";
-            cout << endl;
+                    if ( output_dataset[i][j-1] != 0)
+                    write << rank_output[j]<<",";
+        write << endl;
     }
-    fclose(stdin);
+    write.close();
     return;
 }
 
 void Neural_Network::read_weights(string filePath)
 {
-    freopen(filePath.c_str(),"r",stdin);
+    read.open(filePath.c_str());
     fori (0,hidden_len)
             forj (0,input_len)
-            cin >> Wh[i][j];
+            read >> Wh[i][j];
     fori (0,output_len)
             forj (0,hidden_len)
-            cin >> Wo[i][j];
-    fclose(stdin);
+            read >> Wo[i][j];
+    read.close();
+    return;
 }
 
-void Neural_Network::write_output(string filePath)
-{
-    //fill_rank_output();
-    freopen(filePath.c_str(),"w",stdout);
-    fori(0,dataset_size)
-    {
-            forj(1,output_len+1)
-                    if ( output_dataset[i][j] != 0)
-                        cout << rank_output[j] << " ";
-        cout << endl;
-    }
-    fclose(stdout);
-}
 
 void Neural_Network::write_weights(string filePath)
 {
-    freopen(filePath.c_str(),"w",stdout);
+    cout << filePath << endl;
+    write.open(filePath.c_str());
     fori (0,hidden_len)
             forj (0,input_len)
-                cout << Wh[i][j] << " ";
+                write << Wh[i][j] << " ";
     fori (0,output_len)
             forj (0,hidden_len)
-                cout << Wo[i][j] << " ";
-    fclose(stdout);
+                write << Wo[i][j] << " ";
+    write.close();
+    return;
 }
-

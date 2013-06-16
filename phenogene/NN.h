@@ -54,7 +54,9 @@ public:
             delta_H[hidden_l];
 
     /*files parameters*/
-    string  input_file,
+    string  read_ex_output_string,
+            read_input_string,
+            input_file,
             expected_out_file,
             output_file,
             weights_file,

@@ -59,13 +59,16 @@ void Neural_Network::read_input(string filePath)
     {
         cin >> id;
         if (cin.fail()) {cin.clear(); break;}
+        read_input_string += id+"\n";
         input_dataset[dataset_size].resize(input_len+1);
+        fill_n(input,input_len,0);
         fori(0,input_len)
         {
             cin >> char1 >> char2;
+            read_input_string += char1 + char2 + "\n";
             pair <char,char> temp (char1,char2);
             input[i] = input_rank[temp];
-            input_dataset[dataset_size].push_back(input[i]);
+            input_dataset[dataset_size][i]=input[i];
         }
         dataset_size++;
     }
@@ -94,17 +97,24 @@ void Neural_Network::read_expected_output(string filePath)
     output_dataset.resize(max_dataset_size);
     fori(0,dataset_size)
     {
+        fill_n(expected_o,output_len+1,0);
         output_dataset[i].resize(output_len+1);
         cin >> temp;
+        read_ex_output_string+= temp + "\n";
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
             expected_o[output_rank[tempSplit]]=1;
-        forj(0,output_len)
-                output_dataset[i].push_back(expected_o[j]);
+
+        forj(1,output_len+1)
+                output_dataset[i][j]=expected_o[j];
     }
     fori(0,dataset_size)
-            forj(0,output_len)
-            cout << output_dataset[i][j] << endl;
+    {
+            forj(1,output_len+1)
+            if (output_dataset[i][j] == 1)
+            cout << rank_output[j] << "  ";
+            cout << endl;
+    }
     fclose(stdin);
     return;
 }
@@ -120,6 +130,7 @@ void Neural_Network::read_weights(string filePath)
             cin >> Wo[i][j];
     fclose(stdin);
 }
+
 void Neural_Network::write_output(string filePath)
 {
     //fill_rank_output();
@@ -127,12 +138,13 @@ void Neural_Network::write_output(string filePath)
     fori(0,dataset_size)
     {
             forj(1,output_len+1)
-                    //if ( output_dataset[i][j] != 0)
+                    if ( output_dataset[i][j] != 0)
                         cout << rank_output[j] << " ";
         cout << endl;
     }
     fclose(stdout);
 }
+
 void Neural_Network::write_weights(string filePath)
 {
     freopen(filePath.c_str(),"w",stdout);

@@ -145,7 +145,6 @@ void Neural_Network::read_weights(string filePath)
 
 void Neural_Network::write_weights(string filePath)
 {
-    cout << filePath << endl;
     write.open(filePath.c_str());
     fori (0,hidden_len)
             forj (0,input_len)

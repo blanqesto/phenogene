@@ -41,19 +41,6 @@
     </property>
     <item row="1" column="3">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="1" column="2">
-       <widget class="QPushButton" name="quitButton">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Quit</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QProgressBar" name="progressBar">
         <property name="value">
@@ -65,6 +52,19 @@
        <widget class="QPushButton" name="pushButton">
         <property name="text">
          <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="quitButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Quit</string>
         </property>
        </widget>
       </item>
@@ -144,29 +144,6 @@
          </property>
          <property name="text">
           <string>Browse</string>
-         </property>
-        </widget>
-        <widget class="QTextEdit" name="textEdit">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>320</y>
-           <width>291</width>
-           <height>101</height>
-          </rect>
-         </property>
-         <property name="readOnly">
-          <bool>true</bool>
-         </property>
-         <property name="html">
-          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;One line for each training candidate&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Example: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;(for the above example)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;blue&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;brown&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_5">
@@ -271,6 +248,26 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="text">
           <string>No Selected File</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>320</y>
+           <width>291</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;One line for each training candidate&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Example: &lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;(for the above example)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;blue&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;brown&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </widget>
@@ -380,10 +377,18 @@ p, li { white-space: pre-wrap; }
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>250</y>
-           <width>141</width>
-           <height>19</height>
+           <y>240</y>
+           <width>130</width>
+           <height>40</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
          </property>
          <property name="text">
           <string>Activation function:</string>
@@ -538,26 +543,13 @@ p, li { white-space: pre-wrap; }
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
-        <widget class="Line" name="line_9">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>260</y>
-           <width>131</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
         <widget class="QListWidget" name="listWidget">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>270</y>
-           <width>81</width>
-           <height>31</height>
+           <width>111</width>
+           <height>71</height>
           </rect>
          </property>
          <property name="currentRow">
@@ -566,6 +558,16 @@ p, li { white-space: pre-wrap; }
          <item>
           <property name="text">
            <string>Sigmoidal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AV1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>AV2</string>
           </property>
          </item>
         </widget>
@@ -722,17 +724,58 @@ AFTER the train finishes.</string>
           <string>[0-999]</string>
          </property>
         </widget>
-        <widget class="QTextBrowser" name="textBrowser">
+        <widget class="Line" name="line_10">
          <property name="geometry">
           <rect>
-           <x>100</x>
-           <y>260</y>
-           <width>151</width>
-           <height>81</height>
+           <x>140</x>
+           <y>250</y>
+           <width>100</width>
+           <height>30</height>
           </rect>
          </property>
-         <property name="readOnly">
-          <bool>false</bool>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>240</y>
+           <width>110</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Output keywords</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>250</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>133</x>
+           <y>270</y>
+           <width>111</width>
+           <height>71</height>
+          </rect>
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -815,7 +858,7 @@ p, li { white-space: pre-wrap; }
           </rect>
          </property>
          <property name="text">
-          <string>6</string>
+          <string>7</string>
          </property>
          <property name="maxLength">
           <number>3</number>
@@ -837,7 +880,7 @@ p, li { white-space: pre-wrap; }
           </rect>
          </property>
          <property name="text">
-          <string>0.1</string>
+          <string>0.3</string>
          </property>
          <property name="readOnly">
           <bool>true</bool>
@@ -867,19 +910,6 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="text">
           <string>Hidden nodes:</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_15">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>250</y>
-           <width>141</width>
-           <height>19</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>Activation function:</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_16">
@@ -1040,19 +1070,6 @@ p, li { white-space: pre-wrap; }
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
-        <widget class="Line" name="line_20">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>260</y>
-           <width>131</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
         <widget class="QListWidget" name="listWidget_2">
          <property name="enabled">
           <bool>false</bool>
@@ -1061,7 +1078,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>10</x>
            <y>270</y>
-           <width>191</width>
+           <width>111</width>
            <height>71</height>
           </rect>
          </property>
@@ -1183,6 +1200,51 @@ p, li { white-space: pre-wrap; }
           <string>* Make sure the file follows the correct format.</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>240</y>
+           <width>110</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Output keywords</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>270</y>
+           <width>121</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;blue&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;green&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;brown&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;grey&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;hazel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QFrame" name="frame_4">
         <property name="geometry">
@@ -1264,12 +1326,38 @@ p, li { white-space: pre-wrap; }
           <string>Browse</string>
          </property>
         </widget>
-        <widget class="QTextBrowser" name="textBrowser_2">
+        <widget class="Line" name="line_23">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>50</y>
+           <width>118</width>
+           <height>3</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
          <property name="geometry">
           <rect>
            <x>10</x>
+           <y>30</y>
+           <width>231</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>No Selected File</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_2">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
            <y>60</y>
-           <width>291</width>
+           <width>281</width>
            <height>201</height>
           </rect>
          </property>
@@ -1287,56 +1375,53 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;9          &lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;#User ID&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AA&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;TC&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AG&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AG&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
-        <widget class="Line" name="line_23">
+        <widget class="QTextBrowser" name="textBrowser_5">
          <property name="geometry">
           <rect>
-           <x>130</x>
-           <y>50</y>
-           <width>118</width>
-           <height>3</height>
-          </rect>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-        <widget class="QTextEdit" name="textEdit_2">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
+           <x>20</x>
            <y>300</y>
-           <width>291</width>
-           <height>121</height>
+           <width>271</width>
+           <height>131</height>
           </rect>
          </property>
-         <property name="readOnly">
-          <bool>true</bool>
-         </property>
-         <property name="html">
-          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
         </widget>
-        <widget class="QLabel" name="label_11">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>30</y>
-           <width>231</width>
-           <height>19</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>No Selected File</string>
-         </property>
-        </widget>
+       </widget>
+       <widget class="Line" name="line_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>130</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Activation function:</string>
+        </property>
        </widget>
       </widget>
      </widget>
@@ -1356,8 +1441,43 @@ p, li { white-space: pre-wrap; }
     <property name="title">
      <string>File</string>
     </property>
+    <widget class="QMenu" name="menuSave">
+     <property name="title">
+      <string>Save</string>
+     </property>
+     <addaction name="actionParameters"/>
+     <addaction name="actionWeights"/>
+     <addaction name="actionOutput"/>
+     <addaction name="actionInput"/>
+     <addaction name="actionAll_settings_in_a_ph_file"/>
+    </widget>
+    <widget class="QMenu" name="menuLoad">
+     <property name="title">
+      <string>Load</string>
+     </property>
+     <addaction name="actionParameters_2"/>
+     <addaction name="actionWeights_2"/>
+     <addaction name="actionExpected_Output"/>
+     <addaction name="actionInput_2"/>
+     <addaction name="action_ph_file"/>
+    </widget>
+    <addaction name="menuSave"/>
+    <addaction name="menuLoad"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_us">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
    </widget>
    <addaction name="menuPhenogene"/>
+   <addaction name="menuAbout_us"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -1368,6 +1488,61 @@ p, li { white-space: pre-wrap; }
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionParameters">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionWeights">
+   <property name="text">
+    <string>Weights</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionInput">
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </action>
+  <action name="actionAll_settings_in_a_ph_file">
+   <property name="text">
+    <string>All settings in a .ph file</string>
+   </property>
+  </action>
+  <action name="actionParameters_2">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionWeights_2">
+   <property name="text">
+    <string>Weights</string>
+   </property>
+  </action>
+  <action name="actionExpected_Output">
+   <property name="text">
+    <string>Expected Output</string>
+   </property>
+  </action>
+  <action name="actionInput_2">
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </action>
+  <action name="action_ph_file">
+   <property name="text">
+    <string>.ph file</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Quit program</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
@@ -1388,9 +1563,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>lineEdit_8</tabstop>
   <tabstop>lineEdit_9</tabstop>
   <tabstop>listWidget_2</tabstop>
-  <tabstop>textEdit</tabstop>
-  <tabstop>textBrowser_2</tabstop>
-  <tabstop>textEdit_2</tabstop>
   <tabstop>textBrowser_3</tabstop>
   <tabstop>lineEdit_7</tabstop>
   <tabstop>lineEdit_6</tabstop>

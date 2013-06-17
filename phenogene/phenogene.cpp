@@ -14,8 +14,8 @@ Phenogene::Phenogene(QWidget *parent) :
     ui->lineEdit_2->setValidator(new QIntValidator (1,100, this));
     ui->lineEdit_5->setValidator(new QIntValidator (1,100, this));
     ui->lineEdit_3->setValidator(new QIntValidator (0,1, this));
-    QRegExp re ("[0-1]\\.[0-9][0-9][1-9]|2");
-    QRegExp re2 ("[0-9][0-9]?[0-9]?\\.[0-9][0-9]");
+    QRegExp re ("0\\.[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9])?|2");
+    QRegExp re2 ("[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9])?");
     QRegExpValidator *valid = new QRegExpValidator(re, this);
     QRegExpValidator *valid2 = new QRegExpValidator(re2, this);
     ui->lineEdit_3->setValidator(valid);
@@ -220,4 +220,10 @@ void Phenogene::on_listWidget_currentRowChanged(int currentRow)
 {
     ui->listWidget_2->setCurrentRow(currentRow);
     network.AV=ui->listWidget->currentRow();
+}
+
+
+void Phenogene::on_textEdit_4_textChanged()
+{
+    ui->textBrowser_4->setText(ui->textEdit_4->document()->toPlainText());
 }

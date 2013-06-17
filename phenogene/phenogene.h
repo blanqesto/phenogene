@@ -42,9 +42,10 @@ private slots:
     void on_lineEdit_5_editingFinished();
 
     void on_listWidget_currentRowChanged(int currentRow);
-
-
     void on_pushButton_clicked();
+
+
+    void on_textEdit_4_textChanged();
 
 private:
     Ui::Phenogene *ui;

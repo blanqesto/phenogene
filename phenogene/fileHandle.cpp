@@ -106,9 +106,14 @@ void Neural_Network::write_output(string filePath)
     write.open(filePath.c_str());
     fori(0,dataset_size)
     {
-            forj(1,output_len+1)
-                    if ( output_dataset[i][j-1]>=0.5)//<<" "<<rank_output[j]<<",";// != 0)
-                    write << rank_output[j]<<",";
+        double temp = -10000,rank=-1;
+        forj(1,output_len+1)
+                if (output_dataset[i][j-1]>temp)
+                {
+                    temp = output_dataset[i][j-1];
+                    rank = j;
+                }
+        write << rank_output[rank];
         write << endl;
     }
     write.close();

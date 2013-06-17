@@ -45,8 +45,7 @@ void Neural_Network::init()
 void Neural_Network::train()
 {
     error = 10000;
-    /*initialize weights,bias*/
-    init();
+    init(); //initialize weights,bias
     int iterations = 0;
     while (error > minimum_error && iterations < max_iterations)
     {
@@ -54,9 +53,17 @@ void Neural_Network::train()
         error = 0;
         fork(0, dataset_size)
         {
+            cout << k << endl;
             // Get current dataset of input and expected output
             fori(0,input_len) input[i]=input_dataset[k][i];
             fori(0,output_len) expected_o[i]=output_dataset[k][i];
+            if(input_absent())continue;
+//            cout <<"Training function:\n";
+//            cout << "Input vector: ";
+//            forj(0,input_len)cout << input[j] << "  ";
+//            cout << "\nOutput Vector: ";
+//            forj(0,output_len)cout << expected_o[j] << "  ";
+//            cout << endl << endl << endl;
             // Propagate input
             propagate(AV);
             // Calculate Error
@@ -64,8 +71,15 @@ void Neural_Network::train()
             // Back propagagte the error
             back_propagate();
         }
-        //error*=0.5;
+        error*=0.5;
     }
+}
+
+bool Neural_Network::input_absent()
+{
+    fori (0,input_len)
+            if(input[i]==1) return false;
+    return true;
 }
 
 void Neural_Network::test()
@@ -152,6 +166,6 @@ double Neural_Network::cal_error(int AV)
             delta_H[i] = segmoidal_fn(hidden[i],1)*temp;
         }
     }
-    return (0.5*total_error); //was *0.5
+    return (total_error);
 }
 

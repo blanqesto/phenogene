@@ -16,7 +16,9 @@ SOURCES += main.cpp\
         phenogene.cpp \
     neural_network.cpp \
     fileHandle.cpp \
-    NN_constructor.cpp
+    NN_constructor.cpp \
+    phenogene_constructor.cpp \
+    start_button.cpp
 
 HEADERS  += phenogene.h \
     NN.h

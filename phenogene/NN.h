@@ -24,6 +24,7 @@ using namespace std;
 #define hidden_layer 0
 #define output_layer 1
 #define segmoidal 1
+#define max_iterations 1000
 
 class Neural_Network
 {
@@ -71,7 +72,7 @@ public:
     void init();
     void train();
     void test();
-    void start(int);
+    void do_function(int);
     double segmoidal_fn(double, int);
     void propagate(int);
     double cal_error(int);

@@ -13,34 +13,20 @@ void Neural_Network::fill_rank_output()
     return;
 }
 
-void Neural_Network::start(int what)
+void Neural_Network::do_function(int what)
 {
     //add read files and write to files calls
-    if (what == 0)
+    switch(what)
     {
-        cout << "reading input\n";
-        access(0); // read input
-        cout << "input read\n";
-        access(3); // read expected output
-        cout << "ex output read\n";
-        train(); //train
-        cout << "train finished\n";
-        access(1); // write output
-        cout << "output wrote\n";
-        access(4); // write weights
-        cout << "weights wrote\n";
-    }
-    else if (what == 1)
-    {
-        cout << "reading input \n";
-        access(0); // read input
-        cout << "file read\n";
-        access(2); // read weights
-        cout << "weights read\n";
+    case 5:
+        train();
+        break;
+    case 6:
         test();
-        cout << "test finished\n";
-        access(1); // write output
-        cout << "output wrote\n";
+        break;
+    default:
+        access(what);
+        break;
     }
     return;
 }
@@ -121,8 +107,8 @@ void Neural_Network::write_output(string filePath)
     fori(0,dataset_size)
     {
             forj(1,output_len+1)
-                    /*if (*/write << output_dataset[i][j-1]<<" "<<rank_output[j]<<",";// != 0)
-                    //write << rank_output[j]<<",";
+                    if ( output_dataset[i][j-1]>=0.5)//<<" "<<rank_output[j]<<",";// != 0)
+                    write << rank_output[j]<<",";
         write << endl;
     }
     write.close();

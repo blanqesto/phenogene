@@ -1226,7 +1226,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>130</x>
            <y>270</y>
-           <width>121</width>
+           <width>110</width>
            <height>71</height>
           </rect>
          </property>
@@ -1357,7 +1357,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>15</x>
            <y>60</y>
-           <width>281</width>
+           <width>291</width>
            <height>201</height>
           </rect>
          </property>
@@ -1367,7 +1367,6 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Example &lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;(text in read is for declaration)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2          &lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;#Number of training candidates&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;116      &lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;#User ID&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;AG&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CT&lt;/p&gt;
@@ -1381,9 +1380,9 @@ p, li { white-space: pre-wrap; }
         <widget class="QTextBrowser" name="textBrowser_5">
          <property name="geometry">
           <rect>
-           <x>20</x>
+           <x>10</x>
            <y>300</y>
-           <width>271</width>
+           <width>301</width>
            <height>131</height>
           </rect>
          </property>

@@ -47,8 +47,10 @@ void Neural_Network::train()
     error = 10000;
     /*initialize weights,bias*/
     init();
-    while (error > minimum_error)
+    int iterations = 0;
+    while (error > minimum_error && iterations < max_iterations)
     {
+        iterations ++ ;
         error = 0;
         fork(0, dataset_size)
         {
@@ -62,7 +64,7 @@ void Neural_Network::train()
             // Back propagagte the error
             back_propagate();
         }
-        error*=0.5;
+        //error*=0.5;
     }
 }
 
@@ -113,41 +115,43 @@ void Neural_Network::back_propagate()
 {
     // bias update
     fori(0,output_len)
-            bias_O[i]+=(learning_rate*delta_O[i])+(momentum*bias_O[i]);
+            bias_O[i]-=(learning_rate*delta_O[i])+(momentum*bias_O[i]);
     fori(0,hidden_len)
-            bias_H[i]+=(learning_rate*delta_H[i])+(momentum*bias_H[i]);
+            bias_H[i]-=(learning_rate*delta_H[i])+(momentum*bias_H[i]);
 
     // output weights update
     fori(0,output_len)
             forj(0,hidden_len)
-            Wo[i][j]+=(learning_rate*delta_O[i]*hidden[j]) + (momentum*Wo[i][j]);
+            Wo[i][j]-=(learning_rate*delta_O[i]*hidden[j]) + (momentum*Wo[i][j]);
 
+    // hidden weights update
     fori(0,hidden_len)
             forj(0,input_len)
-            Wh[i][j]+=(learning_rate*delta_H[i]*input[j]) + (momentum*Wh[i][j]);
+            Wh[i][j]-=(learning_rate*delta_H[i]*input[j]) + (momentum*Wh[i][j]);
     return;
 }
 
 double Neural_Network::cal_error(int AV)
 {
-    double total_error = 0.0;
+    double total_error = 0.0, temp = 0.0;
     if (AV == segmoidal)
     {
         // error signal for output layer
         fori(0,output_len)
         {
-            total_error += pow(expected_o[i]-output[i],2);
-            delta_O[i] = total_error*segmoidal_fn(output[i],1);
+            temp = pow(expected_o[i]-output[i],2);
+            delta_O[i] = temp*segmoidal_fn(output[i],1);
+            total_error += temp;
         }
         // error signal for hidden layer
         fori(0,hidden_len)
         {
-            double temp = 0.0;
+            temp = 0.0;
             forj(0,output_len)
                     temp += Wo[j][i]*delta_O[j];
             delta_H[i] = segmoidal_fn(hidden[i],1)*temp;
         }
     }
-    return (total_error); //was *0.5
+    return (0.5*total_error); //was *0.5
 }
 

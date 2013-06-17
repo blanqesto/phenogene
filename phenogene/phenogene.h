@@ -43,12 +43,15 @@ private slots:
 
     void on_listWidget_currentRowChanged(int currentRow);
     void on_pushButton_clicked();
-
-
     void on_textEdit_4_textChanged();
 
 private:
     Ui::Phenogene *ui;
+    void fill_rank();
+    QString valid_input();
+    void perform_train();
+    void perform_test();
+    void display_error(QString);
 };
 
 #endif // PHENOGENE_H

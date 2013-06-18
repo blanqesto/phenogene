@@ -9,6 +9,7 @@
 #include <qvalidator.h>
 #include <qlineedit.h>
 #include <QRegExp>
+#include <FileManager.h>
 
 namespace Ui {
 class GUI;
@@ -16,7 +17,6 @@ class GUI;
 
 class GUI : public QMainWindow
 {
-    Neural_Network network;
     QString filePath;
     QFileDialog fileDialog;
     QByteArray state;
@@ -44,6 +44,7 @@ private slots:
 private:
     Ui::GUI *ui;
     QString valid_input();
+    File_Manager fm;
     void fill_rank();
     void perform_train();
     void perform_test();
@@ -52,4 +53,4 @@ private:
     void display_error(QString);
 };
 
-#endif // PHENOGENE_H
+#endif

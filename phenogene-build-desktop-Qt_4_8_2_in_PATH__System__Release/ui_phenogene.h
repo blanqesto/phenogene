@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Sun Jun 16 20:27:28 2013
+** Created: Tue Jun 18 23:00:31 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -34,15 +34,26 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Phenogene
+class Ui_GUI
 {
 public:
+    QAction *actionParameters;
+    QAction *actionWeights;
+    QAction *actionOutput;
+    QAction *actionInput;
+    QAction *actionAll_settings_in_a_ph_file;
+    QAction *actionParameters_2;
+    QAction *actionWeights_2;
+    QAction *actionExpected_Output;
+    QAction *actionInput_2;
+    QAction *action_ph_file;
+    QAction *actionClose;
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
-    QPushButton *quitButton;
     QProgressBar *progressBar;
     QPushButton *pushButton;
+    QPushButton *quitButton;
     QTabWidget *tabWidget;
     QWidget *tab_3;
     QFrame *frame_2;
@@ -50,7 +61,6 @@ public:
     QLabel *label_9;
     QFrame *line_13;
     QPushButton *pushButton_3;
-    QTextEdit *textEdit;
     QPushButton *pushButton_5;
     QLabel *label_21;
     QFrame *line_24;
@@ -58,6 +68,7 @@ public:
     QFrame *line_25;
     QLabel *label_2;
     QLabel *label_10;
+    QTextBrowser *textBrowser;
     QFrame *frame;
     QLabel *label;
     QLineEdit *lineEdit;
@@ -77,7 +88,6 @@ public:
     QFrame *line_6;
     QFrame *line_7;
     QFrame *line_8;
-    QFrame *line_9;
     QListWidget *listWidget;
     QFrame *line;
     QLabel *label_22;
@@ -90,7 +100,10 @@ public:
     QLabel *label_31;
     QLabel *label_32;
     QLabel *label_33;
-    QTextBrowser *textBrowser;
+    QFrame *line_10;
+    QLabel *label_34;
+    QFrame *line_12;
+    QTextEdit *textEdit_4;
     QWidget *tab_4;
     QFrame *frame_3;
     QLabel *label_12;
@@ -99,7 +112,6 @@ public:
     QLineEdit *lineEdit_8;
     QLabel *label_13;
     QLabel *label_14;
-    QLabel *label_15;
     QLabel *label_16;
     QLabel *label_17;
     QLineEdit *lineEdit_9;
@@ -111,7 +123,6 @@ public:
     QFrame *line_17;
     QFrame *line_18;
     QFrame *line_19;
-    QFrame *line_20;
     QListWidget *listWidget_2;
     QFrame *line_2;
     QLabel *label_24;
@@ -119,32 +130,62 @@ public:
     QPushButton *pushButton_6;
     QFrame *line_26;
     QLabel *label_26;
+    QLabel *label_35;
+    QTextBrowser *textBrowser_4;
     QFrame *frame_4;
     QLabel *label_19;
     QFrame *line_21;
     QFrame *line_22;
     QLabel *label_20;
     QPushButton *pushButton_4;
-    QTextBrowser *textBrowser_2;
     QFrame *line_23;
-    QTextEdit *textEdit_2;
     QLabel *label_11;
+    QTextBrowser *textBrowser_2;
+    QTextBrowser *textBrowser_5;
+    QFrame *line_20;
+    QLabel *label_15;
     QMenuBar *menuBar;
     QMenu *menuPhenogene;
+    QMenu *menuSave;
+    QMenu *menuLoad;
+    QMenu *menuAbout_us;
+    QMenu *menuAbout;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
-    void setupUi(QMainWindow *Phenogene)
+    void setupUi(QMainWindow *GUI)
     {
-        if (Phenogene->objectName().isEmpty())
-            Phenogene->setObjectName(QString::fromUtf8("Phenogene"));
-        Phenogene->setEnabled(true);
-        Phenogene->resize(600, 600);
-        Phenogene->setMinimumSize(QSize(600, 600));
-        Phenogene->setMaximumSize(QSize(600, 600));
-        Phenogene->setStyleSheet(QString::fromUtf8(""));
-        Phenogene->setTabShape(QTabWidget::Rounded);
-        centralWidget = new QWidget(Phenogene);
+        if (GUI->objectName().isEmpty())
+            GUI->setObjectName(QString::fromUtf8("GUI"));
+        GUI->setEnabled(true);
+        GUI->resize(600, 600);
+        GUI->setMinimumSize(QSize(600, 600));
+        GUI->setMaximumSize(QSize(600, 600));
+        GUI->setStyleSheet(QString::fromUtf8(""));
+        GUI->setTabShape(QTabWidget::Rounded);
+        actionParameters = new QAction(GUI);
+        actionParameters->setObjectName(QString::fromUtf8("actionParameters"));
+        actionWeights = new QAction(GUI);
+        actionWeights->setObjectName(QString::fromUtf8("actionWeights"));
+        actionOutput = new QAction(GUI);
+        actionOutput->setObjectName(QString::fromUtf8("actionOutput"));
+        actionInput = new QAction(GUI);
+        actionInput->setObjectName(QString::fromUtf8("actionInput"));
+        actionAll_settings_in_a_ph_file = new QAction(GUI);
+        actionAll_settings_in_a_ph_file->setObjectName(QString::fromUtf8("actionAll_settings_in_a_ph_file"));
+        actionParameters_2 = new QAction(GUI);
+        actionParameters_2->setObjectName(QString::fromUtf8("actionParameters_2"));
+        actionWeights_2 = new QAction(GUI);
+        actionWeights_2->setObjectName(QString::fromUtf8("actionWeights_2"));
+        actionExpected_Output = new QAction(GUI);
+        actionExpected_Output->setObjectName(QString::fromUtf8("actionExpected_Output"));
+        actionInput_2 = new QAction(GUI);
+        actionInput_2->setObjectName(QString::fromUtf8("actionInput_2"));
+        action_ph_file = new QAction(GUI);
+        action_ph_file->setObjectName(QString::fromUtf8("action_ph_file"));
+        actionClose = new QAction(GUI);
+        actionClose->setObjectName(QString::fromUtf8("actionClose"));
+        centralWidget = new QWidget(GUI);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_2 = new QGridLayout(centralWidget);
         gridLayout_2->setSpacing(6);
@@ -154,16 +195,6 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        quitButton = new QPushButton(centralWidget);
-        quitButton->setObjectName(QString::fromUtf8("quitButton"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(quitButton->sizePolicy().hasHeightForWidth());
-        quitButton->setSizePolicy(sizePolicy);
-
-        gridLayout->addWidget(quitButton, 1, 2, 1, 1);
-
         progressBar = new QProgressBar(centralWidget);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
         progressBar->setValue(0);
@@ -174,6 +205,16 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         gridLayout->addWidget(pushButton, 1, 1, 1, 1);
+
+        quitButton = new QPushButton(centralWidget);
+        quitButton->setObjectName(QString::fromUtf8("quitButton"));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(quitButton->sizePolicy().hasHeightForWidth());
+        quitButton->setSizePolicy(sizePolicy);
+
+        gridLayout->addWidget(quitButton, 1, 2, 1, 1);
 
 
         gridLayout_2->addLayout(gridLayout, 1, 3, 1, 1);
@@ -203,10 +244,6 @@ public:
         pushButton_3 = new QPushButton(frame_2);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(250, 290, 61, 27));
-        textEdit = new QTextEdit(frame_2);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(10, 320, 291, 101));
-        textEdit->setReadOnly(true);
         pushButton_5 = new QPushButton(frame_2);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setGeometry(QRect(248, 30, 61, 27));
@@ -232,6 +269,9 @@ public:
         label_10 = new QLabel(frame_2);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setGeometry(QRect(10, 290, 201, 19));
+        textBrowser = new QTextBrowser(frame_2);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setGeometry(QRect(10, 320, 291, 111));
         frame = new QFrame(tab_3);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setGeometry(QRect(0, 0, 251, 441));
@@ -260,7 +300,13 @@ public:
         label_4->setGeometry(QRect(10, 90, 101, 19));
         label_5 = new QLabel(frame);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(10, 250, 141, 19));
+        label_5->setGeometry(QRect(10, 240, 130, 40));
+        QFont font;
+        font.setPointSize(10);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
+        label_5->setFont(font);
         label_6 = new QLabel(frame);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(10, 170, 101, 21));
@@ -307,15 +353,12 @@ public:
         line_8->setGeometry(QRect(10, 230, 118, 3));
         line_8->setFrameShape(QFrame::HLine);
         line_8->setFrameShadow(QFrame::Sunken);
-        line_9 = new QFrame(frame);
-        line_9->setObjectName(QString::fromUtf8("line_9"));
-        line_9->setGeometry(QRect(10, 260, 131, 16));
-        line_9->setFrameShape(QFrame::HLine);
-        line_9->setFrameShadow(QFrame::Sunken);
         listWidget = new QListWidget(frame);
         new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
+        new QListWidgetItem(listWidget);
         listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(10, 270, 81, 31));
+        listWidget->setGeometry(QRect(10, 270, 111, 71));
         line = new QFrame(frame);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(0, 340, 251, 16));
@@ -335,13 +378,13 @@ public:
         label_27 = new QLabel(frame);
         label_27->setObjectName(QString::fromUtf8("label_27"));
         label_27->setGeometry(QRect(10, 410, 241, 31));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Century Schoolbook L"));
-        font.setPointSize(8);
-        font.setBold(false);
-        font.setItalic(false);
-        font.setWeight(50);
-        label_27->setFont(font);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Century Schoolbook L"));
+        font1.setPointSize(8);
+        font1.setBold(false);
+        font1.setItalic(false);
+        font1.setWeight(50);
+        label_27->setFont(font1);
         label_28 = new QLabel(frame);
         label_28->setObjectName(QString::fromUtf8("label_28"));
         label_28->setGeometry(QRect(200, 30, 40, 19));
@@ -360,10 +403,25 @@ public:
         label_33 = new QLabel(frame);
         label_33->setObjectName(QString::fromUtf8("label_33"));
         label_33->setGeometry(QRect(200, 220, 51, 19));
-        textBrowser = new QTextBrowser(frame);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(100, 260, 151, 81));
-        textBrowser->setReadOnly(false);
+        line_10 = new QFrame(frame);
+        line_10->setObjectName(QString::fromUtf8("line_10"));
+        line_10->setGeometry(QRect(140, 250, 100, 30));
+        line_10->setFrameShape(QFrame::HLine);
+        line_10->setFrameShadow(QFrame::Sunken);
+        label_34 = new QLabel(frame);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setGeometry(QRect(140, 240, 110, 40));
+        QFont font2;
+        font2.setPointSize(10);
+        label_34->setFont(font2);
+        line_12 = new QFrame(frame);
+        line_12->setObjectName(QString::fromUtf8("line_12"));
+        line_12->setGeometry(QRect(10, 250, 100, 30));
+        line_12->setFrameShape(QFrame::HLine);
+        line_12->setFrameShadow(QFrame::Sunken);
+        textEdit_4 = new QTextEdit(frame);
+        textEdit_4->setObjectName(QString::fromUtf8("textEdit_4"));
+        textEdit_4->setGeometry(QRect(133, 270, 111, 71));
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QString::fromUtf8("tab_4"));
@@ -398,9 +456,6 @@ public:
         label_14 = new QLabel(frame_3);
         label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setGeometry(QRect(10, 90, 101, 19));
-        label_15 = new QLabel(frame_3);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setGeometry(QRect(10, 250, 141, 19));
         label_16 = new QLabel(frame_3);
         label_16->setObjectName(QString::fromUtf8("label_16"));
         label_16->setGeometry(QRect(10, 170, 101, 21));
@@ -451,18 +506,13 @@ public:
         line_19->setGeometry(QRect(10, 230, 118, 3));
         line_19->setFrameShape(QFrame::HLine);
         line_19->setFrameShadow(QFrame::Sunken);
-        line_20 = new QFrame(frame_3);
-        line_20->setObjectName(QString::fromUtf8("line_20"));
-        line_20->setGeometry(QRect(10, 260, 131, 16));
-        line_20->setFrameShape(QFrame::HLine);
-        line_20->setFrameShadow(QFrame::Sunken);
         listWidget_2 = new QListWidget(frame_3);
         new QListWidgetItem(listWidget_2);
         new QListWidgetItem(listWidget_2);
         new QListWidgetItem(listWidget_2);
         listWidget_2->setObjectName(QString::fromUtf8("listWidget_2"));
         listWidget_2->setEnabled(false);
-        listWidget_2->setGeometry(QRect(10, 270, 191, 71));
+        listWidget_2->setGeometry(QRect(10, 270, 111, 71));
         listWidget_2->setContextMenuPolicy(Qt::DefaultContextMenu);
         listWidget_2->setSelectionMode(QAbstractItemView::SingleSelection);
         listWidget_2->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -489,7 +539,16 @@ public:
         label_26 = new QLabel(frame_3);
         label_26->setObjectName(QString::fromUtf8("label_26"));
         label_26->setGeometry(QRect(10, 420, 241, 21));
-        label_26->setFont(font);
+        label_26->setFont(font1);
+        label_35 = new QLabel(frame_3);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(140, 240, 110, 40));
+        label_35->setFont(font2);
+        textBrowser_4 = new QTextBrowser(frame_3);
+        textBrowser_4->setObjectName(QString::fromUtf8("textBrowser_4"));
+        textBrowser_4->setEnabled(true);
+        textBrowser_4->setGeometry(QRect(130, 270, 110, 71));
+        textBrowser_4->setReadOnly(true);
         frame_4 = new QFrame(tab_4);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
         frame_4->setGeometry(QRect(250, 0, 320, 440));
@@ -514,38 +573,54 @@ public:
         pushButton_4 = new QPushButton(frame_4);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(250, 30, 61, 27));
-        textBrowser_2 = new QTextBrowser(frame_4);
-        textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
-        textBrowser_2->setGeometry(QRect(10, 60, 291, 201));
         line_23 = new QFrame(frame_4);
         line_23->setObjectName(QString::fromUtf8("line_23"));
         line_23->setGeometry(QRect(130, 50, 118, 3));
         line_23->setFrameShape(QFrame::HLine);
         line_23->setFrameShadow(QFrame::Sunken);
-        textEdit_2 = new QTextEdit(frame_4);
-        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-        textEdit_2->setGeometry(QRect(10, 300, 291, 121));
-        textEdit_2->setReadOnly(true);
         label_11 = new QLabel(frame_4);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setGeometry(QRect(10, 30, 231, 19));
+        textBrowser_2 = new QTextBrowser(frame_4);
+        textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
+        textBrowser_2->setGeometry(QRect(15, 60, 291, 201));
+        textBrowser_5 = new QTextBrowser(frame_4);
+        textBrowser_5->setObjectName(QString::fromUtf8("textBrowser_5"));
+        textBrowser_5->setGeometry(QRect(10, 300, 301, 131));
+        line_20 = new QFrame(tab_4);
+        line_20->setObjectName(QString::fromUtf8("line_20"));
+        line_20->setGeometry(QRect(10, 250, 100, 30));
+        line_20->setFrameShape(QFrame::HLine);
+        line_20->setFrameShadow(QFrame::Sunken);
+        label_15 = new QLabel(tab_4);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setGeometry(QRect(10, 240, 130, 40));
+        label_15->setFont(font);
         tabWidget->addTab(tab_4, QString());
 
         gridLayout_2->addWidget(tabWidget, 0, 3, 1, 1);
 
-        Phenogene->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(Phenogene);
+        GUI->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(GUI);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 600, 29));
         menuPhenogene = new QMenu(menuBar);
         menuPhenogene->setObjectName(QString::fromUtf8("menuPhenogene"));
-        Phenogene->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(Phenogene);
+        menuSave = new QMenu(menuPhenogene);
+        menuSave->setObjectName(QString::fromUtf8("menuSave"));
+        menuLoad = new QMenu(menuPhenogene);
+        menuLoad->setObjectName(QString::fromUtf8("menuLoad"));
+        menuAbout_us = new QMenu(menuBar);
+        menuAbout_us->setObjectName(QString::fromUtf8("menuAbout_us"));
+        menuAbout = new QMenu(menuBar);
+        menuAbout->setObjectName(QString::fromUtf8("menuAbout"));
+        GUI->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(GUI);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        Phenogene->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(Phenogene);
+        GUI->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(GUI);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        Phenogene->setStatusBar(statusBar);
+        GUI->setStatusBar(statusBar);
         QWidget::setTabOrder(tabWidget, lineEdit);
         QWidget::setTabOrder(lineEdit, lineEdit_2);
         QWidget::setTabOrder(lineEdit_2, lineEdit_5);
@@ -562,44 +637,58 @@ public:
         QWidget::setTabOrder(lineEdit_10, lineEdit_8);
         QWidget::setTabOrder(lineEdit_8, lineEdit_9);
         QWidget::setTabOrder(lineEdit_9, listWidget_2);
-        QWidget::setTabOrder(listWidget_2, textEdit);
-        QWidget::setTabOrder(textEdit, textBrowser_2);
-        QWidget::setTabOrder(textBrowser_2, textEdit_2);
-        QWidget::setTabOrder(textEdit_2, textBrowser_3);
+        QWidget::setTabOrder(listWidget_2, textBrowser_3);
         QWidget::setTabOrder(textBrowser_3, lineEdit_7);
         QWidget::setTabOrder(lineEdit_7, lineEdit_6);
 
         menuBar->addAction(menuPhenogene->menuAction());
+        menuBar->addAction(menuAbout_us->menuAction());
+        menuBar->addAction(menuAbout->menuAction());
+        menuPhenogene->addAction(menuSave->menuAction());
+        menuPhenogene->addAction(menuLoad->menuAction());
+        menuPhenogene->addAction(actionClose);
+        menuSave->addAction(actionParameters);
+        menuSave->addAction(actionWeights);
+        menuSave->addAction(actionOutput);
+        menuSave->addAction(actionInput);
+        menuSave->addAction(actionAll_settings_in_a_ph_file);
+        menuLoad->addAction(actionParameters_2);
+        menuLoad->addAction(actionWeights_2);
+        menuLoad->addAction(actionExpected_Output);
+        menuLoad->addAction(actionInput_2);
+        menuLoad->addAction(action_ph_file);
 
-        retranslateUi(Phenogene);
+        retranslateUi(GUI);
 
         tabWidget->setCurrentIndex(0);
-        listWidget->setCurrentRow(-1);
+        listWidget->setCurrentRow(0);
         listWidget_2->setCurrentRow(0);
 
 
-        QMetaObject::connectSlotsByName(Phenogene);
+        QMetaObject::connectSlotsByName(GUI);
     } // setupUi
 
-    void retranslateUi(QMainWindow *Phenogene)
+    void retranslateUi(QMainWindow *GUI)
     {
-        Phenogene->setWindowTitle(QApplication::translate("Phenogene", "Phenogene", 0, QApplication::UnicodeUTF8));
-        quitButton->setText(QApplication::translate("Phenogene", "Quit", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("Phenogene", "Start", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("Phenogene", "Output File:", 0, QApplication::UnicodeUTF8));
-        pushButton_3->setText(QApplication::translate("Phenogene", "Browse", 0, QApplication::UnicodeUTF8));
-        textEdit->setHtml(QApplication::translate("Phenogene", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">One line for each training candidate</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">Example: </span><span style=\" font-size:10pt; color:#ff0000;\">(for the above example)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">blue</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt"
-                        "-block-indent:0; text-indent:0px;\">brown</p></body></html>", 0, QApplication::UnicodeUTF8));
-        pushButton_5->setText(QApplication::translate("Phenogene", "Browse", 0, QApplication::UnicodeUTF8));
-        label_21->setText(QApplication::translate("Phenogene", "Input File:", 0, QApplication::UnicodeUTF8));
-        textBrowser_3->setHtml(QApplication::translate("Phenogene", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        GUI->setWindowTitle(QApplication::translate("GUI", "Phenogene", 0, QApplication::UnicodeUTF8));
+        actionParameters->setText(QApplication::translate("GUI", "Parameters", 0, QApplication::UnicodeUTF8));
+        actionWeights->setText(QApplication::translate("GUI", "Weights", 0, QApplication::UnicodeUTF8));
+        actionOutput->setText(QApplication::translate("GUI", "Output", 0, QApplication::UnicodeUTF8));
+        actionInput->setText(QApplication::translate("GUI", "Input", 0, QApplication::UnicodeUTF8));
+        actionAll_settings_in_a_ph_file->setText(QApplication::translate("GUI", "All settings in a .ph file", 0, QApplication::UnicodeUTF8));
+        actionParameters_2->setText(QApplication::translate("GUI", "Parameters", 0, QApplication::UnicodeUTF8));
+        actionWeights_2->setText(QApplication::translate("GUI", "Weights", 0, QApplication::UnicodeUTF8));
+        actionExpected_Output->setText(QApplication::translate("GUI", "Expected Output", 0, QApplication::UnicodeUTF8));
+        actionInput_2->setText(QApplication::translate("GUI", "Input", 0, QApplication::UnicodeUTF8));
+        action_ph_file->setText(QApplication::translate("GUI", ".ph file", 0, QApplication::UnicodeUTF8));
+        actionClose->setText(QApplication::translate("GUI", "Quit program", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("GUI", "Start", 0, QApplication::UnicodeUTF8));
+        quitButton->setText(QApplication::translate("GUI", "Quit", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("GUI", "Output File:", 0, QApplication::UnicodeUTF8));
+        pushButton_3->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
+        pushButton_5->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
+        label_21->setText(QApplication::translate("GUI", "Input File:", 0, QApplication::UnicodeUTF8));
+        textBrowser_3->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
@@ -614,39 +703,53 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">TC</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AG</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("Phenogene", "No Selected File", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("Phenogene", "No Selected File", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("Phenogene", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
-        lineEdit->setText(QApplication::translate("Phenogene", "9", 0, QApplication::UnicodeUTF8));
-        lineEdit_2->setText(QApplication::translate("Phenogene", "6", 0, QApplication::UnicodeUTF8));
-        lineEdit_3->setText(QApplication::translate("Phenogene", "0.1", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("Phenogene", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("Phenogene", "Hidden nodes:", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("Phenogene", "Activation function:", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("Phenogene", "Learning rate:", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("Phenogene", "Acceptable Error:", 0, QApplication::UnicodeUTF8));
-        lineEdit_4->setText(QApplication::translate("Phenogene", "1", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
+        textBrowser->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">One line for each training candidate</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">Example: </span><span style=\" font-size:10pt; color:#ff0000;\">(for the above example)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">blue</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt"
+                        "-block-indent:0; text-indent:0px;\">brown</p></body></html>", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("GUI", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
+        lineEdit->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
+        lineEdit_2->setText(QApplication::translate("GUI", "7", 0, QApplication::UnicodeUTF8));
+        lineEdit_3->setText(QApplication::translate("GUI", "0.3", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("GUI", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("GUI", "Hidden nodes:", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("GUI", "Activation function:", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("GUI", "Learning rate:", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("GUI", "Acceptable Error:", 0, QApplication::UnicodeUTF8));
+        lineEdit_4->setText(QApplication::translate("GUI", "100", 0, QApplication::UnicodeUTF8));
         lineEdit_5->setInputMask(QString());
-        lineEdit_5->setText(QApplication::translate("Phenogene", "5", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("Phenogene", "Output nodes:", 0, QApplication::UnicodeUTF8));
+        lineEdit_5->setText(QApplication::translate("GUI", "5", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("GUI", "Output nodes:", 0, QApplication::UnicodeUTF8));
 
         const bool __sortingEnabled = listWidget->isSortingEnabled();
         listWidget->setSortingEnabled(false);
         QListWidgetItem *___qlistwidgetitem = listWidget->item(0);
-        ___qlistwidgetitem->setText(QApplication::translate("Phenogene", "Sigmoidal", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem->setText(QApplication::translate("GUI", "Sigmoidal", 0, QApplication::UnicodeUTF8));
+        QListWidgetItem *___qlistwidgetitem1 = listWidget->item(1);
+        ___qlistwidgetitem1->setText(QApplication::translate("GUI", "AV1", 0, QApplication::UnicodeUTF8));
+        QListWidgetItem *___qlistwidgetitem2 = listWidget->item(2);
+        ___qlistwidgetitem2->setText(QApplication::translate("GUI", "AV2", 0, QApplication::UnicodeUTF8));
         listWidget->setSortingEnabled(__sortingEnabled);
 
         label_22->setText(QString());
-        label_23->setText(QApplication::translate("Phenogene", "Weights File:", 0, QApplication::UnicodeUTF8));
-        label_27->setText(QApplication::translate("Phenogene", "* To be found in the input's file directory.\n"
+        label_23->setText(QApplication::translate("GUI", "Weights File:", 0, QApplication::UnicodeUTF8));
+        label_27->setText(QApplication::translate("GUI", "* To be found in the input's file directory.\n"
 "AFTER the train finishes.", 0, QApplication::UnicodeUTF8));
-        label_28->setText(QApplication::translate("Phenogene", "Range", 0, QApplication::UnicodeUTF8));
-        label_29->setText(QApplication::translate("Phenogene", "[1-100]", 0, QApplication::UnicodeUTF8));
-        label_30->setText(QApplication::translate("Phenogene", "[1-100]", 0, QApplication::UnicodeUTF8));
-        label_31->setText(QApplication::translate("Phenogene", "[1-100]", 0, QApplication::UnicodeUTF8));
-        label_32->setText(QApplication::translate("Phenogene", "[0-2]", 0, QApplication::UnicodeUTF8));
-        label_33->setText(QApplication::translate("Phenogene", "[0-999]", 0, QApplication::UnicodeUTF8));
-        textBrowser->setHtml(QApplication::translate("Phenogene", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        label_28->setText(QApplication::translate("GUI", "Range", 0, QApplication::UnicodeUTF8));
+        label_29->setText(QApplication::translate("GUI", "[1-100]", 0, QApplication::UnicodeUTF8));
+        label_30->setText(QApplication::translate("GUI", "[1-100]", 0, QApplication::UnicodeUTF8));
+        label_31->setText(QApplication::translate("GUI", "[1-100]", 0, QApplication::UnicodeUTF8));
+        label_32->setText(QApplication::translate("GUI", "[0-2]", 0, QApplication::UnicodeUTF8));
+        label_33->setText(QApplication::translate("GUI", "[0-999]", 0, QApplication::UnicodeUTF8));
+        label_34->setText(QApplication::translate("GUI", "Output keywords", 0, QApplication::UnicodeUTF8));
+        textEdit_4->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
@@ -656,68 +759,75 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">grey</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">hazel</p></body></htm"
                         "l>", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("Phenogene", "Train", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("Phenogene", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
-        lineEdit_6->setText(QApplication::translate("Phenogene", "9", 0, QApplication::UnicodeUTF8));
-        lineEdit_7->setText(QApplication::translate("Phenogene", "6", 0, QApplication::UnicodeUTF8));
-        lineEdit_8->setText(QApplication::translate("Phenogene", "0.1", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("Phenogene", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
-        label_14->setText(QApplication::translate("Phenogene", "Hidden nodes:", 0, QApplication::UnicodeUTF8));
-        label_15->setText(QApplication::translate("Phenogene", "Activation function:", 0, QApplication::UnicodeUTF8));
-        label_16->setText(QApplication::translate("Phenogene", "Learning rate:", 0, QApplication::UnicodeUTF8));
-        label_17->setText(QApplication::translate("Phenogene", "Acceptable Error:", 0, QApplication::UnicodeUTF8));
-        lineEdit_9->setText(QApplication::translate("Phenogene", "1", 0, QApplication::UnicodeUTF8));
-        lineEdit_10->setText(QApplication::translate("Phenogene", "5", 0, QApplication::UnicodeUTF8));
-        label_18->setText(QApplication::translate("Phenogene", "Output nodes:", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("GUI", "Train", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("GUI", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
+        lineEdit_6->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
+        lineEdit_7->setText(QApplication::translate("GUI", "7", 0, QApplication::UnicodeUTF8));
+        lineEdit_8->setText(QApplication::translate("GUI", "0.3", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("GUI", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("GUI", "Hidden nodes:", 0, QApplication::UnicodeUTF8));
+        label_16->setText(QApplication::translate("GUI", "Learning rate:", 0, QApplication::UnicodeUTF8));
+        label_17->setText(QApplication::translate("GUI", "Acceptable Error:", 0, QApplication::UnicodeUTF8));
+        lineEdit_9->setText(QApplication::translate("GUI", "100", 0, QApplication::UnicodeUTF8));
+        lineEdit_10->setText(QApplication::translate("GUI", "5", 0, QApplication::UnicodeUTF8));
+        label_18->setText(QApplication::translate("GUI", "Output nodes:", 0, QApplication::UnicodeUTF8));
 
         const bool __sortingEnabled1 = listWidget_2->isSortingEnabled();
         listWidget_2->setSortingEnabled(false);
-        QListWidgetItem *___qlistwidgetitem1 = listWidget_2->item(0);
-        ___qlistwidgetitem1->setText(QApplication::translate("Phenogene", "Sigmoidal", 0, QApplication::UnicodeUTF8));
-        QListWidgetItem *___qlistwidgetitem2 = listWidget_2->item(1);
-        ___qlistwidgetitem2->setText(QApplication::translate("Phenogene", "AV2", 0, QApplication::UnicodeUTF8));
-        QListWidgetItem *___qlistwidgetitem3 = listWidget_2->item(2);
-        ___qlistwidgetitem3->setText(QApplication::translate("Phenogene", "AV3", 0, QApplication::UnicodeUTF8));
+        QListWidgetItem *___qlistwidgetitem3 = listWidget_2->item(0);
+        ___qlistwidgetitem3->setText(QApplication::translate("GUI", "Sigmoidal", 0, QApplication::UnicodeUTF8));
+        QListWidgetItem *___qlistwidgetitem4 = listWidget_2->item(1);
+        ___qlistwidgetitem4->setText(QApplication::translate("GUI", "AV2", 0, QApplication::UnicodeUTF8));
+        QListWidgetItem *___qlistwidgetitem5 = listWidget_2->item(2);
+        ___qlistwidgetitem5->setText(QApplication::translate("GUI", "AV3", 0, QApplication::UnicodeUTF8));
         listWidget_2->setSortingEnabled(__sortingEnabled1);
 
         label_24->setText(QString());
-        label_25->setText(QApplication::translate("Phenogene", "Weights File:", 0, QApplication::UnicodeUTF8));
-        pushButton_6->setText(QApplication::translate("Phenogene", "Change", 0, QApplication::UnicodeUTF8));
-        label_26->setText(QApplication::translate("Phenogene", "* Make sure the file follows the correct format.", 0, QApplication::UnicodeUTF8));
-        label_19->setText(QApplication::translate("Phenogene", "Input File:", 0, QApplication::UnicodeUTF8));
-        label_20->setText(QApplication::translate("Phenogene", "Predicted Output:", 0, QApplication::UnicodeUTF8));
-        pushButton_4->setText(QApplication::translate("Phenogene", "Browse", 0, QApplication::UnicodeUTF8));
-        textBrowser_2->setHtml(QApplication::translate("Phenogene", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        label_25->setText(QApplication::translate("GUI", "Weights File:", 0, QApplication::UnicodeUTF8));
+        pushButton_6->setText(QApplication::translate("GUI", "Change", 0, QApplication::UnicodeUTF8));
+        label_26->setText(QApplication::translate("GUI", "* Make sure the file follows the correct format.", 0, QApplication::UnicodeUTF8));
+        label_35->setText(QApplication::translate("GUI", "Output keywords", 0, QApplication::UnicodeUTF8));
+        textBrowser_4->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">blue</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">green</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">brown</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">grey</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">hazel</p></body></htm"
+                        "l>", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("GUI", "Input File:", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("GUI", "Predicted Output:", 0, QApplication::UnicodeUTF8));
+        pushButton_4->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
+        label_11->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
+        textBrowser_2->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Example <span style=\" font-size:10pt; color:#ff0000;\">(text in read is for declaration)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2          <span style=\" font-size:10pt; color:#ff0000;\">#Number of training candidates</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">116      <span style=\" font-size:10pt; color:#ff0000;\">#User ID</span></p>\n"
-"<p style=\" margin-top:0px"
-                        "; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AG</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">CT</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AG</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\""
+                        ">CT</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AA</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">9          <span style=\" font-size:10pt; color:#ff0000;\">#User ID</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AA</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">TC</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AG</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; ma"
-                        "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", 0, QApplication::UnicodeUTF8));
-        textEdit_2->setHtml(QApplication::translate("Phenogene", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Charter'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("Phenogene", "No Selected File", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("Phenogene", "Predict", 0, QApplication::UnicodeUTF8));
-        menuPhenogene->setTitle(QApplication::translate("Phenogene", "File", 0, QApplication::UnicodeUTF8));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AG</p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("GUI", "Activation function:", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("GUI", "Predict", 0, QApplication::UnicodeUTF8));
+        menuPhenogene->setTitle(QApplication::translate("GUI", "File", 0, QApplication::UnicodeUTF8));
+        menuSave->setTitle(QApplication::translate("GUI", "Save", 0, QApplication::UnicodeUTF8));
+        menuLoad->setTitle(QApplication::translate("GUI", "Load", 0, QApplication::UnicodeUTF8));
+        menuAbout_us->setTitle(QApplication::translate("GUI", "Help", 0, QApplication::UnicodeUTF8));
+        menuAbout->setTitle(QApplication::translate("GUI", "About", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Phenogene: public Ui_Phenogene {};
+    class GUI: public Ui_GUI {};
 } // namespace Ui
 
 QT_END_NAMESPACE

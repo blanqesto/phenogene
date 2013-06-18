@@ -32,3 +32,12 @@ void File_Manager::set_weights_file(string s)
     weights_file=s;
     return;
 }
+
+/*
+ *Set string with index i to s
+*/
+void File_Manager::set_rank_output_strings(int i, string s)
+{
+    rank_output_strings[i] = s;
+    return;
+}

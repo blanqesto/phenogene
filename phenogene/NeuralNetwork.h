@@ -5,7 +5,7 @@
 
 class Neural_Network
 {
-
+friend class File_Manager;
 public:
     Neural_Network();
     /*Setter functions*/
@@ -18,12 +18,12 @@ public:
 
 
     /*Getter functions*/
-    int get_intput_len();
+    int get_input_len();
     int get_output_len();
     int get_hidden_len();
 
+    /*Other functions*/
     void do_function(int);
-    void fill_rank_output();
 
 private:
     /*Networks Parameters*/

@@ -29,32 +29,32 @@ void File_Manager::do_function(int mode)
 
 void File_Manager::read_input(string filePath)
 {
-    dataset_size = 0;
-    input_population_string="";
     int id = -1;
     char char1,char2;
+    n.dataset_size = 0;
+    input_population_string="";
+    n.input_dataset.clear();
+    n.input_dataset.resize(max_dataset_size);
     read.open(filePath.c_str());
-    input_dataset.clear();
-    input_dataset.resize(max_dataset_size);
     fork (0,max_dataset_size)
     {
         read >> id;
         if (read.fail()) {read.clear(); break;}
         input_population_string += convertInt(id);
         input_population_string +="\n";
-        input_dataset[dataset_size].resize(input_len+1);
-        fill_n(input,input_len,0);
-        fori(0,input_len)
+        n.input_dataset[n.dataset_size].resize(n.input_len+1);
+        fill_n(n.input,n.input_len,0);
+        fori(0,n.input_len)
         {
             read >> char1 >> char2;
             input_population_string += char1;
             input_population_string +=char2;
             input_population_string +="\n";
             pair <char,char> temp (char1,char2);
-            input[i] = input_rank[temp];
-            input_dataset[dataset_size][i]=input[i];
+            n.input[i] = n.input_rank[temp];
+            n.input_dataset[n.dataset_size][i]=n.input[i];
         }
-        dataset_size++;
+        n.dataset_size++;
     }
     read.close();
     return;
@@ -66,21 +66,21 @@ void File_Manager::read_expected_output(string filePath)
     string temp;
     string tempSplit;
     read.open(filePath.c_str());
-    output_dataset.clear();
-    output_dataset.resize(max_dataset_size);
+    n.output_dataset.clear();
+    n.output_dataset.resize(max_dataset_size);
     read_ex_output_string="";
-    fori(0,dataset_size)
+    fori(0,n.dataset_size)
     {
-        fill_n(expected_o,output_len+1,0);
-        output_dataset[i].resize(output_len);
+        fill_n(n.expected_o,n.output_len+1,0);
+        n.output_dataset[i].resize(n.output_len);
         read >> temp;
         read_ex_output_string+= temp + "\n";
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
-            expected_o[output_rank[tempSplit]]=1;
+            n.expected_o[n.output_rank[tempSplit]]=1;
 
-        forj(1,output_len+1)
-                output_dataset[i][j-1]=expected_o[j];
+        forj(1,n.output_len+1)
+                n.output_dataset[i][j-1]=n.expected_o[j];
     }
     read.close();
     return;
@@ -90,17 +90,17 @@ void File_Manager::read_expected_output(string filePath)
 void File_Manager::write_output(string filePath)
 {
     write.open(filePath.c_str());
-    fori(0,dataset_size)
+    fori(0,n.dataset_size)
     {
         double temp = -10000,rank=-1;
-        forj(1,output_len+1)
-                if (output_dataset[i][j-1]>temp)
+        forj(1,n.output_len+1)
+                if (n.output_dataset[i][j-1]>temp)
                 {
-                    temp = output_dataset[i][j-1];
+                    temp = n.output_dataset[i][j-1];
                     rank = j;
                 }
-        write << rank_output[rank];
-        output_population_string+=rank_output[rank];
+        write << n.rank_output[rank];
+        output_population_string+=n.rank_output[rank];
         output_population_string+="\n";
         write << endl;
     }
@@ -111,12 +111,12 @@ void File_Manager::write_output(string filePath)
 void File_Manager::read_weights(string filePath)
 {
     read.open(filePath.c_str());
-    fori (0,hidden_len)
-            forj (0,input_len)
-            read >> Wh[i][j];
-    fori (0,output_len)
-            forj (0,hidden_len)
-            read >> Wo[i][j];
+    fori (0,n.hidden_len)
+            forj (0,n.input_len)
+            read >> n.Wh[i][j];
+    fori (0,n.output_len)
+            forj (0,n.hidden_len)
+            read >> n.Wo[i][j];
     read.close();
     return;
 }
@@ -125,12 +125,12 @@ void File_Manager::read_weights(string filePath)
 void File_Manager::write_weights(string filePath)
 {
     write.open(filePath.c_str());
-    fori (0,hidden_len)
-            forj (0,input_len)
-                write << Wh[i][j] << " ";
-    fori (0,output_len)
-            forj (0,hidden_len)
-                write << Wo[i][j] << " ";
+    fori (0,n.hidden_len)
+            forj (0,n.input_len)
+                write << n.Wh[i][j] << " ";
+    fori (0,n.output_len)
+            forj (0,n.hidden_len)
+                write << n.Wo[i][j] << " ";
     write.close();
     return;
 }
@@ -154,12 +154,12 @@ string File_Manager::convertInt(int number)
 
 void File_Manager::fill_rank_output()
 {
-    output_rank.clear();
-    rank_output.clear();
-    fori (0,output_len)
+    n.output_rank.clear();
+    n.rank_output.clear();
+    fori (0,n.output_len)
     {
-        output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
-        rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
+        n.output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
+        n.rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
     }
     return;
 }

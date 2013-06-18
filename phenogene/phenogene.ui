@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Phenogene</class>
- <widget class="QMainWindow" name="Phenogene">
+ <class>GUI</class>
+ <widget class="QMainWindow" name="GUI">
   <property name="enabled">
    <bool>true</bool>
   </property>

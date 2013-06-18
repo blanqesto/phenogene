@@ -10,8 +10,7 @@ void GUI::on_pushButton_clicked()
         display_error(er);
         return;
     }
-    fill_rank();
-    network.fill_rank_output();
+    fm.fill_rank_output();
     ui->progressBar->setValue(2);
     if(ui->tabWidget->currentIndex()==0) //train
         perform_train();
@@ -24,17 +23,17 @@ void GUI::on_pushButton_clicked()
 void GUI::perform_train()
 {
     ui->progressBar->setValue(0);
-    network.do_function(0); //read input
+    fm.do_function(0); //read input
     ui->progressBar->setValue(15);
-    ui->textBrowser_3->setText(network.get_input_population_string().c_str());
-    network.do_function(3); //read expected output
+    ui->textBrowser_3->setText(fm.get_input_population_string().c_str());
+    fm.do_function(3); //read expected output
     ui->progressBar->setValue(30);
-    ui->textBrowser->setText(network.get_read_ex_output_string().c_str());
-    network.do_function(5); //train
+    ui->textBrowser->setText(fm.get_read_ex_output_string().c_str());
+    fm.n.do_function(5); //train
     ui->progressBar->setValue(80);
     //network.do_function(1); //write output
     //ui->progressBar->setValue(85);
-    network.do_function(4); //write weights
+    fm.do_function(4); //write weights
     ui->progressBar->setValue(100);
     return;
 }
@@ -42,16 +41,16 @@ void GUI::perform_train()
 void GUI::perform_test()
 {
     ui->progressBar->setValue(0);
-    network.do_function(0); //read input
+    fm.do_function(0); //read input
     ui->progressBar->setValue(20);
-    ui->textBrowser_2->setText(network.get_input_population_string().c_str());
-    network.do_function(2); //read weights
+    ui->textBrowser_2->setText(fm.get_input_population_string().c_str());
+    fm.do_function(2); //read weights
     ui->progressBar->setValue(30);
-    network.do_function(6); //test
+    fm.n.do_function(6); //test
     ui->progressBar->setValue(80);
-    network.do_function(1); //write output
+    fm.do_function(1); //write output
     ui->progressBar->setValue(100);
-    ui->textBrowser_5->setText(network.get_output_population_string().c_str());
+    ui->textBrowser_5->setText(fm.get_output_population_string().c_str());
     return;
 }
 
@@ -59,15 +58,18 @@ void GUI::perform_test()
 QString GUI::valid_input()
 {
     QString er = "Error!\n\n";
+    fill_rank();
     if(ui->lineEdit->text()==""
             || ui->lineEdit_2->text()==""
             || ui->lineEdit_3->text()==""
             || ui->lineEdit_5->text()==""
             ) er += "Fill-in all the network's parameters!\n";
     else
-        fori(0,network.get_output_len())
-                if(network.get_rank_output_strings(i)=="")
+        fori(0,fm.n.get_output_len())
+                if(fm.get_rank_output_strings(i)=="")
     {
+            fori(0,fm.n.get_output_len())
+                    cout << fm.get_rank_output_strings(i) << endl;
         er += "Fill-in all the network's parameters!\n";
         break;
     }
@@ -95,7 +97,7 @@ void GUI::fill_rank()
     std::istringstream s(str.c_str());
     int i = 0;
     while(getline(s,tempSplit,'\n'))
-        network.get_rank_output_strings(i++)=tempSplit;
+        fm.set_rank_output_strings(i++,tempSplit);
     /*****************/
 }
 

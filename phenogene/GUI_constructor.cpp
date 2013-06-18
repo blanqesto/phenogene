@@ -6,11 +6,8 @@ GUI::GUI(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::GUI)
 {
-    //filePath="/home";
-    //fileDialog.directory().setCurrent(filePath);
     set_validators();
     set_styleSheet();
-
 }
 
 void GUI::set_styleSheet()
@@ -38,7 +35,7 @@ void GUI::set_validators()
     ui->lineEdit_4->setValidator(valid2);
 }
 
-GUI::~Phenogene()
+GUI::~GUI()
 {
     delete ui;
 }

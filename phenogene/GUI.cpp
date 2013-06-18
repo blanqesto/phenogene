@@ -1,21 +1,22 @@
-#include "phenogene.h"
-#include "ui_phenogene.h"
+#include <GUI.h>
+#include <ui_phenogene.h>
 
 
 /*
  *Train Tab
  *Browse Input File
 */
-void Phenogene::on_pushButton_5_clicked()
+void GUI::on_pushButton_5_clicked()
 {
     QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), "", tr("Files (*.*)"));
-    network.input_file=fileName.toAscii().constData();
+    string temp = fileName.toAscii().constData();
+    network.set_input_file(temp);
     QStringList filename = fileName.split("/");
     ui->label_2->setText(filename[filename.length()-1]);
     ui->label_22->setText(ui->label_2->text()+".w");
     ui->label_24->setText(ui->label_2->text()+".w");
-    network.weights_file=network.input_file+".w";
-    network.output_file=network.input_file+".out";
+    network.set_weights_file(temp+".w");
+    network.set_output_file(temp+".out");
 }
 
 
@@ -23,10 +24,10 @@ void Phenogene::on_pushButton_5_clicked()
  *Train Tab
  *Browse Output File
 */
-void Phenogene::on_pushButton_3_clicked()
+void GUI::on_pushButton_3_clicked()
 {
     QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), filePath, tr("Files (*.*)"));
-    network.expected_out_file=fileName.toAscii().constData();
+    network.set_expected_out_file(fileName.toAscii().constData());
     QStringList filename = fileName.split("/");
     ui->label_10->setText(filename[filename.length()-1]);
 
@@ -37,10 +38,10 @@ void Phenogene::on_pushButton_3_clicked()
  *Train Tab
  *Gene Numbers
 */
-void Phenogene::on_lineEdit_editingFinished()
+void GUI::on_lineEdit_editingFinished()
 {
     ui->lineEdit_6->setText(ui->lineEdit->text());
-    network.input_len=ui->lineEdit->text().toInt();
+    network.set_input_len(ui->lineEdit->text().toInt());
 
 }
 
@@ -48,57 +49,57 @@ void Phenogene::on_lineEdit_editingFinished()
  *Train Tab
  *Hidden Nodes
 */
-void Phenogene::on_lineEdit_2_editingFinished()
+void GUI::on_lineEdit_2_editingFinished()
 {
     ui->lineEdit_7->setText(ui->lineEdit_2->text());
-    network.hidden_len=ui->lineEdit_2->text().toInt();
+    network.set_hidden_len(ui->lineEdit_2->text().toInt());
 }
 
 /*
  *Train Tab
  *Output Nodes
 */
-void Phenogene::on_lineEdit_5_editingFinished()
+void GUI::on_lineEdit_5_editingFinished()
 {
     ui->lineEdit_10->setText(ui->lineEdit_5->text());
-    network.output_len=ui->lineEdit_5->text().toInt();
+    network.set_output_len(ui->lineEdit_5->text().toInt());
 }
 
 /*
  *Train Tab
  *Learning Rate
 */
-void Phenogene::on_lineEdit_3_editingFinished()
+void GUI::on_lineEdit_3_editingFinished()
 {
     ui->lineEdit_8->setText(ui->lineEdit_3->text());
-    network.learning_rate=ui->lineEdit_3->text().toDouble();
+    network.set_learning_rate(ui->lineEdit_3->text().toDouble());
 }
 
 /*
  *Train Tab
  *Acceptable Error
 */
-void Phenogene::on_lineEdit_4_editingFinished()
+void GUI::on_lineEdit_4_editingFinished()
 {
     ui->lineEdit_9->setText(ui->lineEdit_4->text());
-    network.minimum_error=ui->lineEdit_4->text().toDouble();
+    network.set_minimum_error(ui->lineEdit_4->text().toDouble());
 }
 
 /*
  *Train Tab
  *Activation Function
 */
-void Phenogene::on_listWidget_currentRowChanged(int currentRow)
+void GUI::on_listWidget_currentRowChanged(int currentRow)
 {
     ui->listWidget_2->setCurrentRow(currentRow);
-    network.AV=ui->listWidget->currentRow();
+    network.set_AV(ui->listWidget->currentRow());
 }
 
 /*
  *Train Tab
  *Output keywrods
 */
-void Phenogene::on_textEdit_4_textChanged()
+void GUI::on_textEdit_4_textChanged()
 {
     ui->textBrowser_4->setText(ui->textEdit_4->document()->toPlainText());
 }
@@ -108,11 +109,12 @@ void Phenogene::on_textEdit_4_textChanged()
  *Predict Tab
  *Browse Input File
 */
-void Phenogene::on_pushButton_4_clicked()
+void GUI::on_pushButton_4_clicked()
 {
     QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), "", tr("Files (*.*)"));
-    network.input_file=fileName.toAscii().constData();
-    network.output_file=network.input_file+".out";
+    string temp = fileName.toAscii().constData();
+    network.set_input_file(temp);
+    network.set_output_file(temp+".out");
     QStringList filename = fileName.split("/");
     ui->label_11->setText(filename[filename.length()-1]);
 }
@@ -121,16 +123,16 @@ void Phenogene::on_pushButton_4_clicked()
  *Predict Tab
  *Change Weights File
 */
-void Phenogene::on_pushButton_6_clicked()
+void GUI::on_pushButton_6_clicked()
 {
     QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), filePath, tr("Files (*.*)"));
-    network.weights_file=fileName.toAscii().constData();
+    network.set_weights_file(fileName.toAscii().constData());
     QStringList filename = fileName.split("/");
     ui->label_24->setText(filename[filename.length()-1]);
 }
 
 
-void Phenogene::on_quitButton_clicked()
+void GUI::on_quitButton_clicked()
 {
     qApp->quit();
 }

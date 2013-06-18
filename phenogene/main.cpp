@@ -1,11 +1,12 @@
 #include <QApplication>
-#include "phenogene.h"
-#include "NN.h"
+#include <GUI.h>
+#include <NeuralNetwork.h>
+#include <FileManager.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Phenogene w;
+    GUI w;
     //Neural_Network network;
     w.show();
     return a.exec();

@@ -1,10 +1,10 @@
-#include "phenogene.h"
-#include "ui_phenogene.h"
+#include <GUI.h>
+#include <ui_phenogene.h>
 
 
-Phenogene::Phenogene(QWidget *parent) :
+GUI::GUI(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::Phenogene)
+    ui(new Ui::GUI)
 {
     //filePath="/home";
     //fileDialog.directory().setCurrent(filePath);
@@ -13,7 +13,7 @@ Phenogene::Phenogene(QWidget *parent) :
 
 }
 
-void Phenogene::set_styleSheet()
+void GUI::set_styleSheet()
 {
     ui->label_28->setStyleSheet("QLabel { color : grey; }");
     ui->label_29->setStyleSheet("QLabel { color : grey; }");
@@ -23,7 +23,7 @@ void Phenogene::set_styleSheet()
     ui->label_33->setStyleSheet("QLabel { color : grey; }");
 }
 
-void Phenogene::set_validators()
+void GUI::set_validators()
 {
     ui->setupUi(this);
     ui->lineEdit->setValidator(new QIntValidator (1,100, this));
@@ -38,7 +38,7 @@ void Phenogene::set_validators()
     ui->lineEdit_4->setValidator(valid2);
 }
 
-Phenogene::~Phenogene()
+GUI::~Phenogene()
 {
     delete ui;
 }

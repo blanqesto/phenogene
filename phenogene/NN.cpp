@@ -1,5 +1,29 @@
-#include "NN.h"
+#include <NeuralNetwork.h>
 
+/*
+ *Do function:
+ **Call train/test according to parameter what
+*/
+void Neural_Network::do_function(int what)
+{
+    switch(what)
+    {
+    case 5:
+        train();
+        break;
+    case 6:
+        test();
+        break;
+    default:
+        break;
+    }
+    return;
+}
+
+/*
+ *Calculates the power of x to y
+ *Overwrites math::pow(double,double)
+*/
 double pow(double x, double y)
 {
     for(int i = 0; i < y; i++)
@@ -7,6 +31,12 @@ double pow(double x, double y)
     return x;
 }
 
+/*
+ *If called in mode 0:
+ ****Calculates the segmoidal of a double x.
+ *If called in mode 1:
+ ****Calculates the inverse of the segmoidal of a double x.
+*/
 double Neural_Network::segmoidal_fn(double x, int mode)
 {
     double out = 0.0;
@@ -17,6 +47,10 @@ double Neural_Network::segmoidal_fn(double x, int mode)
     return out;
 }
 
+/*
+ *Initialize weights and biases
+ *with values between -0.5 and 0.5
+*/
 void Neural_Network::init()
 {
     double r;
@@ -42,6 +76,18 @@ void Neural_Network::init()
     }
 }
 
+/*
+ *Train the neural network:
+ *
+ **Until error is under threshold
+ **Or maximum number of iterations is reached.
+ *
+ *Data strcutres of the caller object are used:
+ *
+ **input_dataset should be filled before calling
+ **output_dataset should be filled before calling
+ *
+*/
 void Neural_Network::train()
 {
     error = 10000;
@@ -57,13 +103,7 @@ void Neural_Network::train()
             // Get current dataset of input and expected output
             fori(0,input_len) input[i]=input_dataset[k][i];
             fori(0,output_len) expected_o[i]=output_dataset[k][i];
-            if(input_absent())continue;
-//            cout <<"Training function:\n";
-//            cout << "Input vector: ";
-//            forj(0,input_len)cout << input[j] << "  ";
-//            cout << "\nOutput Vector: ";
-//            forj(0,output_len)cout << expected_o[j] << "  ";
-//            cout << endl << endl << endl;
+            //if(input_absent())continue;
             // Propagate input
             propagate(AV);
             // Calculate Error
@@ -75,13 +115,24 @@ void Neural_Network::train()
     }
 }
 
-bool Neural_Network::input_absent()
-{
-    fori (0,input_len)
-            if(input[i]==1) return false;
-    return true;
-}
 
+
+//bool Neural_Network::input_absent()
+//{
+//    fori (0,input_len)
+//            if(input[i]==1) return false;
+//    return true;
+//}
+
+/*
+ *Test the neural network.
+ *
+ *Data strcutres of the caller object are used:
+ *
+ **input_dataset should be filled before calling.
+ **hidden/output weights should be filled before calling.
+ *
+*/
 void Neural_Network::test()
 {
     error = 0;
@@ -105,7 +156,15 @@ void Neural_Network::test()
     return;
 }
 
-void Neural_Network::propagate(int av)
+/*
+ *Propagate input through all layers:
+ *
+ **Starting from the input layer up to the output layer.
+ *
+ *Use activation function's ID = AV.
+ *
+*/
+void Neural_Network::propagate(int AV)
 {
     fill_n(hidden, hidden_len, 0);
     fill_n(output, output_len, 0);
@@ -115,7 +174,7 @@ void Neural_Network::propagate(int av)
     fori (0,output_len)
             forj (0,hidden_len)
             output[i] += hidden[j]*Wo[i][j];
-    if (av == segmoidal)
+    if (AV == segmoidal)
         {
             fori(0,output_len)
                     output[i] = segmoidal_fn(output[i],0);
@@ -125,6 +184,13 @@ void Neural_Network::propagate(int av)
     return;
 }
 
+/*
+ *Back propagate the error through all layers:
+ *
+ **Starting from the output layer down to the input layer.
+ **Updating the hidden/output weights/biases.
+ *
+*/
 void Neural_Network::back_propagate()
 {
     // bias update
@@ -145,6 +211,13 @@ void Neural_Network::back_propagate()
     return;
 }
 
+/*
+ *Calculate the error signal for each node.
+ *
+ *Use activation function's ID = AV.
+ *
+ *Return total error.
+*/
 double Neural_Network::cal_error(int AV)
 {
     double total_error = 0.0, temp = 0.0;

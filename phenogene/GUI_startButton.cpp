@@ -1,8 +1,8 @@
-#include "phenogene.h"
-#include "ui_phenogene.h"
+#include <GUI.h>
+#include <ui_phenogene.h>
 
 /*Start Button*/
-void Phenogene::on_pushButton_clicked()
+void GUI::on_pushButton_clicked()
 {
     QString er = valid_input();
     if (er != "Error!\n\n")
@@ -21,15 +21,15 @@ void Phenogene::on_pushButton_clicked()
     return;
 }
 
-void Phenogene::perform_train()
+void GUI::perform_train()
 {
     ui->progressBar->setValue(0);
     network.do_function(0); //read input
     ui->progressBar->setValue(15);
-    ui->textBrowser_3->setText(network.read_input_string.c_str());
+    ui->textBrowser_3->setText(network.get_input_population_string().c_str());
     network.do_function(3); //read expected output
     ui->progressBar->setValue(30);
-    ui->textBrowser->setText(network.read_ex_output_string.c_str());
+    ui->textBrowser->setText(network.get_read_ex_output_string().c_str());
     network.do_function(5); //train
     ui->progressBar->setValue(80);
     //network.do_function(1); //write output
@@ -39,24 +39,24 @@ void Phenogene::perform_train()
     return;
 }
 
-void Phenogene::perform_test()
+void GUI::perform_test()
 {
     ui->progressBar->setValue(0);
     network.do_function(0); //read input
     ui->progressBar->setValue(20);
-    ui->textBrowser_2->setText(network.read_input_string.c_str());
+    ui->textBrowser_2->setText(network.get_input_population_string().c_str());
     network.do_function(2); //read weights
     ui->progressBar->setValue(30);
     network.do_function(6); //test
     ui->progressBar->setValue(80);
     network.do_function(1); //write output
     ui->progressBar->setValue(100);
-    ui->textBrowser_5->setText(network.read_output_string.c_str());
+    ui->textBrowser_5->setText(network.get_output_population_string().c_str());
     return;
 }
 
 
-QString Phenogene::valid_input()
+QString GUI::valid_input()
 {
     QString er = "Error!\n\n";
     if(ui->lineEdit->text()==""
@@ -65,8 +65,8 @@ QString Phenogene::valid_input()
             || ui->lineEdit_5->text()==""
             ) er += "Fill-in all the network's parameters!\n";
     else
-    fori(0,network.output_len)
-            if(network.rank_output_strings[i]=="")
+        fori(0,network.get_output_len())
+                if(network.get_rank_output_strings(i)=="")
     {
         er += "Fill-in all the network's parameters!\n";
         break;
@@ -88,23 +88,23 @@ QString Phenogene::valid_input()
     return er;
 }
 
-void Phenogene::fill_rank()
+void GUI::fill_rank()
 {
     /*fill_rank_output*/
     string tempSplit,str = ui->textEdit_4->document()->toPlainText().toAscii().constData();
     std::istringstream s(str.c_str());
     int i = 0;
     while(getline(s,tempSplit,'\n'))
-        network.rank_output_strings[i++]=tempSplit;
+        network.get_rank_output_strings(i++)=tempSplit;
     /*****************/
 }
 
-void Phenogene::display_error(QString er)
+void GUI::display_error(QString er)
 {
 
     QMessageBox msgBox;
     msgBox.setText(er);
     msgBox.exec();
-    msgBox.move((Phenogene::width()-msgBox.width())/2,(Phenogene::height()-msgBox.height())/2);
+    msgBox.move((GUI::width()-msgBox.width())/2,(GUI::height()-msgBox.height())/2);
     return;
 }

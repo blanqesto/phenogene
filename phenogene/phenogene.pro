@@ -13,15 +13,22 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        phenogene.cpp \
-    neural_network.cpp \
-    fileHandle.cpp \
     NN_constructor.cpp \
-    phenogene_constructor.cpp \
-    start_button.cpp
+    NN_setters.cpp \
+    NN_getters.cpp \
+    FM_getters.cpp \
+    FM_setters.cpp \
+    FM.cpp \
+    NN.cpp \
+    GUI.cpp \
+    GUI_constructor.cpp \
+    GUI_startButton.cpp
 
-HEADERS  += phenogene.h \
-    NN.h
+HEADERS  += \
+    FileManager.h \
+    NeuralNetwork.h \
+    GUI.h \
+    General_Notation.h
 
 FORMS    += phenogene.ui
 

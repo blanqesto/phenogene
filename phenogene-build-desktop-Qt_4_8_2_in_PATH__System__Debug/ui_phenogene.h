@@ -826,8 +826,7 @@ public:
 
 };
 
-namespace Ui {
-    class Phenogene: public Ui_Phenogene {};
+namespGUI    class Phenogene: public Ui_Phenogene {};
 } // namespace Ui
 
 QT_END_NAMESPACE

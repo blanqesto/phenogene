@@ -1,4 +1,4 @@
-#include "NN.h"
+#include <NeuralNetwork.h>
 
 Neural_Network::Neural_Network()
 {
@@ -7,11 +7,10 @@ Neural_Network::Neural_Network()
     input_len = 9;
     hidden_len = 7;
     output_len = 5;
-    momentum = 0.1;//(double)rand()/((double)RAND_MAX); // between 0 and 1;
+    momentum = 0.9;
     learning_rate = 0.3;
     dataset_size=0;
     AV=segmoidal;
-    //pair <char,char> temp (char1,char2);
     input_rank.insert(pair<pair<char,char>,int>(pair <char,char> ('-','1'),0));
     input_rank.insert(pair<pair<char,char>,int>(pair <char,char> ('A','A'),1));
     input_rank.insert(pair<pair<char,char>,int>(pair <char,char> ('A','C'),2));

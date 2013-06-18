@@ -1,5 +1,5 @@
-#ifndef PHENOGENE_H
-#define PHENOGENE_H
+#ifndef GUI_H
+#define GUI_H
 
 #include <QMainWindow>
 #include <QFileDialog>
@@ -9,13 +9,12 @@
 #include <qvalidator.h>
 #include <qlineedit.h>
 #include <QRegExp>
-#include "NN.h"
 
 namespace Ui {
-class Phenogene;
+class GUI;
 }
 
-class Phenogene : public QMainWindow
+class GUI : public QMainWindow
 {
     Neural_Network network;
     QString filePath;
@@ -24,36 +23,33 @@ class Phenogene : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit Phenogene(QWidget *parent = 0);
-    ~Phenogene();
+    explicit GUI(QWidget *parent = 0);
+    ~GUI();
     
 private slots:
     void on_quitButton_clicked();
+    void on_pushButton_clicked();
     void on_pushButton_3_clicked();
     void on_pushButton_4_clicked();
     void on_pushButton_5_clicked();
     void on_pushButton_6_clicked();
-
-
     void on_lineEdit_editingFinished();
     void on_lineEdit_2_editingFinished();
     void on_lineEdit_3_editingFinished();
     void on_lineEdit_4_editingFinished();
     void on_lineEdit_5_editingFinished();
-
-    void on_listWidget_currentRowChanged(int currentRow);
-    void on_pushButton_clicked();
     void on_textEdit_4_textChanged();
+    void on_listWidget_currentRowChanged(int currentRow);
 
 private:
-    Ui::Phenogene *ui;
-    void fill_rank();
+    Ui::GUI *ui;
     QString valid_input();
+    void fill_rank();
     void perform_train();
     void perform_test();
-    void display_error(QString);
     void set_validators();
     void set_styleSheet();
+    void display_error(QString);
 };
 
 #endif // PHENOGENE_H

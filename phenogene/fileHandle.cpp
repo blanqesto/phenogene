@@ -1,6 +1,22 @@
 #include "NN.h"
 
 
+string convertInt(int number)
+{
+    if (number == 0)
+        return "0";
+    string temp="";
+    string returnvalue="";
+    while (number>0)
+    {
+        temp+=number%10+48;
+        number/=10;
+    }
+    for (int i=0;i<temp.length();i++)
+        returnvalue+=temp[temp.length()-i-1];
+    return returnvalue;
+}
+
 void Neural_Network::fill_rank_output()
 {
     output_rank.clear();
@@ -49,6 +65,7 @@ void Neural_Network::access(int mode)
 void Neural_Network::read_input(string filePath)
 {
     dataset_size = 0;
+    read_input_string="";
     int id = -1;
     char char1,char2;
     read.open(filePath.c_str());
@@ -58,13 +75,16 @@ void Neural_Network::read_input(string filePath)
     {
         read >> id;
         if (read.fail()) {read.clear(); break;}
-        read_input_string += id+"\n";
+        read_input_string += convertInt(id);
+        read_input_string +="\n";
         input_dataset[dataset_size].resize(input_len+1);
         fill_n(input,input_len,0);
         fori(0,input_len)
         {
             read >> char1 >> char2;
-            read_input_string += char1 + char2 + "\n";
+            read_input_string += char1;
+            read_input_string +=char2;
+            read_input_string +="\n";
             pair <char,char> temp (char1,char2);
             input[i] = input_rank[temp];
             input_dataset[dataset_size][i]=input[i];
@@ -83,6 +103,7 @@ void Neural_Network::read_expected_output(string filePath)
     read.open(filePath.c_str());
     output_dataset.clear();
     output_dataset.resize(max_dataset_size);
+    read_ex_output_string="";
     fori(0,dataset_size)
     {
         fill_n(expected_o,output_len+1,0);
@@ -114,6 +135,8 @@ void Neural_Network::write_output(string filePath)
                     rank = j;
                 }
         write << rank_output[rank];
+        read_output_string+=rank_output[rank];
+        read_output_string+="\n";
         write << endl;
     }
     write.close();

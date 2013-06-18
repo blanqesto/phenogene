@@ -60,6 +60,7 @@ public:
     ifstream read;
     string  read_ex_output_string,
             read_input_string,
+            read_output_string,
             input_file,
             expected_out_file,
             output_file,

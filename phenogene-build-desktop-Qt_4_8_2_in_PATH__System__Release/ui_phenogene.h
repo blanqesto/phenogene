@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Tue Jun 18 23:00:31 2013
+** Created: Tue Jun 18 23:27:41 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -318,6 +318,7 @@ public:
         lineEdit_4->setGeometry(QRect(130, 210, 71, 27));
         lineEdit_5 = new QLineEdit(frame);
         lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setEnabled(false);
         lineEdit_5->setGeometry(QRect(130, 130, 71, 27));
         lineEdit_5->setMaxLength(3);
         label_8 = new QLabel(frame);

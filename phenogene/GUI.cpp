@@ -59,11 +59,11 @@ void GUI::on_lineEdit_2_editingFinished()
  *Train Tab
  *Output Nodes
 */
-void GUI::on_lineEdit_5_editingFinished()
-{
-    ui->lineEdit_10->setText(ui->lineEdit_5->text());
-    fm.n.set_output_len(ui->lineEdit_5->text().toInt());
-}
+//void GUI::on_lineEdit_5_editingFinished()
+//{
+//    ui->lineEdit_10->setText(ui->lineEdit_5->text());
+//    fm.n.set_output_len(ui->lineEdit_5->text().toInt());
+//}
 
 /*
  *Train Tab
@@ -101,7 +101,19 @@ void GUI::on_listWidget_currentRowChanged(int currentRow)
 */
 void GUI::on_textEdit_4_textChanged()
 {
-    ui->textBrowser_4->setText(ui->textEdit_4->document()->toPlainText());
+    QString temp = ui->textEdit_4->document()->toPlainText();
+    ui->textBrowser_4->setText(temp);
+    string stemp = temp.toAscii().constData();
+    istringstream is(stemp.c_str());
+    string splitted;
+    int c=0;
+    while(getline(is,splitted,'\n'))
+    {
+        if(splitted!="")c++;
+    }
+    cout << c << endl;
+    ui->lineEdit_5->setText(QString::number(c));
+    ui->lineEdit_10->setText(QString::number(c));
 }
 
 

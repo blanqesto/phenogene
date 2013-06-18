@@ -52,6 +52,8 @@ private:
     void perform_train();
     void perform_test();
     void display_error(QString);
+    void set_validators();
+    void set_styleSheet();
 };
 
 #endif // PHENOGENE_H

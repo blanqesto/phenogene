@@ -1,34 +1,5 @@
 #include "NN.h"
 
-
-string convertInt(int number)
-{
-    if (number == 0)
-        return "0";
-    string temp="";
-    string returnvalue="";
-    while (number>0)
-    {
-        temp+=number%10+48;
-        number/=10;
-    }
-    for (int i=0;i<temp.length();i++)
-        returnvalue+=temp[temp.length()-i-1];
-    return returnvalue;
-}
-
-void Neural_Network::fill_rank_output()
-{
-    output_rank.clear();
-    rank_output.clear();
-    fori (0,output_len)
-    {
-        output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
-        rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
-    }
-    return;
-}
-
 void Neural_Network::do_function(int what)
 {
     //add read files and write to files calls
@@ -49,16 +20,24 @@ void Neural_Network::do_function(int what)
 
 void Neural_Network::access(int mode)
 {
-    if (mode == 0) //read input
+    switch(mode)
+    {
+    case 0: //read input
         read_input(input_file);
-    else if (mode == 1) //write output
+        break;
+    case 1: //write output
         write_output(output_file);
-    else if (mode == 2) //read weights
+        break;
+    case 2: //read weights
         read_weights(weights_file);
-    else if (mode == 3) //read expected output
+        break;
+    case 3: //read expected output
         read_expected_output(expected_out_file);
-    else if (mode == 4) // write weights
+        break;
+    case 4: // write weights
         write_weights(weights_file);
+        break;
+    }
     return;
 }
 
@@ -167,5 +146,34 @@ void Neural_Network::write_weights(string filePath)
             forj (0,hidden_len)
                 write << Wo[i][j] << " ";
     write.close();
+    return;
+}
+
+
+string Neural_Network::convertInt(int number)
+{
+    if (number == 0)
+        return "0";
+    string temp="";
+    string returnvalue="";
+    while (number>0)
+    {
+        temp+=number%10+48;
+        number/=10;
+    }
+    for (unsigned i=0;i<temp.length();i++)
+        returnvalue+=temp[temp.length()-i-1];
+    return returnvalue;
+}
+
+void Neural_Network::fill_rank_output()
+{
+    output_rank.clear();
+    rank_output.clear();
+    fori (0,output_len)
+    {
+        output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
+        rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
+    }
     return;
 }

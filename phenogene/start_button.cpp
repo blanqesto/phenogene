@@ -10,6 +10,7 @@ void Phenogene::on_pushButton_clicked()
         display_error(er);
         return;
     }
+    fill_rank();
     network.fill_rank_output();
     ui->progressBar->setValue(2);
     if(ui->tabWidget->currentIndex()==0) //train
@@ -58,7 +59,6 @@ void Phenogene::perform_test()
 QString Phenogene::valid_input()
 {
     QString er = "Error!\n\n";
-    fill_rank();
     if(ui->lineEdit->text()==""
             || ui->lineEdit_2->text()==""
             || ui->lineEdit_3->text()==""
@@ -73,14 +73,14 @@ QString Phenogene::valid_input()
     }
     if (ui->tabWidget->currentIndex()==0) //train tab selected
     {
-        if(ui->label_2->text()=="No Selected File")
+        if(ui->label_2->text()=="No Selected File"||ui->label_2->text()=="")
             er+="Input file is not selected!\n";
-        if(ui->label_10->text()=="No Selected File")
+        if(ui->label_10->text()=="No Selected File"||ui->label_10->text()=="")
             er+="Output file is not selected!\n";
     }
     else if (ui->tabWidget->currentIndex()==1) // predict tab selected
     {
-        if(ui->label_11->text()=="No Selected File")
+        if(ui->label_11->text()=="No Selected File"||ui->label_11->text()=="")
             er+="Input file is not selected!\n";
         if(ui->label_24->text()=="")
             er+="Weights file is not selected!\n";

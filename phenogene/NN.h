@@ -84,6 +84,7 @@ public:
     void read_weights(string filePath);
     void write_output(string filePath);
     void write_weights(string filePath);
+    string convertInt(int);
     bool input_absent();
 };
 #endif // NN_H

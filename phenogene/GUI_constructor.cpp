@@ -14,8 +14,6 @@ void GUI::set_styleSheet()
 {
     ui->label_28->setStyleSheet("QLabel { color : grey; }");
     ui->label_29->setStyleSheet("QLabel { color : grey; }");
-    ui->label_30->setStyleSheet("QLabel { color : grey; }");
-    ui->label_31->setStyleSheet("QLabel { color : grey; }");
     ui->label_32->setStyleSheet("QLabel { color : grey; }");
     ui->label_33->setStyleSheet("QLabel { color : grey; }");
 }
@@ -24,8 +22,6 @@ void GUI::set_validators()
 {
     ui->setupUi(this);
     ui->lineEdit->setValidator(new QIntValidator (1,100, this));
-    ui->lineEdit_2->setValidator(new QIntValidator (1,100, this));
-    ui->lineEdit_5->setValidator(new QIntValidator (1,100, this));
     ui->lineEdit_3->setValidator(new QIntValidator (0,1, this));
     QRegExp re ("0\\.[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9])?|2");
     QRegExp re2 ("[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9]?[0-9])?");

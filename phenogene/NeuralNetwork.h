@@ -55,7 +55,8 @@ private:
     double delta_H[hidden_l];
 
     /*Map to decimal from characters*/
-    map <pair<char,char>,int> input_rank;
+    map <char,double> input_rank;
+    //map <pair<char,char>,double> input_rank;
     /*Map to decimal from string*/
     map <string,int> output_rank;
     /*Map to string from decimal*/

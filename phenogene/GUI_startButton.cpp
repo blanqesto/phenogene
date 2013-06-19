@@ -15,7 +15,7 @@ void GUI::on_pushButton_clicked()
     if(ui->tabWidget->currentIndex()==0) //train
         perform_train();
     else if(ui->tabWidget->currentIndex()==1) //test
-            perform_test();
+        perform_test();
 
     return;
 }
@@ -60,9 +60,7 @@ QString GUI::valid_input()
     QString er = "Error!\n\n";
     fill_rank();
     if(ui->lineEdit->text()==""
-            || ui->lineEdit_2->text()==""
             || ui->lineEdit_3->text()==""
-            || ui->lineEdit_5->text()==""
             ) er += "Fill-in all the network's parameters!\n";
     else
         fori(0,fm.n.get_output_len())

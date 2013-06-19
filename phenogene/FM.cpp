@@ -30,7 +30,7 @@ void File_Manager::do_function(int mode)
 void File_Manager::read_input(string filePath)
 {
     int id = -1;
-    char char1,char2;
+    char c;//char1,char2;
     n.dataset_size = 0;
     input_population_string="";
     n.input_dataset.clear();
@@ -40,20 +40,24 @@ void File_Manager::read_input(string filePath)
     {
         read >> id;
         if (read.fail()) {read.clear(); break;}
-        input_population_string += convertInt(id);
-        input_population_string +="\n";
+        input_population_string += convertInt(id) + "\n";
         n.input_dataset[n.dataset_size].resize(n.input_len+1);
         fill_n(n.input,n.input_len,0);
         fori(0,n.input_len)
         {
-            read >> char1 >> char2;
-            input_population_string += char1;
-            input_population_string +=char2;
-            input_population_string +="\n";
-            pair <char,char> temp (char1,char2);
-            n.input[i] = n.input_rank[temp];
+            read >> c;
+            input_population_string += c;
+            if (i%2!=0) input_population_string += "\n";
+            n.input[i] = n.input_rank[c];
             n.input_dataset[n.dataset_size][i]=n.input[i];
         }
+//            read >> char1 >> char2;
+//            input_population_string += char1;
+//            input_population_string += char2;
+            //input_population_string += "\n";
+//            pair <char,char> temp (char1,char2);
+//            n.input[i] = n.input_rank[temp];
+//            n.input_dataset[n.dataset_size][i]=n.input[i];
         n.dataset_size++;
     }
     read.close();
@@ -77,7 +81,10 @@ void File_Manager::read_expected_output(string filePath)
         read_ex_output_string+= temp + "\n";
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
+        {
+            cout << i << " " << tempSplit << endl;
             n.expected_o[n.output_rank[tempSplit]]=1;
+        }
 
         forj(1,n.output_len+1)
                 n.output_dataset[i][j-1]=n.expected_o[j];
@@ -89,6 +96,7 @@ void File_Manager::read_expected_output(string filePath)
 
 void File_Manager::write_output(string filePath)
 {
+    output_population_string="";
     write.open(filePath.c_str());
     fori(0,n.dataset_size)
     {

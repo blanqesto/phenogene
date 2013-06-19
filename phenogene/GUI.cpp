@@ -30,7 +30,6 @@ void GUI::on_pushButton_3_clicked()
     fm.set_expected_out_file(fileName.toAscii().constData());
     QStringList filename = fileName.split("/");
     ui->label_10->setText(filename[filename.length()-1]);
-
 }
 
 
@@ -41,29 +40,9 @@ void GUI::on_pushButton_3_clicked()
 void GUI::on_lineEdit_editingFinished()
 {
     ui->lineEdit_6->setText(ui->lineEdit->text());
-    fm.n.set_input_len(ui->lineEdit->text().toInt());
-
+    fm.n.set_input_len(ui->lineEdit->text().toInt()*2);
 }
 
-/*
- *Train Tab
- *Hidden Nodes
-*/
-void GUI::on_lineEdit_2_editingFinished()
-{
-    ui->lineEdit_7->setText(ui->lineEdit_2->text());
-    fm.n.set_hidden_len(ui->lineEdit_2->text().toInt());
-}
-
-/*
- *Train Tab
- *Output Nodes
-*/
-//void GUI::on_lineEdit_5_editingFinished()
-//{
-//    ui->lineEdit_10->setText(ui->lineEdit_5->text());
-//    fm.n.set_output_len(ui->lineEdit_5->text().toInt());
-//}
 
 /*
  *Train Tab
@@ -111,9 +90,7 @@ void GUI::on_textEdit_4_textChanged()
     {
         if(splitted!="")c++;
     }
-    cout << c << endl;
-    ui->lineEdit_5->setText(QString::number(c));
-    ui->lineEdit_10->setText(QString::number(c));
+    fm.n.set_output_len(c);
 }
 
 

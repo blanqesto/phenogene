@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <utility>
 #include <vector>
+#include <cmath>
 #include <map>
 #include <cstring>
 #include <string>

@@ -41,7 +41,11 @@ double Neural_Network::segmoidal_fn(double x, int mode)
 {
     double out = 0.0;
     if (mode == 0)
-        out = 1/(1+(1/pow(2.7182,x)));
+    {
+        //out = 1/(1+(1/pow(2.7182,x)));
+        x*=-1;
+        out = 1/1+exp(x);
+    }
     else if(mode == 1) //derivation of segmoidal
         out = x*(1-x);
     return out;
@@ -56,21 +60,21 @@ void Neural_Network::init()
     double r;
     fori(0,output_len)
     {
-        r = -0.5 + (double)rand()/((double)RAND_MAX);
+        r =  (double)rand()/((double)RAND_MAX);
         bias_O[i]=r;
         forj(0,hidden_len)
         {
-            r = -0.5 + (double)rand()/((double)RAND_MAX);
+            r =  (double)rand()/((double)RAND_MAX);
             Wo[i][j]=r;
         }
     }
     fori(0,hidden_len)
     {
-        r = -0.5 + (double)rand()/((double)RAND_MAX);
+        r =  (double)rand()/((double)RAND_MAX);
         bias_H[i]=r;
         forj(0,input_len)
         {
-            r = -0.5 + (double)rand()/((double)RAND_MAX);
+            r =  (double)rand()/((double)RAND_MAX);
             Wh[i][j]=r;
         }
     }
@@ -90,16 +94,16 @@ void Neural_Network::init()
 */
 void Neural_Network::train()
 {
-    error = 10000;
+    error = 10000.0;
     init(); //initialize weights,bias
     int iterations = 0;
     while (error > minimum_error && iterations < max_iterations)
     {
         iterations ++ ;
-        error = 0;
+        error = 0.0;
         fork(0, dataset_size)
         {
-            cout << k << endl;
+            cout << k << " ";
             // Get current dataset of input and expected output
             fori(0,input_len) input[i]=input_dataset[k][i];
             fori(0,output_len) expected_o[i]=output_dataset[k][i];
@@ -148,11 +152,11 @@ void Neural_Network::test()
         // Calculate Error
         fori(0,output_len)
                 error += pow((output[i]-expected_o[i]),2);
-        error*=0.5;
         output_dataset[k].resize(output_len);
         forj(0,output_len)
                 output_dataset[k][j]=output[j];
     }
+    error*=0.5;
     return;
 }
 
@@ -161,7 +165,7 @@ void Neural_Network::test()
  *
  **Starting from the input layer up to the output layer.
  *
- *Use activation function's ID = AV.
+ *Use activation function ID = AV.
  *
 */
 void Neural_Network::propagate(int AV)
@@ -175,12 +179,12 @@ void Neural_Network::propagate(int AV)
             forj (0,hidden_len)
             output[i] += hidden[j]*Wo[i][j];
     if (AV == segmoidal)
-        {
-            fori(0,output_len)
-                    output[i] = segmoidal_fn(output[i],0);
-            fori(0,hidden_len)
-                    hidden[i] = segmoidal_fn(hidden[i],0);
-       }
+    {
+        fori(0,output_len)
+                output[i] = segmoidal_fn(output[i],0);
+        fori(0,hidden_len)
+                hidden[i] = segmoidal_fn(hidden[i],0);
+    }
     return;
 }
 
@@ -195,19 +199,19 @@ void Neural_Network::back_propagate()
 {
     // bias update
     fori(0,output_len)
-            bias_O[i]-=(learning_rate*delta_O[i])+(momentum*bias_O[i]);
+            bias_O[i]+=(learning_rate*delta_O[i])+(momentum*bias_O[i]);
     fori(0,hidden_len)
-            bias_H[i]-=(learning_rate*delta_H[i])+(momentum*bias_H[i]);
+            bias_H[i]+=(learning_rate*delta_H[i])+(momentum*bias_H[i]);
 
     // output weights update
     fori(0,output_len)
             forj(0,hidden_len)
-            Wo[i][j]-=(learning_rate*delta_O[i]*hidden[j]) + (momentum*Wo[i][j]);
+            Wo[i][j]+=(learning_rate*delta_O[i]*hidden[j]) + (momentum*Wo[i][j]);
 
     // hidden weights update
     fori(0,hidden_len)
             forj(0,input_len)
-            Wh[i][j]-=(learning_rate*delta_H[i]*input[j]) + (momentum*Wh[i][j]);
+            Wh[i][j]+=(learning_rate*delta_H[i]*input[j]) + (momentum*Wh[i][j]);
     return;
 }
 
@@ -227,7 +231,7 @@ double Neural_Network::cal_error(int AV)
         fori(0,output_len)
         {
             temp = pow(expected_o[i]-output[i],2);
-            delta_O[i] = temp*segmoidal_fn(output[i],1);
+            delta_O[i] = temp*output[i]*segmoidal_fn(output[i],1);
             total_error += temp;
         }
         // error signal for hidden layer
@@ -236,7 +240,7 @@ double Neural_Network::cal_error(int AV)
             temp = 0.0;
             forj(0,output_len)
                     temp += Wo[j][i]*delta_O[j];
-            delta_H[i] = segmoidal_fn(hidden[i],1)*temp;
+            delta_H[i] = temp*hidden[i]*segmoidal_fn(hidden[i],1);
         }
     }
     return (total_error);

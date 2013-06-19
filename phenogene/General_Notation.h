@@ -24,6 +24,6 @@ using namespace std;
 #define hidden_layer 0
 #define output_layer 1
 #define segmoidal 1
-#define max_iterations 1000
+#define max_iterations 100000
 
 #endif // GENERAL_NOTATION_H

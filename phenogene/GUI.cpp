@@ -5,6 +5,9 @@
 /*
  *Train Tab
  *Browse Input File
+ *
+ *Allows the user to select a file
+ *Saves the file name in the appropriate data structures
 */
 void GUI::on_pushButton_5_clicked()
 {
@@ -23,6 +26,9 @@ void GUI::on_pushButton_5_clicked()
 /*
  *Train Tab
  *Browse Output File
+ *
+ *Allows the user to select a file
+ *Saves the file name in the appropriate data structures
 */
 void GUI::on_pushButton_3_clicked()
 {
@@ -36,6 +42,8 @@ void GUI::on_pushButton_3_clicked()
 /*
  *Train Tab
  *Gene Numbers
+ *
+ *Syncronise gene numbers between tabs
 */
 void GUI::on_lineEdit_editingFinished()
 {
@@ -47,6 +55,8 @@ void GUI::on_lineEdit_editingFinished()
 /*
  *Train Tab
  *Learning Rate
+ *
+ *Syncronise learning rate between tabs
 */
 void GUI::on_lineEdit_3_editingFinished()
 {
@@ -57,6 +67,8 @@ void GUI::on_lineEdit_3_editingFinished()
 /*
  *Train Tab
  *Acceptable Error
+ *
+ *Syncronise minimum error between tabs
 */
 void GUI::on_lineEdit_4_editingFinished()
 {
@@ -67,6 +79,8 @@ void GUI::on_lineEdit_4_editingFinished()
 /*
  *Train Tab
  *Activation Function
+ *
+ *Syncronise activation function selected between tabs
 */
 void GUI::on_listWidget_currentRowChanged(int currentRow)
 {
@@ -77,6 +91,8 @@ void GUI::on_listWidget_currentRowChanged(int currentRow)
 /*
  *Train Tab
  *Output keywrods
+ *
+ *Syncronise output keywords entered between tabs
 */
 void GUI::on_textEdit_4_textChanged()
 {
@@ -97,6 +113,9 @@ void GUI::on_textEdit_4_textChanged()
 /*
  *Predict Tab
  *Browse Input File
+ *
+ *Allows the user to select a file
+ *Saves the file name in the appropriate data structures
 */
 void GUI::on_pushButton_4_clicked()
 {
@@ -111,6 +130,9 @@ void GUI::on_pushButton_4_clicked()
 /*
  *Predict Tab
  *Change Weights File
+ *
+ *Allows the user to select a file
+ *Saves the file name in the appropriate data structures
 */
 void GUI::on_pushButton_6_clicked()
 {

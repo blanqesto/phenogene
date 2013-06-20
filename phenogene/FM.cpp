@@ -4,6 +4,14 @@ File_Manager::File_Manager()
 {
 }
 
+/*
+ *Do function:
+ **Call rotine according to parameter mode
+ **mode = 1: read from input file
+ **mode = 2: write to output file
+ **mode = 3: read from weights file
+ **mode = 4: write to weights file
+*/
 void File_Manager::do_function(int mode)
 {
     switch(mode)
@@ -27,6 +35,13 @@ void File_Manager::do_function(int mode)
     return;
 }
 
+
+/*
+ *Read input
+ *
+ *Opens file filePath and reads its content
+ *Fills the appropriate data structures
+*/
 void File_Manager::read_input(string filePath)
 {
     int id = -1;
@@ -65,6 +80,12 @@ void File_Manager::read_input(string filePath)
 }
 
 
+/*
+ *Read expected output
+ *
+ *Opens file filePath and reads its content
+ *Fills the appropriate data structures
+*/
 void File_Manager::read_expected_output(string filePath)
 {
     string temp;
@@ -93,20 +114,29 @@ void File_Manager::read_expected_output(string filePath)
     return;
 }
 
-
+/*
+ *Write output
+ *
+ *Opens file filePath and write to it
+ *Fills it with the appropriate data structures
+*/
 void File_Manager::write_output(string filePath)
 {
     output_population_string="";
     write.open(filePath.c_str());
     fori(0,n.dataset_size)
     {
-        double temp = -10000,rank=-1;
+        double temp = -10000.00,rank=-1;
+        cout << "dataset:" << i<< endl;
         forj(1,n.output_len+1)
+        {
+            cout << "rank: " << j << " "<< n.output_dataset[i][j-1] << endl;
                 if (n.output_dataset[i][j-1]>temp)
                 {
                     temp = n.output_dataset[i][j-1];
                     rank = j;
                 }
+        }
         write << n.rank_output[rank];
         output_population_string+=n.rank_output[rank];
         output_population_string+="\n";
@@ -116,6 +146,12 @@ void File_Manager::write_output(string filePath)
     return;
 }
 
+/*
+ *Read weights
+ *
+ *Opens file filePath and reads its content
+ *Fills the appropriate data structures
+*/
 void File_Manager::read_weights(string filePath)
 {
     read.open(filePath.c_str());
@@ -130,6 +166,12 @@ void File_Manager::read_weights(string filePath)
 }
 
 
+/*
+ *Write weights
+ *
+ *Opens file filePath and write to it
+ *Fills it with the appropriate data structures
+*/
 void File_Manager::write_weights(string filePath)
 {
     write.open(filePath.c_str());
@@ -143,7 +185,12 @@ void File_Manager::write_weights(string filePath)
     return;
 }
 
-
+/*
+ *Conver Int
+ *
+ *Converts integer number to string
+ *Returns result string
+*/
 string File_Manager::convertInt(int number)
 {
     if (number == 0)
@@ -160,10 +207,19 @@ string File_Manager::convertInt(int number)
     return returnvalue;
 }
 
+/*
+ *Fill rank output
+ *
+ *Interface to fill the output/decimal association
+ *associates each output string with an integer id
+*/
 void File_Manager::fill_rank_output()
 {
-    n.output_rank.clear();
-    n.rank_output.clear();
+    if(n.output_rank.empty())
+            n.output_rank.clear();
+
+    if(n.rank_output.empty())
+        n.rank_output.clear();
     fori (0,n.output_len)
     {
         n.output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));

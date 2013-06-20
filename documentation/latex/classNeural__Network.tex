@@ -4,164 +4,48 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classNeural__Network_aed9a3037441f5c7a44d3f36d4e62deed}{void {\bfseries access} (int)}\label{classNeural__Network_aed9a3037441f5c7a44d3f36d4e62deed}
+\hypertarget{classNeural__Network_afb37f8321b35bbc9b9beb88d56d69f08}{void {\bfseries set\-\_\-input\-\_\-len} (int)}\label{classNeural__Network_afb37f8321b35bbc9b9beb88d56d69f08}
 
 \item 
-\hypertarget{classNeural__Network_ac86567c994bb671c20ed50316d268d3b}{void {\bfseries init} ()}\label{classNeural__Network_ac86567c994bb671c20ed50316d268d3b}
+\hypertarget{classNeural__Network_a695079279950a3eb27d62df68d32927c}{void {\bfseries set\-\_\-output\-\_\-len} (int)}\label{classNeural__Network_a695079279950a3eb27d62df68d32927c}
 
 \item 
-\hypertarget{classNeural__Network_a033f4f60812c0359cc50815e957f11f7}{void {\bfseries train} ()}\label{classNeural__Network_a033f4f60812c0359cc50815e957f11f7}
+\hypertarget{classNeural__Network_ad1e1afff306e47947e23f4fdd4517e22}{void {\bfseries set\-\_\-hidden\-\_\-len} (int)}\label{classNeural__Network_ad1e1afff306e47947e23f4fdd4517e22}
 
 \item 
-\hypertarget{classNeural__Network_a38193cc61e9affbd077c1c6089fd0889}{void {\bfseries test} ()}\label{classNeural__Network_a38193cc61e9affbd077c1c6089fd0889}
+\hypertarget{classNeural__Network_a80b2c577da9fdc4e830722e7a4569069}{void {\bfseries set\-\_\-\-A\-V} (int)}\label{classNeural__Network_a80b2c577da9fdc4e830722e7a4569069}
+
+\item 
+\hypertarget{classNeural__Network_a0458bfedabe1b42e4d30e3179bd1f189}{void {\bfseries set\-\_\-minimum\-\_\-error} (double)}\label{classNeural__Network_a0458bfedabe1b42e4d30e3179bd1f189}
+
+\item 
+\hypertarget{classNeural__Network_a87a3c876501fcd89ffc1caf298fa2703}{void {\bfseries set\-\_\-learning\-\_\-rate} (double)}\label{classNeural__Network_a87a3c876501fcd89ffc1caf298fa2703}
+
+\item 
+\hypertarget{classNeural__Network_a75e25e607afb4e862219b21c0569c893}{int {\bfseries get\-\_\-input\-\_\-len} ()}\label{classNeural__Network_a75e25e607afb4e862219b21c0569c893}
+
+\item 
+\hypertarget{classNeural__Network_a895c1b35110b7ee5e5adc56a63a55e78}{int {\bfseries get\-\_\-output\-\_\-len} ()}\label{classNeural__Network_a895c1b35110b7ee5e5adc56a63a55e78}
+
+\item 
+\hypertarget{classNeural__Network_ac781308fb521309d657b91a95054be52}{int {\bfseries get\-\_\-hidden\-\_\-len} ()}\label{classNeural__Network_ac781308fb521309d657b91a95054be52}
 
 \item 
 \hypertarget{classNeural__Network_acd3d4762d71d54422b45fda3a13976cf}{void {\bfseries do\-\_\-function} (int)}\label{classNeural__Network_acd3d4762d71d54422b45fda3a13976cf}
 
-\item 
-\hypertarget{classNeural__Network_a7a8eff736645e4101ed906a46e6a27ac}{double {\bfseries segmoidal\-\_\-fn} (double, int)}\label{classNeural__Network_a7a8eff736645e4101ed906a46e6a27ac}
-
-\item 
-\hypertarget{classNeural__Network_aa7a5737152daab632fcd8a8863dd2af3}{void {\bfseries propagate} (int)}\label{classNeural__Network_aa7a5737152daab632fcd8a8863dd2af3}
-
-\item 
-\hypertarget{classNeural__Network_a27bbf05738959d82fb8b3c4667a6dd3d}{double {\bfseries cal\-\_\-error} (int)}\label{classNeural__Network_a27bbf05738959d82fb8b3c4667a6dd3d}
-
-\item 
-\hypertarget{classNeural__Network_a5a0cac77d13e3ffdd3088cb684d39859}{void {\bfseries back\-\_\-propagate} ()}\label{classNeural__Network_a5a0cac77d13e3ffdd3088cb684d39859}
-
-\item 
-\hypertarget{classNeural__Network_a968b3636a13002a3454c8c2eacbf7229}{void {\bfseries fill\-\_\-rank\-\_\-output} ()}\label{classNeural__Network_a968b3636a13002a3454c8c2eacbf7229}
-
-\item 
-\hypertarget{classNeural__Network_a9d07c8020971a4da088839084e1321cf}{void {\bfseries read\-\_\-input} (string file\-Path)}\label{classNeural__Network_a9d07c8020971a4da088839084e1321cf}
-
-\item 
-\hypertarget{classNeural__Network_a3cac10960b86787c62f2af28adf8f263}{void {\bfseries read\-\_\-expected\-\_\-output} (string file\-Path)}\label{classNeural__Network_a3cac10960b86787c62f2af28adf8f263}
-
-\item 
-\hypertarget{classNeural__Network_a80f1c88f48a7d6f10bfd4ac808e11217}{void {\bfseries read\-\_\-weights} (string file\-Path)}\label{classNeural__Network_a80f1c88f48a7d6f10bfd4ac808e11217}
-
-\item 
-\hypertarget{classNeural__Network_a9d4c8fcf362aaf4507644d711e4c254d}{void {\bfseries write\-\_\-output} (string file\-Path)}\label{classNeural__Network_a9d4c8fcf362aaf4507644d711e4c254d}
-
-\item 
-\hypertarget{classNeural__Network_aec4b99de94c88ea069c550f6373fdc2b}{void {\bfseries write\-\_\-weights} (string file\-Path)}\label{classNeural__Network_aec4b99de94c88ea069c550f6373fdc2b}
-
-\item 
-\hypertarget{classNeural__Network_a3d073d4957def9b6a4498448260fedeb}{bool {\bfseries input\-\_\-absent} ()}\label{classNeural__Network_a3d073d4957def9b6a4498448260fedeb}
-
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classNeural__Network_a9e5319bf385fa55bbbd8f0160915306d}{int {\bfseries input\-\_\-len}}\label{classNeural__Network_a9e5319bf385fa55bbbd8f0160915306d}
-
-\item 
-\hypertarget{classNeural__Network_a71cc8ca03da47fe639dd1e8ed518069c}{int {\bfseries hidden\-\_\-len}}\label{classNeural__Network_a71cc8ca03da47fe639dd1e8ed518069c}
-
-\item 
-\hypertarget{classNeural__Network_a053d2b510e07b1f25ef112f366bc62ba}{int {\bfseries output\-\_\-len}}\label{classNeural__Network_a053d2b510e07b1f25ef112f366bc62ba}
-
-\item 
-\hypertarget{classNeural__Network_a970136042929b26220d35be2776220a6}{int {\bfseries A\-V}}\label{classNeural__Network_a970136042929b26220d35be2776220a6}
-
-\item 
-\hypertarget{classNeural__Network_a8fe39196b36a38696abd679328dd8232}{int {\bfseries dataset\-\_\-size}}\label{classNeural__Network_a8fe39196b36a38696abd679328dd8232}
-
-\item 
-\hypertarget{classNeural__Network_a2ffe42aee798e268d4bbf0f3428ba430}{double {\bfseries error}}\label{classNeural__Network_a2ffe42aee798e268d4bbf0f3428ba430}
-
-\item 
-\hypertarget{classNeural__Network_aa2898d2ec7ac091b6d40916d4b113a93}{double {\bfseries minimum\-\_\-error}}\label{classNeural__Network_aa2898d2ec7ac091b6d40916d4b113a93}
-
-\item 
-\hypertarget{classNeural__Network_a1994986029a1ef9d55fa4bb1b440210b}{double {\bfseries learning\-\_\-rate}}\label{classNeural__Network_a1994986029a1ef9d55fa4bb1b440210b}
-
-\item 
-\hypertarget{classNeural__Network_a3a3ea713384da26e538bc60da8410a75}{double {\bfseries momentum}}\label{classNeural__Network_a3a3ea713384da26e538bc60da8410a75}
-
-\item 
-\hypertarget{classNeural__Network_a017bfc29054a46155cb89234aa2f69ee}{map$<$ pair$<$ char, char $>$, int $>$ {\bfseries input\-\_\-rank}}\label{classNeural__Network_a017bfc29054a46155cb89234aa2f69ee}
-
-\item 
-\hypertarget{classNeural__Network_af46a9de8ef619f93fb8c0231be79163c}{map$<$ string, int $>$ {\bfseries output\-\_\-rank}}\label{classNeural__Network_af46a9de8ef619f93fb8c0231be79163c}
-
-\item 
-\hypertarget{classNeural__Network_a8e34531b701290d16068e3685f3066a4}{map$<$ int, string $>$ {\bfseries rank\-\_\-output}}\label{classNeural__Network_a8e34531b701290d16068e3685f3066a4}
-
-\item 
-\hypertarget{classNeural__Network_a81bab51b36643c5b10ba25d518c27ff3}{vector$<$ vector$<$ double $>$ $>$ {\bfseries input\-\_\-dataset}}\label{classNeural__Network_a81bab51b36643c5b10ba25d518c27ff3}
-
-\item 
-\hypertarget{classNeural__Network_aa8441449f55f07c3da384d81608373b5}{vector$<$ vector$<$ double $>$ $>$ {\bfseries output\-\_\-dataset}}\label{classNeural__Network_aa8441449f55f07c3da384d81608373b5}
-
-\item 
-\hypertarget{classNeural__Network_a347a1fceb1ac048ecd913a89126cebb3}{double {\bfseries input} \mbox{[}input\-\_\-l\mbox{]}}\label{classNeural__Network_a347a1fceb1ac048ecd913a89126cebb3}
-
-\item 
-\hypertarget{classNeural__Network_a5b31deacdc5c63e687d6ebc086b761ab}{double {\bfseries hidden} \mbox{[}hidden\-\_\-l\mbox{]}}\label{classNeural__Network_a5b31deacdc5c63e687d6ebc086b761ab}
-
-\item 
-\hypertarget{classNeural__Network_abe5631cce6141b7756154a5a9d247da2}{double {\bfseries output} \mbox{[}output\-\_\-l\mbox{]}}\label{classNeural__Network_abe5631cce6141b7756154a5a9d247da2}
-
-\item 
-\hypertarget{classNeural__Network_a8d632cf69d2fcd076e473aba1ae74702}{double {\bfseries expected\-\_\-o} \mbox{[}output\-\_\-l\mbox{]}}\label{classNeural__Network_a8d632cf69d2fcd076e473aba1ae74702}
-
-\item 
-\hypertarget{classNeural__Network_a8f26363ac0ccda6f04df35e68164cd3a}{double {\bfseries bias\-\_\-\-O} \mbox{[}output\-\_\-l\mbox{]}}\label{classNeural__Network_a8f26363ac0ccda6f04df35e68164cd3a}
-
-\item 
-\hypertarget{classNeural__Network_a38808438a02d406a7ab54c8bf825752a}{double {\bfseries bias\-\_\-\-H} \mbox{[}hidden\-\_\-l\mbox{]}}\label{classNeural__Network_a38808438a02d406a7ab54c8bf825752a}
-
-\item 
-\hypertarget{classNeural__Network_a45dfc138d645e05eaeaa6ca6bb3df818}{double {\bfseries Wh} \mbox{[}hidden\-\_\-l\mbox{]}\mbox{[}input\-\_\-l\mbox{]}}\label{classNeural__Network_a45dfc138d645e05eaeaa6ca6bb3df818}
-
-\item 
-\hypertarget{classNeural__Network_ad6730ce7c9fc3937299dd32473b12d1d}{double {\bfseries Wo} \mbox{[}output\-\_\-l\mbox{]}\mbox{[}hidden\-\_\-l\mbox{]}}\label{classNeural__Network_ad6730ce7c9fc3937299dd32473b12d1d}
-
-\item 
-\hypertarget{classNeural__Network_a1cca3513af05c6dce603fdf332b36691}{double {\bfseries temp\-Wo} \mbox{[}output\-\_\-l\mbox{]}\mbox{[}hidden\-\_\-l\mbox{]}}\label{classNeural__Network_a1cca3513af05c6dce603fdf332b36691}
-
-\item 
-\hypertarget{classNeural__Network_ae5f829ba5e65ae91d5c4feda5f66e37a}{double {\bfseries delta\-\_\-\-O} \mbox{[}output\-\_\-l\mbox{]}}\label{classNeural__Network_ae5f829ba5e65ae91d5c4feda5f66e37a}
-
-\item 
-\hypertarget{classNeural__Network_a51e5c2d2b53ba284c5b3791446c3b7d8}{double {\bfseries delta\-\_\-\-H} \mbox{[}hidden\-\_\-l\mbox{]}}\label{classNeural__Network_a51e5c2d2b53ba284c5b3791446c3b7d8}
-
-\item 
-\hypertarget{classNeural__Network_afcddc4f59d2ea4bcd76aa1c8ce48f177}{ofstream {\bfseries write}}\label{classNeural__Network_afcddc4f59d2ea4bcd76aa1c8ce48f177}
-
-\item 
-\hypertarget{classNeural__Network_a4ae1d30c86833bbc53e34866e5afb0e3}{ifstream {\bfseries read}}\label{classNeural__Network_a4ae1d30c86833bbc53e34866e5afb0e3}
-
-\item 
-\hypertarget{classNeural__Network_af2572406218896cd07d8a31940598ab9}{string {\bfseries read\-\_\-ex\-\_\-output\-\_\-string}}\label{classNeural__Network_af2572406218896cd07d8a31940598ab9}
-
-\item 
-\hypertarget{classNeural__Network_ad70fa9bc2b1421100e56a4b2e7ec23e1}{string {\bfseries read\-\_\-input\-\_\-string}}\label{classNeural__Network_ad70fa9bc2b1421100e56a4b2e7ec23e1}
-
-\item 
-\hypertarget{classNeural__Network_a7edf85b3674d13b20e694d0188e3896b}{string {\bfseries input\-\_\-file}}\label{classNeural__Network_a7edf85b3674d13b20e694d0188e3896b}
-
-\item 
-\hypertarget{classNeural__Network_a7fc61ee2ad0ea852fc91aca6baa196c4}{string {\bfseries expected\-\_\-out\-\_\-file}}\label{classNeural__Network_a7fc61ee2ad0ea852fc91aca6baa196c4}
-
-\item 
-\hypertarget{classNeural__Network_aa5f1247357af06d58346ff09852b3c69}{string {\bfseries output\-\_\-file}}\label{classNeural__Network_aa5f1247357af06d58346ff09852b3c69}
-
-\item 
-\hypertarget{classNeural__Network_a34ef4c88e3b4885a3d53a8b0f9f4495c}{string {\bfseries weights\-\_\-file}}\label{classNeural__Network_a34ef4c88e3b4885a3d53a8b0f9f4495c}
-
-\item 
-\hypertarget{classNeural__Network_a61a8573c18e7c8201996a2265c99cd9f}{string {\bfseries rank\-\_\-output\-\_\-strings} \mbox{[}output\-\_\-l\mbox{]}}\label{classNeural__Network_a61a8573c18e7c8201996a2265c99cd9f}
+\hypertarget{classNeural__Network_a96aa84fcda6b19a74fff9d19c16b07fe}{class {\bfseries File\-\_\-\-Manager}}\label{classNeural__Network_a96aa84fcda6b19a74fff9d19c16b07fe}
 
 \end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-N\-N.\-h\item 
-file\-Handle.\-cpp\item 
-neural\-\_\-network.\-cpp\item 
-N\-N\-\_\-constructor.\-cpp\end{DoxyCompactItemize}
+Neural\-Network.\-h\item 
+N\-N.\-cpp\item 
+N\-N\-\_\-constructor.\-cpp\item 
+N\-N\-\_\-getters.\-cpp\item 
+N\-N\-\_\-setters.\-cpp\end{DoxyCompactItemize}

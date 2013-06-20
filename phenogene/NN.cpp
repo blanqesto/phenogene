@@ -94,39 +94,53 @@ void Neural_Network::init()
 */
 void Neural_Network::train()
 {
-    error = 10000.0;
     init(); //initialize weights,bias
     int iterations = 0;
-    while (error > minimum_error && iterations < max_iterations)
-    {
-        iterations ++ ;
-        error = 0.0;
-        fork(0, dataset_size)
+    //int mismatch=1000000;
+    //while(mismatch > (0.75*dataset_size) && iterations < max_iterations)
+    //{
+      //  iterations ++ ;
+        //mismatch = 0.0;
+//    double prev_error=-1;
+//    double best_error;
+//    double best_lr;
+//    int n_mismatch;
+    error = 100000;
+    //for (int n = 0; n < 130; n++)
+    //{
+        error = 10000.0;
+        while (error > minimum_error && iterations < max_iterations)
         {
-            cout << k << " ";
-            // Get current dataset of input and expected output
-            fori(0,input_len) input[i]=input_dataset[k][i];
-            fori(0,output_len) expected_o[i]=output_dataset[k][i];
-            //if(input_absent())continue;
-            // Propagate input
-            propagate(AV);
-            // Calculate Error
-            error+=cal_error(AV);
-            // Back propagagte the error
-            back_propagate();
+            iterations ++ ;
+            //prev_error=error;
+            error = 0.0;
+            fork(0, dataset_size)
+            {
+                cout << k << " ";
+                // Get current dataset of input and expected output
+                fori(0,input_len) input[i]=input_dataset[k][i];
+                fori(0,output_len) expected_o[i]=output_dataset[k][i];
+                //if(input_absent())continue;
+                // Propagate input
+                propagate();
+                // Calculate Error
+                error+=cal_error();
+                // Back propagagte the error
+                back_propagate();
+            }
         }
-        error*=0.5;
-    }
+//        if (error<prev_error)
+//        {
+//            cout << "Found optimal!" << n << endl;
+//            best_error = error;
+//            best_lr = learning_rate;
+//        }
+//        learning_rate+=0.001;
+//    }
+//    cout << "Optimals:\nError= " << best_error << endl << "learning rate= " << best_lr << endl;
 }
 
 
-
-//bool Neural_Network::input_absent()
-//{
-//    fori (0,input_len)
-//            if(input[i]==1) return false;
-//    return true;
-//}
 
 /*
  *Test the neural network.
@@ -148,7 +162,7 @@ void Neural_Network::test()
         fori(0,input_len)
                 input[i]=input_dataset[k][i];
         // Calculate Output
-        propagate(AV);
+        propagate();
         // Calculate Error
         fori(0,output_len)
                 error += pow((output[i]-expected_o[i]),2);
@@ -165,48 +179,31 @@ void Neural_Network::test()
  *
  **Starting from the input layer up to the output layer.
  *
- *Use activation function ID = AV.
+ *Uses softmax activation function.
  *
 */
-void Neural_Network::propagate(int AV)
+void Neural_Network::propagate()
 {
     fill_n(hidden, hidden_len, 0);
     fill_n(output, output_len, 0);
 
     double max = -1000.0;
     double maxO = -1000.0;
-    /*Calculate the net (weights x input)*/
-    fori (0,hidden_len)
-    {
-        forj (0,input_len) hidden[i] += input[j]*Wh[i][j];
-        if (hidden[i]>max)max=hidden[i];
-    }
-    fori (0,output_len)
-    {
-        forj (0,hidden_len) output[i] += hidden[j]*Wo[i][j];
-        if (output[i]>maxO)maxO=output[i];
-    }
 
+    /*Calculate the net (weights x input)*/
+    calculate_net(max,maxO);
     double exp_HT=0.0;
     double exp_OT=0.0;
 
     /*Softmax activation function*/
-    fori(0,hidden_len) exp_HT+=hidden[i]=exp(hidden[i]-max);
-    fori(0,output_len) exp_OT+=output[i]=exp(output[i]-maxO);
+    fori(0,hidden_len) exp_HT+=hidden[i]=exp(netH[i]-max);
+    fori(0,output_len) exp_OT+=output[i]=exp(netO[i]-maxO);
 
     fori(0,hidden_len) hidden[i]=hidden[i]/exp_HT;
     fori(0,output_len) output[i]=output[i]/exp_OT;
 
     fori(0,hidden_len) cout << hidden[i] << endl;
     fori(0,output_len) cout << output[i] << endl;
-
-//    if (AV == segmoidal)
-//    {
-//        fori(0,output_len)
-//                output[i] = segmoidal_fn(output[i],0);
-//        fori(0,hidden_len)
-//                hidden[i] = segmoidal_fn(hidden[i],0);
-//    }
     return;
 }
 
@@ -240,19 +237,25 @@ void Neural_Network::back_propagate()
 /*
  *Calculate the error signal for each node.
  *
- *Use activation function's ID = AV.
+ *Use corss entropy error function.
  *
  *Return total error.
 */
-double Neural_Network::cal_error(int AV)
+double Neural_Network::cal_error()
 {
     fill_n(delta_O,output_len,0);
     fill_n(delta_H,hidden_len,0);
     double total_error = 0.0, temp = 0.0;
+
+    double max = -1000;
+    double maxO = -1000;
+    /*Calculate the net (weights x input)*/
+    calculate_net(max,maxO);
+
     // error signal for output layer
     fori(0,output_len)
     {
-        temp = log(output[i]);
+        temp = log(netO[i]-maxO);
         delta_O[i] = (output[i]-expected_o[i])*temp;
         total_error += temp;
     }
@@ -261,28 +264,27 @@ double Neural_Network::cal_error(int AV)
     {
         temp = 0.0;
         forj(0,output_len)
-                temp += hidden[i]*delta_O[j];
+                temp += log(netH[i]-max)*delta_O[j];
         delta_H[i] = temp;
     }
-
-//    if (AV == segmoidal)
-//    {
-//        // error signal for output layer
-//        fori(0,output_len)
-//        {
-//            temp = pow(expected_o[i]-output[i],2);
-//            delta_O[i] = temp*output[i]*segmoidal_fn(output[i],1);
-//            total_error += temp;
-//        }
-//        // error signal for hidden layer
-//        fori(0,hidden_len)
-//        {
-//            temp = 0.0;
-//            forj(0,output_len)
-//                    temp += Wo[j][i]*delta_O[j];
-//            delta_H[i] = temp*hidden[i]*segmoidal_fn(hidden[i],1);
-//        }
-//    }
     return (total_error);
 }
 
+void Neural_Network::calculate_net(double &max, double &maxO)
+{
+    max = -1000.0;
+    maxO = -1000.0;
+
+    /*Calculate the net (weights x input)*/
+    fori (0,hidden_len)
+    {
+        forj (0,input_len) netH[i] += input[j]*Wh[i][j];
+        if (netH[i]>max)max=netH[i];
+    }
+    fori (0,output_len)
+    {
+        forj (0,hidden_len) netO[i] += netH[j]*Wo[i][j];
+        if (netO[i]>maxO)maxO=netO[i];
+    }
+    return;
+}

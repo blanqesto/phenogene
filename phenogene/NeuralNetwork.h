@@ -41,6 +41,8 @@ private:
     double input[input_l];
     double hidden[hidden_l];
     double output[output_l];
+    double netH[hidden_l];
+    double netO[output_l];
     double expected_o[output_l];
     double bias_O[output_l];
     double bias_H[hidden_l];
@@ -72,9 +74,10 @@ private:
     void train();
     void test();
     double segmoidal_fn(double, int);
-    void propagate(int);
-    double cal_error(int);
+    void propagate();
+    double cal_error();
     void back_propagate();
     bool input_absent();
+    void calculate_net(double&,double&);
 };
 #endif // NN_H

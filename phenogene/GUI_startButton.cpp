@@ -1,7 +1,14 @@
 #include <GUI.h>
 #include <ui_phenogene.h>
 
-/*Start Button*/
+/*
+ *When start button clicked:
+ *
+ *Called when start button is pushed.
+ *Determines weather to train/test/analyze.
+ *According to the opened tab.
+ *
+*/
 void GUI::on_pushButton_clicked()
 {
     QString er = valid_input();
@@ -20,6 +27,16 @@ void GUI::on_pushButton_clicked()
     return;
 }
 
+
+/*
+ *Perform train:
+ *
+ *Calls file manager rotines to train:
+ **read input
+ **read expected output
+ **train
+ **write weights
+*/
 void GUI::perform_train()
 {
     ui->progressBar->setValue(0);
@@ -38,6 +55,15 @@ void GUI::perform_train()
     return;
 }
 
+/*
+ *Perform test:
+ *
+ *Calls file manager rotines to test:
+ **read input
+ **read weights
+ **test
+ **write output
+*/
 void GUI::perform_test()
 {
     ui->progressBar->setValue(0);
@@ -54,7 +80,11 @@ void GUI::perform_test()
     return;
 }
 
-
+/*
+ *Valid input:
+ *
+ *Check that all input needed is filled
+*/
 QString GUI::valid_input()
 {
     QString er = "Error!\n\n";
@@ -88,6 +118,12 @@ QString GUI::valid_input()
     return er;
 }
 
+/*
+ *Fill Rank:
+ *
+ *Called once before a train/test is performed
+ *Fills necessary data input/decimal mapping structure
+*/
 void GUI::fill_rank()
 {
     /*fill_rank_output*/
@@ -99,6 +135,11 @@ void GUI::fill_rank()
     /*****************/
 }
 
+/*
+ *Display Error:
+ *
+ *Displays the error message contained in string er
+*/
 void GUI::display_error(QString er)
 {
 

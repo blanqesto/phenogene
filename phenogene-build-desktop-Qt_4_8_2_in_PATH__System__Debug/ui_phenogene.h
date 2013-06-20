@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Thu Jun 20 01:13:58 2013
+** Created: Thu Jun 20 13:47:43 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -640,7 +640,7 @@ public:
                         "-block-indent:0; text-indent:0px;\">brown</p></body></html>", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("GUI", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
         lineEdit->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
-        lineEdit_3->setText(QApplication::translate("GUI", "0.2", 0, QApplication::UnicodeUTF8));
+        lineEdit_3->setText(QApplication::translate("GUI", "0.001", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("GUI", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("GUI", "Activation function:", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("GUI", "Learning rate:", 0, QApplication::UnicodeUTF8));
@@ -679,7 +679,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("GUI", "Train", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("GUI", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
         lineEdit_6->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
-        lineEdit_8->setText(QApplication::translate("GUI", "0.2", 0, QApplication::UnicodeUTF8));
+        lineEdit_8->setText(QApplication::translate("GUI", "0.001", 0, QApplication::UnicodeUTF8));
         label_13->setText(QApplication::translate("GUI", "Genes Numbers:", 0, QApplication::UnicodeUTF8));
         label_16->setText(QApplication::translate("GUI", "Learning rate:", 0, QApplication::UnicodeUTF8));
         label_17->setText(QApplication::translate("GUI", "Acceptable Error:", 0, QApplication::UnicodeUTF8));

@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Phenogene", "index.html", [
+  [ "Main Page", "index.html", [
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
     ] ],

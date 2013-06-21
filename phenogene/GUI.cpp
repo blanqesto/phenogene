@@ -11,7 +11,7 @@
 */
 void GUI::on_pushButton_5_clicked()
 {
-    QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), "", tr("Files (*.*)"));
+    QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), filePath, tr("Files (*.*)"));
     string temp = fileName.toAscii().constData();
     fm.set_input_file(temp);
     QStringList filename = fileName.split("/");
@@ -76,17 +76,6 @@ void GUI::on_lineEdit_4_editingFinished()
     fm.n.set_minimum_error(ui->lineEdit_4->text().toDouble());
 }
 
-/*
- *Train Tab
- *Activation Function
- *
- *Syncronise activation function selected between tabs
-*/
-void GUI::on_listWidget_currentRowChanged(int currentRow)
-{
-    ui->listWidget_2->setCurrentRow(currentRow);
-    fm.n.set_AV(ui->listWidget->currentRow());
-}
 
 /**
  On Train Tab
@@ -119,7 +108,7 @@ void GUI::on_textEdit_4_textChanged()
 */
 void GUI::on_pushButton_4_clicked()
 {
-    QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), "", tr("Files (*.*)"));
+    QString fileName=filePath= fileDialog.getOpenFileName(this, tr("Open File"), filePath, tr("Files (*.*)"));
     string temp = fileName.toAscii().constData();
     fm.set_input_file(temp);
     fm.set_output_file(temp+".out");

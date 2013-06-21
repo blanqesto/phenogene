@@ -105,7 +105,7 @@ void File_Manager::read_expected_output(string filePath)
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
         {
-            cout << i << " " << tempSplit << endl;
+            //cout << i << " " << tempSplit << endl;
             n.expected_o[n.output_rank[tempSplit]]=1;
         }
 
@@ -130,10 +130,10 @@ void File_Manager::write_output(string filePath)
     fori(0,n.dataset_size)
     {
         double temp = -10000.00,rank=-1;
-        cout << "dataset:" << i<< endl;
+        //cout << "dataset:" << i<< endl;
         forj(1,n.output_len+1)
         {
-            cout << "rank: " << j << " "<< n.output_dataset[i][j-1] << endl;
+           // cout << "rank: " << j << " "<< n.output_dataset[i][j-1] << endl;
                 if (n.output_dataset[i][j-1]>temp)
                 {
                     temp = n.output_dataset[i][j-1];
@@ -220,10 +220,8 @@ string File_Manager::convertInt(int number)
 */
 void File_Manager::fill_rank_output()
 {
-    if(n.output_rank.empty())
             n.output_rank.clear();
 
-    if(n.rank_output.empty())
         n.rank_output.clear();
     fori (0,n.output_len)
     {

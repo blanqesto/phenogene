@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'GUI.h'
 **
-** Created: Thu Jun 20 13:47:59 2013
+** Created: Sat Jun 22 00:59:03 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -76,7 +76,6 @@ void GUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         case 7: _t->on_lineEdit_3_editingFinished(); break;
         case 8: _t->on_lineEdit_4_editingFinished(); break;
         case 9: _t->on_textEdit_4_textChanged(); break;
-        case 10: _t->on_listWidget_currentRowChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }

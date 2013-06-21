@@ -11,7 +11,7 @@ Neural_Network::Neural_Network()
     input_len = 18;
     hidden_len = 12;
     output_len = 5;
-    momentum = 0.0001;
+    momentum = 0;
     learning_rate = 0.001;
     dataset_size=0;
     AV=segmoidal;

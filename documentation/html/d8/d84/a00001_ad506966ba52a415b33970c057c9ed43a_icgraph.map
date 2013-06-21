@@ -1,4 +1,4 @@
 <map id="File_Manager::get_read_ex_output_string" name="File_Manager::get_read_ex_output_string">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="213,13,344,43"/>
-<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="GUI::on_pushButton\l_clicked" alt="" coords="392,5,533,51"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: ." alt="" coords="213,13,344,43"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="392,5,533,51"/>
 </map>

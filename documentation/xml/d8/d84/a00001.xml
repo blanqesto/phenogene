@@ -27,9 +27,9 @@
         <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="73" endline="77">GUI::on_lineEdit_4_editingFinished</referencedby>
         <referencedby refid="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" compoundref="da/da0/a00009" startline="85" endline="89">GUI::on_listWidget_currentRowChanged</referencedby>
         <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="97" endline="110">GUI::on_textEdit_4_textChanged</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">GUI::valid_input</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -347,7 +347,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="19" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="45" bodyend="49"/>
         <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
-        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="127" endline="136">GUI::fill_rank</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">GUI::fill_rank</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -362,7 +362,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="22" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="6" bodyend="9"/>
         <references refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" compoundref="d0/d0b/a00004" startline="34">read_ex_output_string</references>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -377,8 +377,8 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="23" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="13" bodyend="16"/>
         <references refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" compoundref="d0/d0b/a00004" startline="35">input_population_string</references>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -393,7 +393,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="24" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="20" bodyend="23"/>
         <references refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" compoundref="d0/d0b/a00004" startline="36">output_population_string</references>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -412,7 +412,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="25" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="27" bodyend="30"/>
         <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">GUI::valid_input</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -451,8 +451,8 @@
         <references refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" compoundref="d0/d0b/a00004" startline="40">weights_file</references>
         <references refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="126" endline="150">write_output</references>
         <references refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">write_weights</references>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -474,7 +474,7 @@
         <references refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" compoundref="d2/de7/a00014" startline="63">Neural_Network::output_rank</references>
         <references refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" compoundref="d2/de7/a00014" startline="65">Neural_Network::rank_output</references>
         <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">GUI::on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">GUI::on_pushButton_clicked</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">

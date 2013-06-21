@@ -1,5 +1,5 @@
 <map id="File_Manager::do_function" name="File_Manager::do_function">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="229,5,360,35"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: ." alt="" coords="229,5,360,35"/>
 <area shape="rect" id="node7" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="232,59,357,88"/>
-<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="GUI::on_pushButton\l_clicked" alt="" coords="408,23,549,70"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="408,23,549,70"/>
 </map>

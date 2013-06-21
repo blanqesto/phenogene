@@ -28,6 +28,9 @@ GUI \-
 .ti -1c
 .RI "void \fBon_pushButton_clicked\fP ()"
 .br
+.RI "\fICalled when start button is pushed\&.
+.br
+ Determines weather to train/test/analyze, according to the opened tab\&. \fP"
 .ti -1c
 .RI "void \fBon_pushButton_3_clicked\fP ()"
 .br
@@ -78,12 +81,17 @@ GUI \-
 .ti -1c
 .RI "QString \fBvalid_input\fP ()"
 .br
+.RI "\fICheck that all input needed is filled\&. \fP"
 .ti -1c
 .RI "void \fBfill_rank\fP ()"
 .br
+.RI "\fICalled once before a train/test is performed\&. \fP"
 .ti -1c
 .RI "void \fBperform_train\fP ()"
 .br
+.RI "\fICalls file manager rotines to train:
+.br
+\&. \fP"
 .ti -1c
 .RI "void \fBperform_test\fP ()"
 .br
@@ -98,6 +106,7 @@ GUI \-
 .ti -1c
 .RI "void \fBdisplay_error\fP (QString)"
 .br
+.RI "\fIDisplays the error message contained in string er\&. \fP"
 .in -1c
 .SS "Private Attributes"
 
@@ -142,11 +151,25 @@ References ui\&.
 .SS "void GUI::display_error (QStringer)\fC [private]\fP"
 
 .PP
-Definition at line 143 of file GUI_startButton\&.cpp\&.
+Displays the error message contained in string er\&. \fBParameters:\fP
+.RS 4
+\fI[Qstring\fP er] Error message to be displayed\&. 
+.RE
+.PP
+
+.PP
+Definition at line 131 of file GUI_startButton\&.cpp\&.
 .SS "void GUI::fill_rank ()\fC [private]\fP"
 
 .PP
-Definition at line 127 of file GUI_startButton\&.cpp\&.
+Called once before a train/test is performed\&. \fBPostcondition:\fP
+.RS 4
+Rank-Output Strings are filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file GUI_startButton\&.cpp\&.
 .PP
 References fm, File_Manager::set_rank_output_strings(), and ui\&.
 .SS "void GUI::on_lineEdit_3_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
@@ -306,7 +329,11 @@ References fileDialog, filePath, fm, File_Manager::set_weights_file(), and ui\&.
 .SS "void GUI::on_pushButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
-Definition at line 12 of file GUI_startButton\&.cpp\&.
+Called when start button is pushed\&.
+.br
+ Determines weather to train/test/analyze, according to the opened tab\&. 
+.PP
+Definition at line 9 of file GUI_startButton\&.cpp\&.
 .PP
 References display_error(), File_Manager::fill_rank_output(), fm, perform_test(), perform_train(), ui, and valid_input()\&.
 .SS "void GUI::on_quitButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
@@ -334,15 +361,57 @@ Definition at line 97 of file GUI\&.cpp\&.
 .PP
 References fm, File_Manager::n, Neural_Network::set_output_len(), and ui\&.
 .SS "void GUI::perform_test ()\fC [private]\fP"
+\fBParameters:\fP
+.RS 4
+\fICalls\fP file manager rotines to test\&.
+.br
+.IP "1." 4
+read input\&.
+.br
+
+.IP "2." 4
+read weights\&.
+.br
+
+.IP "3." 4
+test\&.
+.br
+
+.IP "4." 4
+write output\&.
+.br
+ 
+.PP
+.RE
+.PP
 
 .PP
-Definition at line 67 of file GUI_startButton\&.cpp\&.
+Definition at line 60 of file GUI_startButton\&.cpp\&.
 .PP
 References Neural_Network::do_function(), File_Manager::do_function(), fm, File_Manager::get_input_population_string(), File_Manager::get_output_population_string(), File_Manager::n, and ui\&.
 .SS "void GUI::perform_train ()\fC [private]\fP"
 
 .PP
-Definition at line 40 of file GUI_startButton\&.cpp\&.
+Calls file manager rotines to train:
+.br
+\&. .IP "1." 4
+read input\&.
+.br
+
+.IP "2." 4
+read expected output\&.
+.br
+
+.IP "3." 4
+train\&.
+.br
+
+.IP "4." 4
+write weights\&. 
+.PP
+
+.PP
+Definition at line 35 of file GUI_startButton\&.cpp\&.
 .PP
 References Neural_Network::do_function(), File_Manager::do_function(), fm, File_Manager::get_input_population_string(), File_Manager::get_read_ex_output_string(), File_Manager::n, and ui\&.
 .SS "void GUI::set_styleSheet ()\fC [private]\fP"
@@ -364,7 +433,9 @@ References ui\&.
 .SS "QString GUI::valid_input ()\fC [private]\fP"
 
 .PP
-Definition at line 88 of file GUI_startButton\&.cpp\&.
+Check that all input needed is filled\&. 
+.PP
+Definition at line 79 of file GUI_startButton\&.cpp\&.
 .PP
 References fill_rank(), fm, fori, Neural_Network::get_output_len(), File_Manager::get_rank_output_strings(), File_Manager::n, and ui\&.
 .SH "Member Data Documentation"

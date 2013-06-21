@@ -1,9 +1,9 @@
 <map id="GUI::on_pushButton_clicked" name="GUI::on_pushButton_clicked">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#a69ac504cf1500a8c6283d8721b09aeb2" title="GUI::display_error" alt="" coords="196,160,324,189"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#a69ac504cf1500a8c6283d8721b09aeb2" title="Displays the error message contained in string er." alt="" coords="196,160,324,189"/>
 <area shape="rect" id="node5" href="$d8/d84/a00001.html#a44a6161fabb28c07ba6e860ba9927aa6" title="Interface to fill the output/decimal association &#160;associates each output node with a string..." alt="" coords="200,213,320,259"/>
 <area shape="rect" id="node7" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="197,336,323,365"/>
-<area shape="rect" id="node47" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="195,283,325,312"/>
-<area shape="rect" id="node54" href="$d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="GUI::valid_input" alt="" coords="203,513,317,543"/>
+<area shape="rect" id="node47" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: ." alt="" coords="195,283,325,312"/>
+<area shape="rect" id="node54" href="$d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="Check that all input needed is filled." alt="" coords="203,513,317,543"/>
 <area shape="rect" id="node9" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="375,221,548,251"/>
 <area shape="rect" id="node23" href="$d8/d84/a00001.html#a13d1128905d7b4a3bdec2e40392cd036" title="Get string input content." alt="" coords="381,274,541,321"/>
 <area shape="rect" id="node25" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Train or test the network." alt="" coords="392,343,531,390"/>
@@ -23,7 +23,7 @@
 <area shape="rect" id="node33" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="1036,409,1236,439"/>
 <area shape="rect" id="node43" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="873,299,919,328"/>
 <area shape="rect" id="node51" href="$d8/d84/a00001.html#ad506966ba52a415b33970c057c9ed43a" title="Get string expected output content." alt="" coords="383,151,540,198"/>
-<area shape="rect" id="node56" href="$d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="GUI::fill_rank" alt="" coords="412,483,511,512"/>
+<area shape="rect" id="node56" href="$d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="Called once before a train/test is performed." alt="" coords="412,483,511,512"/>
 <area shape="rect" id="node60" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes." alt="" coords="391,535,532,582"/>
 <area shape="rect" id="node62" href="$d8/d84/a00001.html#acd21da57c513a63893641ac505c097f0" title="Get string represenation for given ID." alt="" coords="383,605,540,651"/>
 <area shape="rect" id="node58" href="$d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594" title="Set string with index i to s." alt="" coords="599,474,756,521"/>

@@ -27,7 +27,8 @@ Collaboration diagram for G\-U\-I\-:\nopagebreak
 void \hyperlink{a00002_a5acc81766a1842665846092ebf0815e0}{on\-\_\-quit\-Button\-\_\-clicked} ()
 \item 
 void \hyperlink{a00002_a043466f485b6b75ee25ee879121c1ecc}{on\-\_\-push\-Button\-\_\-clicked} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called when start button is pushed.\par
+ Determines weather to train/test/analyze, according to the opened tab. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_a09eeb721e4f861e80da92d8ed42277ee}{on\-\_\-push\-Button\-\_\-3\-\_\-clicked} ()
 \begin{DoxyCompactList}\small\item\em Browses Expected Output File\par
  Allows the user to select a file. \end{DoxyCompactList}\item 
@@ -54,11 +55,12 @@ void \hyperlink{a00002_a073c74e8357311d12c523d73414ee265}{on\-\_\-list\-Widget\-
 \begin{DoxyCompactItemize}
 \item 
 Q\-String \hyperlink{a00002_a5ec9d8a051303b218c4542f96a87b56f}{valid\-\_\-input} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Check that all input needed is filled. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_a8e8c5918a3a0ddfd352c62e7348d3d74}{fill\-\_\-rank} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once before a train/test is performed. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_ad1bb069dee02010a61045c91f5e7752f}{perform\-\_\-train} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calls file manager rotines to train\-:\par
+. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_ade6ba53055965b3522fa3cd022e4c5e0}{perform\-\_\-test} ()
 \item 
 void \hyperlink{a00002_abd9fac4d8ad5334cc48afb0513544898}{set\-\_\-validators} ()
@@ -66,7 +68,7 @@ void \hyperlink{a00002_abd9fac4d8ad5334cc48afb0513544898}{set\-\_\-validators} (
 void \hyperlink{a00002_a5683a1862ec1a85cf87d9c5f6fc528e9}{set\-\_\-style\-Sheet} ()
 \begin{DoxyCompactList}\small\item\em Set style sheet configuration\-: Set color grey for some labels. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_a69ac504cf1500a8c6283d8721b09aeb2}{display\-\_\-error} (Q\-String)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Displays the error message contained in string er. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -147,7 +149,16 @@ References ui.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a69ac504cf1500a8c6283d8721b09aeb2}
 
 
-Definition at line 143 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+Displays the error message contained in string er. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\-Qstring} & er\mbox{]} Error message to be displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -169,7 +180,14 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a8e8c5918a3a0ddfd352c62e7348d3d74}
 
 
-Definition at line 127 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+Called once before a train/test is performed. 
+
+\begin{DoxyPostcond}{Postcondition}
+Rank-\/\-Output Strings are filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 116 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -188,7 +206,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -488,7 +507,12 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a043466f485b6b75ee25ee879121c1ecc}
 
 
-Definition at line 12 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+Called when start button is pushed.\par
+ Determines weather to train/test/analyze, according to the opened tab. 
+
+
+
+Definition at line 9 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -561,8 +585,24 @@ Here is the call graph for this function\-:\nopagebreak
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_ade6ba53055965b3522fa3cd022e4c5e0}
 
+\begin{DoxyParams}{Parameters}
+{\em Calls} & file manager rotines to test.\par
 
-Definition at line 67 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+\begin{DoxyEnumerate}
+\item read input.\par
+
+\item read weights.\par
+
+\item test.\par
+
+\item write output.\par
+ 
+\end{DoxyEnumerate}\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -570,8 +610,7 @@ References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::d
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -600,7 +639,21 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_ad1bb069dee02010a61045c91f5e7752f}
 
 
-Definition at line 40 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+Calls file manager rotines to train\-:\par
+. 
+
+
+\begin{DoxyEnumerate}
+\item read input.\par
+
+\item read expected output.\par
+
+\item train.\par
+
+\item write weights. 
+\end{DoxyEnumerate}
+
+Definition at line 35 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -608,8 +661,7 @@ References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::d
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -698,7 +750,11 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a5ec9d8a051303b218c4542f96a87b56f}
 
 
-Definition at line 88 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+Check that all input needed is filled. 
+
+
+
+Definition at line 79 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
@@ -706,7 +762,8 @@ References fill\-\_\-rank(), fm, fori, Neural\-\_\-\-Network\-::get\-\_\-output\
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

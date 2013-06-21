@@ -1,12 +1,9 @@
 #include <GUI.h>
 #include <ui_phenogene.h>
 
-/*
- *When start button clicked:
- *
- *Called when start button is pushed.
- *Determines weather to train/test/analyze.
- *According to the opened tab.
+/**
+ \brief Called when start button is pushed.\n
+ Determines weather to train/test/analyze, according to the opened tab.
  *
 */
 void GUI::on_pushButton_clicked()
@@ -28,14 +25,12 @@ void GUI::on_pushButton_clicked()
 }
 
 
-/*
- *Perform train:
- *
- *Calls file manager rotines to train:
- **read input
- **read expected output
- **train
- **write weights
+/**
+ \brief Calls file manager rotines to train:\n
+ 1. read input.\n
+ 2. read expected output.\n
+ 3. train.\n
+ 4. write weights.
 */
 void GUI::perform_train()
 {
@@ -55,14 +50,12 @@ void GUI::perform_train()
     return;
 }
 
-/*
- *Perform test:
- *
- *Calls file manager rotines to test:
- **read input
- **read weights
- **test
- **write output
+/**
+ \param Calls file manager rotines to test.\n
+ 1. read input.\n
+ 2. read weights.\n
+ 3. test.\n
+ 4. write output.\n
 */
 void GUI::perform_test()
 {
@@ -80,10 +73,8 @@ void GUI::perform_test()
     return;
 }
 
-/*
- *Valid input:
- *
- *Check that all input needed is filled
+/**
+ \brief Check that all input needed is filled.
 */
 QString GUI::valid_input()
 {
@@ -118,11 +109,9 @@ QString GUI::valid_input()
     return er;
 }
 
-/*
- *Fill Rank:
- *
- *Called once before a train/test is performed
- *Fills necessary data input/decimal mapping structure
+/**
+ \brief Called once before a train/test is performed.
+ \post Rank-Output Strings are filled.
 */
 void GUI::fill_rank()
 {
@@ -135,10 +124,9 @@ void GUI::fill_rank()
     /*****************/
 }
 
-/*
- *Display Error:
- *
- *Displays the error message contained in string er
+/**
+ \brief Displays the error message contained in string er.
+ \param [Qstring er] Error message to be displayed.
 */
 void GUI::display_error(QString er)
 {

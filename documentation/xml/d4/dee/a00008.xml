@@ -188,7 +188,7 @@
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">GUI::valid_input</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">Neural_Network::init</referencedby>
         <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">Neural_Network::train</referencedby>
         <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">Neural_Network::test</referencedby>

@@ -75,11 +75,11 @@
         <referencedby refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="20" endline="26">set_styleSheet</referencedby>
         <referencedby refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="31" endline="42">set_validators</referencedby>
         <referencedby refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" compoundref="da/d45/a00011" startline="47" endline="50">~GUI</referencedby>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">perform_test</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">valid_input</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="127" endline="136">fill_rank</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" prot="private" static="no" mutable="no">
         <type><ref refid="d8/d84/a00001" kindref="compound">File_Manager</ref></type>
@@ -102,11 +102,11 @@
         <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="97" endline="110">on_textEdit_4_textChanged</referencedby>
         <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="120" endline="128">on_pushButton_4_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="137" endline="143">on_pushButton_6_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">perform_test</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">valid_input</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="127" endline="136">fill_rank</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -165,19 +165,20 @@
         <argsstring>()</argsstring>
         <name>on_pushButton_clicked</name>
         <briefdescription>
-        </briefdescription>
+<para>Called when start button is pushed.<linebreak/>
+ Determines weather to train/test/analyze, according to the opened tab. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="31" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="12" bodyend="28"/>
-        <references refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" compoundref="df/d86/a00012" startline="143" endline="151">display_error</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="31" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="9" bodyend="25"/>
+        <references refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" compoundref="df/d86/a00012" startline="131" endline="139">display_error</references>
         <references refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">perform_test</references>
-        <references refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">perform_train</references>
+        <references refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</references>
+        <references refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
-        <references refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">valid_input</references>
+        <references refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -371,20 +372,20 @@
         <argsstring>()</argsstring>
         <name>valid_input</name>
         <briefdescription>
-        </briefdescription>
+<para>Check that all input needed is filled. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="44" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="88" bodyend="119"/>
-        <references refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="127" endline="136">fill_rank</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="44" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="79" bodyend="110"/>
+        <references refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" compoundref="d4/d51/a00017" startline="15" endline="18">Neural_Network::get_output_len</references>
         <references refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" compoundref="de/d21/a00006" startline="27" endline="30">File_Manager::get_rank_output_strings</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -392,16 +393,17 @@
         <argsstring>()</argsstring>
         <name>fill_rank</name>
         <briefdescription>
-        </briefdescription>
+<para>Called once before a train/test is performed. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="post"><para>Rank-Output Strings are filled. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="127" bodyend="136"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="116" bodyend="125"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" compoundref="de/d5e/a00007" startline="45" endline="49">File_Manager::set_rank_output_strings</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -409,12 +411,18 @@
         <argsstring>()</argsstring>
         <name>perform_train</name>
         <briefdescription>
-        </briefdescription>
+<para>Calls file manager rotines to train:<linebreak/>
+. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><orderedlist>
+<listitem><para>read input.<linebreak/>
+</para></listitem><listitem><para>read expected output.<linebreak/>
+</para></listitem><listitem><para>train.<linebreak/>
+</para></listitem><listitem><para>write weights. </para></listitem></orderedlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="40" bodyend="56"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="35" bodyend="51"/>
         <references refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">Neural_Network::do_function</references>
         <references refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">File_Manager::do_function</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
@@ -422,7 +430,7 @@
         <references refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" compoundref="de/d21/a00006" startline="6" endline="9">File_Manager::get_read_ex_output_string</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -432,10 +440,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Calls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file manager rotines to test.<linebreak/>
+<orderedlist>
+<listitem><para>read input.<linebreak/>
+</para></listitem><listitem><para>read weights.<linebreak/>
+</para></listitem><listitem><para>test.<linebreak/>
+</para></listitem><listitem><para>write output.<linebreak/>
+ </para></listitem></orderedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="67" bodyend="81"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="60" bodyend="74"/>
         <references refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">Neural_Network::do_function</references>
         <references refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">File_Manager::do_function</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
@@ -443,7 +466,7 @@
         <references refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" compoundref="de/d21/a00006" startline="20" endline="23">File_Manager::get_output_population_string</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -485,13 +508,21 @@
           <defname>er</defname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Displays the error message contained in string er. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[Qstring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>er] Error message to be displayed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="143" bodyend="151"/>
-        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="131" bodyend="139"/>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

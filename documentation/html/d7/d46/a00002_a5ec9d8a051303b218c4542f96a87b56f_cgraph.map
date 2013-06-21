@@ -1,5 +1,5 @@
 <map id="GUI::valid_input" name="GUI::valid_input">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="GUI::fill_rank" alt="" coords="201,13,300,43"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="Called once before a train/test is performed." alt="" coords="201,13,300,43"/>
 <area shape="rect" id="node7" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes." alt="" coords="180,66,321,113"/>
 <area shape="rect" id="node9" href="$d8/d84/a00001.html#acd21da57c513a63893641ac505c097f0" title="Get string represenation for given ID." alt="" coords="172,135,329,182"/>
 <area shape="rect" id="node5" href="$d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594" title="Set string with index i to s." alt="" coords="380,5,537,51"/>

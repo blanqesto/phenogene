@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('d7/dec/a00010_source.html','../../');}
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a5acc81766a1842665846092ebf0815e0">on_quitButton_clicked</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc">on_pushButton_clicked</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed.  Determines weather to train/test/analyze, according to the opene...">on_pushButton_clicked</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a09eeb721e4f861e80da92d8ed42277ee" title="Browses Expected Output File  Allows the user to select a file.">on_pushButton_3_clicked</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a9a338258e3edb0d5ab1aabc26dd34d40" title="Browses Input File  Allows the user to select a file.">on_pushButton_4_clicked</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a6fd99e6dc89a1f3d352c037c880ef345" title="Browses Input File  Allows the user to select a file.">on_pushButton_5_clicked</a>();</div>
@@ -149,14 +149,14 @@ $(document).ready(function(){initNavTree('d7/dec/a00010_source.html','../../');}
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">   43</a></span>&#160;    Ui::GUI *<a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString <a class="code" href="../../d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f">valid_input</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString <a class="code" href="../../d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="Check that all input needed is filled.">valid_input</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">   45</a></span>&#160;    <a class="code" href="../../d8/d84/a00001.html">File_Manager</a> <a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74">fill_rank</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f">perform_train</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="Called once before a train/test is performed.">fill_rank</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: .">perform_train</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0">perform_test</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#abd9fac4d8ad5334cc48afb0513544898" title="Set validators for user input.">set_validators</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a5683a1862ec1a85cf87d9c5f6fc528e9" title="Set style sheet configuration: Set color grey for some labels.">set_styleSheet</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a69ac504cf1500a8c6283d8721b09aeb2">display_error</a>(QString);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a69ac504cf1500a8c6283d8721b09aeb2" title="Displays the error message contained in string er.">display_error</a>(QString);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d7/dec/a00010_source.html','../../');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../d7/dec/a00010.html">GUI.h</a></li>
-    <li class="footer">Generated on Fri Jun 21 2013 15:16:46 for Phenogene by
+    <li class="footer">Generated on Fri Jun 21 2013 15:25:38 for Phenogene by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

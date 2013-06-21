@@ -688,7 +688,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="22" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="15" bodyend="18"/>
         <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">GUI::valid_input</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -730,8 +730,8 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="26" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="7" bodyend="21"/>
         <references refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</references>
         <references refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</references>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">

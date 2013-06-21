@@ -1,4 +1,4 @@
 <map id="File_Manager::get_output_population_string" name="File_Manager::get_output_population_string">
 <area shape="rect" id="node3" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="225,13,351,43"/>
-<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="GUI::on_pushButton\l_clicked" alt="" coords="400,5,541,51"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="400,5,541,51"/>
 </map>

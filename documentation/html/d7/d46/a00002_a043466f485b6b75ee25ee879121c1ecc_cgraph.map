@@ -1,30 +1,30 @@
 <map id="GUI::on_pushButton_clicked" name="GUI::on_pushButton_clicked">
 <area shape="rect" id="node3" href="$d7/d46/a00002.html#a69ac504cf1500a8c6283d8721b09aeb2" title="GUI::display_error" alt="" coords="196,160,324,189"/>
-<area shape="rect" id="node5" href="$d8/d84/a00001.html#a44a6161fabb28c07ba6e860ba9927aa6" title="File_Manager::fill\l_rank_output" alt="" coords="200,213,320,259"/>
+<area shape="rect" id="node5" href="$d8/d84/a00001.html#a44a6161fabb28c07ba6e860ba9927aa6" title="Interface to fill the output/decimal association &#160;associates each output node with a string..." alt="" coords="200,213,320,259"/>
 <area shape="rect" id="node7" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="197,336,323,365"/>
 <area shape="rect" id="node47" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="195,283,325,312"/>
 <area shape="rect" id="node54" href="$d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="GUI::valid_input" alt="" coords="203,513,317,543"/>
-<area shape="rect" id="node9" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="File_Manager::do_function" alt="" coords="375,221,548,251"/>
-<area shape="rect" id="node23" href="$d8/d84/a00001.html#a13d1128905d7b4a3bdec2e40392cd036" title="File_Manager::get_input\l_population_string" alt="" coords="381,274,541,321"/>
-<area shape="rect" id="node25" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Neural_Network::do\l_function" alt="" coords="392,343,531,390"/>
-<area shape="rect" id="node45" href="$d8/d84/a00001.html#a368e05b24358cc70bd8b7d2081cd0dd4" title="File_Manager::get_output\l_population_string" alt="" coords="377,413,545,459"/>
-<area shape="rect" id="node11" href="$d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="File_Manager::read\l_expected_output" alt="" coords="611,143,744,190"/>
-<area shape="rect" id="node13" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="File_Manager::read\l_input" alt="" coords="611,213,744,259"/>
-<area shape="rect" id="node17" href="$d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="File_Manager::read\l_weights" alt="" coords="611,282,744,329"/>
-<area shape="rect" id="node19" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="File_Manager::write\l_output" alt="" coords="609,5,745,51"/>
-<area shape="rect" id="node21" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="File_Manager::write\l_weights" alt="" coords="609,74,745,121"/>
-<area shape="rect" id="node15" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="File_Manager::convertInt" alt="" coords="813,221,979,251"/>
-<area shape="rect" id="node27" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Neural_Network::train" alt="" coords="603,405,752,435"/>
-<area shape="rect" id="node40" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Neural_Network::test" alt="" coords="604,352,751,381"/>
-<area shape="rect" id="node29" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Neural_Network::init" alt="" coords="825,405,967,435"/>
-<area shape="rect" id="node31" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Neural_Network::propagate" alt="" coords="805,352,987,381"/>
-<area shape="rect" id="node35" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Neural_Network::cal\l_error" alt="" coords="825,458,967,505"/>
-<area shape="rect" id="node38" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Neural_Network::back\l_propagate" alt="" coords="820,527,972,574"/>
-<area shape="rect" id="node33" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Neural_Network::calculate_net" alt="" coords="1036,409,1236,439"/>
-<area shape="rect" id="node43" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="pow" alt="" coords="873,299,919,328"/>
-<area shape="rect" id="node51" href="$d8/d84/a00001.html#ad506966ba52a415b33970c057c9ed43a" title="File_Manager::get_read\l_ex_output_string" alt="" coords="383,151,540,198"/>
+<area shape="rect" id="node9" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="375,221,548,251"/>
+<area shape="rect" id="node23" href="$d8/d84/a00001.html#a13d1128905d7b4a3bdec2e40392cd036" title="Get string input content." alt="" coords="381,274,541,321"/>
+<area shape="rect" id="node25" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Train or test the network." alt="" coords="392,343,531,390"/>
+<area shape="rect" id="node45" href="$d8/d84/a00001.html#a368e05b24358cc70bd8b7d2081cd0dd4" title="Get string output content." alt="" coords="377,413,545,459"/>
+<area shape="rect" id="node11" href="$d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="Read expected output &#160;Opens file filePath and reads its content." alt="" coords="611,143,744,190"/>
+<area shape="rect" id="node13" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="611,213,744,259"/>
+<area shape="rect" id="node17" href="$d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer. &#160;Opens file filePath and reads its content." alt="" coords="611,282,744,329"/>
+<area shape="rect" id="node19" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output &#160;Opens file filePath and write to it." alt="" coords="609,5,745,51"/>
+<area shape="rect" id="node21" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights &#160;Opens file filePath and write to it." alt="" coords="609,74,745,121"/>
+<area shape="rect" id="node15" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string." alt="" coords="813,221,979,251"/>
+<area shape="rect" id="node27" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Train the neural network:" alt="" coords="603,405,752,435"/>
+<area shape="rect" id="node40" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Test the neural network." alt="" coords="604,352,751,381"/>
+<area shape="rect" id="node29" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Initialize weights and biases with values between &#45;0.5 and 0.5." alt="" coords="825,405,967,435"/>
+<area shape="rect" id="node31" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="805,352,987,381"/>
+<area shape="rect" id="node35" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Calculate the error signal for each node. Uses corss entropy error function." alt="" coords="825,458,967,505"/>
+<area shape="rect" id="node38" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Back propagate the error starting from the output layer down to the input layer." alt="" coords="820,527,972,574"/>
+<area shape="rect" id="node33" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="1036,409,1236,439"/>
+<area shape="rect" id="node43" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="873,299,919,328"/>
+<area shape="rect" id="node51" href="$d8/d84/a00001.html#ad506966ba52a415b33970c057c9ed43a" title="Get string expected output content." alt="" coords="383,151,540,198"/>
 <area shape="rect" id="node56" href="$d7/d46/a00002.html#a8e8c5918a3a0ddfd352c62e7348d3d74" title="GUI::fill_rank" alt="" coords="412,483,511,512"/>
-<area shape="rect" id="node60" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Neural_Network::get\l_output_len" alt="" coords="391,535,532,582"/>
-<area shape="rect" id="node62" href="$d8/d84/a00001.html#acd21da57c513a63893641ac505c097f0" title="File_Manager::get_rank\l_output_strings" alt="" coords="383,605,540,651"/>
-<area shape="rect" id="node58" href="$d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594" title="File_Manager::set_rank\l_output_strings" alt="" coords="599,474,756,521"/>
+<area shape="rect" id="node60" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes." alt="" coords="391,535,532,582"/>
+<area shape="rect" id="node62" href="$d8/d84/a00001.html#acd21da57c513a63893641ac505c097f0" title="Get string represenation for given ID." alt="" coords="383,605,540,651"/>
+<area shape="rect" id="node58" href="$d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594" title="Set string with index i to s." alt="" coords="599,474,756,521"/>
 </map>

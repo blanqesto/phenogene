@@ -108,54 +108,39 @@ $(document).ready(function(){initNavTree('de/d5e/a00007_source.html','../../');}
 <div class="contents">
 <a href="../../de/d5e/a00007.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d0b/a00004.html">FileManager.h</a>&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *Set input file path to string s</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53">    6</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53">File_Manager::set_input_file</a>(<span class="keywordtype">string</span> s)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a78b144182e3cfc70f9aae78ebdd66e51">input_file</a>=s;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *Set expected output file path to string s</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4">File_Manager::set_expected_out_file</a>(<span class="keywordtype">string</span> s)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a8b8f5c9cc3ffcb083ccc4fce1c05ca44">expected_out_file</a>=s;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *Set calculated output file path to string s</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45">File_Manager::set_output_file</a>(<span class="keywordtype">string</span> s)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a63725670a06637b4290c54eba671b640">output_file</a>=s;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *Set weights file path to string s</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1">File_Manager::set_weights_file</a>(<span class="keywordtype">string</span> s)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#aab02256124e6eb39e10e3c9765f0bcb3">weights_file</a>=s;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *Set string with index i to s</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594">File_Manager::set_rank_output_strings</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">string</span> s)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i] = s;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53" title="Set input file path to string s.">File_Manager::set_input_file</a>(<span class="keywordtype">string</span> s)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a78b144182e3cfc70f9aae78ebdd66e51">input_file</a>=s;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4" title="Set expected output file path to string s.">File_Manager::set_expected_out_file</a>(<span class="keywordtype">string</span> s)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a8b8f5c9cc3ffcb083ccc4fce1c05ca44">expected_out_file</a>=s;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45" title="Set calculated output file path to string s.">File_Manager::set_output_file</a>(<span class="keywordtype">string</span> s)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a63725670a06637b4290c54eba671b640">output_file</a>=s;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1" title="Set weights file path to string s.">File_Manager::set_weights_file</a>(<span class="keywordtype">string</span> s)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#aab02256124e6eb39e10e3c9765f0bcb3">weights_file</a>=s;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#af80b18b12b1b619428cf7224cd588594" title="Set string with index i to s.">File_Manager::set_rank_output_strings</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">string</span> s)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i] = s;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../de/d5e/a00007.html">FM_setters.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 21 2013 02:27:28 for Phenogene by
+    <li class="footer">Generated on Fri Jun 21 2013 15:16:46 for Phenogene by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

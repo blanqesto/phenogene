@@ -1,16 +1,2 @@
 <map id="phenogene/General_Notation.h" name="phenogene/General_Notation.h">
-<area shape="rect" id="node3" href="$d0/d0b/a00004.html" title="phenogene/FileManager.h" alt="" coords="268,160,439,189"/>
-<area shape="rect" id="node21" href="$d2/de7/a00014.html" title="phenogene/NeuralNetwork.h" alt="" coords="532,83,719,112"/>
-<area shape="rect" id="node5" href="$dd/dad/a00005.html" title="phenogene/FM.cpp" alt="" coords="5,237,139,267"/>
-<area shape="rect" id="node7" href="$de/d21/a00006.html" title="phenogene/FM_getters.cpp" alt="" coords="163,237,341,267"/>
-<area shape="rect" id="node9" href="$de/d5e/a00007.html" title="phenogene/FM_setters.cpp" alt="" coords="365,237,544,267"/>
-<area shape="rect" id="node11" href="$d7/dec/a00010.html" title="phenogene/GUI.h" alt="" coords="568,237,691,267"/>
-<area shape="rect" id="node13" href="$da/da0/a00009.html" title="phenogene/GUI.cpp" alt="" coords="244,315,383,344"/>
-<area shape="rect" id="node15" href="$da/d45/a00011.html" title="phenogene/GUI_constructor.cpp" alt="" coords="407,315,617,344"/>
-<area shape="rect" id="node17" href="$df/d86/a00012.html" title="phenogene/GUI_startButton.cpp" alt="" coords="641,315,849,344"/>
-<area shape="rect" id="node19" href="$d7/dd4/a00013.html" title="phenogene/main.cpp" alt="" coords="873,315,1015,344"/>
-<area shape="rect" id="node24" href="$dd/d1b/a00015.html" title="phenogene/NN.cpp" alt="" coords="463,160,596,189"/>
-<area shape="rect" id="node26" href="$d7/d7a/a00016.html" title="phenogene/NN_constructor.cpp" alt="" coords="620,160,825,189"/>
-<area shape="rect" id="node28" href="$d4/d51/a00017.html" title="phenogene/NN_getters.cpp" alt="" coords="849,160,1031,189"/>
-<area shape="rect" id="node30" href="$d1/d2b/a00018.html" title="phenogene/NN_setters.cpp" alt="" coords="1055,160,1236,189"/>
 </map>

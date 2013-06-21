@@ -1,9 +1,9 @@
 <map id="Neural_Network::calculate_net" name="Neural_Network::calculate_net">
-<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Neural_Network::propagate" alt="" coords="256,75,437,104"/>
-<area shape="rect" id="node19" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Neural_Network::cal\l_error" alt="" coords="276,5,417,51"/>
-<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Neural_Network::train" alt="" coords="485,21,635,51"/>
-<area shape="rect" id="node16" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Neural_Network::test" alt="" coords="487,75,633,104"/>
-<area shape="rect" id="node7" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Neural_Network::do\l_function" alt="" coords="683,39,821,86"/>
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="256,75,437,104"/>
+<area shape="rect" id="node19" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Calculate the error signal for each node. Uses corss entropy error function." alt="" coords="276,5,417,51"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Train the neural network:" alt="" coords="485,21,635,51"/>
+<area shape="rect" id="node16" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Test the neural network." alt="" coords="487,75,633,104"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Train or test the network." alt="" coords="683,39,821,86"/>
 <area shape="rect" id="node9" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="869,21,1000,51"/>
 <area shape="rect" id="node13" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="872,75,997,104"/>
 <area shape="rect" id="node11" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="GUI::on_pushButton\l_clicked" alt="" coords="1048,39,1189,86"/>

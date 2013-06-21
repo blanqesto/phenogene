@@ -72,9 +72,9 @@
         <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="97" endline="110">on_textEdit_4_textChanged</referencedby>
         <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="120" endline="128">on_pushButton_4_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="137" endline="143">on_pushButton_6_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="21" endline="27">set_styleSheet</referencedby>
-        <referencedby refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="34" endline="45">set_validators</referencedby>
-        <referencedby refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" compoundref="da/d45/a00011" startline="50" endline="53">~GUI</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="20" endline="26">set_styleSheet</referencedby>
+        <referencedby refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="31" endline="42">set_validators</referencedby>
+        <referencedby refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" compoundref="da/d45/a00011" startline="47" endline="50">~GUI</referencedby>
         <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">on_pushButton_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">perform_train</referencedby>
         <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">perform_test</referencedby>
@@ -121,14 +121,14 @@
           <defval>0</defval>
         </param>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="d7/d46/a00002" kindref="compound">GUI</ref> class constructor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="26" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="8" bodyend="14"/>
-        <references refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="21" endline="27">set_styleSheet</references>
-        <references refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="34" endline="45">set_validators</references>
+        <references refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="20" endline="26">set_styleSheet</references>
+        <references refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="31" endline="42">set_validators</references>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="27" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="50" bodyend="53"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="27" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="47" bodyend="50"/>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       </sectiondef>
@@ -172,7 +172,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="31" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="12" bodyend="28"/>
         <references refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" compoundref="df/d86/a00012" startline="143" endline="151">display_error</references>
-        <references refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="216" endline="229">File_Manager::fill_rank_output</references>
+        <references refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">perform_test</references>
         <references refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">perform_train</references>
@@ -185,16 +185,19 @@
         <argsstring>()</argsstring>
         <name>on_pushButton_3_clicked</name>
         <briefdescription>
-        </briefdescription>
+<para>Browses Expected Output File<linebreak/>
+ Allows the user to select a file. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Expected-Output browse button is clicked. </para></simplesect>
+<simplesect kind="post"><para>File path to expected output file is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="32" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="33" bodyend="39"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" compoundref="de/d5e/a00007" startline="14" endline="18">File_Manager::set_expected_out_file</references>
+        <references refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" compoundref="de/d5e/a00007" startline="16" endline="20">File_Manager::set_expected_out_file</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -203,17 +206,20 @@
         <argsstring>()</argsstring>
         <name>on_pushButton_4_clicked</name>
         <briefdescription>
-        </briefdescription>
+<para>Browses Input File<linebreak/>
+ Allows the user to select a file. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Predict Tab <simplesect kind="pre"><para>Input browse button is clicked. </para></simplesect>
+<simplesect kind="post"><para>File path to input file is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="120" bodyend="128"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" compoundref="de/d5e/a00007" startline="6" endline="10">File_Manager::set_input_file</references>
-        <references refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" compoundref="de/d5e/a00007" startline="22" endline="26">File_Manager::set_output_file</references>
+        <references refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" compoundref="de/d5e/a00007" startline="7" endline="11">File_Manager::set_input_file</references>
+        <references refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" compoundref="de/d5e/a00007" startline="25" endline="29">File_Manager::set_output_file</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -222,18 +228,21 @@
         <argsstring>()</argsstring>
         <name>on_pushButton_5_clicked</name>
         <briefdescription>
-        </briefdescription>
+<para>Browses Input File<linebreak/>
+ Allows the user to select a file. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Input browse button is clicked. </para></simplesect>
+<simplesect kind="post"><para>File path to input file is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="34" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="12" bodyend="23"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" compoundref="de/d5e/a00007" startline="6" endline="10">File_Manager::set_input_file</references>
-        <references refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" compoundref="de/d5e/a00007" startline="22" endline="26">File_Manager::set_output_file</references>
-        <references refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" compoundref="de/d5e/a00007" startline="30" endline="34">File_Manager::set_weights_file</references>
+        <references refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" compoundref="de/d5e/a00007" startline="7" endline="11">File_Manager::set_input_file</references>
+        <references refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" compoundref="de/d5e/a00007" startline="25" endline="29">File_Manager::set_output_file</references>
+        <references refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" compoundref="de/d5e/a00007" startline="34" endline="38">File_Manager::set_weights_file</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -242,16 +251,19 @@
         <argsstring>()</argsstring>
         <name>on_pushButton_6_clicked</name>
         <briefdescription>
-        </briefdescription>
+<para>Browses Weights File<linebreak/>
+ Allows the user to select a file. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Predict Tab <simplesect kind="pre"><para>Weights change button is clicked. </para></simplesect>
+<simplesect kind="post"><para>File path to weights file is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="137" bodyend="143"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" compoundref="de/d5e/a00007" startline="30" endline="34">File_Manager::set_weights_file</references>
+        <references refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" compoundref="de/d5e/a00007" startline="34" endline="38">File_Manager::set_weights_file</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -260,15 +272,17 @@
         <argsstring>()</argsstring>
         <name>on_lineEdit_editingFinished</name>
         <briefdescription>
-        </briefdescription>
+<para>Set gene number, aka, input nodes number. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Entered is a valid integer number. </para></simplesect>
+<simplesect kind="post"><para>Input nodes number is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="48" bodyend="52"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
-        <references refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" compoundref="d1/d2b/a00018" startline="6" endline="10">Neural_Network::set_input_len</references>
+        <references refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" compoundref="d1/d2b/a00018" startline="7" endline="11">Neural_Network::set_input_len</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -277,15 +291,17 @@
         <argsstring>()</argsstring>
         <name>on_lineEdit_3_editingFinished</name>
         <briefdescription>
-        </briefdescription>
+<para>Set learning rate. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Entered is a valid double number. </para></simplesect>
+<simplesect kind="post"><para>Learning rate is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="61" bodyend="65"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
-        <references refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" compoundref="d1/d2b/a00018" startline="46" endline="50">Neural_Network::set_learning_rate</references>
+        <references refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" compoundref="d1/d2b/a00018" startline="52" endline="56">Neural_Network::set_learning_rate</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -294,15 +310,17 @@
         <argsstring>()</argsstring>
         <name>on_lineEdit_4_editingFinished</name>
         <briefdescription>
-        </briefdescription>
+<para>Set Acceptable Error. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Entered is a valid double number. </para></simplesect>
+<simplesect kind="post"><para>Minimum error is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="73" bodyend="77"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
-        <references refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" compoundref="d1/d2b/a00018" startline="38" endline="42">Neural_Network::set_minimum_error</references>
+        <references refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" compoundref="d1/d2b/a00018" startline="43" endline="47">Neural_Network::set_minimum_error</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -311,15 +329,17 @@
         <argsstring>()</argsstring>
         <name>on_textEdit_4_textChanged</name>
         <briefdescription>
-        </briefdescription>
+<para>Set output keywords. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>On Train Tab <simplesect kind="pre"><para>Entered is a valid strings. </para></simplesect>
+<simplesect kind="post"><para>Output nodes number is set. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="39" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="97" bodyend="110"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
-        <references refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" compoundref="d1/d2b/a00018" startline="14" endline="18">Neural_Network::set_output_len</references>
+        <references refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" compoundref="d1/d2b/a00018" startline="16" endline="20">Neural_Network::set_output_len</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -340,7 +360,7 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="40" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="85" bodyend="89"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
-        <references refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" compoundref="d1/d2b/a00018" startline="30" endline="34">Neural_Network::set_AV</references>
+        <references refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" compoundref="d1/d2b/a00018" startline="34" endline="38">Neural_Network::set_AV</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
       </memberdef>
       </sectiondef>
@@ -379,7 +399,7 @@
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="127" bodyend="136"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="45">fm</references>
-        <references refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" compoundref="de/d5e/a00007" startline="39" endline="43">File_Manager::set_rank_output_strings</references>
+        <references refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" compoundref="de/d5e/a00007" startline="45" endline="49">File_Manager::set_rank_output_strings</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
         <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">valid_input</referencedby>
       </memberdef>
@@ -431,12 +451,12 @@
         <argsstring>()</argsstring>
         <name>set_validators</name>
         <briefdescription>
-        </briefdescription>
+<para>Set validators for user input. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="49" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="34" bodyend="45"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="49" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="31" bodyend="42"/>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
         <referencedby refid="d7/d46/a00002_1acb0ba8c6fc121d814d30560e2c29f2fe" compoundref="da/d45/a00011" startline="8" endline="14">GUI</referencedby>
       </memberdef>
@@ -446,12 +466,12 @@
         <argsstring>()</argsstring>
         <name>set_styleSheet</name>
         <briefdescription>
-        </briefdescription>
+<para>Set style sheet configuration: Set color grey for some labels. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="50" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="21" bodyend="27"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="50" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp" bodystart="20" bodyend="26"/>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="43">ui</references>
         <referencedby refid="d7/d46/a00002_1acb0ba8c6fc121d814d30560e2c29f2fe" compoundref="da/d45/a00011" startline="8" endline="14">GUI</referencedby>
       </memberdef>

@@ -7,12 +7,11 @@
 
 
 
-Collaboration diagram for File\-\_\-\-Manager\-:
-\nopagebreak
+Collaboration diagram for File\-\_\-\-Manager\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{dd/d32/a00041}
+\includegraphics[height=550pt]{d5/db6/a00042}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -21,27 +20,28 @@ Collaboration diagram for File\-\_\-\-Manager\-:
 \hyperlink{a00001_a2acf523335c71f922a42756c1d0a7a2d}{File\-\_\-\-Manager} ()
 \item 
 void \hyperlink{a00001_af43b27d7ea5f031a20652a43f5b99f53}{set\-\_\-input\-\_\-file} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Set input file path to string s. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_ad83423f6db9466419d4a7acd3e322cb4}{set\-\_\-expected\-\_\-out\-\_\-file} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Set expected output file path to string s. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a2eff082d4fe4d7f2a7ce06afbc689d45}{set\-\_\-output\-\_\-file} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Set calculated output file path to string s. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a860e5837e1671018a26fdc0ce43603b1}{set\-\_\-weights\-\_\-file} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Set weights file path to string s. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_af80b18b12b1b619428cf7224cd588594}{set\-\_\-rank\-\_\-output\-\_\-strings} (int, string)
-\item 
+\begin{DoxyCompactList}\small\item\em Set string with index i to s. \end{DoxyCompactList}\item 
 string \hyperlink{a00001_ad506966ba52a415b33970c057c9ed43a}{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get string expected output content. \end{DoxyCompactList}\item 
 string \hyperlink{a00001_a13d1128905d7b4a3bdec2e40392cd036}{get\-\_\-input\-\_\-population\-\_\-string} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get string input content. \end{DoxyCompactList}\item 
 string \hyperlink{a00001_a368e05b24358cc70bd8b7d2081cd0dd4}{get\-\_\-output\-\_\-population\-\_\-string} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get string output content. \end{DoxyCompactList}\item 
 string \hyperlink{a00001_acd21da57c513a63893641ac505c097f0}{get\-\_\-rank\-\_\-output\-\_\-strings} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Get string represenation for given I\-D. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_abcb9cd1427a3b6ecfd41432391ec9bdc}{do\-\_\-function} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Call rotine specified by parameter mode. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a44a6161fabb28c07ba6e860ba9927aa6}{fill\-\_\-rank\-\_\-output} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Interface to fill the output/decimal association\par
+ associates each output node with a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,17 +51,21 @@ void \hyperlink{a00001_a44a6161fabb28c07ba6e860ba9927aa6}{fill\-\_\-rank\-\_\-ou
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{a00001_a1134b607af353e187667aaba1a960bdd}{read\-\_\-input} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Opens file file\-Path and reads its content. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a4b0a0ad74a4446e5f23020521200b932}{read\-\_\-expected\-\_\-output} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Read expected output\par
+ Opens file file\-Path and reads its content. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a7d2759b2ad892445e7d74892737547cf}{read\-\_\-weights} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Read weights for hidden and output layer.\par
+ Opens file file\-Path and reads its content. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a4e104949ad8e8fd75c612313f857ee5a}{write\-\_\-output} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Write output\par
+ Opens file file\-Path and write to it. \end{DoxyCompactList}\item 
 void \hyperlink{a00001_a67e37c5e1429df91a8c4ff836579cdc0}{write\-\_\-weights} (string)
-\item 
+\begin{DoxyCompactList}\small\item\em Write weights\par
+ Opens file file\-Path and write to it. \end{DoxyCompactList}\item 
 string \hyperlink{a00001_a6b29a9f88396627c1d39170723bad7fd}{convert\-Int} (int)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Converts integer number to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -118,7 +122,19 @@ Definition at line 3 of file F\-M.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a6b29a9f88396627c1d39170723bad7fd}
 
 
-Definition at line 194 of file F\-M.\-cpp.
+Converts integer number to string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}number\mbox{]}} & Integer to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number in string format. 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file F\-M.\-cpp.
 
 
 
@@ -141,6 +157,19 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_abcb9cd1427a3b6ecfd41432391ec9bdc}
 
 
+Call rotine specified by parameter mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}mode\mbox{]}} & mode = 1\-: read from input file\par
+ mode = 2\-: write to output file\par
+ mode = 3\-: read from weights file\par
+ mode = 4\-: write to weights file\par
+ \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 15 of file F\-M.\-cpp.
 
 
@@ -161,8 +190,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -180,7 +208,17 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_a44a6161fabb28c07ba6e860ba9927aa6}
 
 
-Definition at line 216 of file F\-M.\-cpp.
+Interface to fill the output/decimal association\par
+ associates each output node with a string. 
+
+\begin{DoxyPostcond}{Postcondition}
+Output\-\_\-rank is filled. 
+
+Rank\-\_\-output is filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 221 of file F\-M.\-cpp.
 
 
 
@@ -188,8 +226,7 @@ References fori, n, Neural\-\_\-\-Network\-::output\-\_\-len, Neural\-\_\-\-Netw
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -207,6 +244,10 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_a13d1128905d7b4a3bdec2e40392cd036}
 
 
+Get string input content. 
+
+
+
 Definition at line 13 of file F\-M\-\_\-getters.\-cpp.
 
 
@@ -215,8 +256,7 @@ References input\-\_\-population\-\_\-string.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -234,6 +274,10 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_a368e05b24358cc70bd8b7d2081cd0dd4}
 
 
+Get string output content. 
+
+
+
 Definition at line 20 of file F\-M\-\_\-getters.\-cpp.
 
 
@@ -242,8 +286,7 @@ References output\-\_\-population\-\_\-string.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -261,6 +304,10 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_acd21da57c513a63893641ac505c097f0}
 
 
+Get string represenation for given I\-D. 
+
+
+
 Definition at line 27 of file F\-M\-\_\-getters.\-cpp.
 
 
@@ -269,8 +316,7 @@ References rank\-\_\-output\-\_\-strings.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -288,6 +334,10 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_ad506966ba52a415b33970c057c9ed43a}
 
 
+Get string expected output content. 
+
+
+
 Definition at line 6 of file F\-M\-\_\-getters.\-cpp.
 
 
@@ -296,8 +346,7 @@ References read\-\_\-ex\-\_\-output\-\_\-string.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -315,7 +364,23 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a4b0a0ad74a4446e5f23020521200b932}
 
 
-Definition at line 89 of file F\-M.\-cpp.
+Read expected output\par
+ Opens file file\-Path and reads its content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}file\-Path\mbox{]}} & File path to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+File specified by file\-Path is in the correct format. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Expected output dataset is filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 91 of file F\-M.\-cpp.
 
 
 
@@ -323,8 +388,7 @@ References Neural\-\_\-\-Network\-::dataset\-\_\-size, Neural\-\_\-\-Network\-::
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -342,7 +406,22 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a1134b607af353e187667aaba1a960bdd}
 
 
-Definition at line 45 of file F\-M.\-cpp.
+Opens file file\-Path and reads its content. 
+
+$\ast$\-Read input 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}file\-Path\mbox{]}} & File path to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+File specified by file\-Path is in the correct format. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Input dataset is filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 46 of file F\-M.\-cpp.
 
 
 
@@ -362,8 +441,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -381,7 +459,23 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a7d2759b2ad892445e7d74892737547cf}
 
 
-Definition at line 155 of file F\-M.\-cpp.
+Read weights for hidden and output layer.\par
+ Opens file file\-Path and reads its content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}file\-Path\mbox{]}} & File path to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+File specified by file\-Path is in the correct format. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Weights datasets are filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 160 of file F\-M.\-cpp.
 
 
 
@@ -389,8 +483,7 @@ References fori, forj, Neural\-\_\-\-Network\-::hidden\-\_\-len, Neural\-\_\-\-N
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -408,7 +501,16 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_ad83423f6db9466419d4a7acd3e322cb4}
 
 
-Definition at line 14 of file F\-M\-\_\-setters.\-cpp.
+Set expected output file path to string s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string} & s\mbox{]} expected output file path \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file F\-M\-\_\-setters.\-cpp.
 
 
 
@@ -435,7 +537,16 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_af43b27d7ea5f031a20652a43f5b99f53}
 
 
-Definition at line 6 of file F\-M\-\_\-setters.\-cpp.
+Set input file path to string s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string} & s\mbox{]} input file path \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file F\-M\-\_\-setters.\-cpp.
 
 
 
@@ -462,7 +573,16 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_a2eff082d4fe4d7f2a7ce06afbc689d45}
 
 
-Definition at line 22 of file F\-M\-\_\-setters.\-cpp.
+Set calculated output file path to string s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string} & s\mbox{]} output file path \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file F\-M\-\_\-setters.\-cpp.
 
 
 
@@ -490,7 +610,18 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_af80b18b12b1b619428cf7224cd588594}
 
 
-Definition at line 39 of file F\-M\-\_\-setters.\-cpp.
+Set string with index i to s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int} & i\mbox{]} Index i of rank\-\_\-output\-\_\-strings \\
+\hline
+{\em \mbox{[}string} & s\mbox{]} Output keyword \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file F\-M\-\_\-setters.\-cpp.
 
 
 
@@ -498,8 +629,7 @@ References rank\-\_\-output\-\_\-strings.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -517,7 +647,16 @@ Here is the caller graph for this function\-:
 )}}\label{d8/d84/a00001_a860e5837e1671018a26fdc0ce43603b1}
 
 
-Definition at line 30 of file F\-M\-\_\-setters.\-cpp.
+Set weights file path to string s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}string} & s\mbox{]} weights file path \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file F\-M\-\_\-setters.\-cpp.
 
 
 
@@ -544,7 +683,23 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a4e104949ad8e8fd75c612313f857ee5a}
 
 
-Definition at line 123 of file F\-M.\-cpp.
+Write output\par
+ Opens file file\-Path and write to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}file\-Path\mbox{]}} & File path to be wrote. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Directory specified by file\-Path is accessible. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output file to be found in the specified directory. 
+\end{DoxyPostcond}
+
+
+Definition at line 126 of file F\-M.\-cpp.
 
 
 
@@ -552,8 +707,7 @@ References Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, forj, n, Neural\-\_
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -571,7 +725,23 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a67e37c5e1429df91a8c4ff836579cdc0}
 
 
-Definition at line 175 of file F\-M.\-cpp.
+Write weights\par
+ Opens file file\-Path and write to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}file\-Path\mbox{]}} & File path to be wrote. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Directory specified by file\-Path is accessible. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Weights file to be found in the specified directory. 
+\end{DoxyPostcond}
+
+
+Definition at line 181 of file F\-M.\-cpp.
 
 
 
@@ -579,8 +749,7 @@ References fori, forj, Neural\-\_\-\-Network\-::hidden\-\_\-len, Neural\-\_\-\-N
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

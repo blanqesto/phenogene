@@ -1,10 +1,10 @@
 <map id="Neural_Network::do_function" name="Neural_Network::do_function">
-<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Neural_Network::test" alt="" coords="193,59,340,88"/>
-<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Neural_Network::train" alt="" coords="192,112,341,141"/>
-<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Neural_Network::propagate" alt="" coords="389,59,571,88"/>
-<area shape="rect" id="node9" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="pow" alt="" coords="457,5,503,35"/>
-<area shape="rect" id="node7" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Neural_Network::calculate_net" alt="" coords="620,116,820,145"/>
-<area shape="rect" id="node13" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Neural_Network::init" alt="" coords="409,112,551,141"/>
-<area shape="rect" id="node16" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Neural_Network::cal\l_error" alt="" coords="409,165,551,211"/>
-<area shape="rect" id="node19" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Neural_Network::back\l_propagate" alt="" coords="404,234,556,281"/>
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Test the neural network." alt="" coords="193,59,340,88"/>
+<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Train the neural network:" alt="" coords="192,112,341,141"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="389,59,571,88"/>
+<area shape="rect" id="node9" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="457,5,503,35"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="620,116,820,145"/>
+<area shape="rect" id="node13" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Initialize weights and biases with values between &#45;0.5 and 0.5." alt="" coords="409,112,551,141"/>
+<area shape="rect" id="node16" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Calculate the error signal for each node. Uses corss entropy error function." alt="" coords="409,165,551,211"/>
+<area shape="rect" id="node19" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Back propagate the error starting from the output layer down to the input layer." alt="" coords="404,234,556,281"/>
 </map>

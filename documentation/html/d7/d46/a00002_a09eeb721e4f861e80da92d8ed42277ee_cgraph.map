@@ -1,3 +1,3 @@
 <map id="GUI::on_pushButton_3_clicked" name="GUI::on_pushButton_3_clicked">
-<area shape="rect" id="node3" href="$d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4" title="File_Manager::set_expected\l_out_file" alt="" coords="195,5,381,51"/>
+<area shape="rect" id="node3" href="$d8/d84/a00001.html#ad83423f6db9466419d4a7acd3e322cb4" title="Set expected output file path to string s." alt="" coords="195,5,381,51"/>
 </map>

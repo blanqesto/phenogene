@@ -2,12 +2,12 @@
 #include <ui_phenogene.h>
 
 
-/*
- *Train Tab
- *Browse Input File
- *
- *Allows the user to select a file
- *Saves the file name in the appropriate data structures
+/**
+ On Train Tab
+ \brief Browses Input File\n
+  Allows the user to select a file.
+  \pre Input browse button is clicked.
+  \post File path to input file is set.
 */
 void GUI::on_pushButton_5_clicked()
 {
@@ -23,12 +23,12 @@ void GUI::on_pushButton_5_clicked()
 }
 
 
-/*
- *Train Tab
- *Browse Output File
- *
- *Allows the user to select a file
- *Saves the file name in the appropriate data structures
+/**
+ On Train Tab
+ \brief Browses Expected Output File\n
+  Allows the user to select a file.
+  \pre Expected-Output browse button is clicked.
+  \post File path to expected output file is set.
 */
 void GUI::on_pushButton_3_clicked()
 {
@@ -39,11 +39,11 @@ void GUI::on_pushButton_3_clicked()
 }
 
 
-/*
- *Train Tab
- *Gene Numbers
- *
- *Syncronise gene numbers between tabs
+/**
+ On Train Tab
+ \brief Set gene number, aka, input nodes number.
+  \pre Entered is a valid integer number.
+  \post Input nodes number is set.
 */
 void GUI::on_lineEdit_editingFinished()
 {
@@ -52,11 +52,11 @@ void GUI::on_lineEdit_editingFinished()
 }
 
 
-/*
- *Train Tab
- *Learning Rate
- *
- *Syncronise learning rate between tabs
+/**
+ On Train Tab
+ \brief Set learning rate.
+  \pre Entered is a valid double number.
+  \post Learning rate is set.
 */
 void GUI::on_lineEdit_3_editingFinished()
 {
@@ -64,11 +64,11 @@ void GUI::on_lineEdit_3_editingFinished()
     fm.n.set_learning_rate(ui->lineEdit_3->text().toDouble());
 }
 
-/*
- *Train Tab
- *Acceptable Error
- *
- *Syncronise minimum error between tabs
+/**
+ On Train Tab
+ \brief Set Acceptable Error.
+  \pre Entered is a valid double number.
+  \post Minimum error is set.
 */
 void GUI::on_lineEdit_4_editingFinished()
 {
@@ -88,11 +88,11 @@ void GUI::on_listWidget_currentRowChanged(int currentRow)
     fm.n.set_AV(ui->listWidget->currentRow());
 }
 
-/*
- *Train Tab
- *Output keywrods
- *
- *Syncronise output keywords entered between tabs
+/**
+ On Train Tab
+ \brief Set output keywords.
+  \pre Entered is a valid strings.
+  \post Output nodes number is set.
 */
 void GUI::on_textEdit_4_textChanged()
 {
@@ -110,12 +110,12 @@ void GUI::on_textEdit_4_textChanged()
 }
 
 
-/*
- *Predict Tab
- *Browse Input File
- *
- *Allows the user to select a file
- *Saves the file name in the appropriate data structures
+/**
+ On Predict Tab
+ \brief Browses Input File\n
+  Allows the user to select a file.
+  \pre Input browse button is clicked.
+  \post File path to input file is set.
 */
 void GUI::on_pushButton_4_clicked()
 {
@@ -127,12 +127,12 @@ void GUI::on_pushButton_4_clicked()
     ui->label_11->setText(filename[filename.length()-1]);
 }
 
-/*
- *Predict Tab
- *Change Weights File
- *
- *Allows the user to select a file
- *Saves the file name in the appropriate data structures
+/**
+ On Predict Tab
+ \brief Browses Weights File\n
+  Allows the user to select a file.
+  \pre Weights change button is clicked.
+  \post File path to weights file is set.
 */
 void GUI::on_pushButton_6_clicked()
 {

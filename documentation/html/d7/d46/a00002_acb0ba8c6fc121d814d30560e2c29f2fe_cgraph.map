@@ -1,4 +1,4 @@
 <map id="GUI::GUI" name="GUI::GUI">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#a5683a1862ec1a85cf87d9c5f6fc528e9" title="GUI::set_styleSheet" alt="" coords="133,5,275,35"/>
-<area shape="rect" id="node5" href="$d7/d46/a00002.html#abd9fac4d8ad5334cc48afb0513544898" title="GUI::set_validators" alt="" coords="137,59,271,88"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#a5683a1862ec1a85cf87d9c5f6fc528e9" title="Set style sheet configuration: Set color grey for some labels." alt="" coords="133,5,275,35"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#abd9fac4d8ad5334cc48afb0513544898" title="Set validators for user input." alt="" coords="137,59,271,88"/>
 </map>

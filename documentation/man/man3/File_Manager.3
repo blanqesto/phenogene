@@ -17,36 +17,49 @@ File_Manager \-
 .ti -1c
 .RI "void \fBset_input_file\fP (string)"
 .br
+.RI "\fISet input file path to string s\&. \fP"
 .ti -1c
 .RI "void \fBset_expected_out_file\fP (string)"
 .br
+.RI "\fISet expected output file path to string s\&. \fP"
 .ti -1c
 .RI "void \fBset_output_file\fP (string)"
 .br
+.RI "\fISet calculated output file path to string s\&. \fP"
 .ti -1c
 .RI "void \fBset_weights_file\fP (string)"
 .br
+.RI "\fISet weights file path to string s\&. \fP"
 .ti -1c
 .RI "void \fBset_rank_output_strings\fP (int, string)"
 .br
+.RI "\fISet string with index i to s\&. \fP"
 .ti -1c
 .RI "string \fBget_read_ex_output_string\fP ()"
 .br
+.RI "\fIGet string expected output content\&. \fP"
 .ti -1c
 .RI "string \fBget_input_population_string\fP ()"
 .br
+.RI "\fIGet string input content\&. \fP"
 .ti -1c
 .RI "string \fBget_output_population_string\fP ()"
 .br
+.RI "\fIGet string output content\&. \fP"
 .ti -1c
 .RI "string \fBget_rank_output_strings\fP (int)"
 .br
+.RI "\fIGet string represenation for given ID\&. \fP"
 .ti -1c
 .RI "void \fBdo_function\fP (int)"
 .br
+.RI "\fICall rotine specified by parameter mode\&. \fP"
 .ti -1c
 .RI "void \fBfill_rank_output\fP ()"
 .br
+.RI "\fIInterface to fill the output/decimal association
+.br
+ associates each output node with a string\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -61,21 +74,35 @@ File_Manager \-
 .ti -1c
 .RI "void \fBread_input\fP (string)"
 .br
+.RI "\fIOpens file filePath and reads its content\&. \fP"
 .ti -1c
 .RI "void \fBread_expected_output\fP (string)"
 .br
+.RI "\fIRead expected output
+.br
+ Opens file filePath and reads its content\&. \fP"
 .ti -1c
 .RI "void \fBread_weights\fP (string)"
 .br
+.RI "\fIRead weights for hidden and output layer\&.
+.br
+ Opens file filePath and reads its content\&. \fP"
 .ti -1c
 .RI "void \fBwrite_output\fP (string)"
 .br
+.RI "\fIWrite output
+.br
+ Opens file filePath and write to it\&. \fP"
 .ti -1c
 .RI "void \fBwrite_weights\fP (string)"
 .br
+.RI "\fIWrite weights
+.br
+ Opens file filePath and write to it\&. \fP"
 .ti -1c
 .RI "string \fBconvertInt\fP (int)"
 .br
+.RI "\fIConverts integer number to string\&. \fP"
 .in -1c
 .SS "Private Attributes"
 
@@ -125,8 +152,35 @@ Definition at line 3 of file FM\&.cpp\&.
 .SS "string File_Manager::convertInt (intnumber)\fC [private]\fP"
 
 .PP
-Definition at line 194 of file FM\&.cpp\&.
+Converts integer number to string\&. \fBParameters:\fP
+.RS 4
+\fI[number]\fP Integer to be converted\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number in string format\&. 
+.RE
+.PP
+
+.PP
+Definition at line 199 of file FM\&.cpp\&.
 .SS "void File_Manager::do_function (intmode)"
+
+.PP
+Call rotine specified by parameter mode\&. \fBParameters:\fP
+.RS 4
+\fI[mode]\fP mode = 1: read from input file
+.br
+ mode = 2: write to output file
+.br
+ mode = 3: read from weights file
+.br
+ mode = 4: write to weights file
+.br
+ 
+.RE
+.PP
 
 .PP
 Definition at line 15 of file FM\&.cpp\&.
@@ -135,11 +189,24 @@ References expected_out_file, input_file, output_file, read_expected_output(), r
 .SS "void File_Manager::fill_rank_output ()"
 
 .PP
-Definition at line 216 of file FM\&.cpp\&.
+Interface to fill the output/decimal association
+.br
+ associates each output node with a string\&. \fBPostcondition:\fP
+.RS 4
+Output_rank is filled\&. 
+.PP
+Rank_output is filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 221 of file FM\&.cpp\&.
 .PP
 References fori, n, Neural_Network::output_len, Neural_Network::output_rank, Neural_Network::rank_output, and rank_output_strings\&.
 .SS "string File_Manager::get_input_population_string ()"
 
+.PP
+Get string input content\&. 
 .PP
 Definition at line 13 of file FM_getters\&.cpp\&.
 .PP
@@ -147,11 +214,15 @@ References input_population_string\&.
 .SS "string File_Manager::get_output_population_string ()"
 
 .PP
+Get string output content\&. 
+.PP
 Definition at line 20 of file FM_getters\&.cpp\&.
 .PP
 References output_population_string\&.
 .SS "string File_Manager::get_rank_output_strings (inti)"
 
+.PP
+Get string represenation for given ID\&. 
 .PP
 Definition at line 27 of file FM_getters\&.cpp\&.
 .PP
@@ -159,67 +230,201 @@ References rank_output_strings\&.
 .SS "string File_Manager::get_read_ex_output_string ()"
 
 .PP
+Get string expected output content\&. 
+.PP
 Definition at line 6 of file FM_getters\&.cpp\&.
 .PP
 References read_ex_output_string\&.
 .SS "void File_Manager::read_expected_output (stringfilePath)\fC [private]\fP"
 
 .PP
-Definition at line 89 of file FM\&.cpp\&.
+Read expected output
+.br
+ Opens file filePath and reads its content\&. \fBParameters:\fP
+.RS 4
+\fI[filePath]\fP File path to be read\&. 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+File specified by filePath is in the correct format\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Expected output dataset is filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file FM\&.cpp\&.
 .PP
 References Neural_Network::dataset_size, Neural_Network::expected_o, fori, forj, max_dataset_size, n, Neural_Network::output_dataset, Neural_Network::output_len, Neural_Network::output_rank, read, and read_ex_output_string\&.
 .SS "void File_Manager::read_input (stringfilePath)\fC [private]\fP"
 
 .PP
-Definition at line 45 of file FM\&.cpp\&.
+Opens file filePath and reads its content\&. *Read input 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI[filePath]\fP File path to be read\&. 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+File specified by filePath is in the correct format\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Input dataset is filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file FM\&.cpp\&.
 .PP
 References convertInt(), Neural_Network::dataset_size, fori, fork, Neural_Network::input, Neural_Network::input_dataset, Neural_Network::input_len, input_population_string, Neural_Network::input_rank, max_dataset_size, n, and read\&.
 .SS "void File_Manager::read_weights (stringfilePath)\fC [private]\fP"
 
 .PP
-Definition at line 155 of file FM\&.cpp\&.
+Read weights for hidden and output layer\&.
+.br
+ Opens file filePath and reads its content\&. \fBParameters:\fP
+.RS 4
+\fI[filePath]\fP File path to be read\&. 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+File specified by filePath is in the correct format\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Weights datasets are filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 160 of file FM\&.cpp\&.
 .PP
 References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, read, Neural_Network::Wh, and Neural_Network::Wo\&.
 .SS "void File_Manager::set_expected_out_file (strings)"
 
 .PP
-Definition at line 14 of file FM_setters\&.cpp\&.
+Set expected output file path to string s\&. \fBParameters:\fP
+.RS 4
+\fI[string\fP s] expected output file path 
+.RE
+.PP
+
+.PP
+Definition at line 16 of file FM_setters\&.cpp\&.
 .PP
 References expected_out_file\&.
 .SS "void File_Manager::set_input_file (strings)"
 
 .PP
-Definition at line 6 of file FM_setters\&.cpp\&.
+Set input file path to string s\&. \fBParameters:\fP
+.RS 4
+\fI[string\fP s] input file path 
+.RE
+.PP
+
+.PP
+Definition at line 7 of file FM_setters\&.cpp\&.
 .PP
 References input_file\&.
 .SS "void File_Manager::set_output_file (strings)"
 
 .PP
-Definition at line 22 of file FM_setters\&.cpp\&.
+Set calculated output file path to string s\&. \fBParameters:\fP
+.RS 4
+\fI[string\fP s] output file path 
+.RE
+.PP
+
+.PP
+Definition at line 25 of file FM_setters\&.cpp\&.
 .PP
 References output_file\&.
 .SS "void File_Manager::set_rank_output_strings (inti, strings)"
 
 .PP
-Definition at line 39 of file FM_setters\&.cpp\&.
+Set string with index i to s\&. \fBParameters:\fP
+.RS 4
+\fI[int\fP i] Index i of rank_output_strings 
+.br
+\fI[string\fP s] Output keyword 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file FM_setters\&.cpp\&.
 .PP
 References rank_output_strings\&.
 .SS "void File_Manager::set_weights_file (strings)"
 
 .PP
-Definition at line 30 of file FM_setters\&.cpp\&.
+Set weights file path to string s\&. \fBParameters:\fP
+.RS 4
+\fI[string\fP s] weights file path 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file FM_setters\&.cpp\&.
 .PP
 References weights_file\&.
 .SS "void File_Manager::write_output (stringfilePath)\fC [private]\fP"
 
 .PP
-Definition at line 123 of file FM\&.cpp\&.
+Write output
+.br
+ Opens file filePath and write to it\&. \fBParameters:\fP
+.RS 4
+\fI[filePath]\fP File path to be wrote\&. 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+Directory specified by filePath is accessible\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Output file to be found in the specified directory\&. 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file FM\&.cpp\&.
 .PP
 References Neural_Network::dataset_size, fori, forj, n, Neural_Network::output_dataset, Neural_Network::output_len, output_population_string, Neural_Network::rank_output, and write\&.
 .SS "void File_Manager::write_weights (stringfilePath)\fC [private]\fP"
 
 .PP
-Definition at line 175 of file FM\&.cpp\&.
+Write weights
+.br
+ Opens file filePath and write to it\&. \fBParameters:\fP
+.RS 4
+\fI[filePath]\fP File path to be wrote\&. 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+Directory specified by filePath is accessible\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Weights file to be found in the specified directory\&. 
+.RE
+.PP
+
+.PP
+Definition at line 181 of file FM\&.cpp\&.
 .PP
 References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, Neural_Network::Wh, Neural_Network::Wo, and write\&.
 .SH "Member Data Documentation"

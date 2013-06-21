@@ -1,7 +1,7 @@
 #include <NeuralNetwork.h>
 
-/*
- *Get int number of input nodes
+/**
+ * \brief Get int number of input nodes
 */
 int Neural_Network::get_input_len()
 {
@@ -9,8 +9,8 @@ int Neural_Network::get_input_len()
 }
 
 
-/*
- *Get int number of output nodes
+/**
+ * \brief Get int number of output nodes
 */
 int Neural_Network::get_output_len()
 {
@@ -18,8 +18,8 @@ int Neural_Network::get_output_len()
 }
 
 
-/*
- *Get int number of hidden nodes
+/**
+ * \brief Get int number of hidden nodes
 */
 int Neural_Network::get_hidden_len()
 {

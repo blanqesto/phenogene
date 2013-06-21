@@ -2,8 +2,8 @@
 #include <ui_phenogene.h>
 
 
-/*
- *GUI class constructor
+/**
+ * \brief GUI class constructor
 */
 GUI::GUI(QWidget *parent) :
     QMainWindow(parent),
@@ -13,10 +13,9 @@ GUI::GUI(QWidget *parent) :
     set_styleSheet();
 }
 
-/*
- *Set style sheet:
- *
- *Set grey color for some labels
+/**
+ * \brief Set style sheet configuration:
+ Set color grey for some labels
 */
 void GUI::set_styleSheet()
 {
@@ -26,10 +25,8 @@ void GUI::set_styleSheet()
     ui->label_33->setStyleSheet("QLabel { color : grey; }");
 }
 
-/*
- *Set validators
- *
- *Set validators for user input
+/**
+ * \brief Set validators for user input.
 */
 void GUI::set_validators()
 {

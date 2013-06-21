@@ -4,13 +4,13 @@ File_Manager::File_Manager()
 {
 }
 
-/*
- *Do function:
- **Call rotine according to parameter mode
- **mode = 1: read from input file
- **mode = 2: write to output file
- **mode = 3: read from weights file
- **mode = 4: write to weights file
+/**
+ \brief Call rotine specified by parameter mode.
+ \param [mode]
+ mode = 1: read from input file\n
+ mode = 2: write to output file\n
+ mode = 3: read from weights file\n
+ mode = 4: write to weights file\n
 */
 void File_Manager::do_function(int mode)
 {
@@ -36,11 +36,12 @@ void File_Manager::do_function(int mode)
 }
 
 
-/*
+/**
  *Read input
- *
- *Opens file filePath and reads its content
- *Fills the appropriate data structures
+ \brief Opens file filePath and reads its content
+ \param [filePath] File path to be read.
+ \pre File specified by filePath is in the correct format.
+ \post Input dataset is filled.
 */
 void File_Manager::read_input(string filePath)
 {
@@ -80,11 +81,12 @@ void File_Manager::read_input(string filePath)
 }
 
 
-/*
- *Read expected output
- *
- *Opens file filePath and reads its content
- *Fills the appropriate data structures
+/**
+ \brief Read expected output\n
+  Opens file filePath and reads its content.
+ \param [filePath] File path to be read.
+ \pre File specified by filePath is in the correct format.
+ \post Expected output dataset is filled.
 */
 void File_Manager::read_expected_output(string filePath)
 {
@@ -114,11 +116,12 @@ void File_Manager::read_expected_output(string filePath)
     return;
 }
 
-/*
- *Write output
- *
- *Opens file filePath and write to it
- *Fills it with the appropriate data structures
+/**
+ \brief Write output\n
+  Opens file filePath and write to it.
+ \param [filePath] File path to be wrote.
+ \pre Directory specified by filePath is accessible.
+ \post Output file to be found in the specified directory.
 */
 void File_Manager::write_output(string filePath)
 {
@@ -146,11 +149,13 @@ void File_Manager::write_output(string filePath)
     return;
 }
 
-/*
- *Read weights
- *
- *Opens file filePath and reads its content
- *Fills the appropriate data structures
+
+/**
+ \brief Read weights for hidden and output layer.\n
+  Opens file filePath and reads its content.
+ \param [filePath] File path to be read.
+ \pre File specified by filePath is in the correct format.
+ \post Weights datasets are filled.
 */
 void File_Manager::read_weights(string filePath)
 {
@@ -166,11 +171,12 @@ void File_Manager::read_weights(string filePath)
 }
 
 
-/*
- *Write weights
- *
- *Opens file filePath and write to it
- *Fills it with the appropriate data structures
+/**
+ \brief Write weights\n
+  Opens file filePath and write to it.
+ \param [filePath] File path to be wrote.
+ \pre Directory specified by filePath is accessible.
+ \post Weights file to be found in the specified directory.
 */
 void File_Manager::write_weights(string filePath)
 {
@@ -185,11 +191,10 @@ void File_Manager::write_weights(string filePath)
     return;
 }
 
-/*
- *Conver Int
- *
- *Converts integer number to string
- *Returns result string
+/**
+ \brief Converts integer number to string
+ \param [number] Integer to be converted.
+ \returns Number in string format.
 */
 string File_Manager::convertInt(int number)
 {
@@ -207,11 +212,11 @@ string File_Manager::convertInt(int number)
     return returnvalue;
 }
 
-/*
- *Fill rank output
- *
- *Interface to fill the output/decimal association
- *associates each output string with an integer id
+/**
+ \brief Interface to fill the output/decimal association\n
+  associates each output node with a string.
+  \post Output_rank is filled.
+  \post Rank_output is filled.
 */
 void File_Manager::fill_rank_output()
 {

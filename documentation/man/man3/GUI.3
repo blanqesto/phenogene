@@ -14,6 +14,7 @@ GUI \-
 .ti -1c
 .RI "\fBGUI\fP (QWidget *parent=0)"
 .br
+.RI "\fI\fBGUI\fP class constructor\&. \fP"
 .ti -1c
 .RI "\fB~GUI\fP ()"
 .br
@@ -30,27 +31,43 @@ GUI \-
 .ti -1c
 .RI "void \fBon_pushButton_3_clicked\fP ()"
 .br
+.RI "\fIBrowses Expected Output File
+.br
+ Allows the user to select a file\&. \fP"
 .ti -1c
 .RI "void \fBon_pushButton_4_clicked\fP ()"
 .br
+.RI "\fIBrowses Input File
+.br
+ Allows the user to select a file\&. \fP"
 .ti -1c
 .RI "void \fBon_pushButton_5_clicked\fP ()"
 .br
+.RI "\fIBrowses Input File
+.br
+ Allows the user to select a file\&. \fP"
 .ti -1c
 .RI "void \fBon_pushButton_6_clicked\fP ()"
 .br
+.RI "\fIBrowses Weights File
+.br
+ Allows the user to select a file\&. \fP"
 .ti -1c
 .RI "void \fBon_lineEdit_editingFinished\fP ()"
 .br
+.RI "\fISet gene number, aka, input nodes number\&. \fP"
 .ti -1c
 .RI "void \fBon_lineEdit_3_editingFinished\fP ()"
 .br
+.RI "\fISet learning rate\&. \fP"
 .ti -1c
 .RI "void \fBon_lineEdit_4_editingFinished\fP ()"
 .br
+.RI "\fISet Acceptable Error\&. \fP"
 .ti -1c
 .RI "void \fBon_textEdit_4_textChanged\fP ()"
 .br
+.RI "\fISet output keywords\&. \fP"
 .ti -1c
 .RI "void \fBon_listWidget_currentRowChanged\fP (int currentRow)"
 .br
@@ -73,9 +90,11 @@ GUI \-
 .ti -1c
 .RI "void \fBset_validators\fP ()"
 .br
+.RI "\fISet validators for user input\&. \fP"
 .ti -1c
 .RI "void \fBset_styleSheet\fP ()"
 .br
+.RI "\fISet style sheet configuration: Set color grey for some labels\&. \fP"
 .ti -1c
 .RI "void \fBdisplay_error\fP (QString)"
 .br
@@ -107,13 +126,15 @@ Definition at line 18 of file GUI\&.h\&.
 .SS "GUI::GUI (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
 
 .PP
+\fBGUI\fP class constructor\&. 
+.PP
 Definition at line 8 of file GUI_constructor\&.cpp\&.
 .PP
 References set_styleSheet(), and set_validators()\&.
 .SS "GUI::~GUI ()"
 
 .PP
-Definition at line 50 of file GUI_constructor\&.cpp\&.
+Definition at line 47 of file GUI_constructor\&.cpp\&.
 .PP
 References ui\&.
 .SH "Member Function Documentation"
@@ -131,16 +152,58 @@ References fm, File_Manager::set_rank_output_strings(), and ui\&.
 .SS "void GUI::on_lineEdit_3_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
+Set learning rate\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Entered is a valid double number\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Learning rate is set\&. 
+.RE
+.PP
+
+.PP
 Definition at line 61 of file GUI\&.cpp\&.
 .PP
 References fm, File_Manager::n, Neural_Network::set_learning_rate(), and ui\&.
 .SS "void GUI::on_lineEdit_4_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
+Set Acceptable Error\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Entered is a valid double number\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Minimum error is set\&. 
+.RE
+.PP
+
+.PP
 Definition at line 73 of file GUI\&.cpp\&.
 .PP
 References fm, File_Manager::n, Neural_Network::set_minimum_error(), and ui\&.
 .SS "void GUI::on_lineEdit_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Set gene number, aka, input nodes number\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Entered is a valid integer number\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Input nodes number is set\&. 
+.RE
+.PP
 
 .PP
 Definition at line 48 of file GUI\&.cpp\&.
@@ -155,10 +218,42 @@ References fm, File_Manager::n, Neural_Network::set_AV(), and ui\&.
 .SS "void GUI::on_pushButton_3_clicked ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
+Browses Expected Output File
+.br
+ Allows the user to select a file\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Expected-Output browse button is clicked\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+File path to expected output file is set\&. 
+.RE
+.PP
+
+.PP
 Definition at line 33 of file GUI\&.cpp\&.
 .PP
 References fileDialog, filePath, fm, File_Manager::set_expected_out_file(), and ui\&.
 .SS "void GUI::on_pushButton_4_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Browses Input File
+.br
+ Allows the user to select a file\&. On Predict Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Input browse button is clicked\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+File path to input file is set\&. 
+.RE
+.PP
 
 .PP
 Definition at line 120 of file GUI\&.cpp\&.
@@ -167,10 +262,42 @@ References fileDialog, filePath, fm, File_Manager::set_input_file(), File_Manage
 .SS "void GUI::on_pushButton_5_clicked ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
+Browses Input File
+.br
+ Allows the user to select a file\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Input browse button is clicked\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+File path to input file is set\&. 
+.RE
+.PP
+
+.PP
 Definition at line 12 of file GUI\&.cpp\&.
 .PP
 References fileDialog, filePath, fm, File_Manager::set_input_file(), File_Manager::set_output_file(), File_Manager::set_weights_file(), and ui\&.
 .SS "void GUI::on_pushButton_6_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Browses Weights File
+.br
+ Allows the user to select a file\&. On Predict Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Weights change button is clicked\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+File path to weights file is set\&. 
+.RE
+.PP
 
 .PP
 Definition at line 137 of file GUI\&.cpp\&.
@@ -187,6 +314,20 @@ References display_error(), File_Manager::fill_rank_output(), fm, perform_test()
 .PP
 Definition at line 146 of file GUI\&.cpp\&.
 .SS "void GUI::on_textEdit_4_textChanged ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Set output keywords\&. On Train Tab 
+.PP
+\fBPrecondition:\fP
+.RS 4
+Entered is a valid strings\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Output nodes number is set\&. 
+.RE
+.PP
 
 .PP
 Definition at line 97 of file GUI\&.cpp\&.
@@ -207,13 +348,17 @@ References Neural_Network::do_function(), File_Manager::do_function(), fm, File_
 .SS "void GUI::set_styleSheet ()\fC [private]\fP"
 
 .PP
-Definition at line 21 of file GUI_constructor\&.cpp\&.
+Set style sheet configuration: Set color grey for some labels\&. 
+.PP
+Definition at line 20 of file GUI_constructor\&.cpp\&.
 .PP
 References ui\&.
 .SS "void GUI::set_validators ()\fC [private]\fP"
 
 .PP
-Definition at line 34 of file GUI_constructor\&.cpp\&.
+Set validators for user input\&. 
+.PP
+Definition at line 31 of file GUI_constructor\&.cpp\&.
 .PP
 References ui\&.
 .SS "QString GUI::valid_input ()\fC [private]\fP"

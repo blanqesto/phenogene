@@ -84,10 +84,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d2/de7/a00014" kindref="compound">NeuralNetwork.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/>*Neural<sp/>Network<sp/>class<sp/>constructor</highlight></codeline>
-<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7" refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" refkind="member"><highlight class="normal"><ref refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" kindref="member">Neural_Network::Neural_Network</ref>()</highlight></codeline>
+<codeline lineno="7" refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" refkind="member"><highlight class="normal"><ref refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" kindref="member" tooltip="Neural Network class constructor.">Neural_Network::Neural_Network</ref>()</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>srand((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)time(0));</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref><sp/>=<sp/>0.01;</highlight></codeline>

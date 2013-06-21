@@ -1,5 +1,5 @@
 <map id="GUI::on_pushButton_5_clicked" name="GUI::on_pushButton_5_clicked">
-<area shape="rect" id="node3" href="$d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53" title="File_Manager::set_input_file" alt="" coords="204,5,388,35"/>
-<area shape="rect" id="node5" href="$d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45" title="File_Manager::set_output_file" alt="" coords="200,59,392,88"/>
-<area shape="rect" id="node7" href="$d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1" title="File_Manager::set_weights_file" alt="" coords="195,112,397,141"/>
+<area shape="rect" id="node3" href="$d8/d84/a00001.html#af43b27d7ea5f031a20652a43f5b99f53" title="Set input file path to string s." alt="" coords="204,5,388,35"/>
+<area shape="rect" id="node5" href="$d8/d84/a00001.html#a2eff082d4fe4d7f2a7ce06afbc689d45" title="Set calculated output file path to string s." alt="" coords="200,59,392,88"/>
+<area shape="rect" id="node7" href="$d8/d84/a00001.html#a860e5837e1671018a26fdc0ce43603b1" title="Set weights file path to string s." alt="" coords="195,112,397,141"/>
 </map>

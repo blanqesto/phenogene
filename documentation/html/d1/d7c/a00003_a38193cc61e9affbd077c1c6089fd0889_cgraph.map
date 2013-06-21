@@ -1,5 +1,5 @@
 <map id="Neural_Network::test" name="Neural_Network::test">
-<area shape="rect" id="node3" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="pow" alt="" coords="268,5,313,35"/>
-<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Neural_Network::propagate" alt="" coords="200,59,381,88"/>
-<area shape="rect" id="node7" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Neural_Network::calculate_net" alt="" coords="431,59,631,88"/>
+<area shape="rect" id="node3" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="268,5,313,35"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="200,59,381,88"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="431,59,631,88"/>
 </map>

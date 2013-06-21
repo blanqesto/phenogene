@@ -91,31 +91,19 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d0/d0b/a00004" kindref="compound">FileManager.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"><sp/>*Get<sp/>string<sp/>expected<sp/>output<sp/>content</highlight></codeline>
-<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" kindref="member">File_Manager::get_read_ex_output_string</ref>()</highlight></codeline>
+<codeline lineno="6" refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" kindref="member" tooltip="Get string expected output content.">File_Manager::get_read_ex_output_string</ref>()</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" kindref="member">read_ex_output_string</ref>;</highlight></codeline>
 <codeline lineno="9"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*Get<sp/>string<sp/>input<sp/>content</highlight></codeline>
-<codeline lineno="12"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" kindref="member">File_Manager::get_input_population_string</ref>()</highlight></codeline>
+<codeline lineno="13" refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" kindref="member" tooltip="Get string input content.">File_Manager::get_input_population_string</ref>()</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" kindref="member">input_population_string</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="18"><highlight class="comment"><sp/>*Get<sp/>string<sp/>output<sp/>content</highlight></codeline>
-<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" kindref="member">File_Manager::get_output_population_string</ref>()</highlight></codeline>
+<codeline lineno="20" refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" kindref="member" tooltip="Get string output content.">File_Manager::get_output_population_string</ref>()</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" kindref="member">output_population_string</ref>;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="25"><highlight class="comment"><sp/>*Get<sp/>string<sp/>represenation<sp/>for<sp/>given<sp/>ID</highlight></codeline>
-<codeline lineno="26"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" kindref="member">File_Manager::get_rank_output_strings</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="27" refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" kindref="member" tooltip="Get string represenation for given ID.">File_Manager::get_rank_output_strings</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
 <codeline lineno="28"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" kindref="member">rank_output_strings</ref>[i];</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">}</highlight></codeline>

@@ -1,31 +1,35 @@
 #include <FileManager.h>
 
-/*
- *Set input file path to string s
+/**
+ * \brief Set input file path to string s
+ * \param [string s] input file path
 */
 void File_Manager::set_input_file(string s)
 {
     input_file=s;
     return;
 }
-/*
- *Set expected output file path to string s
+/**
+ * \brief Set expected output file path to string s
+ * \param [string s] expected output file path
 */
 void File_Manager::set_expected_out_file(string s)
 {
     expected_out_file=s;
     return;
 }
-/*
- *Set calculated output file path to string s
+/**
+ * \brief Set calculated output file path to string s
+ * \param [string s] output file path
 */
 void File_Manager::set_output_file(string s)
 {
     output_file=s;
     return;
 }
-/*
- *Set weights file path to string s
+/**
+ * \brief Set weights file path to string s
+ * \param [string s] weights file path
 */
 void File_Manager::set_weights_file(string s)
 {
@@ -33,8 +37,10 @@ void File_Manager::set_weights_file(string s)
     return;
 }
 
-/*
- *Set string with index i to s
+/**
+ * \brief Set string with index i to s
+ * \param [int i] Index i of rank_output_strings
+ * \param [string s] Output keyword
 */
 void File_Manager::set_rank_output_strings(int i, string s)
 {

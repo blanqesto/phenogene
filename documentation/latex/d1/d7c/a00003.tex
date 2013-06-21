@@ -7,60 +7,59 @@
 
 
 
-Collaboration diagram for Neural\-\_\-\-Network\-:
-\nopagebreak
+Collaboration diagram for Neural\-\_\-\-Network\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=194pt]{d6/d97/a00045}
+\includegraphics[width=194pt]{d3/dea/a00046}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{a00003_a6f3defa930afbcb64a305393f741a2a4}{Neural\-\_\-\-Network} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Neural Network class constructor. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_afb37f8321b35bbc9b9beb88d56d69f08}{set\-\_\-input\-\_\-len} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Set number of input nodes to int i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a695079279950a3eb27d62df68d32927c}{set\-\_\-output\-\_\-len} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Set number of output to int i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_ad1e1afff306e47947e23f4fdd4517e22}{set\-\_\-hidden\-\_\-len} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Set hidden nodes to int i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a80b2c577da9fdc4e830722e7a4569069}{set\-\_\-\-A\-V} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Set Activation function to be used to int i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a0458bfedabe1b42e4d30e3179bd1f189}{set\-\_\-minimum\-\_\-error} (double)
-\item 
+\begin{DoxyCompactList}\small\item\em Set minimum error to double d. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a87a3c876501fcd89ffc1caf298fa2703}{set\-\_\-learning\-\_\-rate} (double)
-\item 
+\begin{DoxyCompactList}\small\item\em Set learning rate to double d. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_a75e25e607afb4e862219b21c0569c893}{get\-\_\-input\-\_\-len} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get int number of input nodes. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_a895c1b35110b7ee5e5adc56a63a55e78}{get\-\_\-output\-\_\-len} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get int number of output nodes. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_ac781308fb521309d657b91a95054be52}{get\-\_\-hidden\-\_\-len} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get int number of hidden nodes. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_acd3d4762d71d54422b45fda3a13976cf}{do\-\_\-function} (int)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Train or test the network. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{a00003_ac86567c994bb671c20ed50316d268d3b}{init} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize weights and biases with values between -\/0.\-5 and 0.\-5. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a033f4f60812c0359cc50815e957f11f7}{train} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Train the neural network\-: \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a38193cc61e9affbd077c1c6089fd0889}{test} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Test the neural network. \end{DoxyCompactList}\item 
 double \hyperlink{a00003_a7a8eff736645e4101ed906a46e6a27ac}{segmoidal\-\_\-fn} (double, int)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the segmoidal/segmoidal inverse of a double \mbox{[}x\mbox{]}. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a7e6d776ecfbb4f9df682d5fe13a7ec3b}{propagate} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Propagate input starting from the input layer up to the output layer. Uses softmax activation function. \end{DoxyCompactList}\item 
 double \hyperlink{a00003_a3e503ddab5bbc51f6e0b79b67ca6ed2f}{cal\-\_\-error} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calculate the error signal for each node. Uses corss entropy error function. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a5a0cac77d13e3ffdd3088cb684d39859}{back\-\_\-propagate} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Back propagate the error starting from the output layer down to the input layer. \end{DoxyCompactList}\item 
 bool \hyperlink{a00003_a3d073d4957def9b6a4498448260fedeb}{input\-\_\-absent} ()
 \item 
 void \hyperlink{a00003_a25df8564c3f26b64935464366055572e}{calculate\-\_\-net} (double \&, double \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates the net for each node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -142,6 +141,10 @@ Definition at line 6 of file Neural\-Network.\-h.
 )}}\label{d1/d7c/a00003_a6f3defa930afbcb64a305393f741a2a4}
 
 
+Neural Network class constructor. 
+
+
+
 Definition at line 7 of file N\-N\-\_\-constructor.\-cpp.
 
 
@@ -160,7 +163,19 @@ References A\-V, dataset\-\_\-size, hidden\-\_\-len, input\-\_\-len, input\-\_\-
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a5a0cac77d13e3ffdd3088cb684d39859}
 
 
-Definition at line 217 of file N\-N.\-cpp.
+Back propagate the error starting from the output layer down to the input layer. 
+
+\begin{DoxyPrecond}{Precondition}
+Delta signal for each node has been calculated. 
+
+Bias and Weights doesn't hold garpage. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Bias and Weights are updated. 
+\end{DoxyPostcond}
+
+
+Definition at line 211 of file N\-N.\-cpp.
 
 
 
@@ -168,8 +183,7 @@ References bias\-\_\-\-H, bias\-\_\-\-O, delta\-\_\-\-H, delta\-\_\-\-O, fori, f
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -187,7 +201,20 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a3e503ddab5bbc51f6e0b79b67ca6ed2f}
 
 
-Definition at line 244 of file N\-N.\-cpp.
+Calculate the error signal for each node. Uses corss entropy error function. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}total error\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Actual output is calculated using function \mbox{[}propagate\mbox{]}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Delta signal for all nodes is calculated. 
+\end{DoxyPostcond}
+
+
+Definition at line 239 of file N\-N.\-cpp.
 
 
 
@@ -195,8 +222,7 @@ References calculate\-\_\-net(), delta\-\_\-\-H, delta\-\_\-\-O, expected\-\_\-o
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -207,8 +233,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -227,7 +252,19 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a25df8564c3f26b64935464366055572e}
 
 
-Definition at line 273 of file N\-N.\-cpp.
+Calculates the net for each node. 
+
+\begin{DoxyPrecond}{Precondition}
+Input dataset is filled. 
+
+Weights dataset is initialized. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Net is caculated for Output and Hidden nodes. 
+\end{DoxyPostcond}
+
+
+Definition at line 274 of file N\-N.\-cpp.
 
 
 
@@ -235,8 +272,7 @@ References fori, forj, hidden\-\_\-len, input, input\-\_\-len, net\-H, net\-O, o
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -254,6 +290,15 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_acd3d4762d71d54422b45fda3a13976cf}
 
 
+Train or test the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}what\mbox{]}} & Determines weather to train or to test. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line 7 of file N\-N.\-cpp.
 
 
@@ -262,8 +307,7 @@ References test(), and train().
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -274,8 +318,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -293,6 +336,10 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_ac781308fb521309d657b91a95054be52}
 
 
+Get int number of hidden nodes. 
+
+
+
 Definition at line 24 of file N\-N\-\_\-getters.\-cpp.
 
 
@@ -306,6 +353,10 @@ References hidden\-\_\-len.
 {}
 \end{DoxyParamCaption}
 )}}\label{d1/d7c/a00003_a75e25e607afb4e862219b21c0569c893}
+
+
+Get int number of input nodes. 
+
 
 
 Definition at line 6 of file N\-N\-\_\-getters.\-cpp.
@@ -323,6 +374,10 @@ References input\-\_\-len.
 )}}\label{d1/d7c/a00003_a895c1b35110b7ee5e5adc56a63a55e78}
 
 
+Get int number of output nodes. 
+
+
+
 Definition at line 15 of file N\-N\-\_\-getters.\-cpp.
 
 
@@ -331,8 +386,7 @@ References output\-\_\-len.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -350,7 +404,11 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_ac86567c994bb671c20ed50316d268d3b}
 
 
-Definition at line 58 of file N\-N.\-cpp.
+Initialize weights and biases with values between -\/0.\-5 and 0.\-5. 
+
+
+
+Definition at line 55 of file N\-N.\-cpp.
 
 
 
@@ -358,8 +416,7 @@ References bias\-\_\-\-H, bias\-\_\-\-O, fori, forj, hidden\-\_\-len, input\-\_\
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -384,7 +441,17 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a7e6d776ecfbb4f9df682d5fe13a7ec3b}
 
 
-Definition at line 185 of file N\-N.\-cpp.
+Propagate input starting from the input layer up to the output layer. Uses softmax activation function. 
+
+\begin{DoxyPrecond}{Precondition}
+Input dataset is filled 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Hidden and Output nodes are computed. 
+\end{DoxyPostcond}
+
+
+Definition at line 178 of file N\-N.\-cpp.
 
 
 
@@ -392,8 +459,7 @@ References calculate\-\_\-net(), fori, hidden, hidden\-\_\-len, net\-H, net\-O, 
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -404,8 +470,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -424,7 +489,16 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a7a8eff736645e4101ed906a46e6a27ac}
 
 
-Definition at line 40 of file N\-N.\-cpp.
+Calculates the segmoidal/segmoidal inverse of a double \mbox{[}x\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}mode\mbox{]}} & Determines weather to calculate segmoidal or inverse. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file N\-N.\-cpp.
 
 \hypertarget{a00003_a80b2c577da9fdc4e830722e7a4569069}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-\-A\-V@{set\-\_\-\-A\-V}}
 \index{set\-\_\-\-A\-V@{set\-\_\-\-A\-V}!Neural_Network@{Neural\-\_\-\-Network}}
@@ -435,7 +509,16 @@ Definition at line 40 of file N\-N.\-cpp.
 )}}\label{d1/d7c/a00003_a80b2c577da9fdc4e830722e7a4569069}
 
 
-Definition at line 30 of file N\-N\-\_\-setters.\-cpp.
+Set Activation function to be used to int i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int} & i\mbox{]} Activation function to be used. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -443,8 +526,7 @@ References A\-V.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -462,7 +544,16 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_ad1e1afff306e47947e23f4fdd4517e22}
 
 
-Definition at line 22 of file N\-N\-\_\-setters.\-cpp.
+Set hidden nodes to int i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int} & i\mbox{]} Number of nodes on the hidden layer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -477,7 +568,16 @@ References hidden\-\_\-len.
 )}}\label{d1/d7c/a00003_afb37f8321b35bbc9b9beb88d56d69f08}
 
 
-Definition at line 6 of file N\-N\-\_\-setters.\-cpp.
+Set number of input nodes to int i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int} & i\mbox{]} Number of nodes on the input layer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -504,7 +604,16 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_a87a3c876501fcd89ffc1caf298fa2703}
 
 
-Definition at line 46 of file N\-N\-\_\-setters.\-cpp.
+Set learning rate to double d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}double} & d\mbox{]} Learning rate of the neural network. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -531,7 +640,16 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_a0458bfedabe1b42e4d30e3179bd1f189}
 
 
-Definition at line 38 of file N\-N\-\_\-setters.\-cpp.
+Set minimum error to double d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}double} & d\mbox{]} Least acceptable error. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -558,7 +676,16 @@ Here is the caller graph for this function\-:
 )}}\label{d1/d7c/a00003_a695079279950a3eb27d62df68d32927c}
 
 
-Definition at line 14 of file N\-N\-\_\-setters.\-cpp.
+Set number of output to int i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int} & i\mbox{]} Number of nodes on the output layer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -585,7 +712,19 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a38193cc61e9affbd077c1c6089fd0889}
 
 
-Definition at line 154 of file N\-N.\-cpp.
+Test the neural network. 
+
+\begin{DoxyPrecond}{Precondition}
+Input\-\_\-dataset is filled. 
+
+Weights dataset is filled. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output is filled. 
+\end{DoxyPostcond}
+
+
+Definition at line 147 of file N\-N.\-cpp.
 
 
 
@@ -593,8 +732,7 @@ References dataset\-\_\-size, error, expected\-\_\-o, fori, forj, fork, input, i
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -605,8 +743,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -624,7 +761,19 @@ Here is the caller graph for this function\-:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a033f4f60812c0359cc50815e957f11f7}
 
 
-Definition at line 95 of file N\-N.\-cpp.
+Train the neural network\-: 
+
+Until error is under threshold or maximum number of iterations is reached. \begin{DoxyPrecond}{Precondition}
+Input Dataset is filled. 
+
+Expected Output Dataset is filled. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Weights are optimal. 
+\end{DoxyPostcond}
+
+
+Definition at line 89 of file N\-N.\-cpp.
 
 
 
@@ -632,8 +781,7 @@ References back\-\_\-propagate(), cal\-\_\-error(), dataset\-\_\-size, error, ex
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -644,8 +792,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

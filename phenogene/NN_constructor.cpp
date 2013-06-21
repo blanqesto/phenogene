@@ -1,8 +1,8 @@
 #include <NeuralNetwork.h>
 
 
-/*
- *Neural Network class constructor
+/**
+ * \brief Neural Network class constructor
 */
 Neural_Network::Neural_Network()
 {

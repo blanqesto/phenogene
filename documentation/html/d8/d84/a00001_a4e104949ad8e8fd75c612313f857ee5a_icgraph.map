@@ -1,5 +1,5 @@
 <map id="File_Manager::write_output" name="File_Manager::write_output">
-<area shape="rect" id="node3" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="File_Manager::do_function" alt="" coords="191,32,364,61"/>
+<area shape="rect" id="node3" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="191,32,364,61"/>
 <area shape="rect" id="node5" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="GUI::perform_train" alt="" coords="413,5,544,35"/>
 <area shape="rect" id="node9" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="416,59,541,88"/>
 <area shape="rect" id="node7" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="GUI::on_pushButton\l_clicked" alt="" coords="592,23,733,70"/>

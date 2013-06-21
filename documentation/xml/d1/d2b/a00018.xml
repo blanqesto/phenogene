@@ -83,55 +83,37 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d2/de7/a00014" kindref="compound">NeuralNetwork.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"><sp/>*Set<sp/>number<sp/>of<sp/>input<sp/>nodes<sp/>to<sp/>int<sp/>i</highlight></codeline>
-<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" kindref="member">Neural_Network::set_input_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kindref="member">input_len</ref><sp/>=<sp/>i;</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="12"><highlight class="comment"><sp/>*Set<sp/>number<sp/>of<sp/>output<sp/>to<sp/>int<sp/>i</highlight></codeline>
-<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" kindref="member">Neural_Network::set_output_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kindref="member">output_len</ref><sp/>=<sp/>i;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="20"><highlight class="comment"><sp/>*Set<sp/>hidden<sp/>nodes<sp/>to<sp/>int<sp/>i</highlight></codeline>
-<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" kindref="member">Neural_Network::set_hidden_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref>=i;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="28"><highlight class="comment"><sp/>*Set<sp/>Activation<sp/>function<sp/>to<sp/>be<sp/>used<sp/>to<sp/>int<sp/>i</highlight></codeline>
-<codeline lineno="29"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kindref="member">Neural_Network::set_AV</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kindref="member">AV</ref>=i;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"><sp/>*Set<sp/>minimum<sp/>error<sp/>to<sp/>double<sp/>d</highlight></codeline>
-<codeline lineno="37"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kindref="member">Neural_Network::set_minimum_error</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
-<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref>=d;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="44"><highlight class="comment"><sp/>*Set<sp/>learning<sp/>rate<sp/>to<sp/>double<sp/>d</highlight></codeline>
-<codeline lineno="45"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kindref="member">Neural_Network::set_learning_rate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref>=d;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" kindref="member" tooltip="Set number of input nodes to int i.">Neural_Network::set_input_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kindref="member">input_len</ref><sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16" refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" kindref="member" tooltip="Set number of output to int i.">Neural_Network::set_output_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kindref="member">output_len</ref><sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25" refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" kindref="member" tooltip="Set hidden nodes to int i.">Neural_Network::set_hidden_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref>=i;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34" refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kindref="member" tooltip="Set Activation function to be used to int i.">Neural_Network::set_AV</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kindref="member">AV</ref>=i;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43" refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kindref="member" tooltip="Set minimum error to double d.">Neural_Network::set_minimum_error</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref>=d;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52" refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kindref="member" tooltip="Set learning rate to double d.">Neural_Network::set_learning_rate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref>=d;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp"/>
   </compounddef>

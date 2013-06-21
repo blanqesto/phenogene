@@ -1,8 +1,8 @@
 #include <NeuralNetwork.h>
 
-/*
- *Do function:
- **Call train/test according to parameter what
+/**
+ * \brief Train or test the network.
+ * \param [what] Determines weather to train or to test.
 */
 void Neural_Network::do_function(int what)
 {
@@ -20,9 +20,9 @@ void Neural_Network::do_function(int what)
     return;
 }
 
-/*
- *Calculates the power of x to y
- *Overwrites math::pow(double,double)
+/**
+ * \brief Calculates the power of x to y
+ * \brief Overwrites math::pow(double,double)
 */
 double pow(double x, double y)
 {
@@ -31,11 +31,9 @@ double pow(double x, double y)
     return x;
 }
 
-/*
- *If called in mode 0:
- ****Calculates the segmoidal of a double x.
- *If called in mode 1:
- ****Calculates the inverse of the segmoidal of a double x.
+/**
+ * \brief Calculates the segmoidal/segmoidal inverse of a double [x].
+ * \param [mode] Determines weather to calculate segmoidal or inverse.
 */
 double Neural_Network::segmoidal_fn(double x, int mode)
 {
@@ -51,9 +49,8 @@ double Neural_Network::segmoidal_fn(double x, int mode)
     return out;
 }
 
-/*
- *Initialize weights and biases
- *with values between -0.5 and 0.5
+/**
+ * \brief Initialize weights and biases with values between -0.5 and 0.5
 */
 void Neural_Network::init()
 {
@@ -80,16 +77,13 @@ void Neural_Network::init()
     }
 }
 
-/*
- *Train the neural network:
+/**
+ * \brief Train the neural network:
  *
- **Until error is under threshold
- **Or maximum number of iterations is reached.
- *
- *Data strcutres of the caller object are used:
- *
- **input_dataset should be filled before calling
- **output_dataset should be filled before calling
+  Until error is under threshold or maximum number of iterations is reached.
+  \pre Input Dataset is filled.
+  \pre Expected Output Dataset is filled.
+  \post Weights are optimal.
  *
 */
 void Neural_Network::train()
@@ -142,13 +136,12 @@ void Neural_Network::train()
 
 
 
-/*
- *Test the neural network.
+/**
+ * \brief Test the neural network.
  *
- *Data strcutres of the caller object are used:
- *
- **input_dataset should be filled before calling.
- **hidden/output weights should be filled before calling.
+ *\pre Input_dataset is filled.
+  \pre Weights dataset is filled.
+  \post Output is filled.
  *
 */
 void Neural_Network::test()
@@ -174,12 +167,12 @@ void Neural_Network::test()
     return;
 }
 
-/*
- *Propagate input through all layers:
+/**
+ * \brief Propagate input starting from the input layer up to the output layer.
+   Uses softmax activation function.
  *
- **Starting from the input layer up to the output layer.
- *
- *Uses softmax activation function.
+ \pre Input dataset is filled
+ \post Hidden and Output nodes are computed.
  *
 */
 void Neural_Network::propagate()
@@ -207,11 +200,12 @@ void Neural_Network::propagate()
     return;
 }
 
-/*
- *Back propagate the error through all layers:
+/**
+ * \brief Back propagate the error starting from the output layer down to the input layer.
  *
- **Starting from the output layer down to the input layer.
- **Updating the hidden/output weights/biases.
+  \pre Delta signal for each node has been calculated.
+  \pre Bias and Weights doesn't hold garpage.
+  \post Bias and Weights are updated.
  *
 */
 void Neural_Network::back_propagate()
@@ -234,12 +228,13 @@ void Neural_Network::back_propagate()
     return;
 }
 
-/*
- *Calculate the error signal for each node.
+/**
+ * \brief Calculate the error signal for each node.
+ Uses corss entropy error function.
  *
- *Use corss entropy error function.
- *
- *Return total error.
+ \returns [total error]
+ \pre Actual output is calculated using function [propagate].
+ \post Delta signal for all nodes is calculated.
 */
 double Neural_Network::cal_error()
 {
@@ -270,6 +265,12 @@ double Neural_Network::cal_error()
     return (total_error);
 }
 
+/**
+ * \brief Calculates the net for each node.
+ \pre Input dataset is filled.
+ \pre Weights dataset is initialized.
+ \post Net is caculated for Output and Hidden nodes.
+*/
 void Neural_Network::calculate_net(double &max, double &maxO)
 {
     max = -1000.0;

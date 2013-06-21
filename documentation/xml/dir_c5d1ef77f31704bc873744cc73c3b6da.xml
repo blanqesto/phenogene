@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_c5d1ef77f31704bc873744cc73c3b6da" kind="dir">
+    <compoundname>phenogene/</compoundname>
+    <innerfile refid="d0/d0b/a00004">FileManager.h</innerfile>
+    <innerfile refid="dd/dad/a00005">FM.cpp</innerfile>
+    <innerfile refid="de/d21/a00006">FM_getters.cpp</innerfile>
+    <innerfile refid="de/d5e/a00007">FM_setters.cpp</innerfile>
+    <innerfile refid="d4/dee/a00008">General_Notation.h</innerfile>
+    <innerfile refid="da/da0/a00009">GUI.cpp</innerfile>
+    <innerfile refid="d7/dec/a00010">GUI.h</innerfile>
+    <innerfile refid="da/d45/a00011">GUI_constructor.cpp</innerfile>
+    <innerfile refid="df/d86/a00012">GUI_startButton.cpp</innerfile>
+    <innerfile refid="d7/dd4/a00013">main.cpp</innerfile>
+    <innerfile refid="d2/de7/a00014">NeuralNetwork.h</innerfile>
+    <innerfile refid="dd/d1b/a00015">NN.cpp</innerfile>
+    <innerfile refid="d7/d7a/a00016">NN_constructor.cpp</innerfile>
+    <innerfile refid="d4/d51/a00017">NN_getters.cpp</innerfile>
+    <innerfile refid="d1/d2b/a00018">NN_setters.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="d2/de7/a00014" kind="file">
+    <compoundname>NeuralNetwork.h</compoundname>
+    <includes refid="d4/dee/a00008" local="no">General_Notation.h</includes>
+    <includedby refid="d0/d0b/a00004" local="no">phenogene/FileManager.h</includedby>
+    <includedby refid="dd/d1b/a00015" local="no">phenogene/NN.cpp</includedby>
+    <includedby refid="d7/d7a/a00016" local="no">phenogene/NN_constructor.cpp</includedby>
+    <includedby refid="d4/d51/a00017" local="no">phenogene/NN_getters.cpp</includedby>
+    <includedby refid="d1/d2b/a00018" local="no">phenogene/NN_setters.cpp</includedby>
+    <incdepgraph>
+      <node id="553">
+        <label>stdlib.h</label>
+      </node>
+      <node id="548">
+        <label>General_Notation.h</label>
+        <link refid="d4/dee/a00008"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>cmath</label>
+      </node>
+      <node id="559">
+        <label>string</label>
+      </node>
+      <node id="557">
+        <label>map</label>
+      </node>
+      <node id="551">
+        <label>fstream</label>
+      </node>
+      <node id="555">
+        <label>vector</label>
+      </node>
+      <node id="554">
+        <label>utility</label>
+      </node>
+      <node id="550">
+        <label>sstream</label>
+      </node>
+      <node id="549">
+        <label>iostream</label>
+      </node>
+      <node id="547">
+        <label>phenogene/NeuralNetwork.h</label>
+        <link refid="NeuralNetwork.h"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>stdio.h</label>
+      </node>
+      <node id="558">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="569">
+        <label>phenogene/main.cpp</label>
+        <link refid="d7/dd4/a00013"/>
+      </node>
+      <node id="564">
+        <label>phenogene/FM_setters.cpp</label>
+        <link refid="de/d5e/a00007"/>
+      </node>
+      <node id="572">
+        <label>phenogene/NN_getters.cpp</label>
+        <link refid="d4/d51/a00017"/>
+      </node>
+      <node id="562">
+        <label>phenogene/FM.cpp</label>
+        <link refid="dd/dad/a00005"/>
+      </node>
+      <node id="567">
+        <label>phenogene/GUI_constructor.cpp</label>
+        <link refid="da/d45/a00011"/>
+      </node>
+      <node id="561">
+        <label>phenogene/FileManager.h</label>
+        <link refid="d0/d0b/a00004"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>phenogene/NN_constructor.cpp</label>
+        <link refid="d7/d7a/a00016"/>
+      </node>
+      <node id="565">
+        <label>phenogene/GUI.h</label>
+        <link refid="d7/dec/a00010"/>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>phenogene/FM_getters.cpp</label>
+        <link refid="de/d21/a00006"/>
+      </node>
+      <node id="560">
+        <label>phenogene/NeuralNetwork.h</label>
+        <link refid="NeuralNetwork.h"/>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>phenogene/GUI.cpp</label>
+        <link refid="da/da0/a00009"/>
+      </node>
+      <node id="573">
+        <label>phenogene/NN_setters.cpp</label>
+        <link refid="d1/d2b/a00018"/>
+      </node>
+      <node id="570">
+        <label>phenogene/NN.cpp</label>
+        <link refid="dd/d1b/a00015"/>
+      </node>
+      <node id="568">
+        <label>phenogene/GUI_startButton.cpp</label>
+        <link refid="df/d86/a00012"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d7c/a00003" prot="public">Neural_Network</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NN_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NN_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d4/dee/a00008" kindref="compound">General_Notation.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d1/d7c/a00003" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d7c/a00003" kindref="compound">Neural_Network</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="d1/d7c/a00003_1a96aa84fcda6b19a74fff9d19c16b07fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d84/a00001" kindref="compound">File_Manager</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" kindref="member">Neural_Network</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Setter<sp/>functions*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" kindref="member">set_input_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" kindref="member">set_output_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" kindref="member">set_hidden_len</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kindref="member">set_AV</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kindref="member">set_minimum_error</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kindref="member">set_learning_rate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Getter<sp/>functions*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" kindref="member">get_input_len</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kindref="member">get_output_len</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" kindref="member">get_hidden_len</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Other<sp/>functions*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kindref="member">do_function</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Networks<sp/>Parameters*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kindref="member">input_len</ref>;</highlight></codeline>
+<codeline lineno="31" refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kindref="member">output_len</ref>;</highlight></codeline>
+<codeline lineno="33" refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kindref="member">AV</ref>;</highlight></codeline>
+<codeline lineno="34" refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" kindref="member">dataset_size</ref>;</highlight></codeline>
+<codeline lineno="35" refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" kindref="member">error</ref>;</highlight></codeline>
+<codeline lineno="36" refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref>;</highlight></codeline>
+<codeline lineno="37" refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref>;</highlight></codeline>
+<codeline lineno="38" refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" kindref="member">momentum</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Layers<sp/>structures*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" kindref="member">input</ref>[<ref refid="d4/dee/a00008_1a8dae3b2c955083e02ba56da92adbf25d" kindref="member">input_l</ref>];</highlight></codeline>
+<codeline lineno="42" refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" kindref="member">hidden</ref>[<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="43" refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" kindref="member">output</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>];</highlight></codeline>
+<codeline lineno="44" refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" kindref="member">netH</ref>[<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="45" refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" kindref="member">netO</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>];</highlight></codeline>
+<codeline lineno="46" refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" kindref="member">expected_o</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>];</highlight></codeline>
+<codeline lineno="47" refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" kindref="member">bias_O</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>];</highlight></codeline>
+<codeline lineno="48" refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" kindref="member">bias_H</ref>[<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Weights<sp/>structures*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" kindref="member">Wh</ref>[<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>][<ref refid="d4/dee/a00008_1a8dae3b2c955083e02ba56da92adbf25d" kindref="member">input_l</ref>];</highlight></codeline>
+<codeline lineno="52" refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" kindref="member">Wo</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>][<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="53" refid="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" kindref="member">tempWo</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>][<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Error<sp/>delta*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" kindref="member">delta_O</ref>[<ref refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kindref="member">output_l</ref>];</highlight></codeline>
+<codeline lineno="57" refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" kindref="member">delta_H</ref>[<ref refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kindref="member">hidden_l</ref>];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Map<sp/>to<sp/>decimal<sp/>from<sp/>characters*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map<sp/>&lt;char,double&gt;<sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//map<sp/>&lt;pair&lt;char,char&gt;,double&gt;<sp/>input_rank;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Map<sp/>to<sp/>decimal<sp/>from<sp/>string*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map<sp/>&lt;string,int&gt;<sp/><ref refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" kindref="member">output_rank</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Map<sp/>to<sp/>string<sp/>from<sp/>decimal*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map<sp/>&lt;int,string&gt;<sp/><ref refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" kindref="member">rank_output</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Input/Output<sp/>vector,<sp/>to<sp/>hold<sp/>the<sp/>whole<sp/>population*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector<sp/>&lt;vector&lt;double&gt;<sp/>&gt;<sp/><ref refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" kindref="member">input_dataset</ref>;</highlight></codeline>
+<codeline lineno="69" refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector<sp/>&lt;vector&lt;double&gt;<sp/>&gt;<sp/><ref refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" kindref="member">output_dataset</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" kindref="member">train</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a7a8eff736645e4101ed906a46e6a27ac" kindref="member">segmoidal_fn</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" kindref="member">propagate</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" kindref="member">cal_error</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" kindref="member">back_propagate</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a3d073d4957def9b6a4498448260fedeb" kindref="member">input_absent</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" kindref="member">calculate_net</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NN_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h"/>
+  </compounddef>
+</doxygen>

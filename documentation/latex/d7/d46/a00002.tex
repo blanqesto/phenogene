@@ -1,0 +1,694 @@
+\hypertarget{a00002}{\section{G\-U\-I Class Reference}
+\label{d7/d46/a00002}\index{G\-U\-I@{G\-U\-I}}
+}
+
+
+{\ttfamily \#include $<$G\-U\-I.\-h$>$}
+
+
+
+Collaboration diagram for G\-U\-I\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/d42/a00043}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00002_acb0ba8c6fc121d814d30560e2c29f2fe}{G\-U\-I} (Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{a00002_ac9cae2328dcb5d83bdfaeca49a2eb695}{$\sim$\-G\-U\-I} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00002_a5acc81766a1842665846092ebf0815e0}{on\-\_\-quit\-Button\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_a043466f485b6b75ee25ee879121c1ecc}{on\-\_\-push\-Button\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_a09eeb721e4f861e80da92d8ed42277ee}{on\-\_\-push\-Button\-\_\-3\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_a9a338258e3edb0d5ab1aabc26dd34d40}{on\-\_\-push\-Button\-\_\-4\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_a6fd99e6dc89a1f3d352c037c880ef345}{on\-\_\-push\-Button\-\_\-5\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_a8b08d8812751902c52d56efc45d0b58d}{on\-\_\-push\-Button\-\_\-6\-\_\-clicked} ()
+\item 
+void \hyperlink{a00002_ab5da77a34a83e9794edda0d77d79bec0}{on\-\_\-line\-Edit\-\_\-editing\-Finished} ()
+\item 
+void \hyperlink{a00002_a6aff5c3694d19ebd2bd81010c239cf62}{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished} ()
+\item 
+void \hyperlink{a00002_a6bcefb22fdfb8fbd3146eab38a0023d7}{on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished} ()
+\item 
+void \hyperlink{a00002_a39f58394bb8e9691a7b32774114a910a}{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed} ()
+\item 
+void \hyperlink{a00002_a073c74e8357311d12c523d73414ee265}{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed} (int current\-Row)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{a00002_a5ec9d8a051303b218c4542f96a87b56f}{valid\-\_\-input} ()
+\item 
+void \hyperlink{a00002_a8e8c5918a3a0ddfd352c62e7348d3d74}{fill\-\_\-rank} ()
+\item 
+void \hyperlink{a00002_ad1bb069dee02010a61045c91f5e7752f}{perform\-\_\-train} ()
+\item 
+void \hyperlink{a00002_ade6ba53055965b3522fa3cd022e4c5e0}{perform\-\_\-test} ()
+\item 
+void \hyperlink{a00002_abd9fac4d8ad5334cc48afb0513544898}{set\-\_\-validators} ()
+\item 
+void \hyperlink{a00002_a5683a1862ec1a85cf87d9c5f6fc528e9}{set\-\_\-style\-Sheet} ()
+\item 
+void \hyperlink{a00002_a69ac504cf1500a8c6283d8721b09aeb2}{display\-\_\-error} (Q\-String)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{a00002_a62d0a4c604ed8d65f85455971a938548}{file\-Path}
+\item 
+Q\-File\-Dialog \hyperlink{a00002_a9ed0a8b583419e88bb94697a9b258c72}{file\-Dialog}
+\item 
+Q\-Byte\-Array \hyperlink{a00002_aa3abed87f53b22188d76a134e427b30d}{state}
+\item 
+Ui\-::\-G\-U\-I $\ast$ \hyperlink{a00002_acdbca1224663f5a19bd1ad4e7c885886}{ui}
+\item 
+\hyperlink{a00001}{File\-\_\-\-Manager} \hyperlink{a00002_a73cc90505024488d2fd77762ad5059c4}{fm}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file G\-U\-I.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00002_acb0ba8c6fc121d814d30560e2c29f2fe}{\index{G\-U\-I@{G\-U\-I}!G\-U\-I@{G\-U\-I}}
+\index{G\-U\-I@{G\-U\-I}!GUI@{G\-U\-I}}
+\subsubsection[{G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-::\-G\-U\-I (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{d7/d46/a00002_acb0ba8c6fc121d814d30560e2c29f2fe}
+
+
+Definition at line 8 of file G\-U\-I\-\_\-constructor.\-cpp.
+
+
+
+References set\-\_\-style\-Sheet(), and set\-\_\-validators().
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d7/d46/a00002_acb0ba8c6fc121d814d30560e2c29f2fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_ac9cae2328dcb5d83bdfaeca49a2eb695}{\index{G\-U\-I@{G\-U\-I}!$\sim$\-G\-U\-I@{$\sim$\-G\-U\-I}}
+\index{$\sim$\-G\-U\-I@{$\sim$\-G\-U\-I}!GUI@{G\-U\-I}}
+\subsubsection[{$\sim$\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-::$\sim$\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d7/d46/a00002_ac9cae2328dcb5d83bdfaeca49a2eb695}
+
+
+Definition at line 50 of file G\-U\-I\-\_\-constructor.\-cpp.
+
+
+
+References ui.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00002_a69ac504cf1500a8c6283d8721b09aeb2}{\index{G\-U\-I@{G\-U\-I}!display\-\_\-error@{display\-\_\-error}}
+\index{display\-\_\-error@{display\-\_\-error}!GUI@{G\-U\-I}}
+\subsubsection[{display\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::display\-\_\-error (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{er}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a69ac504cf1500a8c6283d8721b09aeb2}
+
+
+Definition at line 143 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d7/d46/a00002_a69ac504cf1500a8c6283d8721b09aeb2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a8e8c5918a3a0ddfd352c62e7348d3d74}{\index{G\-U\-I@{G\-U\-I}!fill\-\_\-rank@{fill\-\_\-rank}}
+\index{fill\-\_\-rank@{fill\-\_\-rank}!GUI@{G\-U\-I}}
+\subsubsection[{fill\-\_\-rank}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::fill\-\_\-rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a8e8c5918a3a0ddfd352c62e7348d3d74}
+
+
+Definition at line 127 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::set\-\_\-rank\-\_\-output\-\_\-strings(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d7/d46/a00002_a8e8c5918a3a0ddfd352c62e7348d3d74_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a8e8c5918a3a0ddfd352c62e7348d3d74_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a6aff5c3694d19ebd2bd81010c239cf62}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a6aff5c3694d19ebd2bd81010c239cf62}
+
+
+Definition at line 61 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-learning\-\_\-rate(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d7/d46/a00002_a6aff5c3694d19ebd2bd81010c239cf62_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a6bcefb22fdfb8fbd3146eab38a0023d7}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-4\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a6bcefb22fdfb8fbd3146eab38a0023d7}
+
+
+Definition at line 73 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-minimum\-\_\-error(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d7/d46/a00002_a6bcefb22fdfb8fbd3146eab38a0023d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_ab5da77a34a83e9794edda0d77d79bec0}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_ab5da77a34a83e9794edda0d77d79bec0}
+
+
+Definition at line 48 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-input\-\_\-len(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d7/d46/a00002_ab5da77a34a83e9794edda0d77d79bec0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a073c74e8357311d12c523d73414ee265}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-list\-Widget\-\_\-current\-Row\-Changed@{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}}
+\index{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed@{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-list\-Widget\-\_\-current\-Row\-Changed (
+\begin{DoxyParamCaption}
+\item[{int}]{current\-Row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a073c74e8357311d12c523d73414ee265}
+
+
+Definition at line 85 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-\-A\-V(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a073c74e8357311d12c523d73414ee265_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a09eeb721e4f861e80da92d8ed42277ee}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-push\-Button\-\_\-3\-\_\-clicked@{on\-\_\-push\-Button\-\_\-3\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-3\-\_\-clicked@{on\-\_\-push\-Button\-\_\-3\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-3\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-push\-Button\-\_\-3\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a09eeb721e4f861e80da92d8ed42277ee}
+
+
+Definition at line 33 of file G\-U\-I.\-cpp.
+
+
+
+References file\-Dialog, file\-Path, fm, File\-\_\-\-Manager\-::set\-\_\-expected\-\_\-out\-\_\-file(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a09eeb721e4f861e80da92d8ed42277ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a9a338258e3edb0d5ab1aabc26dd34d40}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-push\-Button\-\_\-4\-\_\-clicked@{on\-\_\-push\-Button\-\_\-4\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-4\-\_\-clicked@{on\-\_\-push\-Button\-\_\-4\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-4\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-push\-Button\-\_\-4\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a9a338258e3edb0d5ab1aabc26dd34d40}
+
+
+Definition at line 120 of file G\-U\-I.\-cpp.
+
+
+
+References file\-Dialog, file\-Path, fm, File\-\_\-\-Manager\-::set\-\_\-input\-\_\-file(), File\-\_\-\-Manager\-::set\-\_\-output\-\_\-file(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a9a338258e3edb0d5ab1aabc26dd34d40_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a6fd99e6dc89a1f3d352c037c880ef345}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-push\-Button\-\_\-5\-\_\-clicked@{on\-\_\-push\-Button\-\_\-5\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-5\-\_\-clicked@{on\-\_\-push\-Button\-\_\-5\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-5\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-push\-Button\-\_\-5\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a6fd99e6dc89a1f3d352c037c880ef345}
+
+
+Definition at line 12 of file G\-U\-I.\-cpp.
+
+
+
+References file\-Dialog, file\-Path, fm, File\-\_\-\-Manager\-::set\-\_\-input\-\_\-file(), File\-\_\-\-Manager\-::set\-\_\-output\-\_\-file(), File\-\_\-\-Manager\-::set\-\_\-weights\-\_\-file(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a6fd99e6dc89a1f3d352c037c880ef345_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a8b08d8812751902c52d56efc45d0b58d}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-push\-Button\-\_\-6\-\_\-clicked@{on\-\_\-push\-Button\-\_\-6\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-6\-\_\-clicked@{on\-\_\-push\-Button\-\_\-6\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-6\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-push\-Button\-\_\-6\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a8b08d8812751902c52d56efc45d0b58d}
+
+
+Definition at line 137 of file G\-U\-I.\-cpp.
+
+
+
+References file\-Dialog, file\-Path, fm, File\-\_\-\-Manager\-::set\-\_\-weights\-\_\-file(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a8b08d8812751902c52d56efc45d0b58d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a043466f485b6b75ee25ee879121c1ecc}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-push\-Button\-\_\-clicked@{on\-\_\-push\-Button\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-clicked@{on\-\_\-push\-Button\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-push\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a043466f485b6b75ee25ee879121c1ecc}
+
+
+Definition at line 12 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References display\-\_\-error(), File\-\_\-\-Manager\-::fill\-\_\-rank\-\_\-output(), fm, perform\-\_\-test(), perform\-\_\-train(), ui, and valid\-\_\-input().
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a043466f485b6b75ee25ee879121c1ecc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a5acc81766a1842665846092ebf0815e0}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-quit\-Button\-\_\-clicked@{on\-\_\-quit\-Button\-\_\-clicked}}
+\index{on\-\_\-quit\-Button\-\_\-clicked@{on\-\_\-quit\-Button\-\_\-clicked}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-quit\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-quit\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a5acc81766a1842665846092ebf0815e0}
+
+
+Definition at line 146 of file G\-U\-I.\-cpp.
+
+\hypertarget{a00002_a39f58394bb8e9691a7b32774114a910a}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed}}
+\index{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a39f58394bb8e9691a7b32774114a910a}
+
+
+Definition at line 97 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-output\-\_\-len(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d7/d46/a00002_a39f58394bb8e9691a7b32774114a910a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_ade6ba53055965b3522fa3cd022e4c5e0}{\index{G\-U\-I@{G\-U\-I}!perform\-\_\-test@{perform\-\_\-test}}
+\index{perform\-\_\-test@{perform\-\_\-test}!GUI@{G\-U\-I}}
+\subsubsection[{perform\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::perform\-\_\-test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_ade6ba53055965b3522fa3cd022e4c5e0}
+
+
+Definition at line 67 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-output\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_ade6ba53055965b3522fa3cd022e4c5e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d7/d46/a00002_ade6ba53055965b3522fa3cd022e4c5e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_ad1bb069dee02010a61045c91f5e7752f}{\index{G\-U\-I@{G\-U\-I}!perform\-\_\-train@{perform\-\_\-train}}
+\index{perform\-\_\-train@{perform\-\_\-train}!GUI@{G\-U\-I}}
+\subsubsection[{perform\-\_\-train}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::perform\-\_\-train (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_ad1bb069dee02010a61045c91f5e7752f}
+
+
+Definition at line 40 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_ad1bb069dee02010a61045c91f5e7752f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d7/d46/a00002_ad1bb069dee02010a61045c91f5e7752f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a5683a1862ec1a85cf87d9c5f6fc528e9}{\index{G\-U\-I@{G\-U\-I}!set\-\_\-style\-Sheet@{set\-\_\-style\-Sheet}}
+\index{set\-\_\-style\-Sheet@{set\-\_\-style\-Sheet}!GUI@{G\-U\-I}}
+\subsubsection[{set\-\_\-style\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::set\-\_\-style\-Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a5683a1862ec1a85cf87d9c5f6fc528e9}
+
+
+Definition at line 21 of file G\-U\-I\-\_\-constructor.\-cpp.
+
+
+
+References ui.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d7/d46/a00002_a5683a1862ec1a85cf87d9c5f6fc528e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_abd9fac4d8ad5334cc48afb0513544898}{\index{G\-U\-I@{G\-U\-I}!set\-\_\-validators@{set\-\_\-validators}}
+\index{set\-\_\-validators@{set\-\_\-validators}!GUI@{G\-U\-I}}
+\subsubsection[{set\-\_\-validators}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::set\-\_\-validators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_abd9fac4d8ad5334cc48afb0513544898}
+
+
+Definition at line 34 of file G\-U\-I\-\_\-constructor.\-cpp.
+
+
+
+References ui.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{d7/d46/a00002_abd9fac4d8ad5334cc48afb0513544898_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a5ec9d8a051303b218c4542f96a87b56f}{\index{G\-U\-I@{G\-U\-I}!valid\-\_\-input@{valid\-\_\-input}}
+\index{valid\-\_\-input@{valid\-\_\-input}!GUI@{G\-U\-I}}
+\subsubsection[{valid\-\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String G\-U\-I\-::valid\-\_\-input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a5ec9d8a051303b218c4542f96a87b56f}
+
+
+Definition at line 88 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References fill\-\_\-rank(), fm, fori, Neural\-\_\-\-Network\-::get\-\_\-output\-\_\-len(), File\-\_\-\-Manager\-::get\-\_\-rank\-\_\-output\-\_\-strings(), File\-\_\-\-Manager\-::n, and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d46/a00002_a5ec9d8a051303b218c4542f96a87b56f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d7/d46/a00002_a5ec9d8a051303b218c4542f96a87b56f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{a00002_a9ed0a8b583419e88bb94697a9b258c72}{\index{G\-U\-I@{G\-U\-I}!file\-Dialog@{file\-Dialog}}
+\index{file\-Dialog@{file\-Dialog}!GUI@{G\-U\-I}}
+\subsubsection[{file\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Q\-File\-Dialog G\-U\-I\-::file\-Dialog\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a9ed0a8b583419e88bb94697a9b258c72}
+
+
+Definition at line 21 of file G\-U\-I.\-h.
+
+\hypertarget{a00002_a62d0a4c604ed8d65f85455971a938548}{\index{G\-U\-I@{G\-U\-I}!file\-Path@{file\-Path}}
+\index{file\-Path@{file\-Path}!GUI@{G\-U\-I}}
+\subsubsection[{file\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String G\-U\-I\-::file\-Path\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a62d0a4c604ed8d65f85455971a938548}
+
+
+Definition at line 20 of file G\-U\-I.\-h.
+
+\hypertarget{a00002_a73cc90505024488d2fd77762ad5059c4}{\index{G\-U\-I@{G\-U\-I}!fm@{fm}}
+\index{fm@{fm}!GUI@{G\-U\-I}}
+\subsubsection[{fm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-\_\-\-Manager} G\-U\-I\-::fm\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a73cc90505024488d2fd77762ad5059c4}
+
+
+Definition at line 45 of file G\-U\-I.\-h.
+
+\hypertarget{a00002_aa3abed87f53b22188d76a134e427b30d}{\index{G\-U\-I@{G\-U\-I}!state@{state}}
+\index{state@{state}!GUI@{G\-U\-I}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Byte\-Array G\-U\-I\-::state\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_aa3abed87f53b22188d76a134e427b30d}
+
+
+Definition at line 22 of file G\-U\-I.\-h.
+
+\hypertarget{a00002_acdbca1224663f5a19bd1ad4e7c885886}{\index{G\-U\-I@{G\-U\-I}!ui@{ui}}
+\index{ui@{ui}!GUI@{G\-U\-I}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-G\-U\-I$\ast$ G\-U\-I\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_acdbca1224663f5a19bd1ad4e7c885886}
+
+
+Definition at line 43 of file G\-U\-I.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+phenogene/\hyperlink{a00010}{G\-U\-I.\-h}\item 
+phenogene/\hyperlink{a00009}{G\-U\-I.\-cpp}\item 
+phenogene/\hyperlink{a00011}{G\-U\-I\-\_\-constructor.\-cpp}\item 
+phenogene/\hyperlink{a00012}{G\-U\-I\-\_\-start\-Button.\-cpp}\end{DoxyCompactItemize}

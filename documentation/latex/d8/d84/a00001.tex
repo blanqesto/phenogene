@@ -1,0 +1,679 @@
+\hypertarget{a00001}{\section{File\-\_\-\-Manager Class Reference}
+\label{d8/d84/a00001}\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}}
+}
+
+
+{\ttfamily \#include $<$File\-Manager.\-h$>$}
+
+
+
+Collaboration diagram for File\-\_\-\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d32/a00041}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00001_a2acf523335c71f922a42756c1d0a7a2d}{File\-\_\-\-Manager} ()
+\item 
+void \hyperlink{a00001_af43b27d7ea5f031a20652a43f5b99f53}{set\-\_\-input\-\_\-file} (string)
+\item 
+void \hyperlink{a00001_ad83423f6db9466419d4a7acd3e322cb4}{set\-\_\-expected\-\_\-out\-\_\-file} (string)
+\item 
+void \hyperlink{a00001_a2eff082d4fe4d7f2a7ce06afbc689d45}{set\-\_\-output\-\_\-file} (string)
+\item 
+void \hyperlink{a00001_a860e5837e1671018a26fdc0ce43603b1}{set\-\_\-weights\-\_\-file} (string)
+\item 
+void \hyperlink{a00001_af80b18b12b1b619428cf7224cd588594}{set\-\_\-rank\-\_\-output\-\_\-strings} (int, string)
+\item 
+string \hyperlink{a00001_ad506966ba52a415b33970c057c9ed43a}{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string} ()
+\item 
+string \hyperlink{a00001_a13d1128905d7b4a3bdec2e40392cd036}{get\-\_\-input\-\_\-population\-\_\-string} ()
+\item 
+string \hyperlink{a00001_a368e05b24358cc70bd8b7d2081cd0dd4}{get\-\_\-output\-\_\-population\-\_\-string} ()
+\item 
+string \hyperlink{a00001_acd21da57c513a63893641ac505c097f0}{get\-\_\-rank\-\_\-output\-\_\-strings} (int)
+\item 
+void \hyperlink{a00001_abcb9cd1427a3b6ecfd41432391ec9bdc}{do\-\_\-function} (int)
+\item 
+void \hyperlink{a00001_a44a6161fabb28c07ba6e860ba9927aa6}{fill\-\_\-rank\-\_\-output} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00003}{Neural\-\_\-\-Network} \hyperlink{a00001_ac70ea2427e95618bb3903b2c57ee9745}{n}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00001_a1134b607af353e187667aaba1a960bdd}{read\-\_\-input} (string)
+\item 
+void \hyperlink{a00001_a4b0a0ad74a4446e5f23020521200b932}{read\-\_\-expected\-\_\-output} (string)
+\item 
+void \hyperlink{a00001_a7d2759b2ad892445e7d74892737547cf}{read\-\_\-weights} (string)
+\item 
+void \hyperlink{a00001_a4e104949ad8e8fd75c612313f857ee5a}{write\-\_\-output} (string)
+\item 
+void \hyperlink{a00001_a67e37c5e1429df91a8c4ff836579cdc0}{write\-\_\-weights} (string)
+\item 
+string \hyperlink{a00001_a6b29a9f88396627c1d39170723bad7fd}{convert\-Int} (int)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ofstream \hyperlink{a00001_a7d29cb8d04a1a60638f653c28a628095}{write}
+\item 
+ifstream \hyperlink{a00001_a035fb2bdf99f8f928d049bc950c81f4c}{read}
+\item 
+string \hyperlink{a00001_af7d8ea2c0a997e16600478c0020b1858}{read\-\_\-ex\-\_\-output\-\_\-string}
+\item 
+string \hyperlink{a00001_a80f6d8f738cbc4d10154b470c5422fdd}{input\-\_\-population\-\_\-string}
+\item 
+string \hyperlink{a00001_a4266a9bec2fff5d17d7abf06e00384db}{output\-\_\-population\-\_\-string}
+\item 
+string \hyperlink{a00001_a78b144182e3cfc70f9aae78ebdd66e51}{input\-\_\-file}
+\item 
+string \hyperlink{a00001_a8b8f5c9cc3ffcb083ccc4fce1c05ca44}{expected\-\_\-out\-\_\-file}
+\item 
+string \hyperlink{a00001_a63725670a06637b4290c54eba671b640}{output\-\_\-file}
+\item 
+string \hyperlink{a00001_aab02256124e6eb39e10e3c9765f0bcb3}{weights\-\_\-file}
+\item 
+string \hyperlink{a00001_a578abb99a35121fea6c83f1dc21cc2af}{rank\-\_\-output\-\_\-strings} \mbox{[}\hyperlink{a00008_a0a0ddfc9fb3bc3d90d175ed1f7bd54c5}{output\-\_\-l}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file File\-Manager.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00001_a2acf523335c71f922a42756c1d0a7a2d}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!File\-\_\-\-Manager@{File\-\_\-\-Manager}}
+\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{File\-\_\-\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}File\-\_\-\-Manager\-::\-File\-\_\-\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a2acf523335c71f922a42756c1d0a7a2d}
+
+
+Definition at line 3 of file F\-M.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00001_a6b29a9f88396627c1d39170723bad7fd}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!convert\-Int@{convert\-Int}}
+\index{convert\-Int@{convert\-Int}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{convert\-Int}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::convert\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a6b29a9f88396627c1d39170723bad7fd}
+
+
+Definition at line 194 of file F\-M.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a6b29a9f88396627c1d39170723bad7fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_abcb9cd1427a3b6ecfd41432391ec9bdc}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!do\-\_\-function@{do\-\_\-function}}
+\index{do\-\_\-function@{do\-\_\-function}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{do\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::do\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_abcb9cd1427a3b6ecfd41432391ec9bdc}
+
+
+Definition at line 15 of file F\-M.\-cpp.
+
+
+
+References expected\-\_\-out\-\_\-file, input\-\_\-file, output\-\_\-file, read\-\_\-expected\-\_\-output(), read\-\_\-input(), read\-\_\-weights(), weights\-\_\-file, write\-\_\-output(), and write\-\_\-weights().
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_abcb9cd1427a3b6ecfd41432391ec9bdc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_abcb9cd1427a3b6ecfd41432391ec9bdc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a44a6161fabb28c07ba6e860ba9927aa6}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!fill\-\_\-rank\-\_\-output@{fill\-\_\-rank\-\_\-output}}
+\index{fill\-\_\-rank\-\_\-output@{fill\-\_\-rank\-\_\-output}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{fill\-\_\-rank\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::fill\-\_\-rank\-\_\-output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a44a6161fabb28c07ba6e860ba9927aa6}
+
+
+Definition at line 216 of file F\-M.\-cpp.
+
+
+
+References fori, n, Neural\-\_\-\-Network\-::output\-\_\-len, Neural\-\_\-\-Network\-::output\-\_\-rank, Neural\-\_\-\-Network\-::rank\-\_\-output, and rank\-\_\-output\-\_\-strings.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{d8/d84/a00001_a44a6161fabb28c07ba6e860ba9927aa6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a13d1128905d7b4a3bdec2e40392cd036}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!get\-\_\-input\-\_\-population\-\_\-string@{get\-\_\-input\-\_\-population\-\_\-string}}
+\index{get\-\_\-input\-\_\-population\-\_\-string@{get\-\_\-input\-\_\-population\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{get\-\_\-input\-\_\-population\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a13d1128905d7b4a3bdec2e40392cd036}
+
+
+Definition at line 13 of file F\-M\-\_\-getters.\-cpp.
+
+
+
+References input\-\_\-population\-\_\-string.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a13d1128905d7b4a3bdec2e40392cd036_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a368e05b24358cc70bd8b7d2081cd0dd4}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!get\-\_\-output\-\_\-population\-\_\-string@{get\-\_\-output\-\_\-population\-\_\-string}}
+\index{get\-\_\-output\-\_\-population\-\_\-string@{get\-\_\-output\-\_\-population\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{get\-\_\-output\-\_\-population\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::get\-\_\-output\-\_\-population\-\_\-string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a368e05b24358cc70bd8b7d2081cd0dd4}
+
+
+Definition at line 20 of file F\-M\-\_\-getters.\-cpp.
+
+
+
+References output\-\_\-population\-\_\-string.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a368e05b24358cc70bd8b7d2081cd0dd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_acd21da57c513a63893641ac505c097f0}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!get\-\_\-rank\-\_\-output\-\_\-strings@{get\-\_\-rank\-\_\-output\-\_\-strings}}
+\index{get\-\_\-rank\-\_\-output\-\_\-strings@{get\-\_\-rank\-\_\-output\-\_\-strings}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{get\-\_\-rank\-\_\-output\-\_\-strings}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::get\-\_\-rank\-\_\-output\-\_\-strings (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_acd21da57c513a63893641ac505c097f0}
+
+
+Definition at line 27 of file F\-M\-\_\-getters.\-cpp.
+
+
+
+References rank\-\_\-output\-\_\-strings.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_acd21da57c513a63893641ac505c097f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_ad506966ba52a415b33970c057c9ed43a}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string@{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string}}
+\index{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string@{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_ad506966ba52a415b33970c057c9ed43a}
+
+
+Definition at line 6 of file F\-M\-\_\-getters.\-cpp.
+
+
+
+References read\-\_\-ex\-\_\-output\-\_\-string.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_ad506966ba52a415b33970c057c9ed43a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a4b0a0ad74a4446e5f23020521200b932}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!read\-\_\-expected\-\_\-output@{read\-\_\-expected\-\_\-output}}
+\index{read\-\_\-expected\-\_\-output@{read\-\_\-expected\-\_\-output}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{read\-\_\-expected\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::read\-\_\-expected\-\_\-output (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a4b0a0ad74a4446e5f23020521200b932}
+
+
+Definition at line 89 of file F\-M.\-cpp.
+
+
+
+References Neural\-\_\-\-Network\-::dataset\-\_\-size, Neural\-\_\-\-Network\-::expected\-\_\-o, fori, forj, max\-\_\-dataset\-\_\-size, n, Neural\-\_\-\-Network\-::output\-\_\-dataset, Neural\-\_\-\-Network\-::output\-\_\-len, Neural\-\_\-\-Network\-::output\-\_\-rank, read, and read\-\_\-ex\-\_\-output\-\_\-string.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a4b0a0ad74a4446e5f23020521200b932_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a1134b607af353e187667aaba1a960bdd}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!read\-\_\-input@{read\-\_\-input}}
+\index{read\-\_\-input@{read\-\_\-input}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{read\-\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::read\-\_\-input (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a1134b607af353e187667aaba1a960bdd}
+
+
+Definition at line 45 of file F\-M.\-cpp.
+
+
+
+References convert\-Int(), Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, fork, Neural\-\_\-\-Network\-::input, Neural\-\_\-\-Network\-::input\-\_\-dataset, Neural\-\_\-\-Network\-::input\-\_\-len, input\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::input\-\_\-rank, max\-\_\-dataset\-\_\-size, n, and read.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d8/d84/a00001_a1134b607af353e187667aaba1a960bdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a1134b607af353e187667aaba1a960bdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a7d2759b2ad892445e7d74892737547cf}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!read\-\_\-weights@{read\-\_\-weights}}
+\index{read\-\_\-weights@{read\-\_\-weights}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{read\-\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::read\-\_\-weights (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a7d2759b2ad892445e7d74892737547cf}
+
+
+Definition at line 155 of file F\-M.\-cpp.
+
+
+
+References fori, forj, Neural\-\_\-\-Network\-::hidden\-\_\-len, Neural\-\_\-\-Network\-::input\-\_\-len, n, Neural\-\_\-\-Network\-::output\-\_\-len, read, Neural\-\_\-\-Network\-::\-Wh, and Neural\-\_\-\-Network\-::\-Wo.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a7d2759b2ad892445e7d74892737547cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_ad83423f6db9466419d4a7acd3e322cb4}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!set\-\_\-expected\-\_\-out\-\_\-file@{set\-\_\-expected\-\_\-out\-\_\-file}}
+\index{set\-\_\-expected\-\_\-out\-\_\-file@{set\-\_\-expected\-\_\-out\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{set\-\_\-expected\-\_\-out\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::set\-\_\-expected\-\_\-out\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_ad83423f6db9466419d4a7acd3e322cb4}
+
+
+Definition at line 14 of file F\-M\-\_\-setters.\-cpp.
+
+
+
+References expected\-\_\-out\-\_\-file.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_ad83423f6db9466419d4a7acd3e322cb4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_af43b27d7ea5f031a20652a43f5b99f53}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!set\-\_\-input\-\_\-file@{set\-\_\-input\-\_\-file}}
+\index{set\-\_\-input\-\_\-file@{set\-\_\-input\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{set\-\_\-input\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::set\-\_\-input\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_af43b27d7ea5f031a20652a43f5b99f53}
+
+
+Definition at line 6 of file F\-M\-\_\-setters.\-cpp.
+
+
+
+References input\-\_\-file.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_af43b27d7ea5f031a20652a43f5b99f53_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a2eff082d4fe4d7f2a7ce06afbc689d45}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!set\-\_\-output\-\_\-file@{set\-\_\-output\-\_\-file}}
+\index{set\-\_\-output\-\_\-file@{set\-\_\-output\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{set\-\_\-output\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::set\-\_\-output\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a2eff082d4fe4d7f2a7ce06afbc689d45}
+
+
+Definition at line 22 of file F\-M\-\_\-setters.\-cpp.
+
+
+
+References output\-\_\-file.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a2eff082d4fe4d7f2a7ce06afbc689d45_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_af80b18b12b1b619428cf7224cd588594}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!set\-\_\-rank\-\_\-output\-\_\-strings@{set\-\_\-rank\-\_\-output\-\_\-strings}}
+\index{set\-\_\-rank\-\_\-output\-\_\-strings@{set\-\_\-rank\-\_\-output\-\_\-strings}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{set\-\_\-rank\-\_\-output\-\_\-strings}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::set\-\_\-rank\-\_\-output\-\_\-strings (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_af80b18b12b1b619428cf7224cd588594}
+
+
+Definition at line 39 of file F\-M\-\_\-setters.\-cpp.
+
+
+
+References rank\-\_\-output\-\_\-strings.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_af80b18b12b1b619428cf7224cd588594_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a860e5837e1671018a26fdc0ce43603b1}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!set\-\_\-weights\-\_\-file@{set\-\_\-weights\-\_\-file}}
+\index{set\-\_\-weights\-\_\-file@{set\-\_\-weights\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{set\-\_\-weights\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::set\-\_\-weights\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{d8/d84/a00001_a860e5837e1671018a26fdc0ce43603b1}
+
+
+Definition at line 30 of file F\-M\-\_\-setters.\-cpp.
+
+
+
+References weights\-\_\-file.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a860e5837e1671018a26fdc0ce43603b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a4e104949ad8e8fd75c612313f857ee5a}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!write\-\_\-output@{write\-\_\-output}}
+\index{write\-\_\-output@{write\-\_\-output}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{write\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::write\-\_\-output (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a4e104949ad8e8fd75c612313f857ee5a}
+
+
+Definition at line 123 of file F\-M.\-cpp.
+
+
+
+References Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, forj, n, Neural\-\_\-\-Network\-::output\-\_\-dataset, Neural\-\_\-\-Network\-::output\-\_\-len, output\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::rank\-\_\-output, and write.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a4e104949ad8e8fd75c612313f857ee5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00001_a67e37c5e1429df91a8c4ff836579cdc0}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!write\-\_\-weights@{write\-\_\-weights}}
+\index{write\-\_\-weights@{write\-\_\-weights}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{write\-\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}void File\-\_\-\-Manager\-::write\-\_\-weights (
+\begin{DoxyParamCaption}
+\item[{string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a67e37c5e1429df91a8c4ff836579cdc0}
+
+
+Definition at line 175 of file F\-M.\-cpp.
+
+
+
+References fori, forj, Neural\-\_\-\-Network\-::hidden\-\_\-len, Neural\-\_\-\-Network\-::input\-\_\-len, n, Neural\-\_\-\-Network\-::output\-\_\-len, Neural\-\_\-\-Network\-::\-Wh, Neural\-\_\-\-Network\-::\-Wo, and write.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d84/a00001_a67e37c5e1429df91a8c4ff836579cdc0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{a00001_a8b8f5c9cc3ffcb083ccc4fce1c05ca44}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!expected\-\_\-out\-\_\-file@{expected\-\_\-out\-\_\-file}}
+\index{expected\-\_\-out\-\_\-file@{expected\-\_\-out\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{expected\-\_\-out\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::expected\-\_\-out\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a8b8f5c9cc3ffcb083ccc4fce1c05ca44}
+
+
+Definition at line 38 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a78b144182e3cfc70f9aae78ebdd66e51}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!input\-\_\-file@{input\-\_\-file}}
+\index{input\-\_\-file@{input\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{input\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::input\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a78b144182e3cfc70f9aae78ebdd66e51}
+
+
+Definition at line 37 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a80f6d8f738cbc4d10154b470c5422fdd}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!input\-\_\-population\-\_\-string@{input\-\_\-population\-\_\-string}}
+\index{input\-\_\-population\-\_\-string@{input\-\_\-population\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{input\-\_\-population\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::input\-\_\-population\-\_\-string\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a80f6d8f738cbc4d10154b470c5422fdd}
+
+
+Definition at line 35 of file File\-Manager.\-h.
+
+\hypertarget{a00001_ac70ea2427e95618bb3903b2c57ee9745}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!n@{n}}
+\index{n@{n}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Neural\-\_\-\-Network} File\-\_\-\-Manager\-::n}}\label{d8/d84/a00001_ac70ea2427e95618bb3903b2c57ee9745}
+
+
+Definition at line 12 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a63725670a06637b4290c54eba671b640}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!output\-\_\-file@{output\-\_\-file}}
+\index{output\-\_\-file@{output\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{output\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::output\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a63725670a06637b4290c54eba671b640}
+
+
+Definition at line 39 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a4266a9bec2fff5d17d7abf06e00384db}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!output\-\_\-population\-\_\-string@{output\-\_\-population\-\_\-string}}
+\index{output\-\_\-population\-\_\-string@{output\-\_\-population\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{output\-\_\-population\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::output\-\_\-population\-\_\-string\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a4266a9bec2fff5d17d7abf06e00384db}
+
+
+Definition at line 36 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a578abb99a35121fea6c83f1dc21cc2af}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!rank\-\_\-output\-\_\-strings@{rank\-\_\-output\-\_\-strings}}
+\index{rank\-\_\-output\-\_\-strings@{rank\-\_\-output\-\_\-strings}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{rank\-\_\-output\-\_\-strings}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::rank\-\_\-output\-\_\-strings\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a578abb99a35121fea6c83f1dc21cc2af}
+
+
+Definition at line 41 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a035fb2bdf99f8f928d049bc950c81f4c}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!read@{read}}
+\index{read@{read}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}ifstream File\-\_\-\-Manager\-::read\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a035fb2bdf99f8f928d049bc950c81f4c}
+
+
+Definition at line 33 of file File\-Manager.\-h.
+
+\hypertarget{a00001_af7d8ea2c0a997e16600478c0020b1858}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!read\-\_\-ex\-\_\-output\-\_\-string@{read\-\_\-ex\-\_\-output\-\_\-string}}
+\index{read\-\_\-ex\-\_\-output\-\_\-string@{read\-\_\-ex\-\_\-output\-\_\-string}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{read\-\_\-ex\-\_\-output\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::read\-\_\-ex\-\_\-output\-\_\-string\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_af7d8ea2c0a997e16600478c0020b1858}
+
+
+Definition at line 34 of file File\-Manager.\-h.
+
+\hypertarget{a00001_aab02256124e6eb39e10e3c9765f0bcb3}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!weights\-\_\-file@{weights\-\_\-file}}
+\index{weights\-\_\-file@{weights\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{weights\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string File\-\_\-\-Manager\-::weights\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_aab02256124e6eb39e10e3c9765f0bcb3}
+
+
+Definition at line 40 of file File\-Manager.\-h.
+
+\hypertarget{a00001_a7d29cb8d04a1a60638f653c28a628095}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!write@{write}}
+\index{write@{write}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}ofstream File\-\_\-\-Manager\-::write\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_a7d29cb8d04a1a60638f653c28a628095}
+
+
+Definition at line 32 of file File\-Manager.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+phenogene/\hyperlink{a00004}{File\-Manager.\-h}\item 
+phenogene/\hyperlink{a00005}{F\-M.\-cpp}\item 
+phenogene/\hyperlink{a00006}{F\-M\-\_\-getters.\-cpp}\item 
+phenogene/\hyperlink{a00007}{F\-M\-\_\-setters.\-cpp}\end{DoxyCompactItemize}

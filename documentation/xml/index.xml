@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.1.2">
+  <compound refid="d8/d84/a00001" kind="class"><name>File_Manager</name>
+    <member refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" kind="variable"><name>n</name></member>
+    <member refid="d8/d84/a00001_1a7d29cb8d04a1a60638f653c28a628095" kind="variable"><name>write</name></member>
+    <member refid="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" kind="variable"><name>read</name></member>
+    <member refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" kind="variable"><name>read_ex_output_string</name></member>
+    <member refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" kind="variable"><name>input_population_string</name></member>
+    <member refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" kind="variable"><name>output_population_string</name></member>
+    <member refid="d8/d84/a00001_1a78b144182e3cfc70f9aae78ebdd66e51" kind="variable"><name>input_file</name></member>
+    <member refid="d8/d84/a00001_1a8b8f5c9cc3ffcb083ccc4fce1c05ca44" kind="variable"><name>expected_out_file</name></member>
+    <member refid="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" kind="variable"><name>output_file</name></member>
+    <member refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" kind="variable"><name>weights_file</name></member>
+    <member refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" kind="variable"><name>rank_output_strings</name></member>
+    <member refid="d8/d84/a00001_1a2acf523335c71f922a42756c1d0a7a2d" kind="function"><name>File_Manager</name></member>
+    <member refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" kind="function"><name>set_input_file</name></member>
+    <member refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" kind="function"><name>set_expected_out_file</name></member>
+    <member refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" kind="function"><name>set_output_file</name></member>
+    <member refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" kind="function"><name>set_weights_file</name></member>
+    <member refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" kind="function"><name>set_rank_output_strings</name></member>
+    <member refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" kind="function"><name>get_read_ex_output_string</name></member>
+    <member refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" kind="function"><name>get_input_population_string</name></member>
+    <member refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" kind="function"><name>get_output_population_string</name></member>
+    <member refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" kind="function"><name>get_rank_output_strings</name></member>
+    <member refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kind="function"><name>do_function</name></member>
+    <member refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" kind="function"><name>fill_rank_output</name></member>
+    <member refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" kind="function"><name>read_input</name></member>
+    <member refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" kind="function"><name>read_expected_output</name></member>
+    <member refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" kind="function"><name>read_weights</name></member>
+    <member refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" kind="function"><name>write_output</name></member>
+    <member refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" kind="function"><name>write_weights</name></member>
+    <member refid="d8/d84/a00001_1a6b29a9f88396627c1d39170723bad7fd" kind="function"><name>convertInt</name></member>
+  </compound>
+  <compound refid="d7/d46/a00002" kind="class"><name>GUI</name>
+    <member refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" kind="variable"><name>filePath</name></member>
+    <member refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" kind="variable"><name>fileDialog</name></member>
+    <member refid="d7/d46/a00002_1aa3abed87f53b22188d76a134e427b30d" kind="variable"><name>state</name></member>
+    <member refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kind="variable"><name>ui</name></member>
+    <member refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kind="variable"><name>fm</name></member>
+    <member refid="d7/d46/a00002_1acb0ba8c6fc121d814d30560e2c29f2fe" kind="function"><name>GUI</name></member>
+    <member refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" kind="function"><name>~GUI</name></member>
+    <member refid="d7/d46/a00002_1a5acc81766a1842665846092ebf0815e0" kind="slot"><name>on_quitButton_clicked</name></member>
+    <member refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" kind="slot"><name>on_pushButton_clicked</name></member>
+    <member refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" kind="slot"><name>on_pushButton_3_clicked</name></member>
+    <member refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" kind="slot"><name>on_pushButton_4_clicked</name></member>
+    <member refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" kind="slot"><name>on_pushButton_5_clicked</name></member>
+    <member refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" kind="slot"><name>on_pushButton_6_clicked</name></member>
+    <member refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" kind="slot"><name>on_lineEdit_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" kind="slot"><name>on_lineEdit_3_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" kind="slot"><name>on_lineEdit_4_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" kind="slot"><name>on_textEdit_4_textChanged</name></member>
+    <member refid="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" kind="slot"><name>on_listWidget_currentRowChanged</name></member>
+    <member refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" kind="function"><name>valid_input</name></member>
+    <member refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" kind="function"><name>fill_rank</name></member>
+    <member refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" kind="function"><name>perform_train</name></member>
+    <member refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" kind="function"><name>perform_test</name></member>
+    <member refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" kind="function"><name>set_validators</name></member>
+    <member refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" kind="function"><name>set_styleSheet</name></member>
+    <member refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" kind="function"><name>display_error</name></member>
+  </compound>
+  <compound refid="d1/d7c/a00003" kind="class"><name>Neural_Network</name>
+    <member refid="d1/d7c/a00003_1a96aa84fcda6b19a74fff9d19c16b07fe" kind="friend"><name>File_Manager</name></member>
+    <member refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kind="variable"><name>input_len</name></member>
+    <member refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kind="variable"><name>hidden_len</name></member>
+    <member refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kind="variable"><name>output_len</name></member>
+    <member refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kind="variable"><name>AV</name></member>
+    <member refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" kind="variable"><name>dataset_size</name></member>
+    <member refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" kind="variable"><name>error</name></member>
+    <member refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kind="variable"><name>minimum_error</name></member>
+    <member refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kind="variable"><name>learning_rate</name></member>
+    <member refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" kind="variable"><name>momentum</name></member>
+    <member refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" kind="variable"><name>input</name></member>
+    <member refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" kind="variable"><name>hidden</name></member>
+    <member refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" kind="variable"><name>output</name></member>
+    <member refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" kind="variable"><name>netH</name></member>
+    <member refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" kind="variable"><name>netO</name></member>
+    <member refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" kind="variable"><name>expected_o</name></member>
+    <member refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" kind="variable"><name>bias_O</name></member>
+    <member refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" kind="variable"><name>bias_H</name></member>
+    <member refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" kind="variable"><name>Wh</name></member>
+    <member refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" kind="variable"><name>Wo</name></member>
+    <member refid="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" kind="variable"><name>tempWo</name></member>
+    <member refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" kind="variable"><name>delta_O</name></member>
+    <member refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" kind="variable"><name>delta_H</name></member>
+    <member refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kind="variable"><name>input_rank</name></member>
+    <member refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" kind="variable"><name>output_rank</name></member>
+    <member refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" kind="variable"><name>rank_output</name></member>
+    <member refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" kind="variable"><name>input_dataset</name></member>
+    <member refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" kind="variable"><name>output_dataset</name></member>
+    <member refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" kind="function"><name>Neural_Network</name></member>
+    <member refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" kind="function"><name>set_input_len</name></member>
+    <member refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" kind="function"><name>set_output_len</name></member>
+    <member refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" kind="function"><name>set_hidden_len</name></member>
+    <member refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kind="function"><name>set_AV</name></member>
+    <member refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kind="function"><name>set_minimum_error</name></member>
+    <member refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kind="function"><name>set_learning_rate</name></member>
+    <member refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" kind="function"><name>get_input_len</name></member>
+    <member refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kind="function"><name>get_output_len</name></member>
+    <member refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" kind="function"><name>get_hidden_len</name></member>
+    <member refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kind="function"><name>do_function</name></member>
+    <member refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" kind="function"><name>init</name></member>
+    <member refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" kind="function"><name>train</name></member>
+    <member refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" kind="function"><name>test</name></member>
+    <member refid="d1/d7c/a00003_1a7a8eff736645e4101ed906a46e6a27ac" kind="function"><name>segmoidal_fn</name></member>
+    <member refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" kind="function"><name>propagate</name></member>
+    <member refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" kind="function"><name>cal_error</name></member>
+    <member refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" kind="function"><name>back_propagate</name></member>
+    <member refid="d1/d7c/a00003_1a3d073d4957def9b6a4498448260fedeb" kind="function"><name>input_absent</name></member>
+    <member refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" kind="function"><name>calculate_net</name></member>
+  </compound>
+  <compound refid="dd/da2/a00019" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="db/db2/a00020" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="d0/d0b/a00004" kind="file"><name>FileManager.h</name>
+  </compound>
+  <compound refid="dd/dad/a00005" kind="file"><name>FM.cpp</name>
+  </compound>
+  <compound refid="de/d21/a00006" kind="file"><name>FM_getters.cpp</name>
+  </compound>
+  <compound refid="de/d5e/a00007" kind="file"><name>FM_setters.cpp</name>
+  </compound>
+  <compound refid="d4/dee/a00008" kind="file"><name>General_Notation.h</name>
+    <member refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" kind="define"><name>fori</name></member>
+    <member refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" kind="define"><name>forj</name></member>
+    <member refid="d4/dee/a00008_1af720a63ca4d8b6a2dd848ead73362e58" kind="define"><name>fork</name></member>
+    <member refid="d4/dee/a00008_1a137d3378ba32ae138541e30156fb5c66" kind="define"><name>max_dataset_size</name></member>
+    <member refid="d4/dee/a00008_1a8dae3b2c955083e02ba56da92adbf25d" kind="define"><name>input_l</name></member>
+    <member refid="d4/dee/a00008_1a0a0ddfc9fb3bc3d90d175ed1f7bd54c5" kind="define"><name>output_l</name></member>
+    <member refid="d4/dee/a00008_1aa7fdf42e8c0a65ea15cb37a990708e36" kind="define"><name>hidden_l</name></member>
+    <member refid="d4/dee/a00008_1afecc3978fc788de7ecca333d28d62a08" kind="define"><name>hidden_layer</name></member>
+    <member refid="d4/dee/a00008_1a64e47a8f29d1c6cc62edf670a753accc" kind="define"><name>output_layer</name></member>
+    <member refid="d4/dee/a00008_1a2f65cc4d2a528ee38224d709c1d73015" kind="define"><name>segmoidal</name></member>
+    <member refid="d4/dee/a00008_1aeecddf1027b4a894011b52467b2d5733" kind="define"><name>max_iterations</name></member>
+  </compound>
+  <compound refid="da/da0/a00009" kind="file"><name>GUI.cpp</name>
+  </compound>
+  <compound refid="d7/dec/a00010" kind="file"><name>GUI.h</name>
+  </compound>
+  <compound refid="da/d45/a00011" kind="file"><name>GUI_constructor.cpp</name>
+  </compound>
+  <compound refid="df/d86/a00012" kind="file"><name>GUI_startButton.cpp</name>
+  </compound>
+  <compound refid="d7/dd4/a00013" kind="file"><name>main.cpp</name>
+    <member refid="d7/dd4/a00013_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d2/de7/a00014" kind="file"><name>NeuralNetwork.h</name>
+  </compound>
+  <compound refid="dd/d1b/a00015" kind="file"><name>NN.cpp</name>
+    <member refid="dd/d1b/a00015_1aa56c9494c95edf68386375e97d64159b" kind="function"><name>pow</name></member>
+  </compound>
+  <compound refid="d7/d7a/a00016" kind="file"><name>NN_constructor.cpp</name>
+  </compound>
+  <compound refid="d4/d51/a00017" kind="file"><name>NN_getters.cpp</name>
+  </compound>
+  <compound refid="d1/d2b/a00018" kind="file"><name>NN_setters.cpp</name>
+  </compound>
+  <compound refid="dir_c5d1ef77f31704bc873744cc73c3b6da" kind="dir"><name>phenogene/</name>
+  </compound>
+</doxygenindex>

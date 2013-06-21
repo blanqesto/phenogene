@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="d4/d51/a00017" kind="file">
+    <compoundname>NN_getters.cpp</compoundname>
+    <includes refid="d2/de7/a00014" local="no">NeuralNetwork.h</includes>
+    <incdepgraph>
+      <node id="611">
+        <label>stdlib.h</label>
+      </node>
+      <node id="606">
+        <label>General_Notation.h</label>
+        <link refid="d4/dee/a00008"/>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>cmath</label>
+      </node>
+      <node id="617">
+        <label>string</label>
+      </node>
+      <node id="615">
+        <label>map</label>
+      </node>
+      <node id="609">
+        <label>fstream</label>
+      </node>
+      <node id="604">
+        <label>phenogene/NN_getters.cpp</label>
+        <link refid="NN_getters.cpp"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>vector</label>
+      </node>
+      <node id="612">
+        <label>utility</label>
+      </node>
+      <node id="608">
+        <label>sstream</label>
+      </node>
+      <node id="607">
+        <label>iostream</label>
+      </node>
+      <node id="605">
+        <label>NeuralNetwork.h</label>
+        <link refid="d2/de7/a00014"/>
+        <childnode refid="606" relation="include">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>stdio.h</label>
+      </node>
+      <node id="616">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d2/de7/a00014" kindref="compound">NeuralNetwork.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*Get<sp/>int<sp/>number<sp/>of<sp/>input<sp/>nodes</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" kindref="member">Neural_Network::get_input_len</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kindref="member">input_len</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*Get<sp/>int<sp/>number<sp/>of<sp/>output<sp/>nodes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kindref="member">Neural_Network::get_output_len</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kindref="member">output_len</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*Get<sp/>int<sp/>number<sp/>of<sp/>hidden<sp/>nodes</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" kindref="member">Neural_Network::get_hidden_len</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp"/>
+  </compounddef>
+</doxygen>

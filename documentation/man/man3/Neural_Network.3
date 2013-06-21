@@ -1,0 +1,411 @@
+.TH "Neural_Network" 3 "Fri Jun 21 2013" "Version 1.0" "Phenogene" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Neural_Network \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NeuralNetwork\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNeural_Network\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_input_len\fP (int)"
+.br
+.ti -1c
+.RI "void \fBset_output_len\fP (int)"
+.br
+.ti -1c
+.RI "void \fBset_hidden_len\fP (int)"
+.br
+.ti -1c
+.RI "void \fBset_AV\fP (int)"
+.br
+.ti -1c
+.RI "void \fBset_minimum_error\fP (double)"
+.br
+.ti -1c
+.RI "void \fBset_learning_rate\fP (double)"
+.br
+.ti -1c
+.RI "int \fBget_input_len\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_output_len\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_hidden_len\fP ()"
+.br
+.ti -1c
+.RI "void \fBdo_function\fP (int)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBtrain\fP ()"
+.br
+.ti -1c
+.RI "void \fBtest\fP ()"
+.br
+.ti -1c
+.RI "double \fBsegmoidal_fn\fP (double, int)"
+.br
+.ti -1c
+.RI "void \fBpropagate\fP ()"
+.br
+.ti -1c
+.RI "double \fBcal_error\fP ()"
+.br
+.ti -1c
+.RI "void \fBback_propagate\fP ()"
+.br
+.ti -1c
+.RI "bool \fBinput_absent\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalculate_net\fP (double &, double &)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBinput_len\fP"
+.br
+.ti -1c
+.RI "int \fBhidden_len\fP"
+.br
+.ti -1c
+.RI "int \fBoutput_len\fP"
+.br
+.ti -1c
+.RI "int \fBAV\fP"
+.br
+.ti -1c
+.RI "int \fBdataset_size\fP"
+.br
+.ti -1c
+.RI "double \fBerror\fP"
+.br
+.ti -1c
+.RI "double \fBminimum_error\fP"
+.br
+.ti -1c
+.RI "double \fBlearning_rate\fP"
+.br
+.ti -1c
+.RI "double \fBmomentum\fP"
+.br
+.ti -1c
+.RI "double \fBinput\fP [\fBinput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBhidden\fP [\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "double \fBoutput\fP [\fBoutput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBnetH\fP [\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "double \fBnetO\fP [\fBoutput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBexpected_o\fP [\fBoutput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBbias_O\fP [\fBoutput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBbias_H\fP [\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "double \fBWh\fP [\fBhidden_l\fP][\fBinput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBWo\fP [\fBoutput_l\fP][\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "double \fBtempWo\fP [\fBoutput_l\fP][\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "double \fBdelta_O\fP [\fBoutput_l\fP]"
+.br
+.ti -1c
+.RI "double \fBdelta_H\fP [\fBhidden_l\fP]"
+.br
+.ti -1c
+.RI "map< char, double > \fBinput_rank\fP"
+.br
+.ti -1c
+.RI "map< string, int > \fBoutput_rank\fP"
+.br
+.ti -1c
+.RI "map< int, string > \fBrank_output\fP"
+.br
+.ti -1c
+.RI "vector< vector< double > > \fBinput_dataset\fP"
+.br
+.ti -1c
+.RI "vector< vector< double > > \fBoutput_dataset\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBFile_Manager\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file NeuralNetwork\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Neural_Network::Neural_Network ()"
+
+.PP
+Definition at line 7 of file NN_constructor\&.cpp\&.
+.PP
+References AV, dataset_size, hidden_len, input_len, input_rank, learning_rate, minimum_error, momentum, output_len, and segmoidal\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Neural_Network::back_propagate ()\fC [private]\fP"
+
+.PP
+Definition at line 217 of file NN\&.cpp\&.
+.PP
+References bias_H, bias_O, delta_H, delta_O, fori, forj, hidden, hidden_len, input, input_len, learning_rate, momentum, output_len, Wh, and Wo\&.
+.SS "double Neural_Network::cal_error ()\fC [private]\fP"
+
+.PP
+Definition at line 244 of file NN\&.cpp\&.
+.PP
+References calculate_net(), delta_H, delta_O, expected_o, fori, forj, hidden_len, netH, netO, output, and output_len\&.
+.SS "void Neural_Network::calculate_net (double &max, double &maxO)\fC [private]\fP"
+
+.PP
+Definition at line 273 of file NN\&.cpp\&.
+.PP
+References fori, forj, hidden_len, input, input_len, netH, netO, output_len, Wh, and Wo\&.
+.SS "void Neural_Network::do_function (intwhat)"
+
+.PP
+Definition at line 7 of file NN\&.cpp\&.
+.PP
+References test(), and train()\&.
+.SS "int Neural_Network::get_hidden_len ()"
+
+.PP
+Definition at line 24 of file NN_getters\&.cpp\&.
+.PP
+References hidden_len\&.
+.SS "int Neural_Network::get_input_len ()"
+
+.PP
+Definition at line 6 of file NN_getters\&.cpp\&.
+.PP
+References input_len\&.
+.SS "int Neural_Network::get_output_len ()"
+
+.PP
+Definition at line 15 of file NN_getters\&.cpp\&.
+.PP
+References output_len\&.
+.SS "void Neural_Network::init ()\fC [private]\fP"
+
+.PP
+Definition at line 58 of file NN\&.cpp\&.
+.PP
+References bias_H, bias_O, fori, forj, hidden_len, input_len, output_len, Wh, and Wo\&.
+.SS "bool Neural_Network::input_absent ()\fC [private]\fP"
+
+.SS "void Neural_Network::propagate ()\fC [private]\fP"
+
+.PP
+Definition at line 185 of file NN\&.cpp\&.
+.PP
+References calculate_net(), fori, hidden, hidden_len, netH, netO, output, and output_len\&.
+.SS "double Neural_Network::segmoidal_fn (doublex, intmode)\fC [private]\fP"
+
+.PP
+Definition at line 40 of file NN\&.cpp\&.
+.SS "void Neural_Network::set_AV (inti)"
+
+.PP
+Definition at line 30 of file NN_setters\&.cpp\&.
+.PP
+References AV\&.
+.SS "void Neural_Network::set_hidden_len (inti)"
+
+.PP
+Definition at line 22 of file NN_setters\&.cpp\&.
+.PP
+References hidden_len\&.
+.SS "void Neural_Network::set_input_len (inti)"
+
+.PP
+Definition at line 6 of file NN_setters\&.cpp\&.
+.PP
+References input_len\&.
+.SS "void Neural_Network::set_learning_rate (doubled)"
+
+.PP
+Definition at line 46 of file NN_setters\&.cpp\&.
+.PP
+References learning_rate\&.
+.SS "void Neural_Network::set_minimum_error (doubled)"
+
+.PP
+Definition at line 38 of file NN_setters\&.cpp\&.
+.PP
+References minimum_error\&.
+.SS "void Neural_Network::set_output_len (inti)"
+
+.PP
+Definition at line 14 of file NN_setters\&.cpp\&.
+.PP
+References output_len\&.
+.SS "void Neural_Network::test ()\fC [private]\fP"
+
+.PP
+Definition at line 154 of file NN\&.cpp\&.
+.PP
+References dataset_size, error, expected_o, fori, forj, fork, input, input_dataset, input_len, output, output_dataset, output_len, pow(), and propagate()\&.
+.SS "void Neural_Network::train ()\fC [private]\fP"
+
+.PP
+Definition at line 95 of file NN\&.cpp\&.
+.PP
+References back_propagate(), cal_error(), dataset_size, error, expected_o, fori, fork, init(), input, input_dataset, input_len, max_iterations, minimum_error, output_dataset, output_len, and propagate()\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBFile_Manager\fP\fC [friend]\fP"
+
+.PP
+Definition at line 8 of file NeuralNetwork\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int Neural_Network::AV\fC [private]\fP"
+
+.PP
+Definition at line 33 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::bias_H[\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 48 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::bias_O[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 47 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::dataset_size\fC [private]\fP"
+
+.PP
+Definition at line 34 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::delta_H[\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 57 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::delta_O[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 56 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::error\fC [private]\fP"
+
+.PP
+Definition at line 35 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::expected_o[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 46 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::hidden[\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 42 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::hidden_len\fC [private]\fP"
+
+.PP
+Definition at line 31 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::input[\fBinput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 41 of file NeuralNetwork\&.h\&.
+.SS "vector<vector<double> > Neural_Network::input_dataset\fC [private]\fP"
+
+.PP
+Definition at line 68 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::input_len\fC [private]\fP"
+
+.PP
+Definition at line 30 of file NeuralNetwork\&.h\&.
+.SS "map<char,double> Neural_Network::input_rank\fC [private]\fP"
+
+.PP
+Definition at line 60 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::learning_rate\fC [private]\fP"
+
+.PP
+Definition at line 37 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::minimum_error\fC [private]\fP"
+
+.PP
+Definition at line 36 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::momentum\fC [private]\fP"
+
+.PP
+Definition at line 38 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::netH[\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 44 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::netO[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 45 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::output[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 43 of file NeuralNetwork\&.h\&.
+.SS "vector<vector<double> > Neural_Network::output_dataset\fC [private]\fP"
+
+.PP
+Definition at line 69 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::output_len\fC [private]\fP"
+
+.PP
+Definition at line 32 of file NeuralNetwork\&.h\&.
+.SS "map<string,int> Neural_Network::output_rank\fC [private]\fP"
+
+.PP
+Definition at line 63 of file NeuralNetwork\&.h\&.
+.SS "map<int,string> Neural_Network::rank_output\fC [private]\fP"
+
+.PP
+Definition at line 65 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::tempWo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 53 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::Wh[\fBhidden_l\fP][\fBinput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 51 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::Wo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 52 of file NeuralNetwork\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Phenogene from the source code\&.

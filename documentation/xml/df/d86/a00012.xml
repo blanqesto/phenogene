@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="df/d86/a00012" kind="file">
+    <compoundname>GUI_startButton.cpp</compoundname>
+    <includes refid="d7/dec/a00010" local="no">GUI.h</includes>
+    <includes local="no">ui_phenogene.h</includes>
+    <incdepgraph>
+      <node id="499">
+        <label>QMessageBox</label>
+      </node>
+      <node id="511">
+        <label>stdlib.h</label>
+      </node>
+      <node id="506">
+        <label>General_Notation.h</label>
+        <link refid="d4/dee/a00008"/>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>cmath</label>
+      </node>
+      <node id="517">
+        <label>string</label>
+      </node>
+      <node id="497">
+        <label>QMainWindow</label>
+      </node>
+      <node id="515">
+        <label>map</label>
+      </node>
+      <node id="509">
+        <label>fstream</label>
+      </node>
+      <node id="500">
+        <label>qapplication.h</label>
+      </node>
+      <node id="498">
+        <label>QFileDialog</label>
+      </node>
+      <node id="504">
+        <label>QRegExp</label>
+      </node>
+      <node id="513">
+        <label>vector</label>
+      </node>
+      <node id="505">
+        <label>FileManager.h</label>
+        <link refid="d0/d0b/a00004"/>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>utility</label>
+      </node>
+      <node id="508">
+        <label>sstream</label>
+      </node>
+      <node id="519">
+        <label>ui_phenogene.h</label>
+      </node>
+      <node id="503">
+        <label>qlineedit.h</label>
+      </node>
+      <node id="507">
+        <label>iostream</label>
+      </node>
+      <node id="496">
+        <label>GUI.h</label>
+        <link refid="d7/dec/a00010"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>qvalidator.h</label>
+      </node>
+      <node id="501">
+        <label>qmainwindow.h</label>
+      </node>
+      <node id="518">
+        <label>NeuralNetwork.h</label>
+        <link refid="d2/de7/a00014"/>
+        <childnode refid="506" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>stdio.h</label>
+      </node>
+      <node id="516">
+        <label>cstring</label>
+      </node>
+      <node id="495">
+        <label>phenogene/GUI_startButton.cpp</label>
+        <link refid="GUI_startButton.cpp"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d7/dec/a00010" kindref="compound">GUI.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ui_phenogene.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*When<sp/>start<sp/>button<sp/>clicked:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*Called<sp/>when<sp/>start<sp/>button<sp/>is<sp/>pushed.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*Determines<sp/>weather<sp/>to<sp/>train/test/analyze.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*According<sp/>to<sp/>the<sp/>opened<sp/>tab.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" kindref="member">GUI::on_pushButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>er<sp/>=<sp/><ref refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" kindref="member">valid_input</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(er<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;Error!\n\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" kindref="member">display_error</ref>(er);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" kindref="member">fill_rank_output</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(2);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;tabWidget-&gt;currentIndex()==0)<sp/></highlight><highlight class="comment">//train</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" kindref="member">perform_train</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;tabWidget-&gt;currentIndex()==1)<sp/></highlight><highlight class="comment">//test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" kindref="member">perform_test</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*Perform<sp/>train:</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*Calls<sp/>file<sp/>manager<sp/>rotines<sp/>to<sp/>train:</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>**read<sp/>input</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>**read<sp/>expected<sp/>output</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>**train</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>**write<sp/>weights</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" kindref="member">GUI::perform_train</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(0);<sp/></highlight><highlight class="comment">//read<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(15);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;textBrowser_3-&gt;setText(<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" kindref="member">get_input_population_string</ref>().c_str());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(3);<sp/></highlight><highlight class="comment">//read<sp/>expected<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(30);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;textBrowser-&gt;setText(<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" kindref="member">get_read_ex_output_string</ref>().c_str());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" kindref="member">n</ref>.<ref refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kindref="member">do_function</ref>(5);<sp/></highlight><highlight class="comment">//train</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(80);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//network.do_function(1);<sp/>//write<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ui-&gt;progressBar-&gt;setValue(85);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(4);<sp/></highlight><highlight class="comment">//write<sp/>weights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(100);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*Perform<sp/>test:</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*Calls<sp/>file<sp/>manager<sp/>rotines<sp/>to<sp/>test:</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>**read<sp/>input</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>**read<sp/>weights</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>**test</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>**write<sp/>output</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" kindref="member">GUI::perform_test</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(0);<sp/></highlight><highlight class="comment">//read<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(20);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;textBrowser_2-&gt;setText(<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" kindref="member">get_input_population_string</ref>().c_str());</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(2);<sp/></highlight><highlight class="comment">//read<sp/>weights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(30);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" kindref="member">n</ref>.<ref refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kindref="member">do_function</ref>(6);<sp/></highlight><highlight class="comment">//test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(80);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" kindref="member">do_function</ref>(1);<sp/></highlight><highlight class="comment">//write<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;progressBar-&gt;setValue(100);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;textBrowser_5-&gt;setText(<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" kindref="member">get_output_population_string</ref>().c_str());</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*Valid<sp/>input:</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*Check<sp/>that<sp/>all<sp/>input<sp/>needed<sp/>is<sp/>filled</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" refkind="member"><highlight class="normal">QString<sp/><ref refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" kindref="member">GUI::valid_input</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>er<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Error!\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" kindref="member">fill_rank</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit_3-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>er<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Fill-in<sp/>all<sp/>the<sp/>network&apos;s<sp/>parameters!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" kindref="member">fori</ref>(0,<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" kindref="member">n</ref>.<ref refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kindref="member">get_output_len</ref>())</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" kindref="member">get_rank_output_strings</ref>(i)==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" kindref="member">fori</ref>(0,<ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" kindref="member">n</ref>.<ref refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kindref="member">get_output_len</ref>())</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" kindref="member">get_rank_output_strings</ref>(i)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>er<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;Fill-in<sp/>all<sp/>the<sp/>network&apos;s<sp/>parameters!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;tabWidget-&gt;currentIndex()==0)<sp/></highlight><highlight class="comment">//train<sp/>tab<sp/>selected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_2-&gt;text()==</highlight><highlight class="stringliteral">&quot;No<sp/>Selected<sp/>File&quot;</highlight><highlight class="normal">||<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_2-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>er+=</highlight><highlight class="stringliteral">&quot;Input<sp/>file<sp/>is<sp/>not<sp/>selected!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_10-&gt;text()==</highlight><highlight class="stringliteral">&quot;No<sp/>Selected<sp/>File&quot;</highlight><highlight class="normal">||<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_10-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>er+=</highlight><highlight class="stringliteral">&quot;Output<sp/>file<sp/>is<sp/>not<sp/>selected!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;tabWidget-&gt;currentIndex()==1)<sp/></highlight><highlight class="comment">//<sp/>predict<sp/>tab<sp/>selected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_11-&gt;text()==</highlight><highlight class="stringliteral">&quot;No<sp/>Selected<sp/>File&quot;</highlight><highlight class="normal">||<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_11-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>er+=</highlight><highlight class="stringliteral">&quot;Input<sp/>file<sp/>is<sp/>not<sp/>selected!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_24-&gt;text()==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>er+=</highlight><highlight class="stringliteral">&quot;Weights<sp/>file<sp/>is<sp/>not<sp/>selected!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>er;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*Fill<sp/>Rank:</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*Called<sp/>once<sp/>before<sp/>a<sp/>train/test<sp/>is<sp/>performed</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*Fills<sp/>necessary<sp/>data<sp/>input/decimal<sp/>mapping<sp/>structure</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" kindref="member">GUI::fill_rank</ref>()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*fill_rank_output*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tempSplit,str<sp/>=<sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;textEdit_4-&gt;document()-&gt;toPlainText().toAscii().constData();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>std::istringstream<sp/>s(str.c_str());</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(getline(s,tempSplit,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" kindref="member">fm</ref>.<ref refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" kindref="member">set_rank_output_strings</ref>(i++,tempSplit);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*****************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*Display<sp/>Error:</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*Displays<sp/>the<sp/>error<sp/>message<sp/>contained<sp/>in<sp/>string<sp/>er</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" kindref="member">GUI::display_error</ref>(QString<sp/>er)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox<sp/>msgBox;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>msgBox.setText(er);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>msgBox.exec();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>msgBox.move((GUI::width()-msgBox.width())/2,(GUI::height()-msgBox.height())/2);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp"/>
+  </compounddef>
+</doxygen>

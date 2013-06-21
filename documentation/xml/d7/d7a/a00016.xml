@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="d7/d7a/a00016" kind="file">
+    <compoundname>NN_constructor.cpp</compoundname>
+    <includes refid="d2/de7/a00014" local="no">NeuralNetwork.h</includes>
+    <incdepgraph>
+      <node id="596">
+        <label>stdlib.h</label>
+      </node>
+      <node id="591">
+        <label>General_Notation.h</label>
+        <link refid="d4/dee/a00008"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>cmath</label>
+      </node>
+      <node id="602">
+        <label>string</label>
+      </node>
+      <node id="600">
+        <label>map</label>
+      </node>
+      <node id="594">
+        <label>fstream</label>
+      </node>
+      <node id="598">
+        <label>vector</label>
+      </node>
+      <node id="597">
+        <label>utility</label>
+      </node>
+      <node id="593">
+        <label>sstream</label>
+      </node>
+      <node id="592">
+        <label>iostream</label>
+      </node>
+      <node id="589">
+        <label>phenogene/NN_constructor.cpp</label>
+        <link refid="NN_constructor.cpp"/>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>NeuralNetwork.h</label>
+        <link refid="d2/de7/a00014"/>
+        <childnode refid="591" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>stdio.h</label>
+      </node>
+      <node id="601">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d2/de7/a00014" kindref="compound">NeuralNetwork.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*Neural<sp/>Network<sp/>class<sp/>constructor</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" refkind="member"><highlight class="normal"><ref refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" kindref="member">Neural_Network::Neural_Network</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>srand((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)time(0));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref><sp/>=<sp/>0.01;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kindref="member">input_len</ref><sp/>=<sp/>18;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref><sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kindref="member">output_len</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" kindref="member">momentum</ref><sp/>=<sp/>0.0001;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref><sp/>=<sp/>0.001;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" kindref="member">dataset_size</ref>=0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kindref="member">AV</ref>=<ref refid="d4/dee/a00008_1a2f65cc4d2a528ee38224d709c1d73015" kindref="member">segmoidal</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">,0.1));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">,0.1));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,0.3));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;C&apos;</highlight><highlight class="normal">,0.4));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">,0.6));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kindref="member">input_rank</ref>.insert(pair<sp/>&lt;char,double&gt;(</highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,0.9));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;-&apos;,&apos;1&apos;),0));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;A&apos;,&apos;A&apos;),1));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;A&apos;,&apos;C&apos;),2));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;A&apos;,&apos;G&apos;),3));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;A&apos;,&apos;T&apos;),4));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;C&apos;,&apos;A&apos;),5));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;C&apos;,&apos;C&apos;),6));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;C&apos;,&apos;G&apos;),7));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;C&apos;,&apos;T&apos;),8));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;G&apos;,&apos;A&apos;),9));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;G&apos;,&apos;C&apos;),10));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;G&apos;,&apos;G&apos;),11));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;G&apos;,&apos;T&apos;),12));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;T&apos;,&apos;A&apos;),13));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;T&apos;,&apos;C&apos;),14));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;T&apos;,&apos;G&apos;),15));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>input_rank.insert(pair&lt;pair&lt;char,char&gt;,int&gt;(pair<sp/>&lt;char,char&gt;<sp/>(&apos;T&apos;,&apos;T&apos;),16));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/NN_constructor.cpp"/>
+  </compounddef>
+</doxygen>

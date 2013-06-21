@@ -1,0 +1,250 @@
+.TH "GUI" 3 "Fri Jun 21 2013" "Version 1.0" "Phenogene" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GUI \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GUI\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGUI\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~GUI\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_quitButton_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_pushButton_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_pushButton_3_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_pushButton_4_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_pushButton_5_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_pushButton_6_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_lineEdit_editingFinished\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_lineEdit_3_editingFinished\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_lineEdit_4_editingFinished\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_textEdit_4_textChanged\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_listWidget_currentRowChanged\fP (int currentRow)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "QString \fBvalid_input\fP ()"
+.br
+.ti -1c
+.RI "void \fBfill_rank\fP ()"
+.br
+.ti -1c
+.RI "void \fBperform_train\fP ()"
+.br
+.ti -1c
+.RI "void \fBperform_test\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_validators\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_styleSheet\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisplay_error\fP (QString)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString \fBfilePath\fP"
+.br
+.ti -1c
+.RI "QFileDialog \fBfileDialog\fP"
+.br
+.ti -1c
+.RI "QByteArray \fBstate\fP"
+.br
+.ti -1c
+.RI "Ui::GUI * \fBui\fP"
+.br
+.ti -1c
+.RI "\fBFile_Manager\fP \fBfm\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 18 of file GUI\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GUI::GUI (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+Definition at line 8 of file GUI_constructor\&.cpp\&.
+.PP
+References set_styleSheet(), and set_validators()\&.
+.SS "GUI::~GUI ()"
+
+.PP
+Definition at line 50 of file GUI_constructor\&.cpp\&.
+.PP
+References ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void GUI::display_error (QStringer)\fC [private]\fP"
+
+.PP
+Definition at line 143 of file GUI_startButton\&.cpp\&.
+.SS "void GUI::fill_rank ()\fC [private]\fP"
+
+.PP
+Definition at line 127 of file GUI_startButton\&.cpp\&.
+.PP
+References fm, File_Manager::set_rank_output_strings(), and ui\&.
+.SS "void GUI::on_lineEdit_3_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 61 of file GUI\&.cpp\&.
+.PP
+References fm, File_Manager::n, Neural_Network::set_learning_rate(), and ui\&.
+.SS "void GUI::on_lineEdit_4_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 73 of file GUI\&.cpp\&.
+.PP
+References fm, File_Manager::n, Neural_Network::set_minimum_error(), and ui\&.
+.SS "void GUI::on_lineEdit_editingFinished ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 48 of file GUI\&.cpp\&.
+.PP
+References fm, File_Manager::n, Neural_Network::set_input_len(), and ui\&.
+.SS "void GUI::on_listWidget_currentRowChanged (intcurrentRow)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 85 of file GUI\&.cpp\&.
+.PP
+References fm, File_Manager::n, Neural_Network::set_AV(), and ui\&.
+.SS "void GUI::on_pushButton_3_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 33 of file GUI\&.cpp\&.
+.PP
+References fileDialog, filePath, fm, File_Manager::set_expected_out_file(), and ui\&.
+.SS "void GUI::on_pushButton_4_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 120 of file GUI\&.cpp\&.
+.PP
+References fileDialog, filePath, fm, File_Manager::set_input_file(), File_Manager::set_output_file(), and ui\&.
+.SS "void GUI::on_pushButton_5_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 12 of file GUI\&.cpp\&.
+.PP
+References fileDialog, filePath, fm, File_Manager::set_input_file(), File_Manager::set_output_file(), File_Manager::set_weights_file(), and ui\&.
+.SS "void GUI::on_pushButton_6_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 137 of file GUI\&.cpp\&.
+.PP
+References fileDialog, filePath, fm, File_Manager::set_weights_file(), and ui\&.
+.SS "void GUI::on_pushButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 12 of file GUI_startButton\&.cpp\&.
+.PP
+References display_error(), File_Manager::fill_rank_output(), fm, perform_test(), perform_train(), ui, and valid_input()\&.
+.SS "void GUI::on_quitButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 146 of file GUI\&.cpp\&.
+.SS "void GUI::on_textEdit_4_textChanged ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 97 of file GUI\&.cpp\&.
+.PP
+References fm, File_Manager::n, Neural_Network::set_output_len(), and ui\&.
+.SS "void GUI::perform_test ()\fC [private]\fP"
+
+.PP
+Definition at line 67 of file GUI_startButton\&.cpp\&.
+.PP
+References Neural_Network::do_function(), File_Manager::do_function(), fm, File_Manager::get_input_population_string(), File_Manager::get_output_population_string(), File_Manager::n, and ui\&.
+.SS "void GUI::perform_train ()\fC [private]\fP"
+
+.PP
+Definition at line 40 of file GUI_startButton\&.cpp\&.
+.PP
+References Neural_Network::do_function(), File_Manager::do_function(), fm, File_Manager::get_input_population_string(), File_Manager::get_read_ex_output_string(), File_Manager::n, and ui\&.
+.SS "void GUI::set_styleSheet ()\fC [private]\fP"
+
+.PP
+Definition at line 21 of file GUI_constructor\&.cpp\&.
+.PP
+References ui\&.
+.SS "void GUI::set_validators ()\fC [private]\fP"
+
+.PP
+Definition at line 34 of file GUI_constructor\&.cpp\&.
+.PP
+References ui\&.
+.SS "QString GUI::valid_input ()\fC [private]\fP"
+
+.PP
+Definition at line 88 of file GUI_startButton\&.cpp\&.
+.PP
+References fill_rank(), fm, fori, Neural_Network::get_output_len(), File_Manager::get_rank_output_strings(), File_Manager::n, and ui\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QFileDialog GUI::fileDialog\fC [private]\fP"
+
+.PP
+Definition at line 21 of file GUI\&.h\&.
+.SS "QString GUI::filePath\fC [private]\fP"
+
+.PP
+Definition at line 20 of file GUI\&.h\&.
+.SS "\fBFile_Manager\fP GUI::fm\fC [private]\fP"
+
+.PP
+Definition at line 45 of file GUI\&.h\&.
+.SS "QByteArray GUI::state\fC [private]\fP"
+
+.PP
+Definition at line 22 of file GUI\&.h\&.
+.SS "Ui::GUI* GUI::ui\fC [private]\fP"
+
+.PP
+Definition at line 43 of file GUI\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Phenogene from the source code\&.

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="da/d45/a00011" kind="file">
+    <compoundname>GUI_constructor.cpp</compoundname>
+    <includes refid="d7/dec/a00010" local="no">GUI.h</includes>
+    <includes local="no">ui_phenogene.h</includes>
+    <incdepgraph>
+      <node id="473">
+        <label>QMessageBox</label>
+      </node>
+      <node id="485">
+        <label>stdlib.h</label>
+      </node>
+      <node id="480">
+        <label>General_Notation.h</label>
+        <link refid="d4/dee/a00008"/>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>cmath</label>
+      </node>
+      <node id="491">
+        <label>string</label>
+      </node>
+      <node id="471">
+        <label>QMainWindow</label>
+      </node>
+      <node id="489">
+        <label>map</label>
+      </node>
+      <node id="483">
+        <label>fstream</label>
+      </node>
+      <node id="474">
+        <label>qapplication.h</label>
+      </node>
+      <node id="472">
+        <label>QFileDialog</label>
+      </node>
+      <node id="478">
+        <label>QRegExp</label>
+      </node>
+      <node id="469">
+        <label>phenogene/GUI_constructor.cpp</label>
+        <link refid="GUI_constructor.cpp"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>vector</label>
+      </node>
+      <node id="479">
+        <label>FileManager.h</label>
+        <link refid="d0/d0b/a00004"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>utility</label>
+      </node>
+      <node id="482">
+        <label>sstream</label>
+      </node>
+      <node id="493">
+        <label>ui_phenogene.h</label>
+      </node>
+      <node id="477">
+        <label>qlineedit.h</label>
+      </node>
+      <node id="481">
+        <label>iostream</label>
+      </node>
+      <node id="470">
+        <label>GUI.h</label>
+        <link refid="d7/dec/a00010"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>qvalidator.h</label>
+      </node>
+      <node id="475">
+        <label>qmainwindow.h</label>
+      </node>
+      <node id="492">
+        <label>NeuralNetwork.h</label>
+        <link refid="d2/de7/a00014"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>stdio.h</label>
+      </node>
+      <node id="490">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d7/dec/a00010" kindref="compound">GUI.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ui_phenogene.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*GUI<sp/>class<sp/>constructor</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d7/d46/a00002_1acb0ba8c6fc121d814d30560e2c29f2fe" refkind="member"><highlight class="normal"><ref refid="d7/d46/a00002_1acb0ba8c6fc121d814d30560e2c29f2fe" kindref="member">GUI::GUI</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow(parent),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="d7/d46/a00002" kindref="compound">GUI</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" kindref="member">set_validators</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" kindref="member">set_styleSheet</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*Set<sp/>style<sp/>sheet:</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*Set<sp/>grey<sp/>color<sp/>for<sp/>some<sp/>labels</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" kindref="member">GUI::set_styleSheet</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_28-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;QLabel<sp/>{<sp/>color<sp/>:<sp/>grey;<sp/>}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_29-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;QLabel<sp/>{<sp/>color<sp/>:<sp/>grey;<sp/>}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_32-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;QLabel<sp/>{<sp/>color<sp/>:<sp/>grey;<sp/>}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;label_33-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;QLabel<sp/>{<sp/>color<sp/>:<sp/>grey;<sp/>}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*Set<sp/>validators</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*Set<sp/>validators<sp/>for<sp/>user<sp/>input</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" kindref="member">GUI::set_validators</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit-&gt;setValidator(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QIntValidator<sp/>(1,100,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit_3-&gt;setValidator(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QIntValidator<sp/>(0,1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>QRegExp<sp/>re<sp/>(</highlight><highlight class="stringliteral">&quot;0\\.[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9])?|2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>QRegExp<sp/>re2<sp/>(</highlight><highlight class="stringliteral">&quot;[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9]?[0-9])?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QRegExpValidator<sp/>*valid<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRegExpValidator(re,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>QRegExpValidator<sp/>*valid2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRegExpValidator(re2,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit_3-&gt;setValidator(valid);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>-&gt;lineEdit_4-&gt;setValidator(valid2);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*GUI<sp/>destructor</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" refkind="member"><highlight class="normal"><ref refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" kindref="member">GUI::~GUI</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI_constructor.cpp"/>
+  </compounddef>
+</doxygen>

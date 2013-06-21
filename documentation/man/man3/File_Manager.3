@@ -1,0 +1,274 @@
+.TH "File_Manager" 3 "Fri Jun 21 2013" "Version 1.0" "Phenogene" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+File_Manager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FileManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFile_Manager\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_input_file\fP (string)"
+.br
+.ti -1c
+.RI "void \fBset_expected_out_file\fP (string)"
+.br
+.ti -1c
+.RI "void \fBset_output_file\fP (string)"
+.br
+.ti -1c
+.RI "void \fBset_weights_file\fP (string)"
+.br
+.ti -1c
+.RI "void \fBset_rank_output_strings\fP (int, string)"
+.br
+.ti -1c
+.RI "string \fBget_read_ex_output_string\fP ()"
+.br
+.ti -1c
+.RI "string \fBget_input_population_string\fP ()"
+.br
+.ti -1c
+.RI "string \fBget_output_population_string\fP ()"
+.br
+.ti -1c
+.RI "string \fBget_rank_output_strings\fP (int)"
+.br
+.ti -1c
+.RI "void \fBdo_function\fP (int)"
+.br
+.ti -1c
+.RI "void \fBfill_rank_output\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNeural_Network\fP \fBn\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBread_input\fP (string)"
+.br
+.ti -1c
+.RI "void \fBread_expected_output\fP (string)"
+.br
+.ti -1c
+.RI "void \fBread_weights\fP (string)"
+.br
+.ti -1c
+.RI "void \fBwrite_output\fP (string)"
+.br
+.ti -1c
+.RI "void \fBwrite_weights\fP (string)"
+.br
+.ti -1c
+.RI "string \fBconvertInt\fP (int)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ofstream \fBwrite\fP"
+.br
+.ti -1c
+.RI "ifstream \fBread\fP"
+.br
+.ti -1c
+.RI "string \fBread_ex_output_string\fP"
+.br
+.ti -1c
+.RI "string \fBinput_population_string\fP"
+.br
+.ti -1c
+.RI "string \fBoutput_population_string\fP"
+.br
+.ti -1c
+.RI "string \fBinput_file\fP"
+.br
+.ti -1c
+.RI "string \fBexpected_out_file\fP"
+.br
+.ti -1c
+.RI "string \fBoutput_file\fP"
+.br
+.ti -1c
+.RI "string \fBweights_file\fP"
+.br
+.ti -1c
+.RI "string \fBrank_output_strings\fP [\fBoutput_l\fP]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file FileManager\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "File_Manager::File_Manager ()"
+
+.PP
+Definition at line 3 of file FM\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "string File_Manager::convertInt (intnumber)\fC [private]\fP"
+
+.PP
+Definition at line 194 of file FM\&.cpp\&.
+.SS "void File_Manager::do_function (intmode)"
+
+.PP
+Definition at line 15 of file FM\&.cpp\&.
+.PP
+References expected_out_file, input_file, output_file, read_expected_output(), read_input(), read_weights(), weights_file, write_output(), and write_weights()\&.
+.SS "void File_Manager::fill_rank_output ()"
+
+.PP
+Definition at line 216 of file FM\&.cpp\&.
+.PP
+References fori, n, Neural_Network::output_len, Neural_Network::output_rank, Neural_Network::rank_output, and rank_output_strings\&.
+.SS "string File_Manager::get_input_population_string ()"
+
+.PP
+Definition at line 13 of file FM_getters\&.cpp\&.
+.PP
+References input_population_string\&.
+.SS "string File_Manager::get_output_population_string ()"
+
+.PP
+Definition at line 20 of file FM_getters\&.cpp\&.
+.PP
+References output_population_string\&.
+.SS "string File_Manager::get_rank_output_strings (inti)"
+
+.PP
+Definition at line 27 of file FM_getters\&.cpp\&.
+.PP
+References rank_output_strings\&.
+.SS "string File_Manager::get_read_ex_output_string ()"
+
+.PP
+Definition at line 6 of file FM_getters\&.cpp\&.
+.PP
+References read_ex_output_string\&.
+.SS "void File_Manager::read_expected_output (stringfilePath)\fC [private]\fP"
+
+.PP
+Definition at line 89 of file FM\&.cpp\&.
+.PP
+References Neural_Network::dataset_size, Neural_Network::expected_o, fori, forj, max_dataset_size, n, Neural_Network::output_dataset, Neural_Network::output_len, Neural_Network::output_rank, read, and read_ex_output_string\&.
+.SS "void File_Manager::read_input (stringfilePath)\fC [private]\fP"
+
+.PP
+Definition at line 45 of file FM\&.cpp\&.
+.PP
+References convertInt(), Neural_Network::dataset_size, fori, fork, Neural_Network::input, Neural_Network::input_dataset, Neural_Network::input_len, input_population_string, Neural_Network::input_rank, max_dataset_size, n, and read\&.
+.SS "void File_Manager::read_weights (stringfilePath)\fC [private]\fP"
+
+.PP
+Definition at line 155 of file FM\&.cpp\&.
+.PP
+References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, read, Neural_Network::Wh, and Neural_Network::Wo\&.
+.SS "void File_Manager::set_expected_out_file (strings)"
+
+.PP
+Definition at line 14 of file FM_setters\&.cpp\&.
+.PP
+References expected_out_file\&.
+.SS "void File_Manager::set_input_file (strings)"
+
+.PP
+Definition at line 6 of file FM_setters\&.cpp\&.
+.PP
+References input_file\&.
+.SS "void File_Manager::set_output_file (strings)"
+
+.PP
+Definition at line 22 of file FM_setters\&.cpp\&.
+.PP
+References output_file\&.
+.SS "void File_Manager::set_rank_output_strings (inti, strings)"
+
+.PP
+Definition at line 39 of file FM_setters\&.cpp\&.
+.PP
+References rank_output_strings\&.
+.SS "void File_Manager::set_weights_file (strings)"
+
+.PP
+Definition at line 30 of file FM_setters\&.cpp\&.
+.PP
+References weights_file\&.
+.SS "void File_Manager::write_output (stringfilePath)\fC [private]\fP"
+
+.PP
+Definition at line 123 of file FM\&.cpp\&.
+.PP
+References Neural_Network::dataset_size, fori, forj, n, Neural_Network::output_dataset, Neural_Network::output_len, output_population_string, Neural_Network::rank_output, and write\&.
+.SS "void File_Manager::write_weights (stringfilePath)\fC [private]\fP"
+
+.PP
+Definition at line 175 of file FM\&.cpp\&.
+.PP
+References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, Neural_Network::Wh, Neural_Network::Wo, and write\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "string File_Manager::expected_out_file\fC [private]\fP"
+
+.PP
+Definition at line 38 of file FileManager\&.h\&.
+.SS "string File_Manager::input_file\fC [private]\fP"
+
+.PP
+Definition at line 37 of file FileManager\&.h\&.
+.SS "string File_Manager::input_population_string\fC [private]\fP"
+
+.PP
+Definition at line 35 of file FileManager\&.h\&.
+.SS "\fBNeural_Network\fP File_Manager::n"
+
+.PP
+Definition at line 12 of file FileManager\&.h\&.
+.SS "string File_Manager::output_file\fC [private]\fP"
+
+.PP
+Definition at line 39 of file FileManager\&.h\&.
+.SS "string File_Manager::output_population_string\fC [private]\fP"
+
+.PP
+Definition at line 36 of file FileManager\&.h\&.
+.SS "string File_Manager::rank_output_strings[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 41 of file FileManager\&.h\&.
+.SS "ifstream File_Manager::read\fC [private]\fP"
+
+.PP
+Definition at line 33 of file FileManager\&.h\&.
+.SS "string File_Manager::read_ex_output_string\fC [private]\fP"
+
+.PP
+Definition at line 34 of file FileManager\&.h\&.
+.SS "string File_Manager::weights_file\fC [private]\fP"
+
+.PP
+Definition at line 40 of file FileManager\&.h\&.
+.SS "ofstream File_Manager::write\fC [private]\fP"
+
+.PP
+Definition at line 32 of file FileManager\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Phenogene from the source code\&.

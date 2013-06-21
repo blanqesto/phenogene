@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="d8/d84/a00001" kind="class" prot="public">
+    <compoundname>File_Manager</compoundname>
+    <includes refid="d0/d0b/a00004" local="no">FileManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d7c/a00003" kindref="compound">Neural_Network</ref></type>
+        <definition>Neural_Network File_Manager::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="12" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="45" endline="80">read_input</referencedby>
+        <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="89" endline="115">read_expected_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="123" endline="147">write_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="155" endline="166">read_weights</referencedby>
+        <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="175" endline="186">write_weights</referencedby>
+        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="216" endline="229">fill_rank_output</referencedby>
+        <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="52">GUI::on_lineEdit_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="61" endline="65">GUI::on_lineEdit_3_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="73" endline="77">GUI::on_lineEdit_4_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" compoundref="da/da0/a00009" startline="85" endline="89">GUI::on_listWidget_currentRowChanged</referencedby>
+        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="97" endline="110">GUI::on_textEdit_4_textChanged</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d84/a00001_1a7d29cb8d04a1a60638f653c28a628095" prot="private" static="no" mutable="no">
+        <type>ofstream</type>
+        <definition>ofstream File_Manager::write</definition>
+        <argsstring></argsstring>
+        <name>write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="32" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="123" endline="147">write_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="175" endline="186">write_weights</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" prot="private" static="no" mutable="no">
+        <type>ifstream</type>
+        <definition>ifstream File_Manager::read</definition>
+        <argsstring></argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="45" endline="80">read_input</referencedby>
+        <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="89" endline="115">read_expected_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="155" endline="166">read_weights</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::read_ex_output_string</definition>
+        <argsstring></argsstring>
+        <name>read_ex_output_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="34" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="89" endline="115">read_expected_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" compoundref="de/d21/a00006" startline="6" endline="9">get_read_ex_output_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::input_population_string</definition>
+        <argsstring></argsstring>
+        <name>input_population_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="45" endline="80">read_input</referencedby>
+        <referencedby refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" compoundref="de/d21/a00006" startline="13" endline="16">get_input_population_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::output_population_string</definition>
+        <argsstring></argsstring>
+        <name>output_population_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="123" endline="147">write_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" compoundref="de/d21/a00006" startline="20" endline="23">get_output_population_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a78b144182e3cfc70f9aae78ebdd66e51" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::input_file</definition>
+        <argsstring></argsstring>
+        <name>input_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+        <referencedby refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" compoundref="de/d5e/a00007" startline="6" endline="10">set_input_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a8b8f5c9cc3ffcb083ccc4fce1c05ca44" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::expected_out_file</definition>
+        <argsstring></argsstring>
+        <name>expected_out_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+        <referencedby refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" compoundref="de/d5e/a00007" startline="14" endline="18">set_expected_out_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::output_file</definition>
+        <argsstring></argsstring>
+        <name>output_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="39" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+        <referencedby refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" compoundref="de/d5e/a00007" startline="22" endline="26">set_output_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::weights_file</definition>
+        <argsstring></argsstring>
+        <name>weights_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="40" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+        <referencedby refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" compoundref="de/d5e/a00007" startline="30" endline="34">set_weights_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string File_Manager::rank_output_strings[output_l]</definition>
+        <argsstring>[output_l]</argsstring>
+        <name>rank_output_strings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="41" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="216" endline="229">fill_rank_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" compoundref="de/d21/a00006" startline="27" endline="30">get_rank_output_strings</referencedby>
+        <referencedby refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" compoundref="de/d5e/a00007" startline="39" endline="43">set_rank_output_strings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d84/a00001_1a2acf523335c71f922a42756c1d0a7a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>File_Manager::File_Manager</definition>
+        <argsstring>()</argsstring>
+        <name>File_Manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="10" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::set_input_file</definition>
+        <argsstring>(string)</argsstring>
+        <name>set_input_file</name>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="15" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="6" bodyend="10"/>
+        <references refid="d8/d84/a00001_1a78b144182e3cfc70f9aae78ebdd66e51" compoundref="d0/d0b/a00004" startline="37">input_file</references>
+        <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">GUI::on_pushButton_5_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="120" endline="128">GUI::on_pushButton_4_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::set_expected_out_file</definition>
+        <argsstring>(string)</argsstring>
+        <name>set_expected_out_file</name>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="16" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="14" bodyend="18"/>
+        <references refid="d8/d84/a00001_1a8b8f5c9cc3ffcb083ccc4fce1c05ca44" compoundref="d0/d0b/a00004" startline="38">expected_out_file</references>
+        <referencedby refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" compoundref="da/da0/a00009" startline="33" endline="39">GUI::on_pushButton_3_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::set_output_file</definition>
+        <argsstring>(string)</argsstring>
+        <name>set_output_file</name>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="17" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="22" bodyend="26"/>
+        <references refid="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" compoundref="d0/d0b/a00004" startline="39">output_file</references>
+        <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">GUI::on_pushButton_5_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="120" endline="128">GUI::on_pushButton_4_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::set_weights_file</definition>
+        <argsstring>(string)</argsstring>
+        <name>set_weights_file</name>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="18" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="30" bodyend="34"/>
+        <references refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" compoundref="d0/d0b/a00004" startline="40">weights_file</references>
+        <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">GUI::on_pushButton_5_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="137" endline="143">GUI::on_pushButton_6_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::set_rank_output_strings</definition>
+        <argsstring>(int, string)</argsstring>
+        <name>set_rank_output_strings</name>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="19" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_setters.cpp" bodystart="39" bodyend="43"/>
+        <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="127" endline="136">GUI::fill_rank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string File_Manager::get_read_ex_output_string</definition>
+        <argsstring>()</argsstring>
+        <name>get_read_ex_output_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="22" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="6" bodyend="9"/>
+        <references refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" compoundref="d0/d0b/a00004" startline="34">read_ex_output_string</references>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string File_Manager::get_input_population_string</definition>
+        <argsstring>()</argsstring>
+        <name>get_input_population_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="23" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="13" bodyend="16"/>
+        <references refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" compoundref="d0/d0b/a00004" startline="35">input_population_string</references>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string File_Manager::get_output_population_string</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_population_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="24" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="20" bodyend="23"/>
+        <references refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" compoundref="d0/d0b/a00004" startline="36">output_population_string</references>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string File_Manager::get_rank_output_strings</definition>
+        <argsstring>(int)</argsstring>
+        <name>get_rank_output_strings</name>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="25" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM_getters.cpp" bodystart="27" bodyend="30"/>
+        <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="88" endline="119">GUI::valid_input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::do_function</definition>
+        <argsstring>(int)</argsstring>
+        <name>do_function</name>
+        <param>
+          <type>int</type>
+          <defname>mode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="28" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="15" bodyend="36"/>
+        <references refid="d8/d84/a00001_1a8b8f5c9cc3ffcb083ccc4fce1c05ca44" compoundref="d0/d0b/a00004" startline="38">expected_out_file</references>
+        <references refid="d8/d84/a00001_1a78b144182e3cfc70f9aae78ebdd66e51" compoundref="d0/d0b/a00004" startline="37">input_file</references>
+        <references refid="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" compoundref="d0/d0b/a00004" startline="39">output_file</references>
+        <references refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="89" endline="115">read_expected_output</references>
+        <references refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="45" endline="80">read_input</references>
+        <references refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="155" endline="166">read_weights</references>
+        <references refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" compoundref="d0/d0b/a00004" startline="40">weights_file</references>
+        <references refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="123" endline="147">write_output</references>
+        <references refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="175" endline="186">write_weights</references>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="40" endline="56">GUI::perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="67" endline="81">GUI::perform_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::fill_rank_output</definition>
+        <argsstring>()</argsstring>
+        <name>fill_rank_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="29" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="216" bodyend="229"/>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">Neural_Network::output_len</references>
+        <references refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" compoundref="d2/de7/a00014" startline="63">Neural_Network::output_rank</references>
+        <references refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" compoundref="d2/de7/a00014" startline="65">Neural_Network::rank_output</references>
+        <references refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" compoundref="d0/d0b/a00004" startline="41">rank_output_strings</references>
+        <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="12" endline="28">GUI::on_pushButton_clicked</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::read_input</definition>
+        <argsstring>(string)</argsstring>
+        <name>read_input</name>
+        <param>
+          <type>string</type>
+          <defname>filePath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="43" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="45" bodyend="80"/>
+        <references refid="d8/d84/a00001_1a6b29a9f88396627c1d39170723bad7fd" compoundref="dd/dad/a00005" startline="194" endline="208">convertInt</references>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">Neural_Network::dataset_size</references>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d4/dee/a00008_1af720a63ca4d8b6a2dd848ead73362e58" compoundref="d4/dee/a00008" startline="19">fork</references>
+        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="41">Neural_Network::input</references>
+        <references refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" compoundref="d2/de7/a00014" startline="68">Neural_Network::input_dataset</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">Neural_Network::input_len</references>
+        <references refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" compoundref="d0/d0b/a00004" startline="35">input_population_string</references>
+        <references refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" compoundref="d2/de7/a00014" startline="60">Neural_Network::input_rank</references>
+        <references refid="d4/dee/a00008_1a137d3378ba32ae138541e30156fb5c66" compoundref="d4/dee/a00008" startline="20">max_dataset_size</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" compoundref="d0/d0b/a00004" startline="33">read</references>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::read_expected_output</definition>
+        <argsstring>(string)</argsstring>
+        <name>read_expected_output</name>
+        <param>
+          <type>string</type>
+          <defname>filePath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="44" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="89" bodyend="115"/>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">Neural_Network::dataset_size</references>
+        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="46">Neural_Network::expected_o</references>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
+        <references refid="d4/dee/a00008_1a137d3378ba32ae138541e30156fb5c66" compoundref="d4/dee/a00008" startline="20">max_dataset_size</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="69">Neural_Network::output_dataset</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">Neural_Network::output_len</references>
+        <references refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" compoundref="d2/de7/a00014" startline="63">Neural_Network::output_rank</references>
+        <references refid="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" compoundref="d0/d0b/a00004" startline="33">read</references>
+        <references refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" compoundref="d0/d0b/a00004" startline="34">read_ex_output_string</references>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::read_weights</definition>
+        <argsstring>(string)</argsstring>
+        <name>read_weights</name>
+        <param>
+          <type>string</type>
+          <defname>filePath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="45" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="155" bodyend="166"/>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">Neural_Network::hidden_len</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">Neural_Network::input_len</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">Neural_Network::output_len</references>
+        <references refid="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" compoundref="d0/d0b/a00004" startline="33">read</references>
+        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="51">Neural_Network::Wh</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="52">Neural_Network::Wo</references>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::write_output</definition>
+        <argsstring>(string)</argsstring>
+        <name>write_output</name>
+        <param>
+          <type>string</type>
+          <defname>filePath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="123" bodyend="147"/>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">Neural_Network::dataset_size</references>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="69">Neural_Network::output_dataset</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">Neural_Network::output_len</references>
+        <references refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" compoundref="d0/d0b/a00004" startline="36">output_population_string</references>
+        <references refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" compoundref="d2/de7/a00014" startline="65">Neural_Network::rank_output</references>
+        <references refid="d8/d84/a00001_1a7d29cb8d04a1a60638f653c28a628095" compoundref="d0/d0b/a00004" startline="32">write</references>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void File_Manager::write_weights</definition>
+        <argsstring>(string)</argsstring>
+        <name>write_weights</name>
+        <param>
+          <type>string</type>
+          <defname>filePath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="175" bodyend="186"/>
+        <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
+        <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">Neural_Network::hidden_len</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">Neural_Network::input_len</references>
+        <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">n</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">Neural_Network::output_len</references>
+        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="51">Neural_Network::Wh</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="52">Neural_Network::Wo</references>
+        <references refid="d8/d84/a00001_1a7d29cb8d04a1a60638f653c28a628095" compoundref="d0/d0b/a00004" startline="32">write</references>
+        <referencedby refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">do_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a6b29a9f88396627c1d39170723bad7fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string File_Manager::convertInt</definition>
+        <argsstring>(int)</argsstring>
+        <name>convertInt</name>
+        <param>
+          <type>int</type>
+          <defname>number</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FM.cpp" bodystart="194" bodyend="208"/>
+        <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="45" endline="80">read_input</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>File_Manager</label>
+        <link refid="d8/d84/a00001"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>n</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Neural_Network</label>
+        <link refid="d1/d7c/a00003"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" line="8" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/FileManager.h" bodystart="7" bodyend="50"/>
+    <listofallmembers>
+      <member refid="d8/d84/a00001_1a6b29a9f88396627c1d39170723bad7fd" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>convertInt</name></member>
+      <member refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>do_function</name></member>
+      <member refid="d8/d84/a00001_1a8b8f5c9cc3ffcb083ccc4fce1c05ca44" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>expected_out_file</name></member>
+      <member refid="d8/d84/a00001_1a2acf523335c71f922a42756c1d0a7a2d" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>File_Manager</name></member>
+      <member refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>fill_rank_output</name></member>
+      <member refid="d8/d84/a00001_1a13d1128905d7b4a3bdec2e40392cd036" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>get_input_population_string</name></member>
+      <member refid="d8/d84/a00001_1a368e05b24358cc70bd8b7d2081cd0dd4" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>get_output_population_string</name></member>
+      <member refid="d8/d84/a00001_1acd21da57c513a63893641ac505c097f0" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>get_rank_output_strings</name></member>
+      <member refid="d8/d84/a00001_1ad506966ba52a415b33970c057c9ed43a" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>get_read_ex_output_string</name></member>
+      <member refid="d8/d84/a00001_1a78b144182e3cfc70f9aae78ebdd66e51" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>input_file</name></member>
+      <member refid="d8/d84/a00001_1a80f6d8f738cbc4d10154b470c5422fdd" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>input_population_string</name></member>
+      <member refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>n</name></member>
+      <member refid="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>output_file</name></member>
+      <member refid="d8/d84/a00001_1a4266a9bec2fff5d17d7abf06e00384db" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>output_population_string</name></member>
+      <member refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>rank_output_strings</name></member>
+      <member refid="d8/d84/a00001_1a035fb2bdf99f8f928d049bc950c81f4c" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>read</name></member>
+      <member refid="d8/d84/a00001_1af7d8ea2c0a997e16600478c0020b1858" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>read_ex_output_string</name></member>
+      <member refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>read_expected_output</name></member>
+      <member refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>read_input</name></member>
+      <member refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>read_weights</name></member>
+      <member refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>set_expected_out_file</name></member>
+      <member refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>set_input_file</name></member>
+      <member refid="d8/d84/a00001_1a2eff082d4fe4d7f2a7ce06afbc689d45" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>set_output_file</name></member>
+      <member refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>set_rank_output_strings</name></member>
+      <member refid="d8/d84/a00001_1a860e5837e1671018a26fdc0ce43603b1" prot="public" virt="non-virtual"><scope>File_Manager</scope><name>set_weights_file</name></member>
+      <member refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>weights_file</name></member>
+      <member refid="d8/d84/a00001_1a7d29cb8d04a1a60638f653c28a628095" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>write</name></member>
+      <member refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>write_output</name></member>
+      <member refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" prot="private" virt="non-virtual"><scope>File_Manager</scope><name>write_weights</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

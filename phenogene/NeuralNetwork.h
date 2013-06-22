@@ -12,15 +12,18 @@ public:
     void set_input_len(int);
     void set_output_len(int);
     void set_hidden_len(int);
-    void set_AV(int);
+    void set_max_it(int);
     void set_minimum_error(double);
     void set_learning_rate(double);
+    void set_momentum(double);
 
 
     /*Getter functions*/
     int get_input_len();
     int get_output_len();
     int get_hidden_len();
+    int get_max_it();
+    double get_momentum();
 
     /*Other functions*/
     void do_function(int);
@@ -30,7 +33,7 @@ private:
     int input_len;
     int hidden_len;
     int output_len;
-    int AV;
+    int max_iterations;
     int dataset_size;
     double error;
     double minimum_error;

@@ -27,13 +27,14 @@ void Neural_Network::set_hidden_len(int i)
     hidden_len=i;
     return;
 }
+
 /**
- * \brief Set Activation function to be used to int i
- * \param [int i] Activation function to be used.
+ * \brief Set maximum iterations number to integer i
+ * \param [integer i] Maximum iterations to be used.
 */
-void Neural_Network::set_AV(int i)
+void Neural_Network::set_max_it(int i)
 {
-    AV=i;
+    max_iterations=i;
     return;
 }
 /**
@@ -52,6 +53,16 @@ void Neural_Network::set_minimum_error(double d)
 void Neural_Network::set_learning_rate(double d)
 {
     learning_rate=d;
+    return;
+}
+
+/**
+ * \brief Set momentum to double d
+ * \param [double d] Momentum of the neural network.
+*/
+void Neural_Network::set_momentum(double d)
+{
+    momentum=d;
     return;
 }
 

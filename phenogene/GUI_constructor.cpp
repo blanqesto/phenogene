@@ -23,6 +23,9 @@ void GUI::set_styleSheet()
     ui->label_29->setStyleSheet("QLabel { color : grey; }");
     ui->label_32->setStyleSheet("QLabel { color : grey; }");
     ui->label_33->setStyleSheet("QLabel { color : grey; }");
+    ui->label_36->setStyleSheet("QLabel { color : grey; }");
+    ui->label_37->setStyleSheet("QLabel { color : grey; }");
+    ui->label_38->setStyleSheet("QLabel { color : grey; }");
 }
 
 /**
@@ -31,14 +34,18 @@ void GUI::set_styleSheet()
 void GUI::set_validators()
 {
     ui->setupUi(this);
-    ui->lineEdit->setValidator(new QIntValidator (1,100, this));
-    ui->lineEdit_3->setValidator(new QIntValidator (0,1, this));
+    ui->lineEdit->setValidator(new QIntValidator (0,100, this));
+    ui->lineEdit_5->setValidator(new QIntValidator (0,100, this));
+    ui->lineEdit_10->setValidator(new QIntValidator (0,10000000, this));
     QRegExp re ("0\\.[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9])?|2");
     QRegExp re2 ("[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9]?[0-9])?");
+    QRegExp re3 ("0(\\.[0-9]?[0-9]?[0-9])?|1(\\.[0-9]?[0-9]?[0-9])?|2");
     QRegExpValidator *valid = new QRegExpValidator(re, this);
     QRegExpValidator *valid2 = new QRegExpValidator(re2, this);
+    QRegExpValidator *valid3 = new QRegExpValidator(re3, this);
     ui->lineEdit_3->setValidator(valid);
     ui->lineEdit_4->setValidator(valid2);
+    ui->lineEdit_7->setValidator(valid3);
 }
 
 /*

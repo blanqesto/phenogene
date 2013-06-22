@@ -25,3 +25,19 @@ int Neural_Network::get_hidden_len()
 {
     return hidden_len;
 }
+
+/**
+ * \brief Get double momentum
+*/
+double Neural_Network::get_momentum()
+{
+    return momentum;
+}
+
+/**
+ * \brief Get int maximum iterations number
+*/
+int Neural_Network::get_max_it()
+{
+    return max_iterations;
+}

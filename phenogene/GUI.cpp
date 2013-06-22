@@ -131,6 +131,57 @@ void GUI::on_pushButton_6_clicked()
     ui->label_24->setText(filename[filename.length()-1]);
 }
 
+/**
+ On Analysis Tab
+ \brief Change the view when a user changes tab.
+*/
+void GUI::on_tabWidget_currentChanged(int index)
+{
+    if (index ==2)
+    {
+        ui->pushButton->hide();
+        ui->progressBar->hide();
+    }
+    else
+    {
+        ui->pushButton->show();
+        ui->progressBar->setValue(0);
+        ui->progressBar->show();
+    }
+}
+/**
+ On Analysis Tab
+ \brief Set hidden nodes numbers.
+  \pre Entered is a valid integer number.
+  \post Hidden nodes is changed.
+*/
+void GUI::on_lineEdit_5_editingFinished()
+{
+    fm.n.set_hidden_len(ui->lineEdit_5->text().toInt());
+}
+
+/**
+ On Analysis Tab
+ \brief Set momentum.
+  \pre Entered is a valid double number.
+  \post Momentum is changed.
+*/
+void GUI::on_lineEdit_7_editingFinished()
+{
+    fm.n.set_momentum(ui->lineEdit_7->text().toDouble());
+}
+
+/**
+ On Analysis Tab
+ \brief Set maximum iterations number.
+  \pre Entered is a valid double number.
+  \post Maximum iterations number is changed.
+*/
+void GUI::on_lineEdit_10_editingFinished()
+{
+    fm.n.set_max_it(ui->lineEdit_10->text().toInt());
+}
+
 
 void GUI::on_quitButton_clicked()
 {

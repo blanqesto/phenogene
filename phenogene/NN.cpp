@@ -105,7 +105,7 @@ void Neural_Network::train()
         error = 10000.0;
         error = 10000.0;
         cout << "min_err" << minimum_error << endl << endl << endl;
-        while (error > minimum_error && error < prevError)//&& iterations < max_iterations)
+        while (error > minimum_error && error < prevError && iterations < max_iterations)
         {
             iterations ++ ;
             prevError = error;

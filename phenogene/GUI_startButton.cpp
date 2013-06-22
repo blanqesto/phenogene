@@ -20,7 +20,7 @@ void GUI::on_pushButton_clicked()
         perform_train();
     else if(ui->tabWidget->currentIndex()==1) //test
         perform_test();
-
+    prepare_report();
     return;
 }
 
@@ -137,3 +137,20 @@ void GUI::display_error(QString er)
     msgBox.move((GUI::width()-msgBox.width())/2,(GUI::height()-msgBox.height())/2);
     return;
 }
+
+/**
+ \brief Prepare analysis report
+*/
+void GUI::prepare_report()
+{
+    ui->lineEdit_19->setText(QString::fromStdString(""));
+    ui->lineEdit_20->setText(QString::fromStdString(""));
+    ui->lineEdit_21->setText(QString::number(fm.n.get_max_it()));
+    ui->lineEdit_22->setText(QString::fromStdString(""));
+    ui->lineEdit_23->setText(QString::number(fm.n.get_input_len()));
+    ui->lineEdit_24->setText(QString::number(fm.n.get_hidden_len()));
+    ui->lineEdit_25->setText(QString::number(fm.n.get_output_len()));
+    ui->lineEdit_26->setText(QString::number(fm.n.get_momentum()));
+    return;
+}
+

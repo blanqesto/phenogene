@@ -37,7 +37,10 @@ private slots:
     void on_lineEdit_3_editingFinished();
     void on_lineEdit_4_editingFinished();
     void on_textEdit_4_textChanged();
-    void on_listWidget_currentRowChanged(int currentRow);
+    void on_lineEdit_5_editingFinished();
+    void on_lineEdit_7_editingFinished();
+    void on_lineEdit_10_editingFinished();
+    void on_tabWidget_currentChanged(int index);
 
 private:
     Ui::GUI *ui;
@@ -49,6 +52,7 @@ private:
     void set_validators();
     void set_styleSheet();
     void display_error(QString);
+    void prepare_report();
 };
 
 #endif

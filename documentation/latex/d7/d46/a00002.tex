@@ -7,7 +7,8 @@
 
 
 
-Collaboration diagram for G\-U\-I\-:\nopagebreak
+Collaboration diagram for G\-U\-I\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -49,8 +50,14 @@ void \hyperlink{a00002_a6bcefb22fdfb8fbd3146eab38a0023d7}{on\-\_\-line\-Edit\-\_
 \begin{DoxyCompactList}\small\item\em Set Acceptable Error. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_a39f58394bb8e9691a7b32774114a910a}{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed} ()
 \begin{DoxyCompactList}\small\item\em Set output keywords. \end{DoxyCompactList}\item 
-void \hyperlink{a00002_a073c74e8357311d12c523d73414ee265}{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed} (int current\-Row)
-\end{DoxyCompactItemize}
+void \hyperlink{a00002_a18234ca4d797ca5566d710c77594158b}{on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished} ()
+\begin{DoxyCompactList}\small\item\em Set hidden nodes numbers. \end{DoxyCompactList}\item 
+void \hyperlink{a00002_ad2416c2c2d9ce13441a9cd81c47c02e4}{on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished} ()
+\begin{DoxyCompactList}\small\item\em Set momentum. \end{DoxyCompactList}\item 
+void \hyperlink{a00002_a4f47f7bac07a3ad5f0238a09a526d7c8}{on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished} ()
+\begin{DoxyCompactList}\small\item\em Set maximum iterations number. \end{DoxyCompactList}\item 
+void \hyperlink{a00002_a8cb47192d9b34bdc1ba3d47e0b0f2d4f}{on\-\_\-tab\-Widget\-\_\-current\-Changed} (int index)
+\begin{DoxyCompactList}\small\item\em Change the view when a user changes tab. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -68,7 +75,9 @@ void \hyperlink{a00002_abd9fac4d8ad5334cc48afb0513544898}{set\-\_\-validators} (
 void \hyperlink{a00002_a5683a1862ec1a85cf87d9c5f6fc528e9}{set\-\_\-style\-Sheet} ()
 \begin{DoxyCompactList}\small\item\em Set style sheet configuration\-: Set color grey for some labels. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_a69ac504cf1500a8c6283d8721b09aeb2}{display\-\_\-error} (Q\-String)
-\begin{DoxyCompactList}\small\item\em Displays the error message contained in string er. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Displays the error message contained in string er. \end{DoxyCompactList}\item 
+void \hyperlink{a00002_a4b4725862e2fb5a2ffd6ebc0a88c096c}{prepare\-\_\-report} ()
+\begin{DoxyCompactList}\small\item\em Prepare analysis report. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -131,7 +140,7 @@ Here is the call graph for this function\-:\nopagebreak
 )}}\label{d7/d46/a00002_ac9cae2328dcb5d83bdfaeca49a2eb695}
 
 
-Definition at line 47 of file G\-U\-I\-\_\-constructor.\-cpp.
+Definition at line 54 of file G\-U\-I\-\_\-constructor.\-cpp.
 
 
 
@@ -215,6 +224,43 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
+\hypertarget{a00002_a4f47f7bac07a3ad5f0238a09a526d7c8}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-10\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a4f47f7bac07a3ad5f0238a09a526d7c8}
+
+
+Set maximum iterations number. 
+
+On Analysis Tab \begin{DoxyPrecond}{Precondition}
+Entered is a valid double number. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Maximum iterations number is changed. 
+\end{DoxyPostcond}
+
+
+Definition at line 180 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-max\-\_\-it(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d7/d46/a00002_a4f47f7bac07a3ad5f0238a09a526d7c8_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{a00002_a6aff5c3694d19ebd2bd81010c239cf62}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}}
 \index{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
 \subsubsection[{on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-3\-\_\-editing\-Finished (
@@ -287,6 +333,80 @@ Here is the call graph for this function\-:\nopagebreak
 \end{figure}
 
 
+\hypertarget{a00002_a18234ca4d797ca5566d710c77594158b}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-5\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a18234ca4d797ca5566d710c77594158b}
+
+
+Set hidden nodes numbers. 
+
+On Analysis Tab \begin{DoxyPrecond}{Precondition}
+Entered is a valid integer number. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Hidden nodes is changed. 
+\end{DoxyPostcond}
+
+
+Definition at line 158 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-hidden\-\_\-len(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d7/d46/a00002_a18234ca4d797ca5566d710c77594158b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_ad2416c2c2d9ce13441a9cd81c47c02e4}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished}}
+\index{on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-7\-\_\-editing\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_ad2416c2c2d9ce13441a9cd81c47c02e4}
+
+
+Set momentum. 
+
+On Analysis Tab \begin{DoxyPrecond}{Precondition}
+Entered is a valid double number. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Momentum is changed. 
+\end{DoxyPostcond}
+
+
+Definition at line 169 of file G\-U\-I.\-cpp.
+
+
+
+References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-momentum(), and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d7/d46/a00002_ad2416c2c2d9ce13441a9cd81c47c02e4_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{a00002_ab5da77a34a83e9794edda0d77d79bec0}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-line\-Edit\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-editing\-Finished}}
 \index{on\-\_\-line\-Edit\-\_\-editing\-Finished@{on\-\_\-line\-Edit\-\_\-editing\-Finished}!GUI@{G\-U\-I}}
 \subsubsection[{on\-\_\-line\-Edit\-\_\-editing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-line\-Edit\-\_\-editing\-Finished (
@@ -319,32 +439,6 @@ Here is the call graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=346pt]{d7/d46/a00002_ab5da77a34a83e9794edda0d77d79bec0_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{a00002_a073c74e8357311d12c523d73414ee265}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-list\-Widget\-\_\-current\-Row\-Changed@{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}}
-\index{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed@{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}!GUI@{G\-U\-I}}
-\subsubsection[{on\-\_\-list\-Widget\-\_\-current\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-list\-Widget\-\_\-current\-Row\-Changed (
-\begin{DoxyParamCaption}
-\item[{int}]{current\-Row}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a073c74e8357311d12c523d73414ee265}
-
-
-Definition at line 85 of file G\-U\-I.\-cpp.
-
-
-
-References fm, File\-\_\-\-Manager\-::n, Neural\-\_\-\-Network\-::set\-\_\-\-A\-V(), and ui.
-
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d46/a00002_a073c74e8357311d12c523d73414ee265_cgraph}
 \end{center}
 \end{figure}
 
@@ -406,7 +500,7 @@ File path to input file is set.
 \end{DoxyPostcond}
 
 
-Definition at line 120 of file G\-U\-I.\-cpp.
+Definition at line 109 of file G\-U\-I.\-cpp.
 
 
 
@@ -480,7 +574,7 @@ File path to weights file is set.
 \end{DoxyPostcond}
 
 
-Definition at line 137 of file G\-U\-I.\-cpp.
+Definition at line 126 of file G\-U\-I.\-cpp.
 
 
 
@@ -515,11 +609,12 @@ Definition at line 9 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
-References display\-\_\-error(), File\-\_\-\-Manager\-::fill\-\_\-rank\-\_\-output(), fm, perform\-\_\-test(), perform\-\_\-train(), ui, and valid\-\_\-input().
+References display\-\_\-error(), File\-\_\-\-Manager\-::fill\-\_\-rank\-\_\-output(), fm, perform\-\_\-test(), perform\-\_\-train(), prepare\-\_\-report(), ui, and valid\-\_\-input().
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -537,7 +632,26 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a5acc81766a1842665846092ebf0815e0}
 
 
-Definition at line 146 of file G\-U\-I.\-cpp.
+Definition at line 186 of file G\-U\-I.\-cpp.
+
+\hypertarget{a00002_a8cb47192d9b34bdc1ba3d47e0b0f2d4f}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-tab\-Widget\-\_\-current\-Changed@{on\-\_\-tab\-Widget\-\_\-current\-Changed}}
+\index{on\-\_\-tab\-Widget\-\_\-current\-Changed@{on\-\_\-tab\-Widget\-\_\-current\-Changed}!GUI@{G\-U\-I}}
+\subsubsection[{on\-\_\-tab\-Widget\-\_\-current\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::on\-\_\-tab\-Widget\-\_\-current\-Changed (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{d7/d46/a00002_a8cb47192d9b34bdc1ba3d47e0b0f2d4f}
+
+
+Change the view when a user changes tab. 
+
+On Analysis Tab 
+
+Definition at line 138 of file G\-U\-I.\-cpp.
+
+
+
+References ui.
 
 \hypertarget{a00002_a39f58394bb8e9691a7b32774114a910a}{\index{G\-U\-I@{G\-U\-I}!on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed}}
 \index{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-4\-\_\-text\-Changed}!GUI@{G\-U\-I}}
@@ -558,7 +672,7 @@ Output nodes number is set.
 \end{DoxyPostcond}
 
 
-Definition at line 97 of file G\-U\-I.\-cpp.
+Definition at line 86 of file G\-U\-I.\-cpp.
 
 
 
@@ -604,11 +718,12 @@ Definition at line 60 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
-References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-output\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
+References File\-\_\-\-Manager\-::do\-\_\-function(), Neural\-\_\-\-Network\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-output\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -655,11 +770,12 @@ Definition at line 35 of file G\-U\-I\-\_\-start\-Button.\-cpp.
 
 
 
-References Neural\-\_\-\-Network\-::do\-\_\-function(), File\-\_\-\-Manager\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
+References File\-\_\-\-Manager\-::do\-\_\-function(), Neural\-\_\-\-Network\-::do\-\_\-function(), fm, File\-\_\-\-Manager\-::get\-\_\-input\-\_\-population\-\_\-string(), File\-\_\-\-Manager\-::get\-\_\-read\-\_\-ex\-\_\-output\-\_\-string(), File\-\_\-\-Manager\-::n, and ui.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -675,6 +791,49 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=320pt]{d7/d46/a00002_ad1bb069dee02010a61045c91f5e7752f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00002_a4b4725862e2fb5a2ffd6ebc0a88c096c}{\index{G\-U\-I@{G\-U\-I}!prepare\-\_\-report@{prepare\-\_\-report}}
+\index{prepare\-\_\-report@{prepare\-\_\-report}!GUI@{G\-U\-I}}
+\subsubsection[{prepare\-\_\-report}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::prepare\-\_\-report (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a4b4725862e2fb5a2ffd6ebc0a88c096c}
+
+
+Prepare analysis report. 
+
+
+
+Definition at line 144 of file G\-U\-I\-\_\-start\-Button.\-cpp.
+
+
+
+References fm, Neural\-\_\-\-Network\-::get\-\_\-hidden\-\_\-len(), Neural\-\_\-\-Network\-::get\-\_\-input\-\_\-len(), Neural\-\_\-\-Network\-::get\-\_\-max\-\_\-it(), Neural\-\_\-\-Network\-::get\-\_\-momentum(), Neural\-\_\-\-Network\-::get\-\_\-output\-\_\-len(), File\-\_\-\-Manager\-::n, and ui.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d7/d46/a00002_a4b4725862e2fb5a2ffd6ebc0a88c096c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d7/d46/a00002_a4b4725862e2fb5a2ffd6ebc0a88c096c_icgraph}
 \end{center}
 \end{figure}
 
@@ -722,7 +881,7 @@ Set validators for user input.
 
 
 
-Definition at line 31 of file G\-U\-I\-\_\-constructor.\-cpp.
+Definition at line 34 of file G\-U\-I\-\_\-constructor.\-cpp.
 
 
 
@@ -802,7 +961,7 @@ Definition at line 20 of file G\-U\-I.\-h.
 \subsubsection[{fm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-\_\-\-Manager} G\-U\-I\-::fm\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_a73cc90505024488d2fd77762ad5059c4}
 
 
-Definition at line 45 of file G\-U\-I.\-h.
+Definition at line 48 of file G\-U\-I.\-h.
 
 \hypertarget{a00002_aa3abed87f53b22188d76a134e427b30d}{\index{G\-U\-I@{G\-U\-I}!state@{state}}
 \index{state@{state}!GUI@{G\-U\-I}}
@@ -816,7 +975,7 @@ Definition at line 22 of file G\-U\-I.\-h.
 \subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-G\-U\-I$\ast$ G\-U\-I\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{d7/d46/a00002_acdbca1224663f5a19bd1ad4e7c885886}
 
 
-Definition at line 43 of file G\-U\-I.\-h.
+Definition at line 46 of file G\-U\-I.\-h.
 
 
 

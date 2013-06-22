@@ -98,22 +98,29 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kindref="member">hidden_len</ref>=i;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="34" refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kindref="member" tooltip="Set Activation function to be used to int i.">Neural_Network::set_AV</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kindref="member">AV</ref>=i;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="43" refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kindref="member" tooltip="Set minimum error to double d.">Neural_Network::set_minimum_error</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref>=d;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="52" refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kindref="member" tooltip="Set learning rate to double d.">Neural_Network::set_learning_rate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref>=d;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" kindref="member" tooltip="Set maximum iterations number to integer i.">Neural_Network::set_max_it</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" kindref="member">max_iterations</ref>=i;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44" refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kindref="member" tooltip="Set minimum error to double d.">Neural_Network::set_minimum_error</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kindref="member">minimum_error</ref>=d;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53" refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kindref="member" tooltip="Set learning rate to double d.">Neural_Network::set_learning_rate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kindref="member">learning_rate</ref>=d;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" kindref="member" tooltip="Set momentum to double d.">Neural_Network::set_momentum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" kindref="member">momentum</ref>=d;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp"/>
   </compounddef>

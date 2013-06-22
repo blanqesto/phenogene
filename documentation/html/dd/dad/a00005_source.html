@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('dd/dad/a00005_source.html','../../');}
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        std::istringstream s(temp.c_str());</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">while</span>(getline(s,tempSplit,<span class="charliteral">&#39;,&#39;</span>))</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            cout &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; tempSplit &lt;&lt; endl;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="comment">//cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; tempSplit &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8d632cf69d2fcd076e473aba1ae74702">expected_o</a>[<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>[tempSplit]]=1;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
@@ -206,10 +206,10 @@ $(document).ready(function(){initNavTree('dd/dad/a00005_source.html','../../');}
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../d4/dee/a00008.html#a4da775651e53db9851982557af6b2b3f">fori</a>(0,<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8fe39196b36a38696abd679328dd8232">dataset_size</a>)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordtype">double</span> temp = -10000.00,rank=-1;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;dataset:&quot;</span> &lt;&lt; i&lt;&lt; endl;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">//cout &lt;&lt; &quot;dataset:&quot; &lt;&lt; i&lt;&lt; endl;</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="../../d4/dee/a00008.html#a675ae13246328abd54086989d58ba876">forj</a>(1,<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a>+1)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;rank: &quot;</span> &lt;&lt; j &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#aa8441449f55f07c3da384d81608373b5">output_dataset</a>[i][j-1] &lt;&lt; endl;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;           <span class="comment">// cout &lt;&lt; &quot;rank: &quot; &lt;&lt; j &lt;&lt; &quot; &quot;&lt;&lt; n.output_dataset[i][j-1] &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#aa8441449f55f07c3da384d81608373b5">output_dataset</a>[i][j-1]&gt;temp)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    temp = <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#aa8441449f55f07c3da384d81608373b5">output_dataset</a>[i][j-1];</div>
@@ -271,25 +271,23 @@ $(document).ready(function(){initNavTree('dd/dad/a00005_source.html','../../');}
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
 <div class="line"><a name="l00221"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a44a6161fabb28c07ba6e860ba9927aa6">  221</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a44a6161fabb28c07ba6e860ba9927aa6" title="Interface to fill the output/decimal association  associates each output node with a string...">File_Manager::fill_rank_output</a>()</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>.empty())</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>.clear();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8e34531b701290d16068e3685f3066a4">rank_output</a>.empty())</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8e34531b701290d16068e3685f3066a4">rank_output</a>.clear();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="../../d4/dee/a00008.html#a4da775651e53db9851982557af6b2b3f">fori</a> (0,<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a>)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>.insert(pair&lt;string,int&gt;(<a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i],i+1));</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8e34531b701290d16068e3685f3066a4">rank_output</a>.insert(pair&lt;int,string&gt;(i+1,<a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i]));</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>.clear();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8e34531b701290d16068e3685f3066a4">rank_output</a>.clear();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="../../d4/dee/a00008.html#a4da775651e53db9851982557af6b2b3f">fori</a> (0,<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a>)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#af46a9de8ef619f93fb8c0231be79163c">output_rank</a>.insert(pair&lt;string,int&gt;(<a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i],i+1));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8e34531b701290d16068e3685f3066a4">rank_output</a>.insert(pair&lt;int,string&gt;(i+1,<a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[i]));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../dd/dad/a00005.html">FM.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 21 2013 17:20:25 by
+    <li class="footer">Generated on Sat Jun 22 2013 03:48:52 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

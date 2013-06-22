@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('df/d86/a00012_source.html','../../');}
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="../../d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: .">perform_train</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;tabWidget-&gt;currentIndex()==1) <span class="comment">//test</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0">perform_test</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#a4b4725862e2fb5a2ffd6ebc0a88c096c" title="Prepare analysis report.">prepare_report</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -212,13 +212,27 @@ $(document).ready(function(){initNavTree('df/d86/a00012_source.html','../../');}
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    msgBox.move((GUI::width()-msgBox.width())/2,(GUI::height()-msgBox.height())/2);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="../../d7/d46/a00002.html#a4b4725862e2fb5a2ffd6ebc0a88c096c">  144</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/d46/a00002.html#a4b4725862e2fb5a2ffd6ebc0a88c096c" title="Prepare analysis report.">GUI::prepare_report</a>()</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_19-&gt;setText(QString::fromStdString(<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_20-&gt;setText(QString::fromStdString(<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_21-&gt;setText(QString::number(<a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>.<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d" title="Get int maximum iterations number.">get_max_it</a>()));</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_22-&gt;setText(QString::fromStdString(<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_23-&gt;setText(QString::number(<a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>.<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893" title="Get int number of input nodes.">get_input_len</a>()));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_24-&gt;setText(QString::number(<a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>.<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52" title="Get int number of hidden nodes.">get_hidden_len</a>()));</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_25-&gt;setText(QString::number(<a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>.<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes.">get_output_len</a>()));</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="../../d7/d46/a00002.html#acdbca1224663f5a19bd1ad4e7c885886">ui</a>-&gt;lineEdit_26-&gt;setText(QString::number(<a class="code" href="../../d7/d46/a00002.html#a73cc90505024488d2fd77762ad5059c4">fm</a>.<a class="code" href="../../d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745">n</a>.<a class="code" href="../../d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6" title="Get double momentum.">get_momentum</a>()));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../df/d86/a00012.html">GUI_startButton.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 21 2013 17:20:25 by
+    <li class="footer">Generated on Sat Jun 22 2013 03:48:52 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

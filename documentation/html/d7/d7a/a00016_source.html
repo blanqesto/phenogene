@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('d7/d7a/a00016_source.html','../../');}
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    srand((<span class="keywordtype">unsigned</span>)time(0));</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#aa2898d2ec7ac091b6d40916d4b113a93">minimum_error</a> = 0.01;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a9e5319bf385fa55bbbd8f0160915306d">input_len</a> = 18;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a71cc8ca03da47fe639dd1e8ed518069c">hidden_len</a> = 12;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a71cc8ca03da47fe639dd1e8ed518069c">hidden_len</a> = ceil((<a class="code" href="../../d1/d7c/a00003.html#a9e5319bf385fa55bbbd8f0160915306d">input_len</a>+<a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a>)/2);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a> = 5;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a3a3ea713384da26e538bc60da8410a75">momentum</a> = 0.0001;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a3a3ea713384da26e538bc60da8410a75">momentum</a> = 0;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a1994986029a1ef9d55fa4bb1b440210b">learning_rate</a> = 0.001;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a8fe39196b36a38696abd679328dd8232">dataset_size</a>=0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#a970136042929b26220d35be2776220a6">AV</a>=<a class="code" href="../../d4/dee/a00008.html#a2f65cc4d2a528ee38224d709c1d73015">segmoidal</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#ac3c1eed9835dc5da84132d08c090612f">max_iterations</a>=10000;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#adf2c6662b130ed1582025ea2cccacbe2">input_rank</a>.insert(pair &lt;char,double&gt;(<span class="charliteral">&#39;-&#39;</span>,0.1));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#adf2c6662b130ed1582025ea2cccacbe2">input_rank</a>.insert(pair &lt;char,double&gt;(<span class="charliteral">&#39;1&#39;</span>,0.1));</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d1/d7c/a00003.html#adf2c6662b130ed1582025ea2cccacbe2">input_rank</a>.insert(pair &lt;char,double&gt;(<span class="charliteral">&#39;A&#39;</span>,0.3));</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d7/d7a/a00016_source.html','../../');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../d7/d7a/a00016.html">NN_constructor.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 21 2013 17:20:25 by
+    <li class="footer">Generated on Sat Jun 22 2013 03:48:52 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

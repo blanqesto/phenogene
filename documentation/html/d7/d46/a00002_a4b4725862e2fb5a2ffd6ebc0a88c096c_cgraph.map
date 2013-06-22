@@ -1,0 +1,7 @@
+<map id="GUI::prepare_report" name="GUI::prepare_report">
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52" title="Get int number of hidden nodes." alt="" coords="193,5,335,51"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893" title="Get int number of input nodes." alt="" coords="193,74,335,121"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d" title="Get int maximum iterations number." alt="" coords="193,143,335,190"/>
+<area shape="rect" id="node9" href="$d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6" title="Get double momentum." alt="" coords="193,213,335,259"/>
+<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes." alt="" coords="193,282,335,329"/>
+</map>

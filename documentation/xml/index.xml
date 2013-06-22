@@ -49,7 +49,10 @@
     <member refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" kind="slot"><name>on_lineEdit_3_editingFinished</name></member>
     <member refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" kind="slot"><name>on_lineEdit_4_editingFinished</name></member>
     <member refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" kind="slot"><name>on_textEdit_4_textChanged</name></member>
-    <member refid="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" kind="slot"><name>on_listWidget_currentRowChanged</name></member>
+    <member refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" kind="slot"><name>on_lineEdit_5_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" kind="slot"><name>on_lineEdit_7_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" kind="slot"><name>on_lineEdit_10_editingFinished</name></member>
+    <member refid="d7/d46/a00002_1a8cb47192d9b34bdc1ba3d47e0b0f2d4f" kind="slot"><name>on_tabWidget_currentChanged</name></member>
     <member refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" kind="function"><name>valid_input</name></member>
     <member refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" kind="function"><name>fill_rank</name></member>
     <member refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" kind="function"><name>perform_train</name></member>
@@ -57,13 +60,14 @@
     <member refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" kind="function"><name>set_validators</name></member>
     <member refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" kind="function"><name>set_styleSheet</name></member>
     <member refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" kind="function"><name>display_error</name></member>
+    <member refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" kind="function"><name>prepare_report</name></member>
   </compound>
   <compound refid="d1/d7c/a00003" kind="class"><name>Neural_Network</name>
     <member refid="d1/d7c/a00003_1a96aa84fcda6b19a74fff9d19c16b07fe" kind="friend"><name>File_Manager</name></member>
     <member refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" kind="variable"><name>input_len</name></member>
     <member refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kind="variable"><name>hidden_len</name></member>
     <member refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kind="variable"><name>output_len</name></member>
-    <member refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" kind="variable"><name>AV</name></member>
+    <member refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" kind="variable"><name>max_iterations</name></member>
     <member refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" kind="variable"><name>dataset_size</name></member>
     <member refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" kind="variable"><name>error</name></member>
     <member refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kind="variable"><name>minimum_error</name></member>
@@ -91,12 +95,15 @@
     <member refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" kind="function"><name>set_input_len</name></member>
     <member refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" kind="function"><name>set_output_len</name></member>
     <member refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" kind="function"><name>set_hidden_len</name></member>
-    <member refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" kind="function"><name>set_AV</name></member>
+    <member refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" kind="function"><name>set_max_it</name></member>
     <member refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" kind="function"><name>set_minimum_error</name></member>
     <member refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" kind="function"><name>set_learning_rate</name></member>
+    <member refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" kind="function"><name>set_momentum</name></member>
     <member refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" kind="function"><name>get_input_len</name></member>
     <member refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kind="function"><name>get_output_len</name></member>
     <member refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" kind="function"><name>get_hidden_len</name></member>
+    <member refid="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" kind="function"><name>get_max_it</name></member>
+    <member refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" kind="function"><name>get_momentum</name></member>
     <member refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kind="function"><name>do_function</name></member>
     <member refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" kind="function"><name>init</name></member>
     <member refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" kind="function"><name>train</name></member>
@@ -131,7 +138,6 @@
     <member refid="d4/dee/a00008_1afecc3978fc788de7ecca333d28d62a08" kind="define"><name>hidden_layer</name></member>
     <member refid="d4/dee/a00008_1a64e47a8f29d1c6cc62edf670a753accc" kind="define"><name>output_layer</name></member>
     <member refid="d4/dee/a00008_1a2f65cc4d2a528ee38224d709c1d73015" kind="define"><name>segmoidal</name></member>
-    <member refid="d4/dee/a00008_1aeecddf1027b4a894011b52467b2d5733" kind="define"><name>max_iterations</name></member>
   </compound>
   <compound refid="da/da0/a00009" kind="file"><name>GUI.cpp</name>
   </compound>

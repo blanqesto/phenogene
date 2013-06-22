@@ -1,20 +1,20 @@
 <map id="GUI::perform_train" name="GUI::perform_train">
-<area shape="rect" id="node3" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Train or test the network." alt="" coords="203,189,341,235"/>
-<area shape="rect" id="node23" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="185,363,359,392"/>
-<area shape="rect" id="node37" href="$d8/d84/a00001.html#a13d1128905d7b4a3bdec2e40392cd036" title="Get string input content." alt="" coords="192,415,352,462"/>
-<area shape="rect" id="node39" href="$d8/d84/a00001.html#ad506966ba52a415b33970c057c9ed43a" title="Get string expected output content." alt="" coords="193,485,351,531"/>
-<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Train the neural network:" alt="" coords="408,136,557,165"/>
-<area shape="rect" id="node18" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Test the neural network." alt="" coords="409,197,556,227"/>
-<area shape="rect" id="node7" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Initialize weights and biases with values between &#45;0.5 and 0.5." alt="" coords="625,5,767,35"/>
-<area shape="rect" id="node9" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="605,197,787,227"/>
-<area shape="rect" id="node13" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Calculate the error signal for each node. Uses corss entropy error function." alt="" coords="625,58,767,105"/>
-<area shape="rect" id="node16" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Back propagate the error starting from the output layer down to the input layer." alt="" coords="620,127,772,174"/>
-<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="836,132,1036,161"/>
-<area shape="rect" id="node21" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="673,251,719,280"/>
-<area shape="rect" id="node25" href="$d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="Read expected output &#160;Opens file filePath and reads its content." alt="" coords="416,250,549,297"/>
-<area shape="rect" id="node27" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="416,319,549,366"/>
-<area shape="rect" id="node31" href="$d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer. &#160;Opens file filePath and reads its content." alt="" coords="416,389,549,435"/>
-<area shape="rect" id="node33" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output &#160;Opens file filePath and write to it." alt="" coords="415,458,551,505"/>
-<area shape="rect" id="node35" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights &#160;Opens file filePath and write to it." alt="" coords="415,527,551,574"/>
-<area shape="rect" id="node29" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string." alt="" coords="613,328,779,357"/>
+<area shape="rect" id="node3" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="185,187,359,216"/>
+<area shape="rect" id="node17" href="$d1/d7c/a00003.html#acd3d4762d71d54422b45fda3a13976cf" title="Train or test the network." alt="" coords="203,343,341,390"/>
+<area shape="rect" id="node37" href="$d8/d84/a00001.html#a13d1128905d7b4a3bdec2e40392cd036" title="Get string input content." alt="" coords="192,413,352,459"/>
+<area shape="rect" id="node39" href="$d8/d84/a00001.html#ad506966ba52a415b33970c057c9ed43a" title="Get string expected output content." alt="" coords="193,482,351,529"/>
+<area shape="rect" id="node5" href="$d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="Read expected output &#160;Opens file filePath and reads its content." alt="" coords="416,5,549,51"/>
+<area shape="rect" id="node7" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="416,74,549,121"/>
+<area shape="rect" id="node11" href="$d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer. &#160;Opens file filePath and reads its content." alt="" coords="416,143,549,190"/>
+<area shape="rect" id="node13" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output &#160;Opens file filePath and write to it." alt="" coords="415,213,551,259"/>
+<area shape="rect" id="node15" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights &#160;Opens file filePath and write to it." alt="" coords="415,282,551,329"/>
+<area shape="rect" id="node9" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string." alt="" coords="613,83,779,112"/>
+<area shape="rect" id="node19" href="$d1/d7c/a00003.html#a033f4f60812c0359cc50815e957f11f7" title="Train the neural network:" alt="" coords="408,352,557,381"/>
+<area shape="rect" id="node32" href="$d1/d7c/a00003.html#a38193cc61e9affbd077c1c6089fd0889" title="Test the neural network." alt="" coords="409,413,556,443"/>
+<area shape="rect" id="node21" href="$d1/d7c/a00003.html#ac86567c994bb671c20ed50316d268d3b" title="Initialize weights and biases with values between &#45;0.5 and 0.5." alt="" coords="625,221,767,251"/>
+<area shape="rect" id="node23" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="605,413,787,443"/>
+<area shape="rect" id="node27" href="$d1/d7c/a00003.html#a3e503ddab5bbc51f6e0b79b67ca6ed2f" title="Calculate the error signal for each node. Uses corss entropy error function." alt="" coords="625,274,767,321"/>
+<area shape="rect" id="node30" href="$d1/d7c/a00003.html#a5a0cac77d13e3ffdd3088cb684d39859" title="Back propagate the error starting from the output layer down to the input layer." alt="" coords="620,343,772,390"/>
+<area shape="rect" id="node25" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="836,348,1036,377"/>
+<area shape="rect" id="node35" href="$dd/d1b/a00015.html#aa56c9494c95edf68386375e97d64159b" title="Calculates the power of x to y." alt="" coords="673,467,719,496"/>
 </map>

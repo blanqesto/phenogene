@@ -30,15 +30,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="30" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="33" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="46" endline="81">File_Manager::read_input</referencedby>
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
         <referencedby refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" compoundref="d4/d51/a00017" startline="6" endline="9">get_input_len</referencedby>
         <referencedby refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" compoundref="d1/d2b/a00018" startline="7" endline="11">set_input_len</referencedby>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="31" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="34" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="34" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" compoundref="d4/d51/a00017" startline="24" endline="27">get_hidden_len</referencedby>
         <referencedby refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" compoundref="d1/d2b/a00018" startline="25" endline="29">set_hidden_len</referencedby>
@@ -77,37 +77,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="32" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="35" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="91" endline="117">File_Manager::read_expected_output</referencedby>
         <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="126" endline="150">File_Manager::write_output</referencedby>
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
-        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="232">File_Manager::fill_rank_output</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
         <referencedby refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" compoundref="d4/d51/a00017" startline="15" endline="18">get_output_len</referencedby>
         <referencedby refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" compoundref="d1/d2b/a00018" startline="16" endline="20">set_output_len</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" prot="private" static="no" mutable="no">
         <type>int</type>
-        <definition>int Neural_Network::AV</definition>
+        <definition>int Neural_Network::max_iterations</definition>
         <argsstring></argsstring>
-        <name>AV</name>
+        <name>max_iterations</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" compoundref="d1/d2b/a00018" startline="34" endline="38">set_AV</referencedby>
+        <referencedby refid="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" compoundref="d4/d51/a00017" startline="40" endline="43">get_max_it</referencedby>
+        <referencedby refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" compoundref="d1/d2b/a00018" startline="35" endline="39">set_max_it</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -120,12 +122,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="34" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="37" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="46" endline="81">File_Manager::read_input</referencedby>
         <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="91" endline="117">File_Manager::read_expected_output</referencedby>
         <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="126" endline="150">File_Manager::write_output</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" prot="private" static="no" mutable="no">
@@ -139,9 +141,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="35" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -154,10 +156,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="36" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="39" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" compoundref="d1/d2b/a00018" startline="43" endline="47">set_minimum_error</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" compoundref="d1/d2b/a00018" startline="44" endline="48">set_minimum_error</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -170,10 +172,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="37" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="40" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" compoundref="d1/d2b/a00018" startline="52" endline="56">set_learning_rate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" compoundref="d1/d2b/a00018" startline="53" endline="57">set_learning_rate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -186,9 +188,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="38" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="41" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" compoundref="d4/d51/a00017" startline="32" endline="35">get_momentum</referencedby>
+        <referencedby refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" compoundref="d1/d2b/a00018" startline="63" endline="67">set_momentum</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -201,12 +205,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="41" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="41" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="44" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="44" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="46" endline="81">File_Manager::read_input</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -219,9 +223,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="42" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="42" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="45" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -234,10 +238,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="43" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="43" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -250,10 +254,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="44" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="44" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -266,10 +269,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="45" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="45" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -282,11 +284,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="46" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="49" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="49" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="91" endline="117">File_Manager::read_expected_output</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -299,9 +301,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="50" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="50" bodyend="-1"/>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -314,9 +316,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="48" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="51" bodyend="-1"/>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -329,12 +331,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="51" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="54" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="54" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -347,12 +349,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="52" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="52" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="55" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="55" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a7d2759b2ad892445e7d74892737547cf" compoundref="dd/dad/a00005" startline="160" endline="171">File_Manager::read_weights</referencedby>
         <referencedby refid="d8/d84/a00001_1a67e37c5e1429df91a8c4ff836579cdc0" compoundref="dd/dad/a00005" startline="181" endline="192">File_Manager::write_weights</referencedby>
         <referencedby refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -365,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="53" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="53" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="56" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -378,9 +381,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="56" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="56" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="59" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -393,9 +396,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="57" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="57" bodyend="-1"/>
-        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="60" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" prot="private" static="no" mutable="no">
         <type>map&lt; char, double &gt;</type>
@@ -408,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="60" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="63" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="63" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="46" endline="81">File_Manager::read_input</referencedby>
         <referencedby refid="d1/d7c/a00003_1a6f3defa930afbcb64a305393f741a2a4" compoundref="d7/d7a/a00016" startline="7" endline="41">Neural_Network</referencedby>
       </memberdef>
@@ -423,9 +426,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="63" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="63" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="66" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="66" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="91" endline="117">File_Manager::read_expected_output</referencedby>
-        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="232">File_Manager::fill_rank_output</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" prot="private" static="no" mutable="no">
         <type>map&lt; int, string &gt;</type>
@@ -438,9 +441,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="65" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="68" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="68" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="126" endline="150">File_Manager::write_output</referencedby>
-        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="234">File_Manager::fill_rank_output</referencedby>
+        <referencedby refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="232">File_Manager::fill_rank_output</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" prot="private" static="no" mutable="no">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -453,10 +456,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="68" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="68" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="71" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="71" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a1134b607af353e187667aaba1a960bdd" compoundref="dd/dad/a00005" startline="46" endline="81">File_Manager::read_input</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" prot="private" static="no" mutable="no">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -469,11 +472,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="69" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="69" bodyend="-1"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="72" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="72" bodyend="-1"/>
         <referencedby refid="d8/d84/a00001_1a4b0a0ad74a4446e5f23020521200b932" compoundref="dd/dad/a00005" startline="91" endline="117">File_Manager::read_expected_output</referencedby>
         <referencedby refid="d8/d84/a00001_1a4e104949ad8e8fd75c612313f857ee5a" compoundref="dd/dad/a00005" startline="126" endline="150">File_Manager::write_output</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -489,16 +492,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="10" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_constructor.cpp" bodystart="7" bodyend="41"/>
-        <references refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" compoundref="d2/de7/a00014" startline="33">AV</references>
-        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">dataset_size</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" compoundref="d2/de7/a00014" startline="60">input_rank</references>
-        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="37">learning_rate</references>
-        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="36">minimum_error</references>
-        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="38">momentum</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <references refid="d4/dee/a00008_1a2f65cc4d2a528ee38224d709c1d73015" compoundref="d4/dee/a00008" startline="26">segmoidal</references>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="37">dataset_size</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" compoundref="d2/de7/a00014" startline="63">input_rank</references>
+        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="40">learning_rate</references>
+        <references refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" compoundref="d2/de7/a00014" startline="36">max_iterations</references>
+        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="39">minimum_error</references>
+        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="41">momentum</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -524,7 +526,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="12" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="7" bodyend="11"/>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
         <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="52">GUI::on_lineEdit_editingFinished</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -551,8 +553,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="13" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="16" bodyend="20"/>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="97" endline="110">GUI::on_textEdit_4_textChanged</referencedby>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="86" endline="99">GUI::on_textEdit_4_textChanged</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -578,34 +580,35 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="14" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="25" bodyend="29"/>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <referencedby refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" compoundref="da/da0/a00009" startline="158" endline="161">GUI::on_lineEdit_5_editingFinished</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void Neural_Network::set_AV</definition>
+        <definition>void Neural_Network::set_max_it</definition>
         <argsstring>(int)</argsstring>
-        <name>set_AV</name>
+        <name>set_max_it</name>
         <param>
           <type>int</type>
           <defname>i</defname>
         </param>
         <briefdescription>
-<para>Set Activation function to be used to int i. </para>        </briefdescription>
+<para>Set maximum iterations number to integer i. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>[int</parametername>
+<parametername>[integer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>i] Activation function to be used. </para></parameterdescription>
+<para>i] Maximum iterations to be used. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="15" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="34" bodyend="38"/>
-        <references refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" compoundref="d2/de7/a00014" startline="33">AV</references>
-        <referencedby refid="d7/d46/a00002_1a073c74e8357311d12c523d73414ee265" compoundref="da/da0/a00009" startline="85" endline="89">GUI::on_listWidget_currentRowChanged</referencedby>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="15" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="35" bodyend="39"/>
+        <references refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" compoundref="d2/de7/a00014" startline="36">max_iterations</references>
+        <referencedby refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" compoundref="da/da0/a00009" startline="180" endline="183">GUI::on_lineEdit_10_editingFinished</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -630,8 +633,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="16" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="43" bodyend="47"/>
-        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="36">minimum_error</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="16" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="44" bodyend="48"/>
+        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="39">minimum_error</references>
         <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="73" endline="77">GUI::on_lineEdit_4_editingFinished</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -657,9 +660,36 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="17" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="52" bodyend="56"/>
-        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="37">learning_rate</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="17" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="53" bodyend="57"/>
+        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="40">learning_rate</references>
         <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="61" endline="65">GUI::on_lineEdit_3_editingFinished</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Neural_Network::set_momentum</definition>
+        <argsstring>(double)</argsstring>
+        <name>set_momentum</name>
+        <param>
+          <type>double</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+<para>Set momentum to double d. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[double</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>d] Momentum of the neural network. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="18" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_setters.cpp" bodystart="63" bodyend="67"/>
+        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="41">momentum</references>
+        <referencedby refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" compoundref="da/da0/a00009" startline="169" endline="172">GUI::on_lineEdit_7_editingFinished</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -672,8 +702,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="21" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="6" bodyend="9"/>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="22" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="6" bodyend="9"/>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">GUI::prepare_report</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -686,9 +717,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="22" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="15" bodyend="18"/>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="23" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="15" bodyend="18"/>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
         <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">GUI::valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">GUI::prepare_report</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -701,8 +733,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="23" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="24" bodyend="27"/>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="24" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="24" bodyend="27"/>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">GUI::prepare_report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Neural_Network::get_max_it</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_it</name>
+        <briefdescription>
+<para>Get int maximum iterations number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="25" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="40" bodyend="43"/>
+        <references refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" compoundref="d2/de7/a00014" startline="36">max_iterations</references>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">GUI::prepare_report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Neural_Network::get_momentum</definition>
+        <argsstring>()</argsstring>
+        <name>get_momentum</name>
+        <briefdescription>
+<para>Get double momentum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="26" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN_getters.cpp" bodystart="32" bodyend="35"/>
+        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="41">momentum</references>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">GUI::prepare_report</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -727,9 +790,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="26" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="7" bodyend="21"/>
-        <references refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</references>
-        <references refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="29" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="7" bodyend="21"/>
+        <references refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</references>
+        <references refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</references>
         <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">GUI::perform_train</referencedby>
         <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">GUI::perform_test</referencedby>
       </memberdef>
@@ -746,17 +809,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="73" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="55" bodyend="78"/>
-        <references refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" compoundref="d2/de7/a00014" startline="48">bias_H</references>
-        <references refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" compoundref="d2/de7/a00014" startline="47">bias_O</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="76" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="55" bodyend="78"/>
+        <references refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" compoundref="d2/de7/a00014" startline="51">bias_H</references>
+        <references refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" compoundref="d2/de7/a00014" startline="50">bias_O</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="51">Wh</references>
-        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="52">Wo</references>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="54">Wh</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="55">Wo</references>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -771,23 +834,23 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="74" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="89" bodyend="135"/>
-        <references refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="211" endline="229">back_propagate</references>
-        <references refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</references>
-        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">dataset_size</references>
-        <references refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" compoundref="d2/de7/a00014" startline="35">error</references>
-        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="46">expected_o</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="77" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="89" bodyend="141"/>
+        <references refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" compoundref="dd/d1b/a00015" startline="222" endline="240">back_propagate</references>
+        <references refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</references>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="37">dataset_size</references>
+        <references refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" compoundref="d2/de7/a00014" startline="38">error</references>
+        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="49">expected_o</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1af720a63ca4d8b6a2dd848ead73362e58" compoundref="d4/dee/a00008" startline="19">fork</references>
         <references refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" compoundref="dd/d1b/a00015" startline="55" endline="78">init</references>
-        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="41">input</references>
-        <references refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" compoundref="d2/de7/a00014" startline="68">input_dataset</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d4/dee/a00008_1aeecddf1027b4a894011b52467b2d5733" compoundref="d4/dee/a00008" startline="27">max_iterations</references>
-        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="36">minimum_error</references>
-        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="69">output_dataset</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <references refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</references>
+        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="44">input</references>
+        <references refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" compoundref="d2/de7/a00014" startline="71">input_dataset</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" compoundref="d2/de7/a00014" startline="36">max_iterations</references>
+        <references refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" compoundref="d2/de7/a00014" startline="39">minimum_error</references>
+        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="72">output_dataset</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <references refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</references>
         <referencedby refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">do_function</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -803,21 +866,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="75" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="147" bodyend="168"/>
-        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="34">dataset_size</references>
-        <references refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" compoundref="d2/de7/a00014" startline="35">error</references>
-        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="46">expected_o</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="78" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="153" bodyend="174"/>
+        <references refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" compoundref="d2/de7/a00014" startline="37">dataset_size</references>
+        <references refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" compoundref="d2/de7/a00014" startline="38">error</references>
+        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="49">expected_o</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
         <references refid="d4/dee/a00008_1af720a63ca4d8b6a2dd848ead73362e58" compoundref="d4/dee/a00008" startline="19">fork</references>
-        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="41">input</references>
-        <references refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" compoundref="d2/de7/a00014" startline="68">input_dataset</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="43">output</references>
-        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="69">output_dataset</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
+        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="44">input</references>
+        <references refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" compoundref="d2/de7/a00014" startline="71">input_dataset</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="46">output</references>
+        <references refid="d1/d7c/a00003_1aa8441449f55f07c3da384d81608373b5" compoundref="d2/de7/a00014" startline="72">output_dataset</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
         <references refid="dd/d1b/a00015_1aa56c9494c95edf68386375e97d64159b" compoundref="dd/d1b/a00015" startline="27" endline="32">pow</references>
-        <references refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</references>
+        <references refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</references>
         <referencedby refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">do_function</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a7a8eff736645e4101ed906a46e6a27ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -847,7 +910,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="76" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="38" bodyend="50"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="79" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="38" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -862,17 +925,17 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="77" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="178" bodyend="201"/>
-        <references refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="80" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="184" bodyend="212"/>
+        <references refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
-        <references refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" compoundref="d2/de7/a00014" startline="42">hidden</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" compoundref="d2/de7/a00014" startline="44">netH</references>
-        <references refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" compoundref="d2/de7/a00014" startline="45">netO</references>
-        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="43">output</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="147" endline="168">test</referencedby>
+        <references refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" compoundref="d2/de7/a00014" startline="45">hidden</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" compoundref="d2/de7/a00014" startline="47">netH</references>
+        <references refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" compoundref="d2/de7/a00014" startline="48">netO</references>
+        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="46">output</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" compoundref="dd/d1b/a00015" startline="153" endline="174">test</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -888,19 +951,18 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="78" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="239" bodyend="266"/>
-        <references refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="274" endline="291">calculate_net</references>
-        <references refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" compoundref="d2/de7/a00014" startline="57">delta_H</references>
-        <references refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" compoundref="d2/de7/a00014" startline="56">delta_O</references>
-        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="46">expected_o</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="81" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="250" bodyend="282"/>
+        <references refid="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" compoundref="dd/d1b/a00015" startline="290" endline="309">calculate_net</references>
+        <references refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" compoundref="d2/de7/a00014" startline="60">delta_H</references>
+        <references refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" compoundref="d2/de7/a00014" startline="59">delta_O</references>
+        <references refid="d1/d7c/a00003_1a8d632cf69d2fcd076e473aba1ae74702" compoundref="d2/de7/a00014" startline="49">expected_o</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" compoundref="d2/de7/a00014" startline="44">netH</references>
-        <references refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" compoundref="d2/de7/a00014" startline="45">netO</references>
-        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="43">output</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1abe5631cce6141b7756154a5a9d247da2" compoundref="d2/de7/a00014" startline="46">output</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="55">Wo</references>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -915,23 +977,23 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="79" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="211" bodyend="229"/>
-        <references refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" compoundref="d2/de7/a00014" startline="48">bias_H</references>
-        <references refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" compoundref="d2/de7/a00014" startline="47">bias_O</references>
-        <references refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" compoundref="d2/de7/a00014" startline="57">delta_H</references>
-        <references refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" compoundref="d2/de7/a00014" startline="56">delta_O</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="82" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="222" bodyend="240"/>
+        <references refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" compoundref="d2/de7/a00014" startline="51">bias_H</references>
+        <references refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" compoundref="d2/de7/a00014" startline="50">bias_O</references>
+        <references refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" compoundref="d2/de7/a00014" startline="60">delta_H</references>
+        <references refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" compoundref="d2/de7/a00014" startline="59">delta_O</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
-        <references refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" compoundref="d2/de7/a00014" startline="42">hidden</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="41">input</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="37">learning_rate</references>
-        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="38">momentum</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="51">Wh</references>
-        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="52">Wo</references>
-        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="135">train</referencedby>
+        <references refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" compoundref="d2/de7/a00014" startline="45">hidden</references>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="44">input</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" compoundref="d2/de7/a00014" startline="40">learning_rate</references>
+        <references refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" compoundref="d2/de7/a00014" startline="41">momentum</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="54">Wh</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="55">Wo</references>
+        <referencedby refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" compoundref="dd/d1b/a00015" startline="89" endline="141">train</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a3d073d4957def9b6a4498448260fedeb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -944,7 +1006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="80"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="83"/>
       </memberdef>
       <memberdef kind="function" id="d1/d7c/a00003_1a25df8564c3f26b64935464366055572e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -967,19 +1029,19 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="81" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="274" bodyend="291"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="84" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NN.cpp" bodystart="290" bodyend="309"/>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d4/dee/a00008_1a675ae13246328abd54086989d58ba876" compoundref="d4/dee/a00008" startline="18">forj</references>
-        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="31">hidden_len</references>
-        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="41">input</references>
-        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="30">input_len</references>
-        <references refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" compoundref="d2/de7/a00014" startline="44">netH</references>
-        <references refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" compoundref="d2/de7/a00014" startline="45">netO</references>
-        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="32">output_len</references>
-        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="51">Wh</references>
-        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="52">Wo</references>
-        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="178" endline="201">propagate</referencedby>
-        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="239" endline="266">cal_error</referencedby>
+        <references refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" compoundref="d2/de7/a00014" startline="34">hidden_len</references>
+        <references refid="d1/d7c/a00003_1a347a1fceb1ac048ecd913a89126cebb3" compoundref="d2/de7/a00014" startline="44">input</references>
+        <references refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" compoundref="d2/de7/a00014" startline="33">input_len</references>
+        <references refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" compoundref="d2/de7/a00014" startline="47">netH</references>
+        <references refid="d1/d7c/a00003_1a8bcf19afde3c08afbd862759c839a769" compoundref="d2/de7/a00014" startline="48">netO</references>
+        <references refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" compoundref="d2/de7/a00014" startline="35">output_len</references>
+        <references refid="d1/d7c/a00003_1a45dfc138d645e05eaeaa6ca6bb3df818" compoundref="d2/de7/a00014" startline="54">Wh</references>
+        <references refid="d1/d7c/a00003_1ad6730ce7c9fc3937299dd32473b12d1d" compoundref="d2/de7/a00014" startline="55">Wo</references>
+        <referencedby refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" compoundref="dd/d1b/a00015" startline="184" endline="212">propagate</referencedby>
+        <referencedby refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" compoundref="dd/d1b/a00015" startline="250" endline="282">cal_error</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -992,9 +1054,8 @@
         <link refid="d1/d7c/a00003"/>
       </node>
     </collaborationgraph>
-    <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="7" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="6" bodyend="82"/>
+    <location file="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" line="7" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/NeuralNetwork.h" bodystart="6" bodyend="85"/>
     <listofallmembers>
-      <member refid="d1/d7c/a00003_1a970136042929b26220d35be2776220a6" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>AV</name></member>
       <member refid="d1/d7c/a00003_1a5a0cac77d13e3ffdd3088cb684d39859" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>back_propagate</name></member>
       <member refid="d1/d7c/a00003_1a38808438a02d406a7ab54c8bf825752a" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>bias_H</name></member>
       <member refid="d1/d7c/a00003_1a8f26363ac0ccda6f04df35e68164cd3a" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>bias_O</name></member>
@@ -1009,6 +1070,8 @@
       <member refid="d1/d7c/a00003_1a96aa84fcda6b19a74fff9d19c16b07fe" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>File_Manager</name></member>
       <member refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>get_hidden_len</name></member>
       <member refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>get_input_len</name></member>
+      <member refid="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>get_max_it</name></member>
+      <member refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>get_momentum</name></member>
       <member refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>get_output_len</name></member>
       <member refid="d1/d7c/a00003_1a5b31deacdc5c63e687d6ebc086b761ab" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>hidden</name></member>
       <member refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>hidden_len</name></member>
@@ -1019,6 +1082,7 @@
       <member refid="d1/d7c/a00003_1a9e5319bf385fa55bbbd8f0160915306d" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>input_len</name></member>
       <member refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>input_rank</name></member>
       <member refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>learning_rate</name></member>
+      <member refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>max_iterations</name></member>
       <member refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>minimum_error</name></member>
       <member refid="d1/d7c/a00003_1a3a3ea713384da26e538bc60da8410a75" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>momentum</name></member>
       <member refid="d1/d7c/a00003_1aa07e5b1f8997f895d7550495a5b4f0d2" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>netH</name></member>
@@ -1031,11 +1095,12 @@
       <member refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>propagate</name></member>
       <member refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>rank_output</name></member>
       <member refid="d1/d7c/a00003_1a7a8eff736645e4101ed906a46e6a27ac" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>segmoidal_fn</name></member>
-      <member refid="d1/d7c/a00003_1a80b2c577da9fdc4e830722e7a4569069" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_AV</name></member>
       <member refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_hidden_len</name></member>
       <member refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_input_len</name></member>
       <member refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_learning_rate</name></member>
+      <member refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_max_it</name></member>
       <member refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_minimum_error</name></member>
+      <member refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_momentum</name></member>
       <member refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" prot="public" virt="non-virtual"><scope>Neural_Network</scope><name>set_output_len</name></member>
       <member refid="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>tempWo</name></member>
       <member refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" prot="private" virt="non-virtual"><scope>Neural_Network</scope><name>test</name></member>

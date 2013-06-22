@@ -7,11 +7,12 @@
 
 
 
-Collaboration diagram for Neural\-\_\-\-Network\-:\nopagebreak
+Collaboration diagram for Neural\-\_\-\-Network\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=194pt]{d3/dea/a00046}
+\includegraphics[height=550pt]{d3/dea/a00046}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -25,18 +26,24 @@ void \hyperlink{a00003_a695079279950a3eb27d62df68d32927c}{set\-\_\-output\-\_\-l
 \begin{DoxyCompactList}\small\item\em Set number of output to int i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_ad1e1afff306e47947e23f4fdd4517e22}{set\-\_\-hidden\-\_\-len} (int)
 \begin{DoxyCompactList}\small\item\em Set hidden nodes to int i. \end{DoxyCompactList}\item 
-void \hyperlink{a00003_a80b2c577da9fdc4e830722e7a4569069}{set\-\_\-\-A\-V} (int)
-\begin{DoxyCompactList}\small\item\em Set Activation function to be used to int i. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_acc883578064786f6c093346424fac1e9}{set\-\_\-max\-\_\-it} (int)
+\begin{DoxyCompactList}\small\item\em Set maximum iterations number to integer i. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a0458bfedabe1b42e4d30e3179bd1f189}{set\-\_\-minimum\-\_\-error} (double)
 \begin{DoxyCompactList}\small\item\em Set minimum error to double d. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_a87a3c876501fcd89ffc1caf298fa2703}{set\-\_\-learning\-\_\-rate} (double)
 \begin{DoxyCompactList}\small\item\em Set learning rate to double d. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_af198ad4aa200b431aa45fc17a3895438}{set\-\_\-momentum} (double)
+\begin{DoxyCompactList}\small\item\em Set momentum to double d. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_a75e25e607afb4e862219b21c0569c893}{get\-\_\-input\-\_\-len} ()
 \begin{DoxyCompactList}\small\item\em Get int number of input nodes. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_a895c1b35110b7ee5e5adc56a63a55e78}{get\-\_\-output\-\_\-len} ()
 \begin{DoxyCompactList}\small\item\em Get int number of output nodes. \end{DoxyCompactList}\item 
 int \hyperlink{a00003_ac781308fb521309d657b91a95054be52}{get\-\_\-hidden\-\_\-len} ()
 \begin{DoxyCompactList}\small\item\em Get int number of hidden nodes. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_aab60f50cc87dc0b740bd843790cf520d}{get\-\_\-max\-\_\-it} ()
+\begin{DoxyCompactList}\small\item\em Get int maximum iterations number. \end{DoxyCompactList}\item 
+double \hyperlink{a00003_a8aa33e3c123f800aed4c1e7bdc6339d6}{get\-\_\-momentum} ()
+\begin{DoxyCompactList}\small\item\em Get double momentum. \end{DoxyCompactList}\item 
 void \hyperlink{a00003_acd3d4762d71d54422b45fda3a13976cf}{do\-\_\-function} (int)
 \begin{DoxyCompactList}\small\item\em Train or test the network. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
@@ -69,7 +76,7 @@ int \hyperlink{a00003_a71cc8ca03da47fe639dd1e8ed518069c}{hidden\-\_\-len}
 \item 
 int \hyperlink{a00003_a053d2b510e07b1f25ef112f366bc62ba}{output\-\_\-len}
 \item 
-int \hyperlink{a00003_a970136042929b26220d35be2776220a6}{A\-V}
+int \hyperlink{a00003_ac3c1eed9835dc5da84132d08c090612f}{max\-\_\-iterations}
 \item 
 int \hyperlink{a00003_a8fe39196b36a38696abd679328dd8232}{dataset\-\_\-size}
 \item 
@@ -149,7 +156,7 @@ Definition at line 7 of file N\-N\-\_\-constructor.\-cpp.
 
 
 
-References A\-V, dataset\-\_\-size, hidden\-\_\-len, input\-\_\-len, input\-\_\-rank, learning\-\_\-rate, minimum\-\_\-error, momentum, output\-\_\-len, and segmoidal.
+References dataset\-\_\-size, hidden\-\_\-len, input\-\_\-len, input\-\_\-rank, learning\-\_\-rate, max\-\_\-iterations, minimum\-\_\-error, momentum, and output\-\_\-len.
 
 
 
@@ -175,7 +182,7 @@ Bias and Weights are updated.
 \end{DoxyPostcond}
 
 
-Definition at line 211 of file N\-N.\-cpp.
+Definition at line 222 of file N\-N.\-cpp.
 
 
 
@@ -214,11 +221,11 @@ Delta signal for all nodes is calculated.
 \end{DoxyPostcond}
 
 
-Definition at line 239 of file N\-N.\-cpp.
+Definition at line 250 of file N\-N.\-cpp.
 
 
 
-References calculate\-\_\-net(), delta\-\_\-\-H, delta\-\_\-\-O, expected\-\_\-o, fori, forj, hidden\-\_\-len, net\-H, net\-O, output, and output\-\_\-len.
+References calculate\-\_\-net(), delta\-\_\-\-H, delta\-\_\-\-O, expected\-\_\-o, fori, forj, hidden\-\_\-len, output, output\-\_\-len, and Wo.
 
 
 
@@ -264,7 +271,7 @@ Net is caculated for Output and Hidden nodes.
 \end{DoxyPostcond}
 
 
-Definition at line 274 of file N\-N.\-cpp.
+Definition at line 290 of file N\-N.\-cpp.
 
 
 
@@ -346,6 +353,18 @@ Definition at line 24 of file N\-N\-\_\-getters.\-cpp.
 
 References hidden\-\_\-len.
 
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d7c/a00003_ac781308fb521309d657b91a95054be52_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{a00003_a75e25e607afb4e862219b21c0569c893}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!get\-\_\-input\-\_\-len@{get\-\_\-input\-\_\-len}}
 \index{get\-\_\-input\-\_\-len@{get\-\_\-input\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{get\-\_\-input\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::get\-\_\-input\-\_\-len (
@@ -364,6 +383,80 @@ Definition at line 6 of file N\-N\-\_\-getters.\-cpp.
 
 
 References input\-\_\-len.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d7c/a00003_a75e25e607afb4e862219b21c0569c893_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_aab60f50cc87dc0b740bd843790cf520d}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!get\-\_\-max\-\_\-it@{get\-\_\-max\-\_\-it}}
+\index{get\-\_\-max\-\_\-it@{get\-\_\-max\-\_\-it}!Neural_Network@{Neural\-\_\-\-Network}}
+\subsubsection[{get\-\_\-max\-\_\-it}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::get\-\_\-max\-\_\-it (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d1/d7c/a00003_aab60f50cc87dc0b740bd843790cf520d}
+
+
+Get int maximum iterations number. 
+
+
+
+Definition at line 40 of file N\-N\-\_\-getters.\-cpp.
+
+
+
+References max\-\_\-iterations.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d7c/a00003_aab60f50cc87dc0b740bd843790cf520d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_a8aa33e3c123f800aed4c1e7bdc6339d6}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!get\-\_\-momentum@{get\-\_\-momentum}}
+\index{get\-\_\-momentum@{get\-\_\-momentum}!Neural_Network@{Neural\-\_\-\-Network}}
+\subsubsection[{get\-\_\-momentum}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::get\-\_\-momentum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{d1/d7c/a00003_a8aa33e3c123f800aed4c1e7bdc6339d6}
+
+
+Get double momentum. 
+
+
+
+Definition at line 32 of file N\-N\-\_\-getters.\-cpp.
+
+
+
+References momentum.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d7c/a00003_a8aa33e3c123f800aed4c1e7bdc6339d6_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{a00003_a895c1b35110b7ee5e5adc56a63a55e78}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!get\-\_\-output\-\_\-len@{get\-\_\-output\-\_\-len}}
 \index{get\-\_\-output\-\_\-len@{get\-\_\-output\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
@@ -386,7 +479,8 @@ References output\-\_\-len.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -451,7 +545,7 @@ Hidden and Output nodes are computed.
 \end{DoxyPostcond}
 
 
-Definition at line 178 of file N\-N.\-cpp.
+Definition at line 184 of file N\-N.\-cpp.
 
 
 
@@ -500,41 +594,6 @@ Calculates the segmoidal/segmoidal inverse of a double \mbox{[}x\mbox{]}.
 
 Definition at line 38 of file N\-N.\-cpp.
 
-\hypertarget{a00003_a80b2c577da9fdc4e830722e7a4569069}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-\-A\-V@{set\-\_\-\-A\-V}}
-\index{set\-\_\-\-A\-V@{set\-\_\-\-A\-V}!Neural_Network@{Neural\-\_\-\-Network}}
-\subsubsection[{set\-\_\-\-A\-V}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-\_\-\-Network\-::set\-\_\-\-A\-V (
-\begin{DoxyParamCaption}
-\item[{int}]{i}
-\end{DoxyParamCaption}
-)}}\label{d1/d7c/a00003_a80b2c577da9fdc4e830722e7a4569069}
-
-
-Set Activation function to be used to int i. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em \mbox{[}int} & i\mbox{]} Activation function to be used. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 34 of file N\-N\-\_\-setters.\-cpp.
-
-
-
-References A\-V.
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d1/d7c/a00003_a80b2c577da9fdc4e830722e7a4569069_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{a00003_ad1e1afff306e47947e23f4fdd4517e22}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-hidden\-\_\-len@{set\-\_\-hidden\-\_\-len}}
 \index{set\-\_\-hidden\-\_\-len@{set\-\_\-hidden\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{set\-\_\-hidden\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-\_\-\-Network\-::set\-\_\-hidden\-\_\-len (
@@ -558,6 +617,18 @@ Definition at line 25 of file N\-N\-\_\-setters.\-cpp.
 
 
 References hidden\-\_\-len.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d1/d7c/a00003_ad1e1afff306e47947e23f4fdd4517e22_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{a00003_afb37f8321b35bbc9b9beb88d56d69f08}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-input\-\_\-len@{set\-\_\-input\-\_\-len}}
 \index{set\-\_\-input\-\_\-len@{set\-\_\-input\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
@@ -612,7 +683,7 @@ Set learning rate to double d.
 \end{DoxyParams}
 
 
-Definition at line 52 of file N\-N\-\_\-setters.\-cpp.
+Definition at line 53 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -625,6 +696,42 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=324pt]{d1/d7c/a00003_a87a3c876501fcd89ffc1caf298fa2703_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_acc883578064786f6c093346424fac1e9}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-max\-\_\-it@{set\-\_\-max\-\_\-it}}
+\index{set\-\_\-max\-\_\-it@{set\-\_\-max\-\_\-it}!Neural_Network@{Neural\-\_\-\-Network}}
+\subsubsection[{set\-\_\-max\-\_\-it}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-\_\-\-Network\-::set\-\_\-max\-\_\-it (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{d1/d7c/a00003_acc883578064786f6c093346424fac1e9}
+
+
+Set maximum iterations number to integer i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}integer} & i\mbox{]} Maximum iterations to be used. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file N\-N\-\_\-setters.\-cpp.
+
+
+
+References max\-\_\-iterations.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d1/d7c/a00003_acc883578064786f6c093346424fac1e9_icgraph}
 \end{center}
 \end{figure}
 
@@ -647,7 +754,7 @@ Set minimum error to double d.
 \end{DoxyParams}
 
 
-Definition at line 43 of file N\-N\-\_\-setters.\-cpp.
+Definition at line 44 of file N\-N\-\_\-setters.\-cpp.
 
 
 
@@ -660,6 +767,42 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=324pt]{d1/d7c/a00003_a0458bfedabe1b42e4d30e3179bd1f189_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_af198ad4aa200b431aa45fc17a3895438}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!set\-\_\-momentum@{set\-\_\-momentum}}
+\index{set\-\_\-momentum@{set\-\_\-momentum}!Neural_Network@{Neural\-\_\-\-Network}}
+\subsubsection[{set\-\_\-momentum}]{\setlength{\rightskip}{0pt plus 5cm}void Neural\-\_\-\-Network\-::set\-\_\-momentum (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{d1/d7c/a00003_af198ad4aa200b431aa45fc17a3895438}
+
+
+Set momentum to double d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}double} & d\mbox{]} Momentum of the neural network. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file N\-N\-\_\-setters.\-cpp.
+
+
+
+References momentum.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d1/d7c/a00003_af198ad4aa200b431aa45fc17a3895438_icgraph}
 \end{center}
 \end{figure}
 
@@ -720,7 +863,7 @@ Output is filled.
 \end{DoxyPostcond}
 
 
-Definition at line 147 of file N\-N.\-cpp.
+Definition at line 153 of file N\-N.\-cpp.
 
 
 
@@ -810,194 +953,194 @@ Definition at line 8 of file Neural\-Network.\-h.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{a00003_a970136042929b26220d35be2776220a6}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!A\-V@{A\-V}}
-\index{A\-V@{A\-V}!Neural_Network@{Neural\-\_\-\-Network}}
-\subsubsection[{A\-V}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::\-A\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a970136042929b26220d35be2776220a6}
-
-
-Definition at line 33 of file Neural\-Network.\-h.
-
 \hypertarget{a00003_a38808438a02d406a7ab54c8bf825752a}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!bias\-\_\-\-H@{bias\-\_\-\-H}}
 \index{bias\-\_\-\-H@{bias\-\_\-\-H}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{bias\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::bias\-\_\-\-H\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a38808438a02d406a7ab54c8bf825752a}
 
 
-Definition at line 48 of file Neural\-Network.\-h.
+Definition at line 51 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a8f26363ac0ccda6f04df35e68164cd3a}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!bias\-\_\-\-O@{bias\-\_\-\-O}}
 \index{bias\-\_\-\-O@{bias\-\_\-\-O}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{bias\-\_\-\-O}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::bias\-\_\-\-O\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a8f26363ac0ccda6f04df35e68164cd3a}
 
 
-Definition at line 47 of file Neural\-Network.\-h.
+Definition at line 50 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a8fe39196b36a38696abd679328dd8232}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!dataset\-\_\-size@{dataset\-\_\-size}}
 \index{dataset\-\_\-size@{dataset\-\_\-size}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{dataset\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::dataset\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a8fe39196b36a38696abd679328dd8232}
 
 
-Definition at line 34 of file Neural\-Network.\-h.
+Definition at line 37 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a51e5c2d2b53ba284c5b3791446c3b7d8}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!delta\-\_\-\-H@{delta\-\_\-\-H}}
 \index{delta\-\_\-\-H@{delta\-\_\-\-H}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{delta\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::delta\-\_\-\-H\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a51e5c2d2b53ba284c5b3791446c3b7d8}
 
 
-Definition at line 57 of file Neural\-Network.\-h.
+Definition at line 60 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_ae5f829ba5e65ae91d5c4feda5f66e37a}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!delta\-\_\-\-O@{delta\-\_\-\-O}}
 \index{delta\-\_\-\-O@{delta\-\_\-\-O}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{delta\-\_\-\-O}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::delta\-\_\-\-O\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_ae5f829ba5e65ae91d5c4feda5f66e37a}
 
 
-Definition at line 56 of file Neural\-Network.\-h.
+Definition at line 59 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a2ffe42aee798e268d4bbf0f3428ba430}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!error@{error}}
 \index{error@{error}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::error\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a2ffe42aee798e268d4bbf0f3428ba430}
 
 
-Definition at line 35 of file Neural\-Network.\-h.
+Definition at line 38 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a8d632cf69d2fcd076e473aba1ae74702}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!expected\-\_\-o@{expected\-\_\-o}}
 \index{expected\-\_\-o@{expected\-\_\-o}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{expected\-\_\-o}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::expected\-\_\-o\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a8d632cf69d2fcd076e473aba1ae74702}
 
 
-Definition at line 46 of file Neural\-Network.\-h.
+Definition at line 49 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a5b31deacdc5c63e687d6ebc086b761ab}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!hidden@{hidden}}
 \index{hidden@{hidden}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{hidden}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::hidden\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a5b31deacdc5c63e687d6ebc086b761ab}
 
 
-Definition at line 42 of file Neural\-Network.\-h.
+Definition at line 45 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a71cc8ca03da47fe639dd1e8ed518069c}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!hidden\-\_\-len@{hidden\-\_\-len}}
 \index{hidden\-\_\-len@{hidden\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{hidden\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::hidden\-\_\-len\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a71cc8ca03da47fe639dd1e8ed518069c}
 
 
-Definition at line 31 of file Neural\-Network.\-h.
+Definition at line 34 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a347a1fceb1ac048ecd913a89126cebb3}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!input@{input}}
 \index{input@{input}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::input\mbox{[}{\bf input\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a347a1fceb1ac048ecd913a89126cebb3}
 
 
-Definition at line 41 of file Neural\-Network.\-h.
+Definition at line 44 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a81bab51b36643c5b10ba25d518c27ff3}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!input\-\_\-dataset@{input\-\_\-dataset}}
 \index{input\-\_\-dataset@{input\-\_\-dataset}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{input\-\_\-dataset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ Neural\-\_\-\-Network\-::input\-\_\-dataset\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a81bab51b36643c5b10ba25d518c27ff3}
 
 
-Definition at line 68 of file Neural\-Network.\-h.
+Definition at line 71 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a9e5319bf385fa55bbbd8f0160915306d}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!input\-\_\-len@{input\-\_\-len}}
 \index{input\-\_\-len@{input\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{input\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::input\-\_\-len\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a9e5319bf385fa55bbbd8f0160915306d}
 
 
-Definition at line 30 of file Neural\-Network.\-h.
+Definition at line 33 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_adf2c6662b130ed1582025ea2cccacbe2}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!input\-\_\-rank@{input\-\_\-rank}}
 \index{input\-\_\-rank@{input\-\_\-rank}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{input\-\_\-rank}]{\setlength{\rightskip}{0pt plus 5cm}map$<$char,double$>$ Neural\-\_\-\-Network\-::input\-\_\-rank\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_adf2c6662b130ed1582025ea2cccacbe2}
 
 
-Definition at line 60 of file Neural\-Network.\-h.
+Definition at line 63 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a1994986029a1ef9d55fa4bb1b440210b}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!learning\-\_\-rate@{learning\-\_\-rate}}
 \index{learning\-\_\-rate@{learning\-\_\-rate}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{learning\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::learning\-\_\-rate\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a1994986029a1ef9d55fa4bb1b440210b}
 
 
-Definition at line 37 of file Neural\-Network.\-h.
+Definition at line 40 of file Neural\-Network.\-h.
+
+\hypertarget{a00003_ac3c1eed9835dc5da84132d08c090612f}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!max\-\_\-iterations@{max\-\_\-iterations}}
+\index{max\-\_\-iterations@{max\-\_\-iterations}!Neural_Network@{Neural\-\_\-\-Network}}
+\subsubsection[{max\-\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::max\-\_\-iterations\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_ac3c1eed9835dc5da84132d08c090612f}
+
+
+Definition at line 36 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_aa2898d2ec7ac091b6d40916d4b113a93}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!minimum\-\_\-error@{minimum\-\_\-error}}
 \index{minimum\-\_\-error@{minimum\-\_\-error}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{minimum\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::minimum\-\_\-error\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_aa2898d2ec7ac091b6d40916d4b113a93}
 
 
-Definition at line 36 of file Neural\-Network.\-h.
+Definition at line 39 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a3a3ea713384da26e538bc60da8410a75}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!momentum@{momentum}}
 \index{momentum@{momentum}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{momentum}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::momentum\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a3a3ea713384da26e538bc60da8410a75}
 
 
-Definition at line 38 of file Neural\-Network.\-h.
+Definition at line 41 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_aa07e5b1f8997f895d7550495a5b4f0d2}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!net\-H@{net\-H}}
 \index{net\-H@{net\-H}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{net\-H}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::net\-H\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_aa07e5b1f8997f895d7550495a5b4f0d2}
 
 
-Definition at line 44 of file Neural\-Network.\-h.
+Definition at line 47 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a8bcf19afde3c08afbd862759c839a769}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!net\-O@{net\-O}}
 \index{net\-O@{net\-O}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{net\-O}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::net\-O\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a8bcf19afde3c08afbd862759c839a769}
 
 
-Definition at line 45 of file Neural\-Network.\-h.
+Definition at line 48 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_abe5631cce6141b7756154a5a9d247da2}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!output@{output}}
 \index{output@{output}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::output\mbox{[}{\bf output\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_abe5631cce6141b7756154a5a9d247da2}
 
 
-Definition at line 43 of file Neural\-Network.\-h.
+Definition at line 46 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_aa8441449f55f07c3da384d81608373b5}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!output\-\_\-dataset@{output\-\_\-dataset}}
 \index{output\-\_\-dataset@{output\-\_\-dataset}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{output\-\_\-dataset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ Neural\-\_\-\-Network\-::output\-\_\-dataset\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_aa8441449f55f07c3da384d81608373b5}
 
 
-Definition at line 69 of file Neural\-Network.\-h.
+Definition at line 72 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a053d2b510e07b1f25ef112f366bc62ba}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!output\-\_\-len@{output\-\_\-len}}
 \index{output\-\_\-len@{output\-\_\-len}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{output\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int Neural\-\_\-\-Network\-::output\-\_\-len\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a053d2b510e07b1f25ef112f366bc62ba}
 
 
-Definition at line 32 of file Neural\-Network.\-h.
+Definition at line 35 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_af46a9de8ef619f93fb8c0231be79163c}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!output\-\_\-rank@{output\-\_\-rank}}
 \index{output\-\_\-rank@{output\-\_\-rank}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{output\-\_\-rank}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,int$>$ Neural\-\_\-\-Network\-::output\-\_\-rank\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_af46a9de8ef619f93fb8c0231be79163c}
 
 
-Definition at line 63 of file Neural\-Network.\-h.
+Definition at line 66 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a8e34531b701290d16068e3685f3066a4}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!rank\-\_\-output@{rank\-\_\-output}}
 \index{rank\-\_\-output@{rank\-\_\-output}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{rank\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}map$<$int,string$>$ Neural\-\_\-\-Network\-::rank\-\_\-output\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a8e34531b701290d16068e3685f3066a4}
 
 
-Definition at line 65 of file Neural\-Network.\-h.
+Definition at line 68 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a1cca3513af05c6dce603fdf332b36691}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!temp\-Wo@{temp\-Wo}}
 \index{temp\-Wo@{temp\-Wo}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{temp\-Wo}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::temp\-Wo\mbox{[}{\bf output\-\_\-l}\mbox{]}\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a1cca3513af05c6dce603fdf332b36691}
 
 
-Definition at line 53 of file Neural\-Network.\-h.
+Definition at line 56 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_a45dfc138d645e05eaeaa6ca6bb3df818}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!Wh@{Wh}}
 \index{Wh@{Wh}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{Wh}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::\-Wh\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\mbox{[}{\bf input\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_a45dfc138d645e05eaeaa6ca6bb3df818}
 
 
-Definition at line 51 of file Neural\-Network.\-h.
+Definition at line 54 of file Neural\-Network.\-h.
 
 \hypertarget{a00003_ad6730ce7c9fc3937299dd32473b12d1d}{\index{Neural\-\_\-\-Network@{Neural\-\_\-\-Network}!Wo@{Wo}}
 \index{Wo@{Wo}!Neural_Network@{Neural\-\_\-\-Network}}
 \subsubsection[{Wo}]{\setlength{\rightskip}{0pt plus 5cm}double Neural\-\_\-\-Network\-::\-Wo\mbox{[}{\bf output\-\_\-l}\mbox{]}\mbox{[}{\bf hidden\-\_\-l}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d1/d7c/a00003_ad6730ce7c9fc3937299dd32473b12d1d}
 
 
-Definition at line 52 of file Neural\-Network.\-h.
+Definition at line 55 of file Neural\-Network.\-h.
 
 
 

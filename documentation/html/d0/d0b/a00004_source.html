@@ -144,24 +144,25 @@ $(document).ready(function(){initNavTree('d0/d0b/a00004_source.html','../../');}
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a63725670a06637b4290c54eba671b640">   39</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="../../d8/d84/a00001.html#a63725670a06637b4290c54eba671b640">output_file</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#aab02256124e6eb39e10e3c9765f0bcb3">   40</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="../../d8/d84/a00001.html#aab02256124e6eb39e10e3c9765f0bcb3">weights_file</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">   41</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="../../d8/d84/a00001.html#a578abb99a35121fea6c83f1dc21cc2af">rank_output_strings</a>[<a class="code" href="../../d4/dee/a00008.html#a0a0ddfc9fb3bc3d90d175ed1f7bd54c5">output_l</a>];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content.">read_input</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="Read expected output  Opens file filePath and reads its content.">read_expected_output</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer.  Opens file filePath and reads its content.">read_weights</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output  Opens file filePath and write to it.">write_output</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights  Opens file filePath and write to it.">write_weights</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="../../d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string.">convertInt</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif // FILEMANAGER_H</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="../../d8/d84/a00001.html#aa298881ac48abd6b81764741be6485f7">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d84/a00001.html#aa298881ac48abd6b81764741be6485f7">ids</a>[<a class="code" href="../../d4/dee/a00008.html#a137d3378ba32ae138541e30156fb5c66">max_dataset_size</a>];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content.">read_input</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a4b0a0ad74a4446e5f23020521200b932" title="Read expected output  Opens file filePath and reads its content.">read_expected_output</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer.  Opens file filePath and reads its content.">read_weights</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output  Opens file filePath and write to it.">write_output</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights  Opens file filePath and write to it.">write_weights</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="../../d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string.">convertInt</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // FILEMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../d0/d0b/a00004.html">FileManager.h</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 03:48:52 by
+    <li class="footer">Generated on Sun Jun 23 2013 15:04:04 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

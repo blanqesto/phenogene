@@ -89,6 +89,8 @@ string \hyperlink{a00001_a63725670a06637b4290c54eba671b640}{output\-\_\-file}
 string \hyperlink{a00001_aab02256124e6eb39e10e3c9765f0bcb3}{weights\-\_\-file}
 \item 
 string \hyperlink{a00001_a578abb99a35121fea6c83f1dc21cc2af}{rank\-\_\-output\-\_\-strings} \mbox{[}\hyperlink{a00008_a0a0ddfc9fb3bc3d90d175ed1f7bd54c5}{output\-\_\-l}\mbox{]}
+\item 
+int \hyperlink{a00001_aa298881ac48abd6b81764741be6485f7}{ids} \mbox{[}\hyperlink{a00008_a137d3378ba32ae138541e30156fb5c66}{max\-\_\-dataset\-\_\-size}\mbox{]}
 \end{DoxyCompactItemize}
 
 
@@ -135,11 +137,12 @@ Number in string format.
 \end{DoxyReturn}
 
 
-Definition at line 199 of file F\-M.\-cpp.
+Definition at line 212 of file F\-M.\-cpp.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -178,7 +181,8 @@ References expected\-\_\-out\-\_\-file, input\-\_\-file, output\-\_\-file, read\
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -217,7 +221,7 @@ Rank\-\_\-output is filled.
 \end{DoxyPostcond}
 
 
-Definition at line 221 of file F\-M.\-cpp.
+Definition at line 234 of file F\-M.\-cpp.
 
 
 
@@ -379,7 +383,7 @@ Expected output dataset is filled.
 \end{DoxyPostcond}
 
 
-Definition at line 91 of file F\-M.\-cpp.
+Definition at line 101 of file F\-M.\-cpp.
 
 
 
@@ -424,7 +428,7 @@ Definition at line 46 of file F\-M.\-cpp.
 
 
 
-References convert\-Int(), Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, fork, Neural\-\_\-\-Network\-::input, Neural\-\_\-\-Network\-::input\-\_\-dataset, Neural\-\_\-\-Network\-::input\-\_\-len, input\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::input\-\_\-rank, max\-\_\-dataset\-\_\-size, n, and read.
+References convert\-Int(), Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, fork, ids, Neural\-\_\-\-Network\-::input, Neural\-\_\-\-Network\-::input\-\_\-dataset, Neural\-\_\-\-Network\-::input\-\_\-len, input\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::input\-\_\-rank, max\-\_\-dataset\-\_\-size, n, and read.
 
 
 
@@ -473,7 +477,7 @@ Weights datasets are filled.
 \end{DoxyPostcond}
 
 
-Definition at line 160 of file F\-M.\-cpp.
+Definition at line 173 of file F\-M.\-cpp.
 
 
 
@@ -693,11 +697,23 @@ Output file to be found in the specified directory.
 \end{DoxyPostcond}
 
 
-Definition at line 126 of file F\-M.\-cpp.
+Definition at line 136 of file F\-M.\-cpp.
 
 
 
-References Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, forj, n, Neural\-\_\-\-Network\-::output\-\_\-dataset, Neural\-\_\-\-Network\-::output\-\_\-len, output\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::rank\-\_\-output, and write.
+References convert\-Int(), Neural\-\_\-\-Network\-::dataset\-\_\-size, fori, forj, ids, n, Neural\-\_\-\-Network\-::output\-\_\-dataset, Neural\-\_\-\-Network\-::output\-\_\-len, output\-\_\-population\-\_\-string, Neural\-\_\-\-Network\-::rank\-\_\-output, and write.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d8/d84/a00001_a4e104949ad8e8fd75c612313f857ee5a_cgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -735,7 +751,7 @@ Weights file to be found in the specified directory.
 \end{DoxyPostcond}
 
 
-Definition at line 181 of file F\-M.\-cpp.
+Definition at line 194 of file F\-M.\-cpp.
 
 
 
@@ -761,6 +777,13 @@ Here is the caller graph for this function\-:\nopagebreak
 
 
 Definition at line 38 of file File\-Manager.\-h.
+
+\hypertarget{a00001_aa298881ac48abd6b81764741be6485f7}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!ids@{ids}}
+\index{ids@{ids}!File_Manager@{File\-\_\-\-Manager}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}int File\-\_\-\-Manager\-::ids\mbox{[}{\bf max\-\_\-dataset\-\_\-size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{d8/d84/a00001_aa298881ac48abd6b81764741be6485f7}
+
+
+Definition at line 42 of file File\-Manager.\-h.
 
 \hypertarget{a00001_a78b144182e3cfc70f9aae78ebdd66e51}{\index{File\-\_\-\-Manager@{File\-\_\-\-Manager}!input\-\_\-file@{input\-\_\-file}}
 \index{input\-\_\-file@{input\-\_\-file}!File_Manager@{File\-\_\-\-Manager}}

@@ -39,6 +39,7 @@ private:
     string output_file;
     string weights_file;
     string rank_output_strings[output_l];
+    int ids[max_dataset_size];
 
     void read_input(string);
     void read_expected_output(string);

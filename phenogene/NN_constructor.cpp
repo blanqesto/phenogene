@@ -9,8 +9,8 @@ Neural_Network::Neural_Network()
     srand((unsigned)time(0));
     minimum_error = 0.01;
     input_len = 9;
-    hidden_len = ceil((input_len+output_len)/2);
     output_len = 5;
+    hidden_len = ceil((input_len+output_len)/2);
     momentum = 0.0000;
     learning_rate = 0.001;
     dataset_size=0;

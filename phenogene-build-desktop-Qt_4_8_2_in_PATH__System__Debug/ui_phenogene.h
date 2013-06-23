@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Sun Jun 23 02:32:40 2013
+** Created: Sun Jun 23 13:26:21 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -168,6 +168,8 @@ public:
     QProgressBar *progressBar;
     QPushButton *pushButton;
     QPushButton *quitButton;
+    QLabel *label;
+    QLabel *label_9;
     QMenuBar *menuBar;
     QMenu *menuPhenogene;
     QMenu *menuSave;
@@ -815,7 +817,7 @@ public:
         label_4->setWordWrap(false);
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(9, 496, 581, 35));
+        layoutWidget->setGeometry(QRect(9, 496, 581, 60));
         gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -845,6 +847,15 @@ public:
 
         gridLayout->addWidget(quitButton, 1, 2, 1, 1);
 
+        label = new QLabel(layoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        gridLayout->addWidget(label, 2, 0, 1, 1);
+
+        label_9 = new QLabel(centralWidget);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(70, 500, 331, 21));
+        label_9->setFont(font2);
         GUI->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(GUI);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -908,7 +919,7 @@ public:
 
         retranslateUi(GUI);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GUI);
@@ -1032,7 +1043,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("GUI", "Predict", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("GUI", "[Warning: This is an expert mode tab. Do not edit if you don't know what you're doing!]", 0, QApplication::UnicodeUTF8));
         label_8->setText(QApplication::translate("GUI", "Number of hidden nodes", 0, QApplication::UnicodeUTF8));
-        lineEdit_5->setText(QApplication::translate("GUI", "12", 0, QApplication::UnicodeUTF8));
+        lineEdit_5->setText(QApplication::translate("GUI", "7", 0, QApplication::UnicodeUTF8));
         label_36->setText(QApplication::translate("GUI", "[0-100]", 0, QApplication::UnicodeUTF8));
         label_14->setText(QApplication::translate("GUI", "Momentum:", 0, QApplication::UnicodeUTF8));
         lineEdit_7->setText(QApplication::translate("GUI", "0.00000", 0, QApplication::UnicodeUTF8));
@@ -1061,8 +1072,11 @@ public:
         lineEdit_26->setText(QApplication::translate("GUI", "0", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("GUI", "Analysis", 0, QApplication::UnicodeUTF8));
         label_4->setText(QString());
+        progressBar->setFormat(QApplication::translate("GUI", "%p%", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("GUI", "Start", 0, QApplication::UnicodeUTF8));
         quitButton->setText(QApplication::translate("GUI", "Quit", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("GUI", "TextLabel", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QString());
         menuPhenogene->setTitle(QApplication::translate("GUI", "File", 0, QApplication::UnicodeUTF8));
         menuSave->setTitle(QApplication::translate("GUI", "Save", 0, QApplication::UnicodeUTF8));
         menuLoad->setTitle(QApplication::translate("GUI", "Load", 0, QApplication::UnicodeUTF8));

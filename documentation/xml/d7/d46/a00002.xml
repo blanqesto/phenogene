@@ -18,8 +18,8 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="20" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" bodystart="20" bodyend="-1"/>
         <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">on_pushButton_5_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" compoundref="da/da0/a00009" startline="33" endline="39">on_pushButton_3_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="109" endline="117">on_pushButton_4_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="126" endline="132">on_pushButton_6_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="110" endline="118">on_pushButton_4_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="127" endline="133">on_pushButton_6_clicked</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" prot="private" static="no" mutable="no">
         <type>QFileDialog</type>
@@ -35,8 +35,8 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="21" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" bodystart="21" bodyend="-1"/>
         <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">on_pushButton_5_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" compoundref="da/da0/a00009" startline="33" endline="39">on_pushButton_3_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="109" endline="117">on_pushButton_4_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="126" endline="132">on_pushButton_6_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="110" endline="118">on_pushButton_4_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="127" endline="133">on_pushButton_6_clicked</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d7/d46/a00002_1aa3abed87f53b22188d76a134e427b30d" prot="private" static="no" mutable="no">
         <type>QByteArray</type>
@@ -65,25 +65,25 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="46" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" bodystart="46" bodyend="-1"/>
         <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">on_pushButton_5_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" compoundref="da/da0/a00009" startline="33" endline="39">on_pushButton_3_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="52">on_lineEdit_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="61" endline="65">on_lineEdit_3_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="73" endline="77">on_lineEdit_4_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="86" endline="99">on_textEdit_4_textChanged</referencedby>
-        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="109" endline="117">on_pushButton_4_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="126" endline="132">on_pushButton_6_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8cb47192d9b34bdc1ba3d47e0b0f2d4f" compoundref="da/da0/a00009" startline="138" endline="151">on_tabWidget_currentChanged</referencedby>
-        <referencedby refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" compoundref="da/da0/a00009" startline="158" endline="161">on_lineEdit_5_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" compoundref="da/da0/a00009" startline="169" endline="172">on_lineEdit_7_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" compoundref="da/da0/a00009" startline="180" endline="183">on_lineEdit_10_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="53">on_lineEdit_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="62" endline="66">on_lineEdit_3_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="74" endline="78">on_lineEdit_4_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="87" endline="100">on_textEdit_4_textChanged</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="110" endline="118">on_pushButton_4_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="127" endline="133">on_pushButton_6_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8cb47192d9b34bdc1ba3d47e0b0f2d4f" compoundref="da/da0/a00009" startline="139" endline="153">on_tabWidget_currentChanged</referencedby>
+        <referencedby refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" compoundref="da/da0/a00009" startline="160" endline="163">on_lineEdit_5_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" compoundref="da/da0/a00009" startline="171" endline="174">on_lineEdit_7_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" compoundref="da/da0/a00009" startline="182" endline="185">on_lineEdit_10_editingFinished</referencedby>
         <referencedby refid="d7/d46/a00002_1a5683a1862ec1a85cf87d9c5f6fc528e9" compoundref="da/d45/a00011" startline="20" endline="29">set_styleSheet</referencedby>
         <referencedby refid="d7/d46/a00002_1abd9fac4d8ad5334cc48afb0513544898" compoundref="da/d45/a00011" startline="34" endline="49">set_validators</referencedby>
         <referencedby refid="d7/d46/a00002_1ac9cae2328dcb5d83bdfaeca49a2eb695" compoundref="da/d45/a00011" startline="54" endline="57">~GUI</referencedby>
         <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</referencedby>
-        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">prepare_report</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="53">perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="62" endline="77">perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="82" endline="113">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="119" endline="128">fill_rank</referencedby>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="147" endline="160">prepare_report</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" prot="private" static="no" mutable="no">
         <type><ref refid="d8/d84/a00001" kindref="compound">File_Manager</ref></type>
@@ -99,21 +99,21 @@
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="48" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" bodystart="48" bodyend="-1"/>
         <referencedby refid="d7/d46/a00002_1a6fd99e6dc89a1f3d352c037c880ef345" compoundref="da/da0/a00009" startline="12" endline="23">on_pushButton_5_clicked</referencedby>
         <referencedby refid="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" compoundref="da/da0/a00009" startline="33" endline="39">on_pushButton_3_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="52">on_lineEdit_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="61" endline="65">on_lineEdit_3_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="73" endline="77">on_lineEdit_4_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="86" endline="99">on_textEdit_4_textChanged</referencedby>
-        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="109" endline="117">on_pushButton_4_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="126" endline="132">on_pushButton_6_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" compoundref="da/da0/a00009" startline="158" endline="161">on_lineEdit_5_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" compoundref="da/da0/a00009" startline="169" endline="172">on_lineEdit_7_editingFinished</referencedby>
-        <referencedby refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" compoundref="da/da0/a00009" startline="180" endline="183">on_lineEdit_10_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1ab5da77a34a83e9794edda0d77d79bec0" compoundref="da/da0/a00009" startline="48" endline="53">on_lineEdit_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6aff5c3694d19ebd2bd81010c239cf62" compoundref="da/da0/a00009" startline="62" endline="66">on_lineEdit_3_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a6bcefb22fdfb8fbd3146eab38a0023d7" compoundref="da/da0/a00009" startline="74" endline="78">on_lineEdit_4_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a39f58394bb8e9691a7b32774114a910a" compoundref="da/da0/a00009" startline="87" endline="100">on_textEdit_4_textChanged</referencedby>
+        <referencedby refid="d7/d46/a00002_1a9a338258e3edb0d5ab1aabc26dd34d40" compoundref="da/da0/a00009" startline="110" endline="118">on_pushButton_4_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8b08d8812751902c52d56efc45d0b58d" compoundref="da/da0/a00009" startline="127" endline="133">on_pushButton_6_clicked</referencedby>
+        <referencedby refid="d7/d46/a00002_1a18234ca4d797ca5566d710c77594158b" compoundref="da/da0/a00009" startline="160" endline="163">on_lineEdit_5_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad2416c2c2d9ce13441a9cd81c47c02e4" compoundref="da/da0/a00009" startline="171" endline="174">on_lineEdit_7_editingFinished</referencedby>
+        <referencedby refid="d7/d46/a00002_1a4f47f7bac07a3ad5f0238a09a526d7c8" compoundref="da/da0/a00009" startline="182" endline="185">on_lineEdit_10_editingFinished</referencedby>
         <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
-        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</referencedby>
-        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</referencedby>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
-        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</referencedby>
-        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">prepare_report</referencedby>
+        <referencedby refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="53">perform_train</referencedby>
+        <referencedby refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="62" endline="77">perform_test</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="82" endline="113">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="119" endline="128">fill_rank</referencedby>
+        <referencedby refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="147" endline="160">prepare_report</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="30" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="186" bodyend="189"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="30" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="188" bodyend="191"/>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -179,14 +179,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="31" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="9" bodyend="25"/>
-        <references refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" compoundref="df/d86/a00012" startline="131" endline="139">display_error</references>
-        <references refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="221" endline="232">File_Manager::fill_rank_output</references>
+        <references refid="d7/d46/a00002_1a69ac504cf1500a8c6283d8721b09aeb2" compoundref="df/d86/a00012" startline="134" endline="142">display_error</references>
+        <references refid="d8/d84/a00001_1a44a6161fabb28c07ba6e860ba9927aa6" compoundref="dd/dad/a00005" startline="234" endline="245">File_Manager::fill_rank_output</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
-        <references refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="60" endline="74">perform_test</references>
-        <references refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="51">perform_train</references>
-        <references refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="144" endline="155">prepare_report</references>
+        <references refid="d7/d46/a00002_1ade6ba53055965b3522fa3cd022e4c5e0" compoundref="df/d86/a00012" startline="62" endline="77">perform_test</references>
+        <references refid="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" compoundref="df/d86/a00012" startline="35" endline="53">perform_train</references>
+        <references refid="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" compoundref="df/d86/a00012" startline="147" endline="160">prepare_report</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="46">ui</references>
-        <references refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</references>
+        <references refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="82" endline="113">valid_input</references>
       </memberdef>
       <memberdef kind="slot" id="d7/d46/a00002_1a09eeb721e4f861e80da92d8ed42277ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="109" bodyend="117"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="33" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="110" bodyend="118"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
@@ -268,7 +268,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="126" bodyend="132"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="35" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="127" bodyend="133"/>
         <references refid="d7/d46/a00002_1a9ed0a8b583419e88bb94697a9b258c72" compoundref="d7/dec/a00010" startline="21">fileDialog</references>
         <references refid="d7/d46/a00002_1a62d0a4c604ed8d65f85455971a938548" compoundref="d7/dec/a00010" startline="20">filePath</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
@@ -288,9 +288,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="48" bodyend="52"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="36" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="48" bodyend="53"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
+        <references refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" compoundref="d4/d51/a00017" startline="6" endline="9">Neural_Network::get_input_len</references>
+        <references refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" compoundref="d4/d51/a00017" startline="15" endline="18">Neural_Network::get_output_len</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
+        <references refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" compoundref="d1/d2b/a00018" startline="25" endline="29">Neural_Network::set_hidden_len</references>
         <references refid="d1/d7c/a00003_1afb37f8321b35bbc9b9beb88d56d69f08" compoundref="d1/d2b/a00018" startline="7" endline="11">Neural_Network::set_input_len</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="46">ui</references>
       </memberdef>
@@ -307,7 +310,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="61" bodyend="65"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="37" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="62" bodyend="66"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1a87a3c876501fcd89ffc1caf298fa2703" compoundref="d1/d2b/a00018" startline="53" endline="57">Neural_Network::set_learning_rate</references>
@@ -326,7 +329,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="73" bodyend="77"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="38" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="74" bodyend="78"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1a0458bfedabe1b42e4d30e3179bd1f189" compoundref="d1/d2b/a00018" startline="44" endline="48">Neural_Network::set_minimum_error</references>
@@ -345,7 +348,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="39" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="86" bodyend="99"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="39" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="87" bodyend="100"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1a695079279950a3eb27d62df68d32927c" compoundref="d1/d2b/a00018" startline="16" endline="20">Neural_Network::set_output_len</references>
@@ -364,7 +367,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="40" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="158" bodyend="161"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="40" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="160" bodyend="163"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1ad1e1afff306e47947e23f4fdd4517e22" compoundref="d1/d2b/a00018" startline="25" endline="29">Neural_Network::set_hidden_len</references>
@@ -383,7 +386,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="41" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="169" bodyend="172"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="41" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="171" bodyend="174"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1af198ad4aa200b431aa45fc17a3895438" compoundref="d1/d2b/a00018" startline="63" endline="67">Neural_Network::set_momentum</references>
@@ -402,7 +405,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="42" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="180" bodyend="183"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="42" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="182" bodyend="185"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d1/d7c/a00003_1acc883578064786f6c093346424fac1e9" compoundref="d1/d2b/a00018" startline="35" endline="39">Neural_Network::set_max_it</references>
@@ -423,7 +426,7 @@
 <para>On Analysis Tab </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="43" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="138" bodyend="151"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="43" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI.cpp" bodystart="139" bodyend="153"/>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="46">ui</references>
       </memberdef>
       </sectiondef>
@@ -439,8 +442,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="79" bodyend="110"/>
-        <references refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="116" endline="125">fill_rank</references>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="47" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="82" bodyend="113"/>
+        <references refid="d7/d46/a00002_1a8e8c5918a3a0ddfd352c62e7348d3d74" compoundref="df/d86/a00012" startline="119" endline="128">fill_rank</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d4/dee/a00008_1a4da775651e53db9851982557af6b2b3f" compoundref="d4/dee/a00008" startline="17">fori</references>
         <references refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" compoundref="d4/d51/a00017" startline="15" endline="18">Neural_Network::get_output_len</references>
@@ -461,11 +464,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="49" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="116" bodyend="125"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="49" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="119" bodyend="128"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
         <references refid="d8/d84/a00001_1af80b18b12b1b619428cf7224cd588594" compoundref="de/d5e/a00007" startline="45" endline="49">File_Manager::set_rank_output_strings</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="46">ui</references>
-        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="79" endline="110">valid_input</referencedby>
+        <referencedby refid="d7/d46/a00002_1a5ec9d8a051303b218c4542f96a87b56f" compoundref="df/d86/a00012" startline="82" endline="113">valid_input</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1ad1bb069dee02010a61045c91f5e7752f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -484,7 +487,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="50" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="35" bodyend="51"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="50" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="35" bodyend="53"/>
         <references refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">File_Manager::do_function</references>
         <references refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">Neural_Network::do_function</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
@@ -520,7 +523,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="60" bodyend="74"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="51" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="62" bodyend="77"/>
         <references refid="d8/d84/a00001_1abcb9cd1427a3b6ecfd41432391ec9bdc" compoundref="dd/dad/a00005" startline="15" endline="36">File_Manager::do_function</references>
         <references refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" compoundref="dd/d1b/a00015" startline="7" endline="21">Neural_Network::do_function</references>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
@@ -583,7 +586,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="54" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="131" bodyend="139"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="54" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="134" bodyend="142"/>
         <referencedby refid="d7/d46/a00002_1a043466f485b6b75ee25ee879121c1ecc" compoundref="df/d86/a00012" startline="9" endline="25">on_pushButton_clicked</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d46/a00002_1a4b4725862e2fb5a2ffd6ebc0a88c096c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -597,12 +600,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="55" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="144" bodyend="155"/>
+        <location file="/home/blanqesto/workspace/phenogene/phenogene/GUI.h" line="55" bodyfile="/home/blanqesto/workspace/phenogene/phenogene/GUI_startButton.cpp" bodystart="147" bodyend="160"/>
         <references refid="d7/d46/a00002_1a73cc90505024488d2fd77762ad5059c4" compoundref="d7/dec/a00010" startline="48">fm</references>
+        <references refid="d1/d7c/a00003_1a5d2f56c6fa9c9dc72db252653469f4cc" compoundref="d4/d51/a00017" startline="56" endline="59">Neural_Network::get_dataset_size</references>
         <references refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" compoundref="d4/d51/a00017" startline="24" endline="27">Neural_Network::get_hidden_len</references>
         <references refid="d1/d7c/a00003_1a75e25e607afb4e862219b21c0569c893" compoundref="d4/d51/a00017" startline="6" endline="9">Neural_Network::get_input_len</references>
-        <references refid="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" compoundref="d4/d51/a00017" startline="40" endline="43">Neural_Network::get_max_it</references>
-        <references refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" compoundref="d4/d51/a00017" startline="32" endline="35">Neural_Network::get_momentum</references>
+        <references refid="d1/d7c/a00003_1aacf2daec15b81c80a817b9102655a205" compoundref="d4/d51/a00017" startline="40" endline="43">Neural_Network::get_iterations</references>
+        <references refid="d1/d7c/a00003_1a679f8ed0fbaec8037be4145e2667ab36" compoundref="d4/d51/a00017" startline="64" endline="67">Neural_Network::get_least_error</references>
+        <references refid="d1/d7c/a00003_1add6473ba7b95c86fb88ec81610861075" compoundref="d4/d51/a00017" startline="48" endline="51">Neural_Network::get_mismatch</references>
+        <references refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" compoundref="d4/d51/a00017" startline="72" endline="75">Neural_Network::get_momentum</references>
         <references refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" compoundref="d4/d51/a00017" startline="15" endline="18">Neural_Network::get_output_len</references>
         <references refid="d8/d84/a00001_1ac70ea2427e95618bb3903b2c57ee9745" compoundref="d0/d0b/a00004" startline="12">File_Manager::n</references>
         <references refid="d7/d46/a00002_1acdbca1224663f5a19bd1ad4e7c885886" compoundref="d7/dec/a00010" startline="46">ui</references>

@@ -105,39 +105,60 @@ $(document).ready(function(){initNavTree('d4/d51/a00017_source.html','../../');}
 <div class="contents">
 <a href="../../d4/d51/a00017.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/de7/a00014.html">NeuralNetwork.h</a>&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893" title="Get int number of input nodes.">Neural_Network::get_input_len</a>()</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893" title="Get integer number of input nodes.">Neural_Network::get_input_len</a>()</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a9e5319bf385fa55bbbd8f0160915306d">input_len</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78">   15</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get int number of output nodes.">Neural_Network::get_output_len</a>()</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78">   15</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get integer number of output nodes.">Neural_Network::get_output_len</a>()</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a053d2b510e07b1f25ef112f366bc62ba">output_len</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52" title="Get int number of hidden nodes.">Neural_Network::get_hidden_len</a>()</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#ac781308fb521309d657b91a95054be52" title="Get integer number of hidden nodes.">Neural_Network::get_hidden_len</a>()</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a71cc8ca03da47fe639dd1e8ed518069c">hidden_len</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6">   32</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6" title="Get double momentum.">Neural_Network::get_momentum</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d">   32</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d" title="Get integer maximum iterations number.">Neural_Network::get_max_it</a>()</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a3a3ea713384da26e538bc60da8410a75">momentum</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#ac3c1eed9835dc5da84132d08c090612f">max_iterations</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#aab60f50cc87dc0b740bd843790cf520d" title="Get int maximum iterations number.">Neural_Network::get_max_it</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#aacf2daec15b81c80a817b9102655a205">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#aacf2daec15b81c80a817b9102655a205" title="Get integer actual iterations number.">Neural_Network::get_iterations</a>()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#ac3c1eed9835dc5da84132d08c090612f">max_iterations</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a99100a67cd1859c7a5024ba5e8d4ac66">iterations</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#add6473ba7b95c86fb88ec81610861075">   48</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#add6473ba7b95c86fb88ec81610861075" title="Get integer number of mismatches between expected and actual output.">Neural_Network::get_mismatch</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a018a2a3717a3a8bb66fe8914478e29b2">mismatch</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a5d2f56c6fa9c9dc72db252653469f4cc">   56</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d1/d7c/a00003.html#a5d2f56c6fa9c9dc72db252653469f4cc" title="Get integer dataset size.">Neural_Network::get_dataset_size</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a8fe39196b36a38696abd679328dd8232">dataset_size</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a679f8ed0fbaec8037be4145e2667ab36">   64</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d1/d7c/a00003.html#a679f8ed0fbaec8037be4145e2667ab36" title="Get double least error reached.">Neural_Network::get_least_error</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a16a71525bcd3f7954146f12036f60da1">least_error</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="../../d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6">   72</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d1/d7c/a00003.html#a8aa33e3c123f800aed4c1e7bdc6339d6" title="Get double momentum.">Neural_Network::get_momentum</a>()</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d7c/a00003.html#a3a3ea713384da26e538bc60da8410a75">momentum</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_c5d1ef77f31704bc873744cc73c3b6da.html">phenogene</a></li><li class="navelem"><a class="el" href="../../d4/d51/a00017.html">NN_getters.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 22 2013 03:48:52 by
+    <li class="footer">Generated on Sun Jun 23 2013 15:04:04 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

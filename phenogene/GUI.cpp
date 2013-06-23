@@ -138,6 +138,7 @@ void GUI::on_pushButton_6_clicked()
 */
 void GUI::on_tabWidget_currentChanged(int index)
 {
+    ui->label_9->setText("");
     if (index ==2)
     {
         ui->pushButton->hide();

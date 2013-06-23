@@ -1,4 +1,4 @@
-.TH "Neural_Network" 3 "Sat Jun 22 2013" "Version 1.0" "Doxygen" \" -*- nroff -*-
+.TH "Neural_Network" 3 "Sun Jun 23 2013" "Version 1.0" "Doxygen" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -46,19 +46,35 @@ Neural_Network \-
 .ti -1c
 .RI "int \fBget_input_len\fP ()"
 .br
-.RI "\fIGet int number of input nodes\&. \fP"
+.RI "\fIGet integer number of input nodes\&. \fP"
 .ti -1c
 .RI "int \fBget_output_len\fP ()"
 .br
-.RI "\fIGet int number of output nodes\&. \fP"
+.RI "\fIGet integer number of output nodes\&. \fP"
 .ti -1c
 .RI "int \fBget_hidden_len\fP ()"
 .br
-.RI "\fIGet int number of hidden nodes\&. \fP"
+.RI "\fIGet integer number of hidden nodes\&. \fP"
 .ti -1c
 .RI "int \fBget_max_it\fP ()"
 .br
-.RI "\fIGet int maximum iterations number\&. \fP"
+.RI "\fIGet integer maximum iterations number\&. \fP"
+.ti -1c
+.RI "int \fBget_iterations\fP ()"
+.br
+.RI "\fIGet integer actual iterations number\&. \fP"
+.ti -1c
+.RI "int \fBget_mismatch\fP ()"
+.br
+.RI "\fIGet integer number of mismatches between expected and actual output\&. \fP"
+.ti -1c
+.RI "int \fBget_dataset_size\fP ()"
+.br
+.RI "\fIGet integer dataset size\&. \fP"
+.ti -1c
+.RI "double \fBget_least_error\fP ()"
+.br
+.RI "\fIGet double least error reached\&. \fP"
 .ti -1c
 .RI "double \fBget_momentum\fP ()"
 .br
@@ -80,9 +96,9 @@ Neural_Network \-
 .br
 .RI "\fITrain the neural network: \fP"
 .ti -1c
-.RI "void \fBtest\fP ()"
+.RI "void \fBpredict\fP ()"
 .br
-.RI "\fITest the neural network\&. \fP"
+.RI "\fIPredict using the neural network\&. \fP"
 .ti -1c
 .RI "double \fBsegmoidal_fn\fP (double, int)"
 .br
@@ -123,7 +139,16 @@ Neural_Network \-
 .RI "int \fBmax_iterations\fP"
 .br
 .ti -1c
+.RI "int \fBiterations\fP"
+.br
+.ti -1c
 .RI "int \fBdataset_size\fP"
+.br
+.ti -1c
+.RI "int \fBmismatch\fP"
+.br
+.ti -1c
+.RI "double \fBleast_error\fP"
 .br
 .ti -1c
 .RI "double \fBerror\fP"
@@ -177,7 +202,7 @@ Neural_Network \-
 .RI "double \fBdelta_H\fP [\fBhidden_l\fP]"
 .br
 .ti -1c
-.RI "map< char, double > \fBinput_rank\fP"
+.RI "map< pair< char, char >, int > \fBinput_rank\fP"
 .br
 .ti -1c
 .RI "map< string, int > \fBoutput_rank\fP"
@@ -211,7 +236,7 @@ Neural Network class constructor\&.
 .PP
 Definition at line 7 of file NN_constructor\&.cpp\&.
 .PP
-References dataset_size, hidden_len, input_len, input_rank, learning_rate, max_iterations, minimum_error, momentum, and output_len\&.
+References dataset_size, hidden_len, input_len, input_rank, learning_rate, max_iterations, minimum_error, mismatch, momentum, and output_len\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void Neural_Network::back_propagate ()\fC [private]\fP"
@@ -231,7 +256,7 @@ Bias and Weights are updated\&.
 .PP
 
 .PP
-Definition at line 222 of file NN\&.cpp\&.
+Definition at line 199 of file NN\&.cpp\&.
 .PP
 References bias_H, bias_O, delta_H, delta_O, fori, forj, hidden, hidden_len, input, input_len, learning_rate, momentum, output_len, Wh, and Wo\&.
 .SS "double Neural_Network::cal_error ()\fC [private]\fP"
@@ -254,7 +279,7 @@ Delta signal for all nodes is calculated\&.
 .PP
 
 .PP
-Definition at line 250 of file NN\&.cpp\&.
+Definition at line 227 of file NN\&.cpp\&.
 .PP
 References calculate_net(), delta_H, delta_O, expected_o, fori, forj, hidden_len, output, output_len, and Wo\&.
 .SS "void Neural_Network::calculate_net (double &max, double &maxO)\fC [private]\fP"
@@ -274,7 +299,7 @@ Net is caculated for Output and Hidden nodes\&.
 .PP
 
 .PP
-Definition at line 290 of file NN\&.cpp\&.
+Definition at line 262 of file NN\&.cpp\&.
 .PP
 References fori, forj, hidden_len, input, input_len, netH, netO, output_len, Wh, and Wo\&.
 .SS "void Neural_Network::do_function (intwhat)"
@@ -289,11 +314,19 @@ Train or test the network\&. \fBParameters:\fP
 .PP
 Definition at line 7 of file NN\&.cpp\&.
 .PP
-References test(), and train()\&.
+References predict(), and train()\&.
+.SS "int Neural_Network::get_dataset_size ()"
+
+.PP
+Get integer dataset size\&. 
+.PP
+Definition at line 56 of file NN_getters\&.cpp\&.
+.PP
+References dataset_size\&.
 .SS "int Neural_Network::get_hidden_len ()"
 
 .PP
-Get int number of hidden nodes\&. 
+Get integer number of hidden nodes\&. 
 .PP
 Definition at line 24 of file NN_getters\&.cpp\&.
 .PP
@@ -301,31 +334,55 @@ References hidden_len\&.
 .SS "int Neural_Network::get_input_len ()"
 
 .PP
-Get int number of input nodes\&. 
+Get integer number of input nodes\&. 
 .PP
 Definition at line 6 of file NN_getters\&.cpp\&.
 .PP
 References input_len\&.
-.SS "int Neural_Network::get_max_it ()"
+.SS "int Neural_Network::get_iterations ()"
 
 .PP
-Get int maximum iterations number\&. 
+Get integer actual iterations number\&. 
 .PP
 Definition at line 40 of file NN_getters\&.cpp\&.
 .PP
+References iterations\&.
+.SS "double Neural_Network::get_least_error ()"
+
+.PP
+Get double least error reached\&. 
+.PP
+Definition at line 64 of file NN_getters\&.cpp\&.
+.PP
+References least_error\&.
+.SS "int Neural_Network::get_max_it ()"
+
+.PP
+Get integer maximum iterations number\&. 
+.PP
+Definition at line 32 of file NN_getters\&.cpp\&.
+.PP
 References max_iterations\&.
+.SS "int Neural_Network::get_mismatch ()"
+
+.PP
+Get integer number of mismatches between expected and actual output\&. 
+.PP
+Definition at line 48 of file NN_getters\&.cpp\&.
+.PP
+References mismatch\&.
 .SS "double Neural_Network::get_momentum ()"
 
 .PP
 Get double momentum\&. 
 .PP
-Definition at line 32 of file NN_getters\&.cpp\&.
+Definition at line 72 of file NN_getters\&.cpp\&.
 .PP
 References momentum\&.
 .SS "int Neural_Network::get_output_len ()"
 
 .PP
-Get int number of output nodes\&. 
+Get integer number of output nodes\&. 
 .PP
 Definition at line 15 of file NN_getters\&.cpp\&.
 .PP
@@ -340,6 +397,26 @@ Definition at line 55 of file NN\&.cpp\&.
 References bias_H, bias_O, fori, forj, hidden_len, input_len, output_len, Wh, and Wo\&.
 .SS "bool Neural_Network::input_absent ()\fC [private]\fP"
 
+.SS "void Neural_Network::predict ()\fC [private]\fP"
+
+.PP
+Predict using the neural network\&. \fBPrecondition:\fP
+.RS 4
+Input_dataset is filled\&. 
+.PP
+Weights dataset is filled\&. 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Output is filled\&. 
+.RE
+.PP
+
+.PP
+Definition at line 142 of file NN\&.cpp\&.
+.PP
+References dataset_size, error, fori, forj, fork, input, input_dataset, input_len, output, output_dataset, output_len, and propagate()\&.
 .SS "void Neural_Network::propagate ()\fC [private]\fP"
 
 .PP
@@ -355,7 +432,7 @@ Hidden and Output nodes are computed\&.
 .PP
 
 .PP
-Definition at line 184 of file NN\&.cpp\&.
+Definition at line 169 of file NN\&.cpp\&.
 .PP
 References calculate_net(), fori, hidden, hidden_len, netH, netO, output, and output_len\&.
 .SS "double Neural_Network::segmoidal_fn (doublex, intmode)\fC [private]\fP"
@@ -460,26 +537,6 @@ Set number of output to int i\&. \fBParameters:\fP
 Definition at line 16 of file NN_setters\&.cpp\&.
 .PP
 References output_len\&.
-.SS "void Neural_Network::test ()\fC [private]\fP"
-
-.PP
-Test the neural network\&. \fBPrecondition:\fP
-.RS 4
-Input_dataset is filled\&. 
-.PP
-Weights dataset is filled\&. 
-.RE
-.PP
-\fBPostcondition:\fP
-.RS 4
-Output is filled\&. 
-.RE
-.PP
-
-.PP
-Definition at line 153 of file NN\&.cpp\&.
-.PP
-References dataset_size, error, expected_o, fori, forj, fork, input, input_dataset, input_len, output, output_dataset, output_len, pow(), and propagate()\&.
 .SS "void Neural_Network::train ()\fC [private]\fP"
 
 .PP
@@ -501,7 +558,7 @@ Weights are optimal\&.
 .PP
 Definition at line 89 of file NN\&.cpp\&.
 .PP
-References back_propagate(), cal_error(), dataset_size, error, expected_o, fori, fork, init(), input, input_dataset, input_len, max_iterations, minimum_error, output_dataset, output_len, and propagate()\&.
+References back_propagate(), cal_error(), dataset_size, error, expected_o, fori, forj, fork, init(), input, input_dataset, input_len, iterations, least_error, max_iterations, minimum_error, mismatch, output, output_dataset, output_len, and propagate()\&.
 .SH "Friends And Related Function Documentation"
 .PP 
 .SS "friend class \fBFile_Manager\fP\fC [friend]\fP"
@@ -513,111 +570,123 @@ Definition at line 8 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::bias_H[\fBhidden_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 51 of file NeuralNetwork\&.h\&.
+Definition at line 58 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::bias_O[\fBoutput_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 50 of file NeuralNetwork\&.h\&.
+Definition at line 57 of file NeuralNetwork\&.h\&.
 .SS "int Neural_Network::dataset_size\fC [private]\fP"
 
 .PP
-Definition at line 37 of file NeuralNetwork\&.h\&.
+Definition at line 42 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::delta_H[\fBhidden_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 60 of file NeuralNetwork\&.h\&.
+Definition at line 67 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::delta_O[\fBoutput_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 59 of file NeuralNetwork\&.h\&.
+Definition at line 66 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::error\fC [private]\fP"
 
 .PP
-Definition at line 38 of file NeuralNetwork\&.h\&.
+Definition at line 45 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::expected_o[\fBoutput_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 49 of file NeuralNetwork\&.h\&.
+Definition at line 56 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::hidden[\fBhidden_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 45 of file NeuralNetwork\&.h\&.
+Definition at line 52 of file NeuralNetwork\&.h\&.
 .SS "int Neural_Network::hidden_len\fC [private]\fP"
 
 .PP
-Definition at line 34 of file NeuralNetwork\&.h\&.
+Definition at line 38 of file NeuralNetwork\&.h\&.
 .SS "double Neural_Network::input[\fBinput_l\fP]\fC [private]\fP"
 
 .PP
-Definition at line 44 of file NeuralNetwork\&.h\&.
+Definition at line 51 of file NeuralNetwork\&.h\&.
 .SS "vector<vector<double> > Neural_Network::input_dataset\fC [private]\fP"
 
 .PP
-Definition at line 71 of file NeuralNetwork\&.h\&.
+Definition at line 79 of file NeuralNetwork\&.h\&.
 .SS "int Neural_Network::input_len\fC [private]\fP"
 
 .PP
-Definition at line 33 of file NeuralNetwork\&.h\&.
-.SS "map<char,double> Neural_Network::input_rank\fC [private]\fP"
+Definition at line 37 of file NeuralNetwork\&.h\&.
+.SS "map< pair <char,char>,int > Neural_Network::input_rank\fC [private]\fP"
 
 .PP
-Definition at line 63 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::learning_rate\fC [private]\fP"
-
-.PP
-Definition at line 40 of file NeuralNetwork\&.h\&.
-.SS "int Neural_Network::max_iterations\fC [private]\fP"
-
-.PP
-Definition at line 36 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::minimum_error\fC [private]\fP"
-
-.PP
-Definition at line 39 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::momentum\fC [private]\fP"
+Definition at line 71 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::iterations\fC [private]\fP"
 
 .PP
 Definition at line 41 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::netH[\fBhidden_l\fP]\fC [private]\fP"
+.SS "double Neural_Network::learning_rate\fC [private]\fP"
 
 .PP
 Definition at line 47 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::netO[\fBoutput_l\fP]\fC [private]\fP"
+.SS "double Neural_Network::least_error\fC [private]\fP"
 
 .PP
-Definition at line 48 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::output[\fBoutput_l\fP]\fC [private]\fP"
+Definition at line 44 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::max_iterations\fC [private]\fP"
+
+.PP
+Definition at line 40 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::minimum_error\fC [private]\fP"
 
 .PP
 Definition at line 46 of file NeuralNetwork\&.h\&.
-.SS "vector<vector<double> > Neural_Network::output_dataset\fC [private]\fP"
+.SS "int Neural_Network::mismatch\fC [private]\fP"
 
 .PP
-Definition at line 72 of file NeuralNetwork\&.h\&.
-.SS "int Neural_Network::output_len\fC [private]\fP"
+Definition at line 43 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::momentum\fC [private]\fP"
 
 .PP
-Definition at line 35 of file NeuralNetwork\&.h\&.
-.SS "map<string,int> Neural_Network::output_rank\fC [private]\fP"
-
-.PP
-Definition at line 66 of file NeuralNetwork\&.h\&.
-.SS "map<int,string> Neural_Network::rank_output\fC [private]\fP"
-
-.PP
-Definition at line 68 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::tempWo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
-
-.PP
-Definition at line 56 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::Wh[\fBhidden_l\fP][\fBinput_l\fP]\fC [private]\fP"
+Definition at line 48 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::netH[\fBhidden_l\fP]\fC [private]\fP"
 
 .PP
 Definition at line 54 of file NeuralNetwork\&.h\&.
-.SS "double Neural_Network::Wo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
+.SS "double Neural_Network::netO[\fBoutput_l\fP]\fC [private]\fP"
 
 .PP
 Definition at line 55 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::output[\fBoutput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 53 of file NeuralNetwork\&.h\&.
+.SS "vector<vector<double> > Neural_Network::output_dataset\fC [private]\fP"
+
+.PP
+Definition at line 80 of file NeuralNetwork\&.h\&.
+.SS "int Neural_Network::output_len\fC [private]\fP"
+
+.PP
+Definition at line 39 of file NeuralNetwork\&.h\&.
+.SS "map<string,int> Neural_Network::output_rank\fC [private]\fP"
+
+.PP
+Definition at line 74 of file NeuralNetwork\&.h\&.
+.SS "map<int,string> Neural_Network::rank_output\fC [private]\fP"
+
+.PP
+Definition at line 76 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::tempWo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 63 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::Wh[\fBhidden_l\fP][\fBinput_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 61 of file NeuralNetwork\&.h\&.
+.SS "double Neural_Network::Wo[\fBoutput_l\fP][\fBhidden_l\fP]\fC [private]\fP"
+
+.PP
+Definition at line 62 of file NeuralNetwork\&.h\&.
 
 .SH "Author"
 .PP 

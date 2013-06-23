@@ -123,6 +123,7 @@ void Neural_Network::train()
             // Back propagagte the error
             back_propagate();
         }
+        //error/=output_len;
         if (error < least_error) least_error=error;
         cout << "min_err" << error << "  ";
     }
@@ -241,12 +242,13 @@ double Neural_Network::cal_error()
         total_error += expected_o[i]*log(output[i])+(1-expected_o[i])*log(1-output[i]);
     }
     total_error/=-output_len;
+    //total_error*=-1;
     // error signal for hidden layer
     fori(0,hidden_len)
     {
         delta_H[i] = 0.0;
         forj(0,output_len)
-                delta_H[i] += delta_O[j];//*Wo[j][i];
+                delta_H[i] += delta_O[j]*Wo[j][i];
     }
     return (total_error);
 }

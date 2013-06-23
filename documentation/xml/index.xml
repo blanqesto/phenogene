@@ -12,6 +12,7 @@
     <member refid="d8/d84/a00001_1a63725670a06637b4290c54eba671b640" kind="variable"><name>output_file</name></member>
     <member refid="d8/d84/a00001_1aab02256124e6eb39e10e3c9765f0bcb3" kind="variable"><name>weights_file</name></member>
     <member refid="d8/d84/a00001_1a578abb99a35121fea6c83f1dc21cc2af" kind="variable"><name>rank_output_strings</name></member>
+    <member refid="d8/d84/a00001_1aa298881ac48abd6b81764741be6485f7" kind="variable"><name>ids</name></member>
     <member refid="d8/d84/a00001_1a2acf523335c71f922a42756c1d0a7a2d" kind="function"><name>File_Manager</name></member>
     <member refid="d8/d84/a00001_1af43b27d7ea5f031a20652a43f5b99f53" kind="function"><name>set_input_file</name></member>
     <member refid="d8/d84/a00001_1ad83423f6db9466419d4a7acd3e322cb4" kind="function"><name>set_expected_out_file</name></member>
@@ -68,7 +69,10 @@
     <member refid="d1/d7c/a00003_1a71cc8ca03da47fe639dd1e8ed518069c" kind="variable"><name>hidden_len</name></member>
     <member refid="d1/d7c/a00003_1a053d2b510e07b1f25ef112f366bc62ba" kind="variable"><name>output_len</name></member>
     <member refid="d1/d7c/a00003_1ac3c1eed9835dc5da84132d08c090612f" kind="variable"><name>max_iterations</name></member>
+    <member refid="d1/d7c/a00003_1a99100a67cd1859c7a5024ba5e8d4ac66" kind="variable"><name>iterations</name></member>
     <member refid="d1/d7c/a00003_1a8fe39196b36a38696abd679328dd8232" kind="variable"><name>dataset_size</name></member>
+    <member refid="d1/d7c/a00003_1a018a2a3717a3a8bb66fe8914478e29b2" kind="variable"><name>mismatch</name></member>
+    <member refid="d1/d7c/a00003_1a16a71525bcd3f7954146f12036f60da1" kind="variable"><name>least_error</name></member>
     <member refid="d1/d7c/a00003_1a2ffe42aee798e268d4bbf0f3428ba430" kind="variable"><name>error</name></member>
     <member refid="d1/d7c/a00003_1aa2898d2ec7ac091b6d40916d4b113a93" kind="variable"><name>minimum_error</name></member>
     <member refid="d1/d7c/a00003_1a1994986029a1ef9d55fa4bb1b440210b" kind="variable"><name>learning_rate</name></member>
@@ -86,7 +90,7 @@
     <member refid="d1/d7c/a00003_1a1cca3513af05c6dce603fdf332b36691" kind="variable"><name>tempWo</name></member>
     <member refid="d1/d7c/a00003_1ae5f829ba5e65ae91d5c4feda5f66e37a" kind="variable"><name>delta_O</name></member>
     <member refid="d1/d7c/a00003_1a51e5c2d2b53ba284c5b3791446c3b7d8" kind="variable"><name>delta_H</name></member>
-    <member refid="d1/d7c/a00003_1adf2c6662b130ed1582025ea2cccacbe2" kind="variable"><name>input_rank</name></member>
+    <member refid="d1/d7c/a00003_1abb3f03e964a641cd94933a0f34292626" kind="variable"><name>input_rank</name></member>
     <member refid="d1/d7c/a00003_1af46a9de8ef619f93fb8c0231be79163c" kind="variable"><name>output_rank</name></member>
     <member refid="d1/d7c/a00003_1a8e34531b701290d16068e3685f3066a4" kind="variable"><name>rank_output</name></member>
     <member refid="d1/d7c/a00003_1a81bab51b36643c5b10ba25d518c27ff3" kind="variable"><name>input_dataset</name></member>
@@ -103,11 +107,15 @@
     <member refid="d1/d7c/a00003_1a895c1b35110b7ee5e5adc56a63a55e78" kind="function"><name>get_output_len</name></member>
     <member refid="d1/d7c/a00003_1ac781308fb521309d657b91a95054be52" kind="function"><name>get_hidden_len</name></member>
     <member refid="d1/d7c/a00003_1aab60f50cc87dc0b740bd843790cf520d" kind="function"><name>get_max_it</name></member>
+    <member refid="d1/d7c/a00003_1aacf2daec15b81c80a817b9102655a205" kind="function"><name>get_iterations</name></member>
+    <member refid="d1/d7c/a00003_1add6473ba7b95c86fb88ec81610861075" kind="function"><name>get_mismatch</name></member>
+    <member refid="d1/d7c/a00003_1a5d2f56c6fa9c9dc72db252653469f4cc" kind="function"><name>get_dataset_size</name></member>
+    <member refid="d1/d7c/a00003_1a679f8ed0fbaec8037be4145e2667ab36" kind="function"><name>get_least_error</name></member>
     <member refid="d1/d7c/a00003_1a8aa33e3c123f800aed4c1e7bdc6339d6" kind="function"><name>get_momentum</name></member>
     <member refid="d1/d7c/a00003_1acd3d4762d71d54422b45fda3a13976cf" kind="function"><name>do_function</name></member>
     <member refid="d1/d7c/a00003_1ac86567c994bb671c20ed50316d268d3b" kind="function"><name>init</name></member>
     <member refid="d1/d7c/a00003_1a033f4f60812c0359cc50815e957f11f7" kind="function"><name>train</name></member>
-    <member refid="d1/d7c/a00003_1a38193cc61e9affbd077c1c6089fd0889" kind="function"><name>test</name></member>
+    <member refid="d1/d7c/a00003_1aff80304f6d257107092c521198eab68b" kind="function"><name>predict</name></member>
     <member refid="d1/d7c/a00003_1a7a8eff736645e4101ed906a46e6a27ac" kind="function"><name>segmoidal_fn</name></member>
     <member refid="d1/d7c/a00003_1a7e6d776ecfbb4f9df682d5fe13a7ec3b" kind="function"><name>propagate</name></member>
     <member refid="d1/d7c/a00003_1a3e503ddab5bbc51f6e0b79b67ca6ed2f" kind="function"><name>cal_error</name></member>

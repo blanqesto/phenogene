@@ -1,7 +1,8 @@
 <map id="File_Manager::convertInt" name="File_Manager::convertInt">
-<area shape="rect" id="node3" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="221,23,355,70"/>
-<area shape="rect" id="node5" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="404,32,577,61"/>
-<area shape="rect" id="node7" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: ." alt="" coords="627,5,757,35"/>
-<area shape="rect" id="node11" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="629,59,755,88"/>
-<area shape="rect" id="node9" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="805,23,947,70"/>
+<area shape="rect" id="node3" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="223,5,356,51"/>
+<area shape="rect" id="node14" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output &#160;Opens file filePath and write to it." alt="" coords="221,74,357,121"/>
+<area shape="rect" id="node5" href="$d8/d84/a00001.html#abcb9cd1427a3b6ecfd41432391ec9bdc" title="Call rotine specified by parameter mode." alt="" coords="407,48,580,77"/>
+<area shape="rect" id="node7" href="$d7/d46/a00002.html#ad1bb069dee02010a61045c91f5e7752f" title="Calls file manager rotines to train: ." alt="" coords="629,21,760,51"/>
+<area shape="rect" id="node11" href="$d7/d46/a00002.html#ade6ba53055965b3522fa3cd022e4c5e0" title="GUI::perform_test" alt="" coords="632,75,757,104"/>
+<area shape="rect" id="node9" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="808,39,949,86"/>
 </map>

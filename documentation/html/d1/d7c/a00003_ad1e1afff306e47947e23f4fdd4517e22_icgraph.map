@@ -1,3 +1,4 @@
 <map id="Neural_Network::set_hidden_len" name="Neural_Network::set_hidden_len">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#a18234ca4d797ca5566d710c77594158b" title="Set hidden nodes numbers." alt="" coords="199,5,329,51"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#ab5da77a34a83e9794edda0d77d79bec0" title="Set gene number, aka, input nodes number." alt="" coords="197,5,360,51"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#a18234ca4d797ca5566d710c77594158b" title="Set hidden nodes numbers." alt="" coords="213,74,344,121"/>
 </map>

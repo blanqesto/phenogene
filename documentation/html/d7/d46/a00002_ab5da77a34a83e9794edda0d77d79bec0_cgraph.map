@@ -1,3 +1,6 @@
 <map id="GUI::on_lineEdit_editingFinished" name="GUI::on_lineEdit_editingFinished">
-<area shape="rect" id="node3" href="$d1/d7c/a00003.html#afb37f8321b35bbc9b9beb88d56d69f08" title="Set number of input nodes to int i." alt="" coords="217,5,359,51"/>
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a75e25e607afb4e862219b21c0569c893" title="Get integer number of input nodes." alt="" coords="217,5,359,51"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a895c1b35110b7ee5e5adc56a63a55e78" title="Get integer number of output nodes." alt="" coords="217,74,359,121"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#ad1e1afff306e47947e23f4fdd4517e22" title="Set hidden nodes to int i." alt="" coords="217,143,359,190"/>
+<area shape="rect" id="node9" href="$d1/d7c/a00003.html#afb37f8321b35bbc9b9beb88d56d69f08" title="Set number of input nodes to int i." alt="" coords="217,213,359,259"/>
 </map>

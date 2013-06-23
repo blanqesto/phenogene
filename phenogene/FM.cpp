@@ -45,7 +45,6 @@ void File_Manager::do_function(int mode)
 */
 void File_Manager::read_input(string filePath)
 {
-    int id = -1;
     char char1,char2;//c;
     n.dataset_size = 0;
     input_population_string="";
@@ -54,9 +53,9 @@ void File_Manager::read_input(string filePath)
     read.open(filePath.c_str());
     fork (0,max_dataset_size)
     {
-        read >> id;
+        read >> ids[k];
         if (read.fail()) {read.clear(); break;}
-        input_population_string += convertInt(id) + "\n";
+        input_population_string += convertInt(ids[k]) + "\n";
         n.input_dataset[n.dataset_size].resize(n.input_len+1);
         fill_n(n.input,n.input_len,0);
         fori(0,n.input_len)
@@ -151,7 +150,10 @@ void File_Manager::write_output(string filePath)
                     rank = j;
                 }
         }
-        write << n.rank_output[rank];
+        write << ids[i] <<n.rank_output[rank];
+        output_population_string+="ID#";
+        output_population_string+=convertInt(ids[i]);
+        output_population_string+=": ";
         output_population_string+=n.rank_output[rank];
         output_population_string+="\n";
         write << endl;

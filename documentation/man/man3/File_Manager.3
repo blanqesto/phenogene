@@ -1,4 +1,4 @@
-.TH "File_Manager" 3 "Sat Jun 22 2013" "Version 1.0" "Doxygen" \" -*- nroff -*-
+.TH "File_Manager" 3 "Sun Jun 23 2013" "Version 1.0" "Doxygen" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -137,6 +137,9 @@ File_Manager \-
 .ti -1c
 .RI "string \fBrank_output_strings\fP [\fBoutput_l\fP]"
 .br
+.ti -1c
+.RI "int \fBids\fP [\fBmax_dataset_size\fP]"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -164,7 +167,7 @@ Number in string format\&.
 .PP
 
 .PP
-Definition at line 199 of file FM\&.cpp\&.
+Definition at line 212 of file FM\&.cpp\&.
 .SS "void File_Manager::do_function (intmode)"
 
 .PP
@@ -200,7 +203,7 @@ Rank_output is filled\&.
 .PP
 
 .PP
-Definition at line 221 of file FM\&.cpp\&.
+Definition at line 234 of file FM\&.cpp\&.
 .PP
 References fori, n, Neural_Network::output_len, Neural_Network::output_rank, Neural_Network::rank_output, and rank_output_strings\&.
 .SS "string File_Manager::get_input_population_string ()"
@@ -257,7 +260,7 @@ Expected output dataset is filled\&.
 .PP
 
 .PP
-Definition at line 91 of file FM\&.cpp\&.
+Definition at line 101 of file FM\&.cpp\&.
 .PP
 References Neural_Network::dataset_size, Neural_Network::expected_o, fori, forj, max_dataset_size, n, Neural_Network::output_dataset, Neural_Network::output_len, Neural_Network::output_rank, read, and read_ex_output_string\&.
 .SS "void File_Manager::read_input (stringfilePath)\fC [private]\fP"
@@ -284,7 +287,7 @@ Input dataset is filled\&.
 .PP
 Definition at line 46 of file FM\&.cpp\&.
 .PP
-References convertInt(), Neural_Network::dataset_size, fori, fork, Neural_Network::input, Neural_Network::input_dataset, Neural_Network::input_len, input_population_string, Neural_Network::input_rank, max_dataset_size, n, and read\&.
+References convertInt(), Neural_Network::dataset_size, fori, fork, ids, Neural_Network::input, Neural_Network::input_dataset, Neural_Network::input_len, input_population_string, Neural_Network::input_rank, max_dataset_size, n, and read\&.
 .SS "void File_Manager::read_weights (stringfilePath)\fC [private]\fP"
 
 .PP
@@ -307,7 +310,7 @@ Weights datasets are filled\&.
 .PP
 
 .PP
-Definition at line 160 of file FM\&.cpp\&.
+Definition at line 173 of file FM\&.cpp\&.
 .PP
 References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, read, Neural_Network::Wh, and Neural_Network::Wo\&.
 .SS "void File_Manager::set_expected_out_file (strings)"
@@ -399,9 +402,9 @@ Output file to be found in the specified directory\&.
 .PP
 
 .PP
-Definition at line 126 of file FM\&.cpp\&.
+Definition at line 136 of file FM\&.cpp\&.
 .PP
-References Neural_Network::dataset_size, fori, forj, n, Neural_Network::output_dataset, Neural_Network::output_len, output_population_string, Neural_Network::rank_output, and write\&.
+References convertInt(), Neural_Network::dataset_size, fori, forj, ids, n, Neural_Network::output_dataset, Neural_Network::output_len, output_population_string, Neural_Network::rank_output, and write\&.
 .SS "void File_Manager::write_weights (stringfilePath)\fC [private]\fP"
 
 .PP
@@ -424,7 +427,7 @@ Weights file to be found in the specified directory\&.
 .PP
 
 .PP
-Definition at line 181 of file FM\&.cpp\&.
+Definition at line 194 of file FM\&.cpp\&.
 .PP
 References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n, Neural_Network::output_len, Neural_Network::Wh, Neural_Network::Wo, and write\&.
 .SH "Member Data Documentation"
@@ -433,6 +436,10 @@ References fori, forj, Neural_Network::hidden_len, Neural_Network::input_len, n,
 
 .PP
 Definition at line 38 of file FileManager\&.h\&.
+.SS "int File_Manager::ids[\fBmax_dataset_size\fP]\fC [private]\fP"
+
+.PP
+Definition at line 42 of file FileManager\&.h\&.
 .SS "string File_Manager::input_file\fC [private]\fP"
 
 .PP

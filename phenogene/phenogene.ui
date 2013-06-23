@@ -1518,7 +1518,7 @@ border-color: rgb(255, 0, 0);</string>
        </font>
       </property>
       <property name="text">
-       <string>12</string>
+       <string>7</string>
       </property>
      </widget>
      <widget class="Line" name="line_9">
@@ -2272,7 +2272,7 @@ border-color: rgb(255, 0, 0);</string>
       <x>9</x>
       <y>496</y>
       <width>581</width>
-      <height>35</height>
+      <height>60</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -2288,6 +2288,9 @@ border-color: rgb(255, 0, 0);</string>
        </property>
        <property name="value">
         <number>0</number>
+       </property>
+       <property name="format">
+        <string>%p%</string>
        </property>
       </widget>
      </item>
@@ -2327,7 +2330,35 @@ border-color: rgb(255, 0, 0);</string>
        </property>
       </widget>
      </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>500</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>LMSansDemiCond10</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

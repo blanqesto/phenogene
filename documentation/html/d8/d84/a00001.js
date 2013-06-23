@@ -19,6 +19,7 @@ var a00001 =
     [ "write_output", "d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a", null ],
     [ "write_weights", "d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0", null ],
     [ "expected_out_file", "d8/d84/a00001.html#a8b8f5c9cc3ffcb083ccc4fce1c05ca44", null ],
+    [ "ids", "d8/d84/a00001.html#aa298881ac48abd6b81764741be6485f7", null ],
     [ "input_file", "d8/d84/a00001.html#a78b144182e3cfc70f9aae78ebdd66e51", null ],
     [ "input_population_string", "d8/d84/a00001.html#a80f6d8f738cbc4d10154b470c5422fdd", null ],
     [ "n", "d8/d84/a00001.html#ac70ea2427e95618bb3903b2c57ee9745", null ],

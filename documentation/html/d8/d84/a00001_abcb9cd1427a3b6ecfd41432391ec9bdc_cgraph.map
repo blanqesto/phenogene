@@ -3,6 +3,6 @@
 <area shape="rect" id="node5" href="$d8/d84/a00001.html#a1134b607af353e187667aaba1a960bdd" title="Opens file filePath and reads its content." alt="" coords="231,74,364,121"/>
 <area shape="rect" id="node9" href="$d8/d84/a00001.html#a7d2759b2ad892445e7d74892737547cf" title="Read weights for hidden and output layer. &#160;Opens file filePath and reads its content." alt="" coords="231,143,364,190"/>
 <area shape="rect" id="node11" href="$d8/d84/a00001.html#a4e104949ad8e8fd75c612313f857ee5a" title="Write output &#160;Opens file filePath and write to it." alt="" coords="229,213,365,259"/>
-<area shape="rect" id="node13" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights &#160;Opens file filePath and write to it." alt="" coords="229,282,365,329"/>
-<area shape="rect" id="node7" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string." alt="" coords="415,83,580,112"/>
+<area shape="rect" id="node14" href="$d8/d84/a00001.html#a67e37c5e1429df91a8c4ff836579cdc0" title="Write weights &#160;Opens file filePath and write to it." alt="" coords="229,282,365,329"/>
+<area shape="rect" id="node7" href="$d8/d84/a00001.html#a6b29a9f88396627c1d39170723bad7fd" title="Converts integer number to string." alt="" coords="415,152,580,181"/>
 </map>

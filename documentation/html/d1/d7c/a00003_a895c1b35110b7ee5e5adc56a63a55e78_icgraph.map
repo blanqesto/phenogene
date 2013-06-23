@@ -1,5 +1,6 @@
 <map id="Neural_Network::get_output_len" name="Neural_Network::get_output_len">
-<area shape="rect" id="node3" href="$d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="Check that all input needed is filled." alt="" coords="209,5,324,35"/>
-<area shape="rect" id="node7" href="$d7/d46/a00002.html#a4b4725862e2fb5a2ffd6ebc0a88c096c" title="Prepare analysis report." alt="" coords="199,59,335,88"/>
-<area shape="rect" id="node5" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="384,23,525,70"/>
+<area shape="rect" id="node3" href="$d7/d46/a00002.html#ab5da77a34a83e9794edda0d77d79bec0" title="Set gene number, aka, input nodes number." alt="" coords="197,5,360,51"/>
+<area shape="rect" id="node5" href="$d7/d46/a00002.html#a5ec9d8a051303b218c4542f96a87b56f" title="Check that all input needed is filled." alt="" coords="221,75,336,104"/>
+<area shape="rect" id="node9" href="$d7/d46/a00002.html#a4b4725862e2fb5a2ffd6ebc0a88c096c" title="Prepare analysis report." alt="" coords="211,128,347,157"/>
+<area shape="rect" id="node7" href="$d7/d46/a00002.html#a043466f485b6b75ee25ee879121c1ecc" title="Called when start button is pushed. &#160;Determines weather to train/test/analyze, according to the opene..." alt="" coords="408,93,549,139"/>
 </map>

@@ -39,14 +39,16 @@ void GUI::perform_train()
     ui->progressBar->setValue(15);
     ui->textBrowser_3->setText(fm.get_input_population_string().c_str());
     fm.do_function(3); //read expected output
+    ui->label_9->setText("Training, this might take a while. Please be patient!");
     ui->progressBar->setValue(30);
     ui->textBrowser->setText(fm.get_read_ex_output_string().c_str());
     fm.n.do_function(5); //train
-    ui->progressBar->setValue(80);
+    ui->progressBar->setValue(90);
     //network.do_function(1); //write output
     //ui->progressBar->setValue(85);
     fm.do_function(4); //write weights
     ui->progressBar->setValue(100);
+    ui->label_9->setText("Process Completed!");
     return;
 }
 
@@ -69,6 +71,7 @@ void GUI::perform_test()
     ui->progressBar->setValue(80);
     fm.do_function(1); //write output
     ui->progressBar->setValue(100);
+    ui->label_9->setText("Process Completed!");
     ui->textBrowser_5->setText(fm.get_output_population_string().c_str());
     return;
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Sun Jun 23 02:22:08 2013
+** Created: Sun Jun 23 02:32:40 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -908,7 +908,7 @@ public:
 
         retranslateUi(GUI);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(GUI);
@@ -1051,7 +1051,7 @@ public:
         label_82->setText(QApplication::translate("GUI", "Momentum:", 0, QApplication::UnicodeUTF8));
         pushButton_2->setText(QApplication::translate("GUI", "Produce PDF report", 0, QApplication::UnicodeUTF8));
         pushButton_12->setText(QApplication::translate("GUI", "Save current configurations", 0, QApplication::UnicodeUTF8));
-        lineEdit_19->setText(QString());
+        lineEdit_19->setText(QApplication::translate("GUI", "%", 0, QApplication::UnicodeUTF8));
         lineEdit_20->setText(QString());
         lineEdit_21->setText(QApplication::translate("GUI", "10000", 0, QApplication::UnicodeUTF8));
         lineEdit_22->setText(QString());

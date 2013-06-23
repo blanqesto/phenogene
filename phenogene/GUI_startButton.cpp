@@ -144,8 +144,8 @@ void GUI::display_error(QString er)
 void GUI::prepare_report()
 {
     int local_mismatch = fm.n.get_mismatch();
-    double percentage = (local_mismatch/fm.n.get_dataset_size())*100;
-    ui->lineEdit_19->setText(QString::number(percentage));
+    double percentage = ((double)local_mismatch/fm.n.get_dataset_size())*100;
+    ui->lineEdit_19->setText(QString::number(percentage).append("%"));
     ui->lineEdit_20->setText(QString::number(local_mismatch));
     ui->lineEdit_21->setText(QString::number(fm.n.get_iterations()));
     ui->lineEdit_22->setText(QString::number(fm.n.get_least_error()));

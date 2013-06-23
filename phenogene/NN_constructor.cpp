@@ -12,7 +12,7 @@ Neural_Network::Neural_Network()
     hidden_len = ceil((input_len+output_len)/2);
     output_len = 5;
     momentum = 0.0000;
-    learning_rate = 0.0001;
+    learning_rate = 0.001;
     dataset_size=0;
     max_iterations=10000;
     mismatch=0;

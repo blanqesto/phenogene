@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Sat Jun 22 03:45:32 2013
+** Created: Sun Jun 23 02:22:08 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -47,6 +47,7 @@ public:
     QAction *actionInput_2;
     QAction *action_ph_file;
     QAction *actionClose;
+    QAction *actionProgrammer_guide;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab_3;
@@ -144,7 +145,6 @@ public:
     QLabel *label_81;
     QLabel *label_82;
     QPushButton *pushButton_2;
-    QPushButton *pushButton_11;
     QPushButton *pushButton_12;
     QLineEdit *lineEdit_19;
     QFrame *line_50;
@@ -162,7 +162,6 @@ public:
     QFrame *line_56;
     QLineEdit *lineEdit_26;
     QFrame *line_57;
-    QLabel *label;
     QLabel *label_4;
     QWidget *layoutWidget;
     QGridLayout *gridLayout;
@@ -231,6 +230,8 @@ public:
         actionClose = new QAction(GUI);
         actionClose->setObjectName(QString::fromUtf8("actionClose"));
         actionClose->setFont(font);
+        actionProgrammer_guide = new QAction(GUI);
+        actionProgrammer_guide->setObjectName(QString::fromUtf8("actionProgrammer_guide"));
         centralWidget = new QWidget(GUI);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -613,7 +614,7 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         label_5 = new QLabel(tab);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(20, 0, 561, 30));
+        label_5->setGeometry(QRect(20, 0, 531, 30));
         label_5->setFont(font);
         label_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         label_8 = new QLabel(tab);
@@ -714,20 +715,16 @@ public:
         label_82->setFont(font2);
         pushButton_2 = new QPushButton(tab);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(340, 270, 231, 61));
+        pushButton_2->setGeometry(QRect(350, 340, 211, 41));
         QFont font5;
         font5.setFamily(QString::fromUtf8("LMSansDemiCond10"));
         font5.setPointSize(14);
         font5.setBold(true);
         font5.setWeight(75);
         pushButton_2->setFont(font5);
-        pushButton_11 = new QPushButton(tab);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setGeometry(QRect(340, 200, 231, 61));
-        pushButton_11->setFont(font5);
         pushButton_12 = new QPushButton(tab);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(340, 340, 231, 61));
+        pushButton_12->setGeometry(QRect(350, 390, 211, 41));
         pushButton_12->setFont(font5);
         lineEdit_19 = new QLineEdit(tab);
         lineEdit_19->setObjectName(QString::fromUtf8("lineEdit_19"));
@@ -809,14 +806,10 @@ public:
         line_57->setGeometry(QRect(60, 430, 170, 10));
         line_57->setFrameShape(QFrame::HLine);
         line_57->setFrameShadow(QFrame::Sunken);
-        label = new QLabel(tab);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(340, 200, 231, 61));
-        label->setOpenExternalLinks(true);
         tabWidget->addTab(tab, QString());
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(380, 0, 211, 51));
+        label_4->setGeometry(QRect(360, 0, 231, 51));
         label_4->setPixmap(QPixmap(QString::fromUtf8(":/images/images/logo.png")));
         label_4->setScaledContents(true);
         label_4->setWordWrap(false);
@@ -911,10 +904,11 @@ public:
         menuLoad->addAction(actionExpected_Output);
         menuLoad->addAction(actionInput_2);
         menuLoad->addAction(action_ph_file);
+        menuAbout_us->addAction(actionProgrammer_guide);
 
         retranslateUi(GUI);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GUI);
@@ -934,6 +928,7 @@ public:
         actionInput_2->setText(QApplication::translate("GUI", "Input", 0, QApplication::UnicodeUTF8));
         action_ph_file->setText(QApplication::translate("GUI", ".ph file", 0, QApplication::UnicodeUTF8));
         actionClose->setText(QApplication::translate("GUI", "Quit program", 0, QApplication::UnicodeUTF8));
+        actionProgrammer_guide->setText(QApplication::translate("GUI", "Programmer Guide", 0, QApplication::UnicodeUTF8));
         pushButton_3->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         pushButton_5->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         textBrowser_3->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -1040,7 +1035,7 @@ public:
         lineEdit_5->setText(QApplication::translate("GUI", "12", 0, QApplication::UnicodeUTF8));
         label_36->setText(QApplication::translate("GUI", "[0-100]", 0, QApplication::UnicodeUTF8));
         label_14->setText(QApplication::translate("GUI", "Momentum:", 0, QApplication::UnicodeUTF8));
-        lineEdit_7->setText(QApplication::translate("GUI", "0.00", 0, QApplication::UnicodeUTF8));
+        lineEdit_7->setText(QApplication::translate("GUI", "0.00000", 0, QApplication::UnicodeUTF8));
         label_37->setText(QApplication::translate("GUI", "[0-2]", 0, QApplication::UnicodeUTF8));
         label_38->setText(QApplication::translate("GUI", "[0-10000000]", 0, QApplication::UnicodeUTF8));
         lineEdit_10->setText(QApplication::translate("GUI", "10000", 0, QApplication::UnicodeUTF8));
@@ -1055,7 +1050,6 @@ public:
         label_81->setText(QApplication::translate("GUI", "Number of output nodes:", 0, QApplication::UnicodeUTF8));
         label_82->setText(QApplication::translate("GUI", "Momentum:", 0, QApplication::UnicodeUTF8));
         pushButton_2->setText(QApplication::translate("GUI", "Produce PDF report", 0, QApplication::UnicodeUTF8));
-        pushButton_11->setText(QApplication::translate("GUI", "Programmer Guide", 0, QApplication::UnicodeUTF8));
         pushButton_12->setText(QApplication::translate("GUI", "Save current configurations", 0, QApplication::UnicodeUTF8));
         lineEdit_19->setText(QString());
         lineEdit_20->setText(QString());
@@ -1065,7 +1059,6 @@ public:
         lineEdit_24->setText(QApplication::translate("GUI", "12", 0, QApplication::UnicodeUTF8));
         lineEdit_25->setText(QApplication::translate("GUI", "5", 0, QApplication::UnicodeUTF8));
         lineEdit_26->setText(QApplication::translate("GUI", "0", 0, QApplication::UnicodeUTF8));
-        label->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("GUI", "Analysis", 0, QApplication::UnicodeUTF8));
         label_4->setText(QString());
         pushButton->setText(QApplication::translate("GUI", "Start", 0, QApplication::UnicodeUTF8));

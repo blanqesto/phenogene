@@ -37,9 +37,9 @@ void GUI::set_validators()
     ui->lineEdit->setValidator(new QIntValidator (0,100, this));
     ui->lineEdit_5->setValidator(new QIntValidator (0,100, this));
     ui->lineEdit_10->setValidator(new QIntValidator (0,10000000, this));
-    QRegExp re ("0\\.[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9])?|2");
-    QRegExp re2 ("[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9]?[0-9])?");
-    QRegExp re3 ("0(\\.[0-9]?[0-9]?[0-9])?|1(\\.[0-9]?[0-9]?[0-9])?|2");
+    QRegExp re ("0\\.[0-9]?[0-9]?[0-9]?[0-9]?[1-9]|1(\\.[0-9]?[0-9]?[0-9]?[0-9]?[0-9])?|2");
+    QRegExp re2 ("[0-9][0-9]?[0-9]?(\\.[0-9]?[0-9]?[0-9]?[0-9]?[0-9])?");
+    QRegExp re3 ("0(\\.[0-9]?[0-9]?[0-9]?[0-9]?[0-9])?|1(\\.[0-9]?[0-9]?[0-9]?[0-9]?[0-9])?|2");
     QRegExpValidator *valid = new QRegExpValidator(re, this);
     QRegExpValidator *valid2 = new QRegExpValidator(re2, this);
     QRegExpValidator *valid3 = new QRegExpValidator(re3, this);

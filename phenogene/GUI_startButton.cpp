@@ -143,10 +143,12 @@ void GUI::display_error(QString er)
 */
 void GUI::prepare_report()
 {
-    ui->lineEdit_19->setText(QString::fromStdString(""));
-    ui->lineEdit_20->setText(QString::fromStdString(""));
-    ui->lineEdit_21->setText(QString::number(fm.n.get_max_it()));
-    ui->lineEdit_22->setText(QString::fromStdString(""));
+    int local_mismatch = fm.n.get_mismatch();
+    double percentage = (local_mismatch/fm.n.get_dataset_size())*100;
+    ui->lineEdit_19->setText(QString::number(percentage));
+    ui->lineEdit_20->setText(QString::number(local_mismatch));
+    ui->lineEdit_21->setText(QString::number(fm.n.get_iterations()));
+    ui->lineEdit_22->setText(QString::number(fm.n.get_least_error()));
     ui->lineEdit_23->setText(QString::number(fm.n.get_input_len()));
     ui->lineEdit_24->setText(QString::number(fm.n.get_hidden_len()));
     ui->lineEdit_25->setText(QString::number(fm.n.get_output_len()));

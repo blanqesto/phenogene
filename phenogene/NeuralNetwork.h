@@ -23,6 +23,10 @@ public:
     int get_output_len();
     int get_hidden_len();
     int get_max_it();
+    int get_iterations();
+    int get_mismatch();
+    int get_dataset_size();
+    double get_least_error();
     double get_momentum();
 
     /*Other functions*/
@@ -34,7 +38,10 @@ private:
     int hidden_len;
     int output_len;
     int max_iterations;
+    int iterations;
     int dataset_size;
+    int mismatch;
+    double least_error;
     double error;
     double minimum_error;
     double learning_rate;
@@ -60,7 +67,8 @@ private:
     double delta_H[hidden_l];
 
     /*Map to decimal from characters*/
-    map <char,double> input_rank;
+    //map <char,double> input_rank;
+    map < pair <char,char>,int > input_rank;
     //map <pair<char,char>,double> input_rank;
     /*Map to decimal from string*/
     map <string,int> output_rank;
@@ -75,7 +83,7 @@ private:
 
     void init();
     void train();
-    void test();
+    void predict();
     double segmoidal_fn(double, int);
     void propagate();
     double cal_error();

@@ -46,7 +46,7 @@ void File_Manager::do_function(int mode)
 void File_Manager::read_input(string filePath)
 {
     int id = -1;
-    char c;//char1,char2;
+    char char1,char2;//c;
     n.dataset_size = 0;
     input_population_string="";
     n.input_dataset.clear();
@@ -60,13 +60,24 @@ void File_Manager::read_input(string filePath)
         n.input_dataset[n.dataset_size].resize(n.input_len+1);
         fill_n(n.input,n.input_len,0);
         fori(0,n.input_len)
+                {
+                    read >> char1 >> char2;
+                    input_population_string += char1;
+                    input_population_string += char2;
+                    input_population_string += "\n";
+                    pair <char,char> temp (char1,char2);
+                    n.input[i] = n.input_rank[temp];
+                    n.input_dataset[n.dataset_size][i]=n.input[i];
+                }
+        /*
+        fori(0,n.input_len)
         {
             read >> c;
             input_population_string += c;
             if (i%2!=0) input_population_string += "\n";
             n.input[i] = n.input_rank[c];
             n.input_dataset[n.dataset_size][i]=n.input[i];
-        }
+        }*/
 //            read >> char1 >> char2;
 //            input_population_string += char1;
 //            input_population_string += char2;

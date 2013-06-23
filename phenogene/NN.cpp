@@ -12,7 +12,7 @@ void Neural_Network::do_function(int what)
         train();
         break;
     case 6:
-        test();
+        predict();
         break;
     default:
         break;
@@ -89,68 +89,56 @@ void Neural_Network::init()
 void Neural_Network::train()
 {
     init(); //initialize weights,bias
-    int iterations = 0;
-    //int mismatch=1000000;
-    //while(mismatch > (0.75*dataset_size) && iterations < max_iterations)
-    //{
-      //  iterations ++ ;
-        //mismatch = 0.0;
-      double prevError=10001.1;
-//    double best_error;
-//    double best_lr;
-//    int n_mismatch;
-    error = 100000;
-    //for (int n = 0; n < 130; n++)
-    //{
-        error = 10000.0;
-        error = 10000.0;
-        cout << "min_err" << minimum_error << endl << endl << endl;
-        while (error > minimum_error && error < prevError && iterations < max_iterations)
+    double temp = -10000.00;
+    int rank=-1;
+    iterations = 0;
+    least_error=10000;
+    error = 10000.0;
+    while (error > minimum_error && iterations < max_iterations)//
+    {
+        mismatch=0;
+        iterations ++ ;
+        error = 0.0;
+        fork(0, dataset_size)
         {
-            iterations ++ ;
-            prevError = error;
-            error = 0.0;
-            fork(0, dataset_size)//dataset_size);
-            {
-                //cout << k << " ";
-                // Get current dataset of input and expected output
-                fori(0,input_len) input[i]=input_dataset[k][i];
-                fori(0,output_len) expected_o[i]=output_dataset[k][i];
+            // Get current dataset of input and expected output
+            fori(0,input_len) input[i]=input_dataset[k][i];
+            fori(0,output_len) expected_o[i]=output_dataset[k][i];
 
-                //fori(0,input_len) cout << input[i] << endl;
-                //fori(0,output_len) cout << expected_o[i] << endl;
-                //if(input_absent())continue;
-                // Propagate input
-                propagate();
-                // Calculate Error
-                error+=cal_error();
-                // Back propagagte the error
-                back_propagate();
-            }
-            error/=dataset_size;
+            // Propagate input
+            propagate();
+
+            // Calculate Error
+            error+=cal_error();
+            temp = -100000;
+            // Check if mismatch
+            forj(1,output_len+1)
+                    if (output[j-1]>temp)
+                    {
+                        temp = output[j-1];
+                        rank = j;
+                    }
+            if(expected_o[rank]!=1)mismatch++;
+
+            // Back propagagte the error
+            back_propagate();
         }
-//        if (error<prev_error)
-//        {
-//            cout << "Found optimal!" << n << endl;
-//            best_error = error;
-//            best_lr = learning_rate;
-//        }
-//        learning_rate+=0.001;
-//    }
-//    cout << "Optimals:\nError= " << best_error << endl << "learning rate= " << best_lr << endl;
+        if (error < least_error) least_error=error;
+        cout << "min_err" << error << "  ";
+    }
 }
 
 
 
 /**
- * \brief Test the neural network.
+ * \brief Predict using the neural network.
  *
  *\pre Input_dataset is filled.
   \pre Weights dataset is filled.
   \post Output is filled.
  *
 */
-void Neural_Network::test()
+void Neural_Network::predict()
 {
     error = 0;
     output_dataset.clear();
@@ -162,14 +150,10 @@ void Neural_Network::test()
                 input[i]=input_dataset[k][i];
         // Calculate Output
         propagate();
-        // Calculate Error
-        fori(0,output_len)
-                error += pow((output[i]-expected_o[i]),2);
         output_dataset[k].resize(output_len);
         forj(0,output_len)
                 output_dataset[k][j]=output[j];
     }
-    error*=0.5;
     return;
 }
 
@@ -195,19 +179,11 @@ void Neural_Network::propagate()
     double exp_OT=0.0;
 
     /*Softmax activation function*/
-    fori(0,hidden_len) exp_HT+=hidden[i]=exp(netH[i]);//-max);
-    fori(0,output_len) exp_OT+=output[i]=exp(netO[i]);//-maxO);
-
-   // cout << exp_HT << ":HELLO:" << exp_OT << endl;
+    fori(0,hidden_len) exp_HT+=hidden[i]=exp(netH[i]);
+    fori(0,output_len) exp_OT+=output[i]=exp(netO[i]);
 
     fori(0,hidden_len) hidden[i]=hidden[i]/exp_HT;
     fori(0,output_len) output[i]=output[i]/exp_OT;
-
-//    fori(0,hidden_len) cout << hidden[i] << endl;
-//    fori(0,output_len) cout << output[i] << endl;
-
-    //fori(0,hidden_len) cout << hidden[i] << endl;
-    //fori(0,output_len) cout << output[i] << endl;
     return;
 }
 
@@ -251,7 +227,7 @@ double Neural_Network::cal_error()
 {
     fill_n(delta_O,output_len,0);
     fill_n(delta_H,hidden_len,0);
-    double total_error = 0.0, temp = 0.0;
+    double total_error = 0.0;
 
     double max = -1000;
     double maxO = -1000;
@@ -260,23 +236,17 @@ double Neural_Network::cal_error()
 
     // error signal for output layer
     fori(0,output_len)
-    {        //temp = log(netO[i]+maxO);//-maxO);
-        //cout << temp << "::";
-        delta_O[i] = (output[i]-expected_o[i]);//expected_o[i]*log(output[i]+0.001)+(1-expected_o[i])*log(1-output[i]+0.001);//*temp;
-        temp = expected_o[i]*log(output[i])+(1-expected_o[i])*log(1-output[i]);
-        total_error += temp;
+    {
+        delta_O[i] = (output[i]-expected_o[i]);
+        total_error += expected_o[i]*log(output[i])+(1-expected_o[i])*log(1-output[i]);
     }
     total_error/=-output_len;
-//    total_error=pow(total_error,2.0);
-//    total_error*=0.5;
     // error signal for hidden layer
     fori(0,hidden_len)
     {
-        temp = 0.0;
+        delta_H[i] = 0.0;
         forj(0,output_len)
-                temp += delta_O[j]*Wo[j][i];//log(netH[i]+max);//-max)*delta_O[j];
-        //cout << temp << ":";
-        delta_H[i] = temp;
+                delta_H[i] += delta_O[j];//*Wo[j][i];
     }
     return (total_error);
 }

@@ -48,7 +48,8 @@ void GUI::on_pushButton_3_clicked()
 void GUI::on_lineEdit_editingFinished()
 {
     ui->lineEdit_6->setText(ui->lineEdit->text());
-    fm.n.set_input_len(ui->lineEdit->text().toInt()*2);
+    fm.n.set_input_len(ui->lineEdit->text().toInt());//*2);
+    fm.n.set_hidden_len(ceil(fm.n.get_input_len()+fm.n.get_output_len())/2);
 }
 
 

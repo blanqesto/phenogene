@@ -1,0 +1,4 @@
+<map id="Neural_Network::predict" name="Neural_Network::predict">
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a7e6d776ecfbb4f9df682d5fe13a7ec3b" title="Propagate input starting from the input layer up to the output layer. Uses softmax activation functio..." alt="" coords="216,5,397,35"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a25df8564c3f26b64935464366055572e" title="Calculates the net for each node." alt="" coords="447,5,647,35"/>
+</map>

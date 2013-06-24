@@ -17,10 +17,12 @@ void GUI::on_pushButton_clicked()
     fm.fill_rank_output();
     ui->progressBar->setValue(2);
     if(ui->tabWidget->currentIndex()==0) //train
+    {
         perform_train();
+        prepare_report();
+    }
     else if(ui->tabWidget->currentIndex()==1) //test
         perform_test();
-    prepare_report();
     return;
 }
 

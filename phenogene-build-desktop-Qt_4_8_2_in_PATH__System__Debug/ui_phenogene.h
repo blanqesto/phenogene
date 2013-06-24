@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Mon Jun 24 12:01:33 2013
+** Created: Tue Jun 25 01:17:34 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -19,6 +19,7 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
+#include <QtGui/QListWidget>
 #include <QtGui/QMainWindow>
 #include <QtGui/QProgressBar>
 #include <QtGui/QPushButton>
@@ -81,12 +82,13 @@ public:
     QLabel *label_29;
     QLabel *label_32;
     QLabel *label_33;
-    QFrame *line_10;
     QTextEdit *textEdit_4;
     QLabel *label_83;
     QLabel *label_86;
     QLabel *label_87;
     QFrame *line_49;
+    QLabel *label_93;
+    QListWidget *listWidget;
     QWidget *tab_4;
     QFrame *frame_3;
     QLineEdit *lineEdit_6;
@@ -106,6 +108,8 @@ public:
     QLabel *label_26;
     QTextBrowser *textBrowser_4;
     QLabel *label_91;
+    QListWidget *listWidget_2;
+    QLabel *label_94;
     QFrame *frame_4;
     QFrame *line_21;
     QFrame *line_22;
@@ -303,7 +307,7 @@ public:
         label_84->setObjectName(QString::fromUtf8("label_84"));
         label_84->setGeometry(QRect(10, 0, 100, 31));
         QFont font3;
-        font3.setFamily(QString::fromUtf8("LMRomanDemi10"));
+        font3.setFamily(QString::fromUtf8("LMSansDemiCond10"));
         font3.setPointSize(14);
         font3.setBold(true);
         font3.setWeight(75);
@@ -410,14 +414,9 @@ public:
         label_33->setObjectName(QString::fromUtf8("label_33"));
         label_33->setGeometry(QRect(200, 140, 51, 19));
         label_33->setFont(font);
-        line_10 = new QFrame(frame);
-        line_10->setObjectName(QString::fromUtf8("line_10"));
-        line_10->setGeometry(QRect(140, 250, 100, 30));
-        line_10->setFrameShape(QFrame::HLine);
-        line_10->setFrameShadow(QFrame::Sunken);
         textEdit_4 = new QTextEdit(frame);
         textEdit_4->setObjectName(QString::fromUtf8("textEdit_4"));
-        textEdit_4->setGeometry(QRect(10, 200, 231, 131));
+        textEdit_4->setGeometry(QRect(10, 200, 111, 131));
         textEdit_4->setFont(font2);
         label_83 = new QLabel(frame);
         label_83->setObjectName(QString::fromUtf8("label_83"));
@@ -429,8 +428,8 @@ public:
         label_83->setFrameShadow(QFrame::Sunken);
         label_86 = new QLabel(frame);
         label_86->setObjectName(QString::fromUtf8("label_86"));
-        label_86->setGeometry(QRect(10, 170, 160, 31));
-        label_86->setFont(font3);
+        label_86->setGeometry(QRect(0, 170, 121, 31));
+        label_86->setFont(font2);
         label_86->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
 "border-color: rgb(255, 0, 0);"));
         label_86->setFrameShape(QFrame::StyledPanel);
@@ -448,6 +447,17 @@ public:
         line_49->setGeometry(QRect(120, 50, 118, 3));
         line_49->setFrameShape(QFrame::HLine);
         line_49->setFrameShadow(QFrame::Sunken);
+        label_93 = new QLabel(frame);
+        label_93->setObjectName(QString::fromUtf8("label_93"));
+        label_93->setGeometry(QRect(119, 170, 121, 31));
+        label_93->setFont(font2);
+        label_93->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
+"border-color: rgb(255, 0, 0);"));
+        label_93->setFrameShape(QFrame::StyledPanel);
+        label_93->setFrameShadow(QFrame::Sunken);
+        listWidget = new QListWidget(frame);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        listWidget->setGeometry(QRect(130, 200, 111, 131));
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QString::fromUtf8("tab_4"));
@@ -531,7 +541,7 @@ public:
         textBrowser_4 = new QTextBrowser(frame_3);
         textBrowser_4->setObjectName(QString::fromUtf8("textBrowser_4"));
         textBrowser_4->setEnabled(true);
-        textBrowser_4->setGeometry(QRect(10, 200, 231, 131));
+        textBrowser_4->setGeometry(QRect(10, 200, 111, 131));
         textBrowser_4->setFont(font2);
         textBrowser_4->setReadOnly(true);
         label_91 = new QLabel(frame_3);
@@ -542,6 +552,18 @@ public:
 "border-color: rgb(255, 0, 0);"));
         label_91->setFrameShape(QFrame::StyledPanel);
         label_91->setFrameShadow(QFrame::Sunken);
+        listWidget_2 = new QListWidget(frame_3);
+        listWidget_2->setObjectName(QString::fromUtf8("listWidget_2"));
+        listWidget_2->setEnabled(true);
+        listWidget_2->setGeometry(QRect(130, 200, 111, 131));
+        label_94 = new QLabel(frame_3);
+        label_94->setObjectName(QString::fromUtf8("label_94"));
+        label_94->setGeometry(QRect(119, 170, 121, 31));
+        label_94->setFont(font2);
+        label_94->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
+"border-color: rgb(255, 0, 0);"));
+        label_94->setFrameShape(QFrame::StyledPanel);
+        label_94->setFrameShadow(QFrame::Sunken);
         frame_4 = new QFrame(tab_4);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
         frame_4->setGeometry(QRect(250, 0, 320, 440));
@@ -605,8 +627,8 @@ public:
         label_90->setFrameShadow(QFrame::Sunken);
         label_92 = new QLabel(tab_4);
         label_92->setObjectName(QString::fromUtf8("label_92"));
-        label_92->setGeometry(QRect(10, 170, 160, 31));
-        label_92->setFont(font3);
+        label_92->setGeometry(QRect(0, 170, 121, 31));
+        label_92->setFont(font2);
         label_92->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
 "border-color: rgb(255, 0, 0);"));
         label_92->setFrameShape(QFrame::StyledPanel);
@@ -717,17 +739,12 @@ public:
         label_82->setFont(font2);
         pushButton_2 = new QPushButton(tab);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(350, 390, 211, 41));
-        QFont font5;
-        font5.setFamily(QString::fromUtf8("LMSansDemiCond10"));
-        font5.setPointSize(14);
-        font5.setBold(true);
-        font5.setWeight(75);
-        pushButton_2->setFont(font5);
+        pushButton_2->setGeometry(QRect(350, 400, 211, 41));
+        pushButton_2->setFont(font3);
         pushButton_12 = new QPushButton(tab);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(350, 330, 211, 41));
-        pushButton_12->setFont(font5);
+        pushButton_12->setGeometry(QRect(350, 350, 211, 41));
+        pushButton_12->setFont(font3);
         lineEdit_19 = new QLineEdit(tab);
         lineEdit_19->setObjectName(QString::fromUtf8("lineEdit_19"));
         lineEdit_19->setGeometry(QRect(230, 200, 71, 27));
@@ -810,8 +827,8 @@ public:
         line_57->setFrameShadow(QFrame::Sunken);
         pushButton_13 = new QPushButton(tab);
         pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
-        pushButton_13->setGeometry(QRect(350, 270, 211, 41));
-        pushButton_13->setFont(font5);
+        pushButton_13->setGeometry(QRect(350, 300, 211, 41));
+        pushButton_13->setFont(font3);
         label_34 = new QLabel(tab);
         label_34->setObjectName(QString::fromUtf8("label_34"));
         label_34->setGeometry(QRect(320, 200, 131, 21));
@@ -864,7 +881,7 @@ public:
 
         pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setFont(font5);
+        pushButton->setFont(font3);
 
         gridLayout->addWidget(pushButton, 1, 1, 1, 1);
 
@@ -875,13 +892,13 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(quitButton->sizePolicy().hasHeightForWidth());
         quitButton->setSizePolicy(sizePolicy);
-        quitButton->setFont(font5);
+        quitButton->setFont(font3);
 
         gridLayout->addWidget(quitButton, 1, 2, 1, 1);
 
         label_9 = new QLabel(centralWidget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(70, 530, 331, 21));
+        label_9->setGeometry(QRect(70, 540, 331, 21));
         label_9->setFont(font2);
         GUI->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(GUI);
@@ -904,7 +921,7 @@ public:
 
         retranslateUi(GUI);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(GUI);
@@ -983,6 +1000,7 @@ public:
         label_83->setText(QApplication::translate("GUI", "Neural Network Parameters:", 0, QApplication::UnicodeUTF8));
         label_86->setText(QApplication::translate("GUI", "Output keywords:", 0, QApplication::UnicodeUTF8));
         label_87->setText(QApplication::translate("GUI", "Weights file:", 0, QApplication::UnicodeUTF8));
+        label_93->setText(QApplication::translate("GUI", "Selected genes:", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("GUI", "Train", 0, QApplication::UnicodeUTF8));
         lineEdit_6->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
         lineEdit_8->setText(QApplication::translate("GUI", "0.001", 0, QApplication::UnicodeUTF8));
@@ -1004,6 +1022,7 @@ public:
                         "-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">grey</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">hazel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         label_91->setText(QApplication::translate("GUI", "Weights file:", 0, QApplication::UnicodeUTF8));
+        label_94->setText(QApplication::translate("GUI", "Selected genes:", 0, QApplication::UnicodeUTF8));
         pushButton_4->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
         textBrowser_2->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

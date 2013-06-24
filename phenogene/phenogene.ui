@@ -58,7 +58,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -289,7 +289,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
+         <family>LMSansDemiCond10</family>
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -320,7 +320,7 @@ border-color: rgb(255, 0, 0);</string>
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
+         <family>LMSansDemiCond10</family>
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -676,25 +676,12 @@ AFTER the train finishes.</string>
         <string>[0-999]</string>
        </property>
       </widget>
-      <widget class="Line" name="line_10">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>250</y>
-         <width>100</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
       <widget class="QTextEdit" name="textEdit_4">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>200</y>
-         <width>231</width>
+         <width>111</width>
          <height>131</height>
         </rect>
        </property>
@@ -729,7 +716,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
+         <family>LMSansDemiCond10</family>
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -752,16 +739,16 @@ border-color: rgb(255, 0, 0);</string>
       <widget class="QLabel" name="label_86">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>0</x>
          <y>170</y>
-         <width>160</width>
+         <width>121</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
-         <pointsize>14</pointsize>
+         <family>LMSansDemiCond10</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -791,7 +778,7 @@ border-color: rgb(255, 0, 0);</string>
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
+         <family>LMSansDemiCond10</family>
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -822,6 +809,47 @@ border-color: rgb(255, 0, 0);</string>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_93">
+       <property name="geometry">
+        <rect>
+         <x>119</x>
+         <y>170</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>LMSansDemiCond10</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 0, 0);
+border-color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>Selected genes:</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidget">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>200</y>
+         <width>111</width>
+         <height>131</height>
+        </rect>
        </property>
       </widget>
      </widget>
@@ -1127,7 +1155,7 @@ border-color: rgb(255, 0, 0);</string>
         <rect>
          <x>10</x>
          <y>200</y>
-         <width>231</width>
+         <width>111</width>
          <height>131</height>
         </rect>
        </property>
@@ -1165,7 +1193,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="font">
         <font>
-         <family>LMRomanDemi10</family>
+         <family>LMSansDemiCond10</family>
          <pointsize>14</pointsize>
          <weight>75</weight>
          <bold>true</bold>
@@ -1183,6 +1211,50 @@ border-color: rgb(255, 0, 0);</string>
        </property>
        <property name="text">
         <string>Weights file:</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidget_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>200</y>
+         <width>111</width>
+         <height>131</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_94">
+       <property name="geometry">
+        <rect>
+         <x>119</x>
+         <y>170</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>LMSansDemiCond10</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 0, 0);
+border-color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>Selected genes:</string>
        </property>
       </widget>
      </widget>
@@ -1341,7 +1413,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>LMRomanDemi10</family>
+        <family>LMSansDemiCond10</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -1372,7 +1444,7 @@ border-color: rgb(255, 0, 0);</string>
       </property>
       <property name="font">
        <font>
-        <family>LMRomanDemi10</family>
+        <family>LMSansDemiCond10</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -1403,7 +1475,7 @@ border-color: rgb(255, 0, 0);</string>
       </property>
       <property name="font">
        <font>
-        <family>LMRomanDemi10</family>
+        <family>LMSansDemiCond10</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -1426,16 +1498,16 @@ border-color: rgb(255, 0, 0);</string>
      <widget class="QLabel" name="label_92">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>170</y>
-        <width>160</width>
+        <width>121</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>LMRomanDemi10</family>
-        <pointsize>14</pointsize>
+        <family>LMSansDemiCond10</family>
+        <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1725,7 +1797,7 @@ border-color: rgb(255, 0, 0);</string>
       </property>
       <property name="font">
        <font>
-        <family>LMRomanDemi10</family>
+        <family>LMSansDemiCond10</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -1917,7 +1989,7 @@ border-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>350</x>
-        <y>390</y>
+        <y>400</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -1938,7 +2010,7 @@ border-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>350</x>
-        <y>330</y>
+        <y>350</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -2247,7 +2319,7 @@ border-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>350</x>
-        <y>270</y>
+        <y>300</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -2472,7 +2544,7 @@ border-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>530</y>
+      <y>540</y>
       <width>331</width>
       <height>21</height>
      </rect>

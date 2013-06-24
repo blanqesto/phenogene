@@ -31,10 +31,10 @@ void File_Manager::do_function(int mode)
     case 4: // write weights
         write_weights(weights_file);
         break;
-    case 5:
+    case 5: // import pg file
         read_pg_file(pg_file);
         break;
-    case 6:
+    case 6: // export pg file
         write_pg_file(pg_file);
     }
     return;
@@ -73,22 +73,6 @@ void File_Manager::read_input(string filePath)
                     n.input[i] = n.input_rank[temp];
                     n.input_dataset[n.dataset_size][i]=n.input[i];
                 }
-        /*
-        fori(0,n.input_len)
-        {
-            read >> c;
-            input_population_string += c;
-            if (i%2!=0) input_population_string += "\n";
-            n.input[i] = n.input_rank[c];
-            n.input_dataset[n.dataset_size][i]=n.input[i];
-        }*/
-//            read >> char1 >> char2;
-//            input_population_string += char1;
-//            input_population_string += char2;
-            //input_population_string += "\n";
-//            pair <char,char> temp (char1,char2);
-//            n.input[i] = n.input_rank[temp];
-//            n.input_dataset[n.dataset_size][i]=n.input[i];
         n.dataset_size++;
     }
     read.close();
@@ -145,10 +129,8 @@ void File_Manager::write_output(string filePath)
     fori(0,n.dataset_size)
     {
         double temp = -10000.00,rank=-1;
-        //cout << "dataset:" << i<< endl;
         forj(1,n.output_len+1)
         {
-           // cout << "rank: " << j << " "<< n.output_dataset[i][j-1] << endl;
                 if (n.output_dataset[i][j-1]>temp)
                 {
                     temp = n.output_dataset[i][j-1];

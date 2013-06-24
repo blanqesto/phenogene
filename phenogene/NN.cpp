@@ -40,7 +40,6 @@ double Neural_Network::segmoidal_fn(double x, int mode)
     double out = 0.0;
     if (mode == 0)
     {
-        //out = 1/(1+(1/pow(2.7182,x)));
         x*=-1;
         out = 1/1+exp(x);
     }

@@ -1,9 +1,6 @@
 <RCC>
     <qresource prefix="/images">
-        <file>images/beach.jpeg</file>
-        <file>images/back1.jpg</file>
-        <file>images/back2.jpg</file>
-        <file>images/back_white.jpg</file>
         <file>images/logo.png</file>
+        <file>images/DNA-Humano.jpg</file>
     </qresource>
 </RCC>

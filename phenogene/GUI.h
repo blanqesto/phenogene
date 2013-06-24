@@ -9,6 +9,8 @@
 #include <qvalidator.h>
 #include <qlineedit.h>
 #include <QRegExp>
+#include <qprinter.h>
+#include <qpainter.h>
 #include <FileManager.h>
 
 namespace Ui {
@@ -45,6 +47,8 @@ private slots:
     void on_pushButton_13_clicked();
 
     void on_pushButton_12_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::GUI *ui;

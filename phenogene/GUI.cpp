@@ -51,6 +51,20 @@ void GUI::on_lineEdit_editingFinished()
     ui->lineEdit_6->setText(ui->lineEdit->text());
     fm.n.set_input_len(ui->lineEdit->text().toInt());//*2);
     fm.n.set_hidden_len(ceil(fm.n.get_input_len()+fm.n.get_output_len())/2);
+    ui->listWidget->clear();
+    ui->listWidget_2->clear();
+    QListWidgetItem *item;
+    fori(0,fm.n.get_input_len())
+    {
+        item = new QListWidgetItem("Gene#"+QString::number(i+1), ui->listWidget);
+        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+        item->setCheckState(Qt::Checked);
+        ui->listWidget->addItem(item);
+        item = new QListWidgetItem("Gene#"+QString::number(i+1), ui->listWidget_2);
+        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+        item->setCheckState(Qt::Checked);
+        ui->listWidget_2->addItem(item);
+    }
 }
 
 
@@ -219,6 +233,7 @@ void GUI::on_pushButton_13_clicked()
 */
 void GUI::on_pushButton_12_clicked()
 {
+    if(ui->lineEdit_20->text()==""){display_error("Error!\n\nTraining wasn't performed!\n");return;}
     fm.set_pg_file(fm.get_input_file()+".pg");
     fm.do_function(6);
     display_error(QString::fromStdString("PG file is exported successfully!\n"));
@@ -261,11 +276,59 @@ void GUI::set_pg_parameters()
     ui->lineEdit_21->setText(QString::fromStdString(""));
     ui->lineEdit_22->setText(QString::fromStdString(""));
 
-    ui->label_22->setText(QString::fromStdString("imported.pg"));
     ui->label_24->setText(QString::fromStdString("imported.pg"));
 }
 
 void GUI::on_quitButton_clicked()
 {
     qApp->quit();
+}
+
+/**
+ On Analysis Tab
+ \brief Saves PG File\n
+  Allows the user to save a file.
+  \pre Export configurations button is clicked.
+  \post File PG is created.
+*/
+void GUI::on_pushButton_2_clicked()
+{
+    if(ui->lineEdit_20->text()==""){display_error("Error!\n\nTraining wasn't performed!\n");return;}
+    QPrinter printer;
+    printer.setOutputFileName(filePath.append("Report.pdf"));
+    printer.setOutputFormat(QPrinter::PdfFormat);
+    QPainter painter;
+    painter.begin(&printer);
+    QImage im("../phenogene/images/logo.png");
+    painter.drawImage(0,0,im.scaled(200,50));
+    QString temp = "";
+    temp += "\n\nTraining Report:";
+    temp += "\n\n\nLearning Rate = ";
+    temp += ui->lineEdit_27->text();
+    temp += "\n\n\nMomentum = ";
+    temp += ui->lineEdit_26->text();
+    temp += "\n\n\nAcceptable error = ";
+    temp += ui->lineEdit_28->text();
+    temp += "\n\n\nNumber of mismatches = ";
+    temp += QString::number(fm.n.get_mismatch());
+    temp += "\n\n\nActual error Percentage= ";
+    temp += ui->lineEdit_19->text();
+    temp += "\n\n\nLeast error reached = ";
+    temp += ui->lineEdit_22->text();
+    temp += "\n\n\nMaximum iterations number= ";
+    temp += QString::number(fm.n.get_max_it());
+    temp += "\n\n\nActual iterations number= ";
+    temp += QString::number(fm.n.get_iterations());
+    temp += "\n\n\nNumber of input nodes = ";
+    temp += QString::number(fm.n.get_input_len());
+    temp += "\n\n\nNumber of hidden nodes = ";
+    temp += QString::number(fm.n.get_hidden_len());
+    temp += "\n\n\nNumber of output nodes = ";
+    temp += QString::number(fm.n.get_output_len());
+    temp += "\n\n\nPhenotypic traits = \n";
+    fori(0,fm.n.get_output_len())
+            temp += QString::fromStdString(fm.get_rank_output_strings(i)+"\n");
+    painter.drawText(printer.pageRect(),temp);
+    painter.end();
+    display_error("Report written successfully!");
 }

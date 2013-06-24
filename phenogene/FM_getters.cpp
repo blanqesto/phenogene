@@ -22,6 +22,20 @@ string File_Manager::get_output_population_string()
     return output_population_string;
 }
 /**
+ * \brief Get string pg file
+*/
+string File_Manager::get_pg_file()
+{
+    return pg_file;
+}
+/**
+ * \brief Get string input file
+*/
+string File_Manager::get_input_file()
+{
+    return input_file;
+}
+/**
  * \brief Get string represenation for given ID
 */
 string File_Manager::get_rank_output_strings(int i)

@@ -42,6 +42,10 @@ private slots:
     void on_lineEdit_10_editingFinished();
     void on_tabWidget_currentChanged(int index);
 
+    void on_pushButton_13_clicked();
+
+    void on_pushButton_12_clicked();
+
 private:
     Ui::GUI *ui;
     QString valid_input();
@@ -52,6 +56,7 @@ private:
     void set_validators();
     void set_styleSheet();
     void display_error(QString);
+    void set_pg_parameters();
     void prepare_report();
 };
 

@@ -16,6 +16,7 @@ public:
     void set_expected_out_file(string);
     void set_output_file(string);
     void set_weights_file(string);
+    void set_pg_file(string);
     void set_rank_output_strings(int, string);
 
     /*Getter functions*/
@@ -23,6 +24,8 @@ public:
     string get_input_population_string();
     string get_output_population_string();
     string get_rank_output_strings(int);
+    string get_pg_file();
+    string get_input_file();
 
     /*Other functions*/
     void do_function(int);
@@ -38,14 +41,17 @@ private:
     string expected_out_file;
     string output_file;
     string weights_file;
+    string pg_file;
     string rank_output_strings[output_l];
     int ids[max_dataset_size];
 
     void read_input(string);
     void read_expected_output(string);
     void read_weights(string);
+    void read_pg_file(string);
     void write_output(string);
     void write_weights(string);
+    void write_pg_file(string);
     string convertInt(int);
 
 };

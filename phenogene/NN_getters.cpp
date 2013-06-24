@@ -74,3 +74,17 @@ double Neural_Network::get_momentum()
     return momentum;
 }
 
+/**
+ * \brief Get double learning_rate
+*/
+double Neural_Network::get_learning_rate()
+{
+    return learning_rate;
+}
+/**
+ * \brief Get double minimum error
+*/
+double Neural_Network::get_min_er()
+{
+    return minimum_error;
+}

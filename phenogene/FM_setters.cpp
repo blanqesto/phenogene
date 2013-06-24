@@ -36,7 +36,14 @@ void File_Manager::set_weights_file(string s)
     weights_file=s;
     return;
 }
-
+/**
+ * \brief Set string pg file
+ * \param [string s] pg project file path
+*/
+void File_Manager::set_pg_file(string s)
+{
+    pg_file=s;
+}
 /**
  * \brief Set string with index i to s
  * \param [int i] Index i of rank_output_strings

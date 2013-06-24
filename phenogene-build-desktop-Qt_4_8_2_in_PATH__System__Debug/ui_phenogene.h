@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Sun Jun 23 13:26:21 2013
+** Created: Mon Jun 24 12:01:33 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,15 +20,12 @@
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
 #include <QtGui/QProgressBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTabWidget>
 #include <QtGui/QTextBrowser>
 #include <QtGui/QTextEdit>
-#include <QtGui/QToolBar>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -48,6 +45,7 @@ public:
     QAction *action_ph_file;
     QAction *actionClose;
     QAction *actionProgrammer_guide;
+    QAction *actionPhenogene;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab_3;
@@ -162,21 +160,20 @@ public:
     QFrame *line_56;
     QLineEdit *lineEdit_26;
     QFrame *line_57;
+    QPushButton *pushButton_13;
+    QLabel *label_34;
+    QLineEdit *lineEdit_27;
+    QFrame *line_58;
+    QLineEdit *lineEdit_28;
+    QLabel *label_35;
+    QFrame *line_59;
     QLabel *label_4;
     QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QProgressBar *progressBar;
     QPushButton *pushButton;
     QPushButton *quitButton;
-    QLabel *label;
     QLabel *label_9;
-    QMenuBar *menuBar;
-    QMenu *menuPhenogene;
-    QMenu *menuSave;
-    QMenu *menuLoad;
-    QMenu *menuAbout_us;
-    QMenu *menuAbout;
-    QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *GUI)
@@ -192,6 +189,7 @@ public:
         GUI->setTabShape(QTabWidget::Rounded);
         actionParameters = new QAction(GUI);
         actionParameters->setObjectName(QString::fromUtf8("actionParameters"));
+        actionParameters->setCheckable(false);
         QFont font;
         font.setFamily(QString::fromUtf8("LMSansDemiCond10"));
         font.setBold(true);
@@ -234,11 +232,13 @@ public:
         actionClose->setFont(font);
         actionProgrammer_guide = new QAction(GUI);
         actionProgrammer_guide->setObjectName(QString::fromUtf8("actionProgrammer_guide"));
+        actionPhenogene = new QAction(GUI);
+        actionPhenogene->setObjectName(QString::fromUtf8("actionPhenogene"));
         centralWidget = new QWidget(GUI);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 10, 581, 481));
+        tabWidget->setGeometry(QRect(10, 50, 581, 481));
         tabWidget->setFont(font);
         tabWidget->setStyleSheet(QString::fromUtf8(""));
         tab_3 = new QWidget();
@@ -532,7 +532,7 @@ public:
         textBrowser_4->setObjectName(QString::fromUtf8("textBrowser_4"));
         textBrowser_4->setEnabled(true);
         textBrowser_4->setGeometry(QRect(10, 200, 231, 131));
-        textBrowser_4->setFont(font);
+        textBrowser_4->setFont(font2);
         textBrowser_4->setReadOnly(true);
         label_91 = new QLabel(frame_3);
         label_91->setObjectName(QString::fromUtf8("label_91"));
@@ -717,7 +717,7 @@ public:
         label_82->setFont(font2);
         pushButton_2 = new QPushButton(tab);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(350, 340, 211, 41));
+        pushButton_2->setGeometry(QRect(350, 390, 211, 41));
         QFont font5;
         font5.setFamily(QString::fromUtf8("LMSansDemiCond10"));
         font5.setPointSize(14);
@@ -726,7 +726,7 @@ public:
         pushButton_2->setFont(font5);
         pushButton_12 = new QPushButton(tab);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(350, 390, 211, 41));
+        pushButton_12->setGeometry(QRect(350, 330, 211, 41));
         pushButton_12->setFont(font5);
         lineEdit_19 = new QLineEdit(tab);
         lineEdit_19->setObjectName(QString::fromUtf8("lineEdit_19"));
@@ -808,16 +808,48 @@ public:
         line_57->setGeometry(QRect(60, 430, 170, 10));
         line_57->setFrameShape(QFrame::HLine);
         line_57->setFrameShadow(QFrame::Sunken);
+        pushButton_13 = new QPushButton(tab);
+        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+        pushButton_13->setGeometry(QRect(350, 270, 211, 41));
+        pushButton_13->setFont(font5);
+        label_34 = new QLabel(tab);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setGeometry(QRect(320, 200, 131, 21));
+        label_34->setFont(font2);
+        lineEdit_27 = new QLineEdit(tab);
+        lineEdit_27->setObjectName(QString::fromUtf8("lineEdit_27"));
+        lineEdit_27->setGeometry(QRect(500, 200, 71, 27));
+        lineEdit_27->setFont(font);
+        lineEdit_27->setReadOnly(true);
+        line_58 = new QFrame(tab);
+        line_58->setObjectName(QString::fromUtf8("line_58"));
+        line_58->setGeometry(QRect(360, 210, 141, 30));
+        line_58->setFrameShape(QFrame::HLine);
+        line_58->setFrameShadow(QFrame::Sunken);
+        lineEdit_28 = new QLineEdit(tab);
+        lineEdit_28->setObjectName(QString::fromUtf8("lineEdit_28"));
+        lineEdit_28->setGeometry(QRect(500, 230, 71, 27));
+        lineEdit_28->setFont(font);
+        lineEdit_28->setReadOnly(true);
+        label_35 = new QLabel(tab);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(320, 230, 131, 21));
+        label_35->setFont(font2);
+        line_59 = new QFrame(tab);
+        line_59->setObjectName(QString::fromUtf8("line_59"));
+        line_59->setGeometry(QRect(360, 240, 141, 30));
+        line_59->setFrameShape(QFrame::HLine);
+        line_59->setFrameShadow(QFrame::Sunken);
         tabWidget->addTab(tab, QString());
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(360, 0, 231, 51));
+        label_4->setGeometry(QRect(250, 10, 341, 90));
         label_4->setPixmap(QPixmap(QString::fromUtf8(":/images/images/logo.png")));
         label_4->setScaledContents(true);
         label_4->setWordWrap(false);
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(9, 496, 581, 60));
+        layoutWidget->setGeometry(QRect(9, 530, 581, 41));
         gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -847,40 +879,11 @@ public:
 
         gridLayout->addWidget(quitButton, 1, 2, 1, 1);
 
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        gridLayout->addWidget(label, 2, 0, 1, 1);
-
         label_9 = new QLabel(centralWidget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(70, 500, 331, 21));
+        label_9->setGeometry(QRect(70, 530, 331, 21));
         label_9->setFont(font2);
         GUI->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(GUI);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 31));
-        menuBar->setFont(font);
-        menuPhenogene = new QMenu(menuBar);
-        menuPhenogene->setObjectName(QString::fromUtf8("menuPhenogene"));
-        menuPhenogene->setFont(font);
-        menuSave = new QMenu(menuPhenogene);
-        menuSave->setObjectName(QString::fromUtf8("menuSave"));
-        menuSave->setFont(font);
-        menuLoad = new QMenu(menuPhenogene);
-        menuLoad->setObjectName(QString::fromUtf8("menuLoad"));
-        menuLoad->setFont(font);
-        menuAbout_us = new QMenu(menuBar);
-        menuAbout_us->setObjectName(QString::fromUtf8("menuAbout_us"));
-        menuAbout_us->setFont(font);
-        menuAbout = new QMenu(menuBar);
-        menuAbout->setObjectName(QString::fromUtf8("menuAbout"));
-        menuAbout->setFont(font);
-        GUI->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(GUI);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        mainToolBar->setFont(font);
-        GUI->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(GUI);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
         statusBar->setFont(font);
@@ -898,24 +901,6 @@ public:
         QWidget::setTabOrder(lineEdit_8, lineEdit_9);
         QWidget::setTabOrder(lineEdit_9, textBrowser_3);
         QWidget::setTabOrder(textBrowser_3, lineEdit_6);
-
-        menuBar->addAction(menuPhenogene->menuAction());
-        menuBar->addAction(menuAbout_us->menuAction());
-        menuBar->addAction(menuAbout->menuAction());
-        menuPhenogene->addAction(menuSave->menuAction());
-        menuPhenogene->addAction(menuLoad->menuAction());
-        menuPhenogene->addAction(actionClose);
-        menuSave->addAction(actionParameters);
-        menuSave->addAction(actionWeights);
-        menuSave->addAction(actionOutput);
-        menuSave->addAction(actionInput);
-        menuSave->addAction(actionAll_settings_in_a_ph_file);
-        menuLoad->addAction(actionParameters_2);
-        menuLoad->addAction(actionWeights_2);
-        menuLoad->addAction(actionExpected_Output);
-        menuLoad->addAction(actionInput_2);
-        menuLoad->addAction(action_ph_file);
-        menuAbout_us->addAction(actionProgrammer_guide);
 
         retranslateUi(GUI);
 
@@ -940,6 +925,7 @@ public:
         action_ph_file->setText(QApplication::translate("GUI", ".ph file", 0, QApplication::UnicodeUTF8));
         actionClose->setText(QApplication::translate("GUI", "Quit program", 0, QApplication::UnicodeUTF8));
         actionProgrammer_guide->setText(QApplication::translate("GUI", "Programmer Guide", 0, QApplication::UnicodeUTF8));
+        actionPhenogene->setText(QApplication::translate("GUI", "Phenogene", 0, QApplication::UnicodeUTF8));
         pushButton_3->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         pushButton_5->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         textBrowser_3->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -1010,13 +996,13 @@ public:
         textBrowser_4->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'LMSansDemiCond10'; font-size:11pt; font-weight:600; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\">blue</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\">green</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\">brown</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\""
-                        ">grey</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\">hazel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'LMSansDemiCond10'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">blue</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">green</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">brown</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
+                        "-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">grey</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">hazel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         label_91->setText(QApplication::translate("GUI", "Weights file:", 0, QApplication::UnicodeUTF8));
         pushButton_4->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
@@ -1061,27 +1047,26 @@ public:
         label_81->setText(QApplication::translate("GUI", "Number of output nodes:", 0, QApplication::UnicodeUTF8));
         label_82->setText(QApplication::translate("GUI", "Momentum:", 0, QApplication::UnicodeUTF8));
         pushButton_2->setText(QApplication::translate("GUI", "Produce PDF report", 0, QApplication::UnicodeUTF8));
-        pushButton_12->setText(QApplication::translate("GUI", "Save current configurations", 0, QApplication::UnicodeUTF8));
+        pushButton_12->setText(QApplication::translate("GUI", "Export configurations", 0, QApplication::UnicodeUTF8));
         lineEdit_19->setText(QApplication::translate("GUI", "%", 0, QApplication::UnicodeUTF8));
         lineEdit_20->setText(QString());
-        lineEdit_21->setText(QApplication::translate("GUI", "10000", 0, QApplication::UnicodeUTF8));
+        lineEdit_21->setText(QString());
         lineEdit_22->setText(QString());
         lineEdit_23->setText(QApplication::translate("GUI", "9", 0, QApplication::UnicodeUTF8));
         lineEdit_24->setText(QApplication::translate("GUI", "12", 0, QApplication::UnicodeUTF8));
         lineEdit_25->setText(QApplication::translate("GUI", "5", 0, QApplication::UnicodeUTF8));
         lineEdit_26->setText(QApplication::translate("GUI", "0", 0, QApplication::UnicodeUTF8));
+        pushButton_13->setText(QApplication::translate("GUI", "Import configurations", 0, QApplication::UnicodeUTF8));
+        label_34->setText(QApplication::translate("GUI", "Learning Rate:", 0, QApplication::UnicodeUTF8));
+        lineEdit_27->setText(QApplication::translate("GUI", "0.001", 0, QApplication::UnicodeUTF8));
+        lineEdit_28->setText(QApplication::translate("GUI", "0.01", 0, QApplication::UnicodeUTF8));
+        label_35->setText(QApplication::translate("GUI", "Accepted Error:", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("GUI", "Analysis", 0, QApplication::UnicodeUTF8));
         label_4->setText(QString());
         progressBar->setFormat(QApplication::translate("GUI", "%p%", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("GUI", "Start", 0, QApplication::UnicodeUTF8));
         quitButton->setText(QApplication::translate("GUI", "Quit", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("GUI", "TextLabel", 0, QApplication::UnicodeUTF8));
         label_9->setText(QString());
-        menuPhenogene->setTitle(QApplication::translate("GUI", "File", 0, QApplication::UnicodeUTF8));
-        menuSave->setTitle(QApplication::translate("GUI", "Save", 0, QApplication::UnicodeUTF8));
-        menuLoad->setTitle(QApplication::translate("GUI", "Load", 0, QApplication::UnicodeUTF8));
-        menuAbout_us->setTitle(QApplication::translate("GUI", "Help", 0, QApplication::UnicodeUTF8));
-        menuAbout->setTitle(QApplication::translate("GUI", "About", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

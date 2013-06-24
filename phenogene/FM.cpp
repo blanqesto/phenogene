@@ -31,6 +31,11 @@ void File_Manager::do_function(int mode)
     case 4: // write weights
         write_weights(weights_file);
         break;
+    case 5:
+        read_pg_file(pg_file);
+        break;
+    case 6:
+        write_pg_file(pg_file);
     }
     return;
 }
@@ -150,7 +155,7 @@ void File_Manager::write_output(string filePath)
                     rank = j;
                 }
         }
-        write << ids[i] <<n.rank_output[rank];
+        write << ids[i] << ": "<< n.rank_output[rank];
         output_population_string+="ID#";
         output_population_string+=convertInt(ids[i]);
         output_population_string+=": ";
@@ -196,10 +201,10 @@ void File_Manager::write_weights(string filePath)
     write.open(filePath.c_str());
     fori (0,n.hidden_len)
             forj (0,n.input_len)
-                write << n.Wh[i][j] << " ";
+                write << n.Wh[i][j] << endl;
     fori (0,n.output_len)
             forj (0,n.hidden_len)
-                write << n.Wo[i][j] << " ";
+                write << n.Wo[i][j] << endl;
     write.close();
     return;
 }
@@ -241,5 +246,65 @@ void File_Manager::fill_rank_output()
         n.output_rank.insert(pair<string,int>(rank_output_strings[i],i+1));
         n.rank_output.insert(pair<int,string>(i+1,rank_output_strings[i]));
     }
+    return;
+}
+
+/**
+ \brief Read pg configuration file.\n
+  Opens file filePath and reads its content.
+ \param [filePath] File path to be read.
+ \pre File specified by filePath is in the correct format.
+ \post different neural network datasets are filled.
+*/
+void File_Manager::read_pg_file(string filePath)
+{
+    read.open(filePath.c_str());
+    read >> n.input_len;
+    read >> n.hidden_len;
+    read >> n.output_len;
+    fori(0,n.output_len)
+    {
+            read >> rank_output_strings[i];
+            rank_output_strings[i]+="\n";
+    }
+    read >> n.learning_rate;
+    read >> n.momentum;
+    read >> n.minimum_error;
+    read >> n.max_iterations;
+    fori (0,n.hidden_len)
+            forj (0,n.input_len)
+            read >> n.Wh[i][j];
+    fori (0,n.output_len)
+            forj (0,n.hidden_len)
+            read >> n.Wo[i][j];
+    read.close();
+    return;
+}
+/**
+ \brief Write pg configuration file.\n
+  Opens file filePath and write to it.
+ \param [filePath] File path to be wrote.
+ \pre Directory specified by filePath is accessible.
+ \post pg file to be found in the specified directory.
+*/
+void File_Manager::write_pg_file(string filePath)
+{
+    write.open(filePath.c_str());
+    write << n.input_len << endl;
+    write << n.hidden_len << endl;
+    write << n.output_len << endl;
+    fori(0,n.output_len)
+            write << rank_output_strings[i] << endl;
+    write << n.learning_rate << endl;
+    write << n.momentum << endl;
+    write << n.minimum_error << endl;
+    write << n.max_iterations << endl;
+    fori (0,n.hidden_len)
+            forj (0,n.input_len)
+                write << n.Wh[i][j] << endl;
+    fori (0,n.output_len)
+            forj (0,n.hidden_len)
+                write << n.Wo[i][j] << endl;
+    write.close();
     return;
 }

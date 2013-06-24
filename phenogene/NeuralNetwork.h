@@ -28,6 +28,8 @@ public:
     int get_dataset_size();
     double get_least_error();
     double get_momentum();
+    double get_learning_rate();
+    double get_min_er();
 
     /*Other functions*/
     void do_function(int);

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'GUI.h'
 **
-** Created: Sun Jun 23 12:04:07 2013
+** Created: Mon Jun 24 11:32:50 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_GUI[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      16,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -45,6 +45,8 @@ static const uint qt_meta_data_GUI[] = {
      311,    4,    4,    4, 0x08,
      343,    4,    4,    4, 0x08,
      382,  376,    4,    4, 0x08,
+     415,    4,    4,    4, 0x08,
+     442,    4,    4,    4, 0x08,
 
        0        // eod
 };
@@ -64,6 +66,8 @@ static const char qt_meta_stringdata_GUI[] = {
     "on_lineEdit_7_editingFinished()\0"
     "on_lineEdit_10_editingFinished()\0index\0"
     "on_tabWidget_currentChanged(int)\0"
+    "on_pushButton_13_clicked()\0"
+    "on_pushButton_12_clicked()\0"
 };
 
 void GUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -86,6 +90,8 @@ void GUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         case 11: _t->on_lineEdit_7_editingFinished(); break;
         case 12: _t->on_lineEdit_10_editingFinished(); break;
         case 13: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 14: _t->on_pushButton_13_clicked(); break;
+        case 15: _t->on_pushButton_12_clicked(); break;
         default: ;
         }
     }
@@ -123,9 +129,9 @@ int GUI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 16;
     }
     return _id;
 }

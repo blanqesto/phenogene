@@ -20,6 +20,7 @@ void GUI::on_pushButton_5_clicked()
     ui->label_24->setText(ui->label_2->text()+".w");
     fm.set_weights_file(temp+".w");
     fm.set_output_file(temp+".out");
+    fm.set_pg_file(temp+".pg");
 }
 
 
@@ -63,6 +64,7 @@ void GUI::on_lineEdit_3_editingFinished()
 {
     ui->lineEdit_8->setText(ui->lineEdit_3->text());
     fm.n.set_learning_rate(ui->lineEdit_3->text().toDouble());
+    ui->lineEdit_27->setText(ui->lineEdit_3->text());
 }
 
 /**
@@ -75,6 +77,7 @@ void GUI::on_lineEdit_4_editingFinished()
 {
     ui->lineEdit_9->setText(ui->lineEdit_4->text());
     fm.n.set_minimum_error(ui->lineEdit_4->text().toDouble());
+    ui->lineEdit_28->setText(ui->lineEdit_4->text());
 }
 
 
@@ -184,6 +187,83 @@ void GUI::on_lineEdit_10_editingFinished()
     fm.n.set_max_it(ui->lineEdit_10->text().toInt());
 }
 
+
+/**
+ On Analysis Tab
+ \brief Browses PG File\n
+  Allows the user to select a file.
+  \pre Import configurations button is clicked.
+  \post File path to PG file is set.
+*/
+void GUI::on_pushButton_13_clicked()
+{
+    QString fileName= fileDialog.getOpenFileName(this, tr("Open File"), filePath, tr("Files (*.*)"));
+    if(fileName!="")filePath=fileName;
+    else
+    {
+        display_error(QString::fromStdString("Choose a file!\n"));
+        return;
+    }
+    fm.set_pg_file(fileName.toStdString());
+    fm.do_function(5);
+    set_pg_parameters();
+    display_error(QString::fromStdString("PG file is imported successfully!\n"));
+}
+
+/**
+ On Analysis Tab
+ \brief Saves PG File\n
+  Allows the user to save a file.
+  \pre Export configurations button is clicked.
+  \post File PG is created.
+*/
+void GUI::on_pushButton_12_clicked()
+{
+    fm.set_pg_file(fm.get_input_file()+".pg");
+    fm.do_function(6);
+    display_error(QString::fromStdString("PG file is exported successfully!\n"));
+}
+
+/**
+ \brief Updates parameters after PG file is read
+  \pre Configurations has been imported.
+  \post All parameters are updated.
+*/
+void GUI::set_pg_parameters()
+{
+    ui->lineEdit->setText(QString::number(fm.n.get_input_len()));
+    ui->lineEdit_6->setText(QString::number(fm.n.get_input_len()));
+    ui->lineEdit_23->setText(QString::number(fm.n.get_input_len()));
+
+    ui->lineEdit_5->setText(QString::number(fm.n.get_hidden_len()));
+    ui->lineEdit_24->setText(QString::number(fm.n.get_hidden_len()));
+    ui->lineEdit_25->setText(QString::number(fm.n.get_output_len()));
+    string temp="";
+    fori(0,fm.n.get_output_len()) temp+=fm.get_rank_output_strings(i);
+    ui->textEdit_4->setText(QString::fromStdString(temp));
+    ui->textBrowser_4->setText(QString::fromStdString(temp));
+
+    ui->lineEdit_3->setText(QString::number(fm.n.get_learning_rate()));
+    ui->lineEdit_8->setText(QString::number(fm.n.get_learning_rate()));
+    ui->lineEdit_27->setText(QString::number(fm.n.get_learning_rate()));
+
+    ui->lineEdit_7->setText(QString::number(fm.n.get_momentum()));
+    ui->lineEdit_26->setText(QString::number(fm.n.get_momentum()));
+
+    ui->lineEdit_4->setText(QString::number(fm.n.get_min_er()));
+    ui->lineEdit_9->setText(QString::number(fm.n.get_min_er()));
+    ui->lineEdit_28->setText(QString::number(fm.n.get_min_er()));
+
+    ui->lineEdit_10->setText(QString::number(fm.n.get_max_it()));
+
+    ui->lineEdit_19->setText(QString::fromStdString("%"));
+    ui->lineEdit_20->setText(QString::fromStdString(""));
+    ui->lineEdit_21->setText(QString::fromStdString(""));
+    ui->lineEdit_22->setText(QString::fromStdString(""));
+
+    ui->label_22->setText(QString::fromStdString("imported.pg"));
+    ui->label_24->setText(QString::fromStdString("imported.pg"));
+}
 
 void GUI::on_quitButton_clicked()
 {

@@ -30,6 +30,10 @@ public:
     /*Other functions*/
     void do_function(int);
     void fill_rank_output();
+    string convertInt(int);
+
+    /**/
+    int skip_genes[input_l];
 
 private:
     ofstream write;
@@ -52,7 +56,6 @@ private:
     void write_output(string);
     void write_weights(string);
     void write_pg_file(string);
-    string convertInt(int);
 
 };
 

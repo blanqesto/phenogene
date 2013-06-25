@@ -64,15 +64,16 @@ void File_Manager::read_input(string filePath)
         n.input_dataset[n.dataset_size].resize(n.input_len+1);
         fill_n(n.input,n.input_len,0);
         fori(0,n.input_len)
-                {
-                    read >> char1 >> char2;
-                    input_population_string += char1;
-                    input_population_string += char2;
-                    input_population_string += "\n";
-                    pair <char,char> temp (char1,char2);
-                    n.input[i] = n.input_rank[temp];
-                    n.input_dataset[n.dataset_size][i]=n.input[i];
-                }
+        {
+            read >> char1 >> char2;
+            if(skip_genes[i]==1)continue;
+            input_population_string += char1;
+            input_population_string += char2;
+            input_population_string += "\n";
+            pair <char,char> temp (char1,char2);
+            n.input[i] = n.input_rank[temp];
+            n.input_dataset[n.dataset_size][i]=n.input[i];
+        }
         n.dataset_size++;
     }
     read.close();
@@ -104,10 +105,8 @@ void File_Manager::read_expected_output(string filePath)
         std::istringstream s(temp.c_str());
         while(getline(s,tempSplit,','))
         {
-            //cout << i << " " << tempSplit << endl;
             n.expected_o[n.output_rank[tempSplit]]=1;
         }
-
         forj(1,n.output_len+1)
                 n.output_dataset[i][j-1]=n.expected_o[j];
     }

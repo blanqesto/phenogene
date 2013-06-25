@@ -34,6 +34,7 @@ void GUI::set_styleSheet()
 void GUI::set_validators()
 {
     ui->setupUi(this);
+    count_reports=0;
     ui->lineEdit->setValidator(new QIntValidator (0,100, this));
     ui->lineEdit_5->setValidator(new QIntValidator (0,100, this));
     ui->lineEdit_10->setValidator(new QIntValidator (0,10000000, this));
@@ -46,6 +47,14 @@ void GUI::set_validators()
     ui->lineEdit_3->setValidator(valid);
     ui->lineEdit_4->setValidator(valid2);
     ui->lineEdit_7->setValidator(valid3);
+    QListWidgetItem *item[fm.n.get_input_len()];
+    fori(0,fm.n.get_input_len())
+    {
+        item[i]= new QListWidgetItem("Gene#"+QString::number(i+1), ui->listWidget);
+        item[i]->setFlags(item[i]->flags() | Qt::ItemIsUserCheckable);
+        item[i]->setCheckState(Qt::Checked);
+        ui->listWidget->addItem(item[i]);
+    }
 }
 
 /*

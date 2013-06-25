@@ -18,8 +18,10 @@ void GUI::on_pushButton_clicked()
     ui->progressBar->setValue(2);
     if(ui->tabWidget->currentIndex()==0) //train
     {
+        int temp = fm.n.get_input_len();
         perform_train();
         prepare_report();
+        fm.n.set_input_len(temp);
     }
     else if(ui->tabWidget->currentIndex()==1) //test
         perform_test();
@@ -38,6 +40,8 @@ void GUI::perform_train()
 {
     ui->progressBar->setValue(0);
     fm.do_function(0); //read input
+    calculate_check();
+    fm.n.set_input_len(actual_input_checked);
     ui->progressBar->setValue(15);
     ui->textBrowser_3->setText(fm.get_input_population_string().c_str());
     fm.do_function(3); //read expected output
@@ -161,3 +165,22 @@ void GUI::prepare_report()
     return;
 }
 
+/**
+ * @brief GUI::calculate_check
+ * \brief Check which items are checked
+ */
+void GUI::calculate_check()
+{
+    actual_input_checked=0;
+    fill_n(fm.skip_genes,input_l,1);
+    int temp = ui->listWidget->count();
+    fori(0,temp)
+    {
+        bool checked = ui->listWidget->item(i)->checkState()==Qt::Checked;
+            if(checked)
+            {
+                fm.skip_genes[i]=0;
+                actual_input_checked++;
+            }
+    }
+}

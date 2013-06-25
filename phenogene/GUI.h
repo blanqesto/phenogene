@@ -54,6 +54,8 @@ private:
     Ui::GUI *ui;
     QString valid_input();
     File_Manager fm;
+    int actual_input_checked;
+    int count_reports;
     void fill_rank();
     void perform_train();
     void perform_test();
@@ -62,6 +64,7 @@ private:
     void display_error(QString);
     void set_pg_parameters();
     void prepare_report();
+    void calculate_check();
 };
 
 #endif

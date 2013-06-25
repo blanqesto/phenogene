@@ -124,7 +124,7 @@ void Neural_Network::train()
         }
         //error/=output_len;
         if (error < least_error) least_error=error;
-        cout << "min_err" << error << "  ";
+        //cout << "min_err" << error << "  ";
     }
 }
 

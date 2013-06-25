@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phenogene.ui'
 **
-** Created: Tue Jun 25 01:17:34 2013
+** Created: Tue Jun 25 09:58:29 2013
 **      by: Qt User Interface Compiler version 4.8.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -108,8 +108,6 @@ public:
     QLabel *label_26;
     QTextBrowser *textBrowser_4;
     QLabel *label_91;
-    QListWidget *listWidget_2;
-    QLabel *label_94;
     QFrame *frame_4;
     QFrame *line_21;
     QFrame *line_22;
@@ -541,7 +539,7 @@ public:
         textBrowser_4 = new QTextBrowser(frame_3);
         textBrowser_4->setObjectName(QString::fromUtf8("textBrowser_4"));
         textBrowser_4->setEnabled(true);
-        textBrowser_4->setGeometry(QRect(10, 200, 111, 131));
+        textBrowser_4->setGeometry(QRect(10, 200, 231, 131));
         textBrowser_4->setFont(font2);
         textBrowser_4->setReadOnly(true);
         label_91 = new QLabel(frame_3);
@@ -552,18 +550,6 @@ public:
 "border-color: rgb(255, 0, 0);"));
         label_91->setFrameShape(QFrame::StyledPanel);
         label_91->setFrameShadow(QFrame::Sunken);
-        listWidget_2 = new QListWidget(frame_3);
-        listWidget_2->setObjectName(QString::fromUtf8("listWidget_2"));
-        listWidget_2->setEnabled(true);
-        listWidget_2->setGeometry(QRect(130, 200, 111, 131));
-        label_94 = new QLabel(frame_3);
-        label_94->setObjectName(QString::fromUtf8("label_94"));
-        label_94->setGeometry(QRect(119, 170, 121, 31));
-        label_94->setFont(font2);
-        label_94->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
-"border-color: rgb(255, 0, 0);"));
-        label_94->setFrameShape(QFrame::StyledPanel);
-        label_94->setFrameShadow(QFrame::Sunken);
         frame_4 = new QFrame(tab_4);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
         frame_4->setGeometry(QRect(250, 0, 320, 440));
@@ -627,8 +613,8 @@ public:
         label_90->setFrameShadow(QFrame::Sunken);
         label_92 = new QLabel(tab_4);
         label_92->setObjectName(QString::fromUtf8("label_92"));
-        label_92->setGeometry(QRect(0, 170, 121, 31));
-        label_92->setFont(font2);
+        label_92->setGeometry(QRect(0, 170, 141, 31));
+        label_92->setFont(font3);
         label_92->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 0);\n"
 "border-color: rgb(255, 0, 0);"));
         label_92->setFrameShape(QFrame::StyledPanel);
@@ -921,7 +907,7 @@ public:
 
         retranslateUi(GUI);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GUI);
@@ -1022,7 +1008,6 @@ public:
                         "-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">grey</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:400;\">hazel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         label_91->setText(QApplication::translate("GUI", "Weights file:", 0, QApplication::UnicodeUTF8));
-        label_94->setText(QApplication::translate("GUI", "Selected genes:", 0, QApplication::UnicodeUTF8));
         pushButton_4->setText(QApplication::translate("GUI", "Browse", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("GUI", "No Selected File", 0, QApplication::UnicodeUTF8));
         textBrowser_2->setHtml(QApplication::translate("GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

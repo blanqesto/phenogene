@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     NN.cpp \
     GUI.cpp \
     GUI_constructor.cpp \
-    GUI_startButton.cpp
+    GUI_startButton.cpp \
+    GUI_analysis.cpp
 
 HEADERS  += \
     FileManager.h \
